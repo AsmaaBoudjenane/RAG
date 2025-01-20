@@ -1,0 +1,92 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{List of Figures}{}{chapter*.4}%
+\contentsline {chapter}{List of Tables}{}{chapter*.5}%
+\contentsline {chapter}{List of Abbreviations }{}{chapter*.6}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problem Identification and Motivation}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objectives and Scope}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Contributions}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Outline of the Thesis}{1}{section.1.4}%
+\contentsline {chapter}{PART I: BACKGROUND AND RELATED WORK}{2}{chapter*.7}%
+\contentsline {chapter}{\numberline {2}Arabic Language and Machine Translation}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Arabic Language}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Social Media}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Natural Language Processing}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Machine Translation}{12}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Linguistic Approaches}{12}{subsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.1}\textbf {Direct Approach}}{13}{subsubsection.2.5.1.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.2}\textbf {Rule-based MT}}{13}{subsubsection.2.5.1.2}%
+\contentsline {subsubsection}{\numberline {2.5.1.3}\textbf {Interlingual MT}}{13}{subsubsection.2.5.1.3}%
+\contentsline {subsubsection}{\numberline {2.5.1.4}\textbf {Transfer-based MT}}{13}{subsubsection.2.5.1.4}%
+\contentsline {subsection}{\numberline {2.5.2}Corpus Approaches}{13}{subsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.1}\textbf {Example-based MT}}{14}{subsubsection.2.5.2.1}%
+\contentsline {subsubsection}{\numberline {2.5.2.2}\textbf {Statistical MT}}{14}{subsubsection.2.5.2.2}%
+\contentsline {section}{\numberline {2.6}Evaluation}{15}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Human Evaluation}{15}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Automatic Evaluation}{16}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.7}Related Work}{17}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Summary}{19}{section.2.8}%
+\contentsline {chapter}{\numberline {3}Neural Networks and Machine Translation}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview}{20}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Neural Networks}{20}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Feed-Forward Neural Networks}{21}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Recurrent Neural Networks}{23}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}Stacked Recurrent Neural Networks}{24}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}Bidirectional Recurrent Neural Networks}{24}{subsubsection.3.2.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Long Short-Term Memory}{24}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Gated Recurrent Units}{25}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Neural Machine Translation}{26}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Training Neural Machine Translation Models}{28}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Decoding}{29}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Related Work}{30}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Summary}{31}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Large Language Models}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Transformers}{33}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Large Language Models}{35}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}BERT}{35}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}GPT}{37}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}LLM-based Machine Translation}{38}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}BART}{39}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}T5}{39}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}ChatGPT}{41}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Related Work}{41}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Summary}{41}{section.4.6}%
+\contentsline {chapter}{PART II: DATASET CREATION AND EXPERIMENTS}{43}{chapter*.28}%
+\contentsline {chapter}{\numberline {5}Algerian Arabic Corpus by Data Augmentation}{44}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Overview}{44}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Bilingual Corpora}{44}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Monollingual Corpora}{46}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Existing Corpora}{46}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Data Sources}{46}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Preprocessing}{47}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Data Augmentation}{48}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Monolingual corpora Augmentation}{48}{subsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.1}Copied-corpus Augmentation}{48}{subsubsection.5.7.1.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.2}Back Translation Augmentation}{49}{subsubsection.5.7.1.2}%
+\contentsline {subsection}{\numberline {5.7.2}Parallel Corpora Augmentaiton}{50}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}Right Rotation Augmentation}{50}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}Entity Replacement Augmentation}{52}{subsubsection.5.7.2.2}%
+\contentsline {section}{\numberline {5.8}Summary}{53}{section.5.8}%
+\contentsline {chapter}{\numberline {6}Seq2Seq Neural Machine Translation}{55}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Overview}{55}{section.6.1}%
+\contentsline {section}{\numberline {6.2}System Architecture}{55}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Baseline System}{55}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Experiments and Evaluation}{55}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Results and Discussions}{55}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Summary}{55}{section.6.6}%
+\contentsline {chapter}{\numberline {7}GPT-based Machine Translation}{56}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Overview}{56}{section.7.1}%
+\contentsline {section}{\numberline {7.2}System Architecture}{56}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Baseline System}{56}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Experiments and Evaluation}{56}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Results and Discussions}{56}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Summary}{56}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Conclusion}{57}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Summary}{57}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Limitations}{57}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Future work}{57}{section.8.3}%
+\contentsline {chapter}{Bibliography}{58}{chapter*.35}%
+\contentsline {chapter}{\numberline {A}Title of Appendix A}{}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Title of Appendix B}{}{appendix.B}%

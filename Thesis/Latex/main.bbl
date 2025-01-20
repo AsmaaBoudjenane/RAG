@@ -1,0 +1,1603 @@
+\begin{thebibliography}{100}
+
+\bibitem{vaswani17}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock In {\em Advances in neural information processing systems}, pages
+  5998--6008, 2017.
+
+\bibitem{khalid21}
+Usama Khalid, Mirza~Omer Beg, and Muhammad~Umair Arshad.
+\newblock Rubert: A bilingual roman urdu bert using cross lingual transfer
+  learning.
+\newblock {\em arXiv preprint arXiv:2102.11278}, 2021.
+
+\bibitem{wang23}
+Mingye Wang, Pan Xie, Yao Du, and Xiaohui Hu.
+\newblock T5-based model for abstractive summarization: A semi-supervised
+  learning approach with consistency loss functions.
+\newblock {\em Applied Sciences}, 13:7111, 06 2023.
+
+\bibitem{almansor18}
+Ebtesam~H. Almansor and Ahmed Al-Ani.
+\newblock A hybrid neural machine translation technique for translating low
+  resource languages.
+\newblock In Petra Perner, editor, {\em Machine Learning and Data Mining in
+  Pattern Recognition}, pages 347--356, Cham, 2018. Springer International
+  Publishing.
+
+\bibitem{alqudsi14}
+Arwa Alqudsi, Nazlia Omar, and Khalid Shaker.
+\newblock Arabic machine translation: a survey.
+\newblock {\em Artificial Intelligence Review}, 42(4):549--572, 2014.
+
+\bibitem{fehri93}
+A~Fassi Fehri.
+\newblock {\em Issues in the structure of Arabic clauses and words}, volume~29.
+\newblock Springer Science \& Business Media, 1993.
+
+\bibitem{chalabi00}
+Achraf Chalabi.
+\newblock Mt-based transparent arabization of the internet tarjim. com.
+\newblock In {\em Conference of the Association for Machine Translation in the
+  Americas}, pages 189--191. Springer, 2000.
+
+\bibitem{daimi01}
+Kevin Daimi.
+\newblock Identifying syntactic ambiguities in single-parse arabic sentence.
+\newblock {\em Computers and the Humanities}, 35(3):333--349, 2001.
+
+\bibitem{Kordoni14}
+Valia Kordoni and Iliana Simova.
+\newblock Multiword expressions in machine translation.
+\newblock In {\em Proceedings of the Ninth International Conference on Language
+  Resources and Evaluation ({LREC}'14)}, pages 1208--1211, Reykjavik, Iceland,
+  May 2014. European Language Resources Association (ELRA).
+
+\bibitem{Zaninello20}
+Andrea Zaninello and Alexandra Birch.
+\newblock Multiword expression aware neural machine translation.
+\newblock In {\em Proceedings of the 12th Language Resources and Evaluation
+  Conference}, pages 3816--3825, Marseille, France, May 2020. European Language
+  Resources Association.
+
+\bibitem{boyd08}
+danah~m. boyd and Nicole~B. Ellison.
+\newblock Social network sites: Definition, history, and scholarship.
+\newblock {\em Journal of Computer-Mediated Communication}, 13(1):210--230, 10
+  2007.
+
+\bibitem{yaqub23}
+Muhammad~Zafar Yaqub and Abdullah Alsabban.
+\newblock Knowledge sharing through social media platforms in the silicon age.
+\newblock {\em Sustainability}, 15(8), 2023.
+
+\bibitem{segesten22}
+Anamaria~Dutceac Segesten, Michael Bossetta, Nils Holmberg, and Diederick
+  Niehorster.
+\newblock The cueing power of comments on social media: how disagreement in
+  facebook comments affects user engagement with news.
+\newblock {\em Information, Communication \& Society}, 25(8):1115--1134, 2022.
+
+\bibitem{yoon14}
+Sung-joon Yoon.
+\newblock Does social capital affect sns usage? a look at the roles of
+  subjective well-being and social identity.
+\newblock {\em Computers in Human Behavior}, 41:295--303, 2014.
+
+\bibitem{rogers21}
+Richard Rogers.
+\newblock Visual media analysis for instagram and other online platforms.
+\newblock {\em Big Data \& Society}, 8(1):20539517211022370, 2021.
+
+\bibitem{lu24}
+Yingdan Lu and Yilang Peng.
+\newblock The mobilizing power of visual media across stages of social-mediated
+  protests.
+\newblock {\em Political Communication}, 0(0):1--28, 2024.
+
+\bibitem{lenhart15}
+A.~Lenhart, R.~Ling, S.~Campbell, and A.~Elder.
+\newblock Teens, social media, \& technology overview 2015.
+
+\bibitem{pang20}
+Natalie Pang and Yue~Ting Woo.
+\newblock What about whatsapp? a systematic review of whatsapp and its role in
+  civic and political engagement.
+\newblock {\em First Monday}, 25(12), Jan. 2020.
+
+\bibitem{ellison07}
+Nicole~B. Ellison, Charles Steinfield, and Cliff Lampe.
+\newblock The benefits of facebook “friends:” social capital and college
+  students’ use of online social network sites.
+\newblock {\em Journal of Computer-Mediated Communication}, 12(4):1143--1168,
+  2007.
+
+\bibitem{davis20}
+Joanna Davis, Hans-Georg Wolff, Monica~L. Forret, and Sherry~E. Sullivan.
+\newblock Networking via linkedin: An examination of usage and career benefits.
+\newblock {\em Journal of Vocational Behavior}, 118:103396, 2020.
+
+\bibitem{Moussallem19}
+Diego Moussallem, Matthias Wauer, and Axel Cyrille~Ngonga Ngomo.
+\newblock Semantic web for machine translation: Challenges and directions.
+\newblock {\em CEUR Workshop Proceedings}, 2576:1--9, 2019.
+
+\bibitem{Darwish15}
+Kareem Darwish.
+\newblock Arabizi detection and conversion to arabic.
+\newblock In {\em Proceedings ofthe EMNLP 2014 Workshop on Arabic Natural
+  Langauge Processing (ANLP)}, pages 217--224, Doha, Qatar, 2015.
+
+\bibitem{okpor14}
+M.~D. Okpor.
+\newblock Machine translation approaches: Issues and challenges.
+\newblock {\em IJCSI International Journal of Computer Science Issues},
+  11(2):159--165, Sep 2014.
+
+\bibitem{Ashraf15}
+Neeha Ashraf and Manzoor Ahmad.
+\newblock Machine translation techniques and their comparative study.
+\newblock {\em International Journal of Computer Applications}, 125(7):25--31,
+  Sep 2015.
+\newblock Published by Foundation of Computer Science (FCS), NY, USA.
+
+\bibitem{DO11}
+Thi-Ngoc-Diep DO.
+\newblock {\em Extraction de corpus parallèle pour la traduction automatique
+  depuis et vers une langue peu dotée}.
+\newblock PhD thesis, UNIVERSITÉ DE GRENOBLE, 2011.
+
+\bibitem{Nagao84}
+Makoto Nagao.
+\newblock Framework of a mechanical translation between japanese and english by
+  analogy principle.
+\newblock {\em Artificial and Human Intelligence, A. Elithorn and R. Banerji
+  (eds.) North-Holland}, pages 173--180, 1984.
+
+\bibitem{brown88}
+Peter~F Brown, John Cocke, Stephen~A Della~Pietra, Vincent~J Della~Pietra,
+  Frederick Jelinek, Robert~L Mercer, and Paul Roossin.
+\newblock A statistical approach to language translation.
+\newblock In {\em {C}oling {B}udapest 1988 Volume 1: {I}nternational
+  {C}onference on {C}omputational {L}inguistics}, 1988.
+
+\bibitem{brown93}
+Peter~F. Brown, Stephen~A. Della~Pietra, Vincent~J. Della~Pietra, and Robert~L.
+  Mercer.
+\newblock The mathematics of statistical machine translation: Parameter
+  estimation.
+\newblock {\em Computational Linguistics}, 19(2):263--311, 1993.
+
+\bibitem{mauvcec19}
+Mirjam~Sepesy Mau{\v{c}}ec and Gregor Donaj.
+\newblock Machine translation and the evaluation of its quality.
+\newblock In {\em Recent Trends in Computational Intelligence}. IntechOpen,
+  2019.
+
+\bibitem{papineni02}
+Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu.
+\newblock Bleu: a method for automatic evaluation of machine translation.
+\newblock In {\em Proceedings of the 40th annual meeting of the Association for
+  Computational Linguistics}, pages 311--318, Philadelphia, Pennsylvania, USA,
+  Jul 2002. Association for Computational Linguistics.
+
+\bibitem{doddington02}
+George Doddington.
+\newblock Automatic evaluation of machine translation quality using n-gram
+  co-occurrence statistics.
+\newblock In {\em Proceedings of the Second International Conference on Human
+  Language Technology Research}, HLT '02, pages 138--145, San Francisco, CA,
+  USA, 2002. Morgan Kaufmann Publishers Inc.
+
+\bibitem{banerjee05}
+Satanjeev Banerjee and Alon Lavie.
+\newblock {METEOR}: An automatic metric for {MT} evaluation with improved
+  correlation with human judgments.
+\newblock In {\em Proceedings of the {ACL} Workshop on Intrinsic and Extrinsic
+  Evaluation Measures for Machine Translation and/or Summarization}, pages
+  65--72, Ann Arbor, Michigan, Jun 2005.
+
+\bibitem{snover06}
+Matthew Snover, Bonnie Dorr, Richard Schwartz, Linnea Micciulla, and John
+  Makhoul.
+\newblock A study of translation edit rate with targeted human annotation.
+\newblock In {\em Proceedings of the 7th Conference of the Association for
+  Machine Translation in the Americas: Technical Papers}, pages 223--231,
+  Cambridge, Massachusetts, USA, August 8-12 2006. Association for Machine
+  Translation in the Americas.
+
+\bibitem{han12}
+Aaron L.~F. Han, Derek~F. Wong, and Lidia~S. Chao.
+\newblock {LEPOR}: A robust evaluation metric for machine translation with
+  augmented factors.
+\newblock In {\em Proceedings of {COLING} 2012: Posters}, pages 441--450,
+  Mumbai, India, Dec 2012. The COLING 2012 Organizing Committee.
+
+\bibitem{altaani05}
+Ahmad~T Al-Taani and Zeyad~M Hailat.
+\newblock A direct english-arabic machine translation system.
+\newblock {\em Information Technology Journal}, 4(3):256--261, 2005.
+
+\bibitem{ittycheriah-roukos-07}
+Abraham Ittycheriah and Salim Roukos.
+\newblock Direct translation model 2.
+\newblock In {\em Human Language Technologies 2007: The Conference of the North
+  {A}merican Chapter of the Association for Computational Linguistics;
+  Proceedings of the Main Conference}, pages 57--64, Rochester, New York, Apr
+  2007. Association for Computational Linguistics.
+
+\bibitem{mankai95}
+Chafia Mankai and Ali Mili.
+\newblock Machine translation from arabic to english and french.
+\newblock {\em Information Sciences-Applications}, 3(2):91--109, 1995.
+
+\bibitem{salem08}
+Yasser Salem, Arnold Hensman, and Brian Nolan.
+\newblock Implementing arabic-to-english machine translation using the role and
+  reference grammar linguistic model.
+\newblock In {\em Proceedings of the Eighth Annual International Conference on
+  Information Technology and Telecommunication}, pages 103--110, 2008.
+
+\bibitem{nguyen08}
+ThuyLinh Nguyen and Stephan Vogel.
+\newblock Context-based {A}rabic morphological analysis for machine
+  translation.
+\newblock In {\em {C}o{NLL} 2008: Proceedings of the Twelfth Conference on
+  Computational Natural Language Learning}, pages 135--142, Manchester,
+  England, Aug 2008. Coling 2008 Organizing Committee.
+
+\bibitem{samy08}
+Doaa Samy and Ana Gonz{\'a}lez-Ledesma.
+\newblock Pragmatic annotation of discourse markers in a multilingual parallel
+  corpus (arabic-spanish-english).
+\newblock In {\em LREC}, 2008.
+
+\bibitem{abushquier08}
+M.~M. {Abu Shquier} and T.~M.~T. {Sembok}.
+\newblock Word agreement and ordering in english-arabic machine translation.
+\newblock In {\em 2008 International Symposium on Information Technology},
+  volume~1, pages 1--10, 2008.
+
+\bibitem{elming09}
+Jakob Elming and Nizar Habash.
+\newblock Syntactic reordering for {E}nglish-{A}rabic phrase-based machine
+  translation.
+\newblock In {\em Proceedings of the {EACL} 2009 Workshop on Computational
+  Approaches to {S}emitic Languages}, pages 69--77, Athens, Greece, Mar 2009.
+  Association for Computational Linguistics.
+
+\bibitem{besanccon09}
+Romaric Besan{\c{c}}on, Djamel Mostefa, Isma{\"\i}l Timimi, St{\'e}phane
+  Chaudiron, Mariama La{\"\i}b, and Khalid Choukri.
+\newblock Arabic, english and french: three languages in a filtering systems
+  evaluation project.
+\newblock {\em MEDAR}, pages 163--167, 2009.
+
+\bibitem{salloum12}
+Wael Salloum and Nizar Habash.
+\newblock {Elissa}: A dialectal to standard arabic machine translation system.
+\newblock In {\em COLING 2012: Demonstration Papers}, December 2012, pages
+  385--392, Mumbai, 2012.
+
+\bibitem{sghaier20}
+Mohamed~Ali Sghaier and Mounir Zrigui.
+\newblock Rule-based machine translation from tunisian dialect to modern
+  standard arabic.
+\newblock {\em Procedia Computer Science}, 176:310--319, 2020.
+
+\bibitem{soudi02}
+Abdelhadi Soudi, Violetta Cavalli-Sforza, and Abderrahim Jamari.
+\newblock Prototype english-to-arabic interlingua-based mt system.
+\newblock In {\em Proceedings of the Third International Conference on Language
+  Resources and Evaluation: Workshop on Arabic Language Resources and
+  Evaluation: Status and Prospects}, pages 18--25, Las Palmas de Gran Canaria,
+  Spain, 01 2002.
+
+\bibitem{shaalan06}
+Khaled Shaalan, Azza~Abdel Monem, Ahmed Rafea, and Hoda Baraka.
+\newblock Mapping interlingua representations to feature structures of arabic
+  sentences.
+\newblock In {\em The Challenge of Arabic for NLP/MT. International Conference
+  at the British Computer Society, London}, pages 149--159, 2006.
+
+\bibitem{bouillon08}
+Pierrette Bouillon, Ismahene~Sonia Halimi~Mallem, Yukie Nakao, Kyoko Kanzaki,
+  Hitoshi Isahara, Nikolaos Tsourakis, Marianne Starlander, Beth~Ann Hockey,
+  and Emmanuel Rayner.
+\newblock Developing non-european translation pairs in a medium-vocabulary
+  medical speech translation system.
+\newblock In {\em Proceedings of the Sixth International Conference on Language
+  Resources and Evaluation (LREC)}, pages 1741--1748, 2008.
+
+\bibitem{AlAnsary14}
+Sameh Alansary.
+\newblock Interlingua-based machine translation systems: Unl versus other
+  interlinguas.
+\newblock {\em The Egyptian Journal of Language Engineering}, 1, Jan 2014.
+
+\bibitem{attia02}
+M~Attia.
+\newblock Implications of the agreement features in machine translation.
+\newblock {\em Al-Azhar University}, 2002.
+
+\bibitem{shaalan04}
+Khaled Shaalan, Ahmed Rafea, Azza~Abdel Moneim, and Hoda Baraka.
+\newblock Machine translation of english noun phrases into arabic.
+\newblock {\em International Journal of Computer Processing of Oriental
+  Languages}, 17(02):121--134, 2004.
+
+\bibitem{shirko10}
+Omar Shirko, Nazlia Omar, Haslina Arshad, and Mohammed Albared.
+\newblock Machine translation of noun phrases from arabic to english using
+  transfer-based approach.
+\newblock {\em Journal of Computer Science}, 6(3):350, 2010.
+
+\bibitem{shaalan10a}
+Khaled Shaalan, Ashraf Hendam, and Ahmed Rafea.
+\newblock {An English-Arabic bi-directional machine translation tool in the
+  agriculture domain: A rule-based transfer approach for translating expert
+  systems}.
+\newblock {\em IFIP Advances in Information and Communication Technology},
+  pages 281--290, 2010.
+
+\bibitem{hatem11}
+Arwa Hatem, Nazlia Omar, and Khalid Shaker.
+\newblock Morphological analysis for rule based machine translation.
+\newblock In {\em 2011 International Conference on Semantic Technology and
+  Information Retrieval}, pages 260--263. IEEE, 2011.
+
+\bibitem{guidere02}
+Mathieu Guidere.
+\newblock Toward corpus-based machine translation for standard arabic.
+\newblock {\em Translation Journal}, 6(1), 2002.
+
+\bibitem{Bar11}
+Kfir Bar and N.~Dershowitz.
+\newblock Using verb paraphrases for arabic-to-english example-based
+  translation.
+\newblock {\em Machine Translation and Morphologically-rich Languages}, 2011.
+
+\bibitem{Bar12}
+Kfir Bar and N.~Dershowitz.
+\newblock {\em Using semantic equivalents for Arabic-to-English: Example-based
+  translation}, pages 49--72.
+\newblock John Benjamins Publishing, Amsterdam, Netherlands, 2012.
+
+\bibitem{Cavalli-Sforza12}
+Violetta Cavalli-Sforza and Aaron Phillips.
+\newblock {\em Using morphology to improve Example-Based Machine Translation},
+  pages 23--48.
+\newblock John Benjamins Publishing, Jan 2012.
+
+\bibitem{elshishtawy14}
+T~El-Shishtawy and A~El-Sammak.
+\newblock The best templates match technique for example based machine
+  translation.
+\newblock {\em arXiv preprint arXiv:1406.1241}, 2014.
+
+\bibitem{hasan06}
+Sasa Hasan, Anas El~Isbihani, and Hermann Ney.
+\newblock Creating a large-scale arabic to french statistical machine
+  translation system.
+\newblock In {\em LREC}, pages 855--858, 2006.
+
+\bibitem{diab07}
+Mona Diab, Mahmoud Ghoneim, and Nizar Habash.
+\newblock Arabic diacritization in the context of statistical machine
+  translation.
+\newblock In {\em Proceedings of MT-Summit}, 2007.
+
+\bibitem{sarikaya07}
+Ruhi Sarikaya, Yonggang Deng, and Yuqing Gao.
+\newblock Context dependent word modeling for statistical machine translation
+  using part-of-speech tags.
+\newblock In {\em Eighth Annual Conference of the International Speech
+  Communication Association}, 2007.
+
+\bibitem{badr09}
+Ibrahim Badr, Rabih Zbib, and James Glass.
+\newblock Syntactic phrase reordering for {E}nglish-to-{A}rabic statistical
+  machine translation.
+\newblock In {\em Proceedings of the 12th Conference of the {E}uropean Chapter
+  of the {ACL} ({EACL} 2009)}, pages 86--93, Athens, Greece, Mar 2009.
+  Association for Computational Linguistics.
+
+\bibitem{habash-hu09}
+Nizar Habash and Jun Hu.
+\newblock Improving {A}rabic-{C}hinese statistical machine translation using
+  {E}nglish as pivot language.
+\newblock In {\em Proceedings of the Fourth Workshop on Statistical Machine
+  Translation}, pages 173--181, Athens, Greece, Mar 2009. Association for
+  Computational Linguistics.
+
+\bibitem{carpuat10}
+Marine Carpuat, Yuval Marton, and Nizar Habash.
+\newblock Improving {A}rabic-to-{E}nglish statistical machine translation by
+  reordering post-verbal subjects for alignment.
+\newblock In {\em Proceedings of the {ACL} 2010 Conference Short Papers}, pages
+  178--183, Uppsala, Sweden, Jul 2010. Association for Computational
+  Linguistics.
+
+\bibitem{ghurab10}
+Mossa Ghurab, Yueting Zhuang, Jiangqin Wu, and Maan~Younis Abdullah.
+\newblock Arabic-chinese and chinese-arabic phrase-based statistical machine
+  translation systems.
+\newblock {\em Inf. Technol. J}, 9(4):666--672, 2010.
+
+\bibitem{bisazza10}
+Arianna Bisazza and Marcello Federico.
+\newblock Chunk-based verb reordering in {VSO} sentences for {A}rabic-{E}nglish
+  statistical machine translation.
+\newblock In {\em Proceedings of the Joint Fifth Workshop on Statistical
+  Machine Translation and {M}etrics{MATR}}, pages 235--243, Uppsala, Sweden,
+  Jul 2010. Association for Computational Linguistics.
+
+\bibitem{durrani17}
+Nadir Durrani, Fahim Dalvi, Hassan Sajjad, and Stephan Vogel.
+\newblock Qcri machine translation systems for iwslt 16.
+\newblock {\em arXiv preprint arXiv:1701.03924}, 2017.
+
+\bibitem{mallek17}
+Fatma Mallek, Billal Belainine, and Fatiha Sadat.
+\newblock Arabic social media analysis and translation.
+\newblock {\em Procedia Computer Science}, 117:298--303, 2017.
+
+\bibitem{ebrahim17}
+Sara Ebrahim, Doaa Hegazy, Mostafa Gadal Haqq~M. Mostafa, and Samhaa~R.
+  El-Beltagy.
+\newblock Detecting and integrating multiword expression into english-arabic
+  statistical machine translation.
+\newblock {\em Procedia Computer Science}, 117:111--118, 2017.
+
+\bibitem{aqlan19a}
+Fares Aqlan, Xiaoping Fan, Abdullah Alqwbani, and Akram Al-Mansoub.
+\newblock Improved arabic-chinese machine translation with linguistic input
+  features.
+\newblock {\em Future Internet}, 11:22, 2019.
+
+\bibitem{alsharaf04}
+Haytham Alsharaf, Sylviane Cardey, and Peter Greenfield.
+\newblock French to arabic machine translation: the specificity of language
+  couples.
+\newblock In {\em Proc. of the 9th Annual Workshop of the European Association
+  for Machine Translation (EAMT), Malta, April}, 2004.
+
+\bibitem{toutanova08}
+Kristina Toutanova, Hisami Suzuki, and Achim Ruopp.
+\newblock Applying morphology generation models to machine translation.
+\newblock In {\em Proceedings of ACL-08: HLT}, pages 514--522, Columbus, Ohio,
+  Jun 2008. Association for Computational Linguistics.
+
+\bibitem{hatem08}
+Ahmed Hatem and Amin Nassar.
+\newblock Modified dijstra-like search algorithm for english to arabic machine
+  translation system.
+\newblock {\em Proceedings EAMT}, 2008:12th, 2008.
+
+\bibitem{matusov09}
+Evgeny Matusov, Gregor Leusch, and Hermann Ney.
+\newblock {\em Learning To Combine Machine Translation Systems}, chapter~13,
+  pages 257--276.
+\newblock Neural Information Processing Series. MIT Press, 2009.
+
+\bibitem{habash09}
+Nizar Habash, B.~Dorr, and Christof Monz.
+\newblock Symbolic-to-statistical hybridization: extending generation-heavy
+  machine translation.
+\newblock {\em Machine Translation}, 23:23--63, 2009.
+
+\bibitem{aldam10}
+Rasha~Al Dam and Ahmed Guessoum.
+\newblock Building a neural network-based english-to-arabic transfer module
+  from an unrestricted domain.
+\newblock In {\em 2010 International Conference on Machine and Web
+  Intelligence}, pages 94--101, 2010.
+
+\bibitem{sawaf10}
+Hassan Sawaf.
+\newblock Arabic dialect handling in hybrid machine translation.
+\newblock In {\em AMTA 2010 - 9th Conference of the Association for Machine
+  Translation in the Americas}, 2010.
+
+\bibitem{alawneh11}
+Mouiad Alawneh and Tengku~Mohd Sembok.
+\newblock Handling agreement and words reordering in machine translation from
+  english to arabic using hybrid-based systems.
+\newblock {\em Journal of Computer Science}, 11(6):93--97, 2011.
+
+\bibitem{shaalan12}
+Khaled Shaalan and Ahmad~Hany Hossny.
+\newblock Automatic rule induction in arabic to english machine translation
+  framework.
+\newblock {\em Challenges for Arabic Machine Translation}, 9(2012):135, 2012.
+
+\bibitem{akeel14}
+Marwan Akeel and Ravi Mishra.
+\newblock Ann and rule based method for english to arabic machine translation.
+\newblock {\em Int. Arab J. Inf. Technol.}, 11(4):396--405, 2014.
+
+\bibitem{mohamed15}
+Emad Mohamed and Fatiha Sadat.
+\newblock Hybrid arabic--french machine translation using syntactic re-ordering
+  and morphological pre-processing.
+\newblock {\em Computer Speech \& Language}, 32(1):135--144, 2015.
+
+\bibitem{zantout15}
+RACHED Zantout and Ahmed Guessoum.
+\newblock Obstacles facing arabic machine translation: building a neural
+  network-based transfer module.
+\newblock {\em Papers in Translation Studies}, pages 229--253, 2015.
+
+\bibitem{elman90}
+Jeffrey~L. Elman.
+\newblock Finding structure in time.
+\newblock {\em Cognitive Science}, 14(2):179--211, 1990.
+
+\bibitem{bahdanau15}
+Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio.
+\newblock Neural machine translation by jointly learning to align and
+  translate.
+\newblock In {\em Proceedings of the 3rd International Conference on Learning
+  Representations (ICLR’15)}, 2015.
+
+\bibitem{lample18}
+Guillaume Lample, Myle Ott, Alexis Conneau, Ludovic Denoyer, and Marc{'}Aurelio
+  Ranzato.
+\newblock Phrase-based {\&} neural unsupervised machine translation.
+\newblock In Ellen Riloff, David Chiang, Julia Hockenmaier, and Jun{'}ichi
+  Tsujii, editors, {\em Proceedings of the 2018 Conference on Empirical Methods
+  in Natural Language Processing}, pages 5039--5049, Brussels, Belgium, oct --
+  nov 2018. Association for Computational Linguistics.
+
+\bibitem{schuster97}
+M.~Schuster and K.K. Paliwal.
+\newblock Bidirectional recurrent neural networks.
+\newblock {\em IEEE Transactions on Signal Processing}, 45(11):2673--2681,
+  1997.
+
+\bibitem{hochreiter97}
+Sepp Hochreiter and Jürgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
+
+\bibitem{almahairi16}
+Amjad Almahairi, Kyunghyun Cho, Nizar Habash, and Aaron Courville.
+\newblock First result on arabic neural machine translation.
+\newblock {\em arXiv preprint arXiv:1606.02680}, 2016.
+
+\bibitem{guzman16}
+Francisco Guzm{\'a}n, Houda Bouamor, Ramy Baly, and Nizar Habash.
+\newblock Machine translation evaluation for {A}rabic using
+  morphologically-enriched embeddings.
+\newblock In {\em Proceedings of {COLING} 2016, the 26th International
+  Conference on Computational Linguistics: Technical Papers}, pages 1398--1408,
+  Osaka, Japan, dec 2016. The COLING 2016 Organizing Committee.
+
+\bibitem{belinkov17}
+Yonatan Belinkov, Nadir Durrani, Fahim Dalvi, Hassan Sajjad, and James Glass.
+\newblock What do neural machine translation models learn about morphology?
+\newblock In {\em Proceedings of the 55th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pages 861--872,
+  Vancouver, Canada, Jul 2017. Association for Computational Linguistics.
+
+\bibitem{choi17}
+Gyu{-}Hyeon Choi, Jong{-}Hun Shin, and Young{-}Kil Kim.
+\newblock Improving a multi-source neural machine translation model with corpus
+  extension for low-resource languages.
+\newblock {\em arXiv Preprint:1709.08898}, 2017.
+
+\bibitem{shapiro18}
+Pamela Shapiro and Kevin Duh.
+\newblock Morphological word embeddings for {A}rabic neural machine translation
+  in low-resource setting.
+\newblock In {\em Proceedings of the Second Workshop on Subword/Character
+  {LE}vel Models}, pages 1--11, New Orleans, Jun 2018. Association for
+  Computational Linguistics.
+
+\bibitem{alrajeh18}
+Abdullah Alrajeh.
+\newblock A recipe for arabic-english neural machine translation.
+\newblock {\em arXiv preprint arXiv:1808.06116}, 2018.
+
+\bibitem{alkhatib18}
+Manar Alkhatib and Khaled Shaalan.
+\newblock Paraphrasing arabic metaphor with neural machine translation.
+\newblock {\em Procedia Computer Science}, 142:308--314, 2018.
+
+\bibitem{baniata18}
+Laith~H Baniata, Seyoung Park, and Seong-bae Park.
+\newblock A neural machine translation model for arabic dialects that utilizes
+  multitask learning (mtl).
+\newblock {\em Computational Intelligence and Neuroscience}, 2018:1--10, 2018.
+
+\bibitem{aqlan19}
+Fares Aqlan, Xiaoping Fan, Abdullah Alqwbani, and Akram Al-Mansoub.
+\newblock Arabic–chinese neural machine translation: Romanized arabic as
+  subword unit for arabic-sourced translation.
+\newblock {\em IEEE Access}, 7:133122--133135, 2019.
+
+\bibitem{oudah19}
+Mai Oudah, Amjad Almahairi, and Nizar Habash.
+\newblock The impact of preprocessing on {A}rabic-{E}nglish statistical and
+  neural machine translation.
+\newblock In {\em Proceedings of Machine Translation Summit XVII: Research
+  Track}, pages 214--221, Dublin, Ireland, Aug 2019. European Association for
+  Machine Translation.
+
+\bibitem{hadjameur19}
+Mohamed~Seghir Hadj~Ameur, Ahmed Guessoum, and Farid Meziane.
+\newblock Improving arabic neural machine translation via n-best list
+  re-ranking.
+\newblock {\em Machine Translation}, 33(4):279--314, 2019.
+
+\bibitem{gashaw19}
+Ibrahim Gashaw and HL~Shashirekha.
+\newblock Amharic-arabic neural machine translation.
+\newblock {\em arXiv preprint arXiv:1912.13161}, 2019.
+
+\bibitem{ji20}
+Baijun Ji, Zhirui Zhang, Xiangyu Duan, Min Zhang, Boxing Chen, and Weihua Luo.
+\newblock Cross-lingual pre-training based transfer for zero-shot neural
+  machine translation.
+\newblock {\em Proceedings of the AAAI Conference on Artificial Intelligence},
+  34:115--122, 04 2020.
+
+\bibitem{bensalah21}
+Nouhaila Bensalah, Habib Ayad, Abdellah Adib, and Abdelhamid Ibn El~Farouk.
+\newblock Lstm vs. gru for arabic machine translation.
+\newblock In Ajith Abraham, Yukio Ohsawa, Niketa Gandhi, M.A. Jabbar, Abdelkrim
+  Haqiq, Se{\'a}n McLoone, and Biju Issac, editors, {\em Proceedings of the
+  12th International Conference on Soft Computing and Pattern Recognition
+  (SoCPaR 2020)}, pages 156--165, Cham, 2021. Springer International
+  Publishing.
+
+\bibitem{berrichi21}
+Safae Berrichi and Azzeddine Mazroui.
+\newblock Addressing limited vocabulary and long sentences constraints in
+  english--arabic neural machine translation.
+\newblock {\em Arabian Journal for Science and Engineering}, 46(9):8245--8259,
+  2021.
+
+\bibitem{moukafih21}
+Youness Moukafih, Nada Sbihi, Mounir Ghogho, and Kamel Sma{\"i}li.
+\newblock Improving machine translation of arabic dialects through multi-task
+  learning.
+\newblock In {\em 20th International Conference Italian Association for
+  Artificial Intelligence:AIxIA 2021}, pages 235--243, MILAN/Virtual, Italy,
+  Dec 2021.
+
+\bibitem{nagoudi21}
+El~Moatez~Billah Nagoudi, AbdelRahim Elmadany, and Muhammad Abdul-Mageed.
+\newblock Investigating code-mixed modern standard arabic-egyptian to english
+  machine translation.
+\newblock {\em arXiv preprint arXiv:2105.13573}, 2021.
+
+\bibitem{stergiadis21}
+Emmanouil Stergiadis, Satendra Kumar, Fedor Kovalev, and Pavel Levin.
+\newblock Multi-domain adaptation in neural machine translation through
+  multidimensional tagging.
+\newblock {\em arXiv preprint arXiv:a2102.10160v1}, 2021.
+
+\bibitem{bensalah22}
+Nouhaila Bensalah, Habib Ayad, Abdellah Adib, and Abdelhamid Ibn El~Farouk.
+\newblock Cran: An hybrid cnn-rnn attention-based model for arabic machine
+  translation.
+\newblock In Mohamed Ben~Ahmed, Horia-Nicolai~L. Teodorescu, Tomader Mazri,
+  Parthasarathy Subashini, and Anouar~Abdelhakim Boudhir, editors, {\em
+  Networking, Intelligent Systems and Security}, pages 87--102, Singapore,
+  2022. Springer Singapore.
+
+\bibitem{slim22}
+Amel Slim, Ahlem Melouah, Usef Faghihi, and Khouloud Sahib.
+\newblock Improving neural machine translation for low resource algerian
+  dialect by transductive transfer learning strategy.
+\newblock {\em Arabian Journal for Science and Engineering}, pages 1--8, 2022.
+
+\bibitem{gaser22}
+Marwa Gaser, Manuel Mager, Injy Hamed, Nizar Habash, Slim Abdennadher, and
+  Ngoc~Thang Vu.
+\newblock Exploring segmentation approaches for neural machine translation of
+  code-switched egyptian arabic-english text, 2022.
+
+\bibitem{nagoudi22}
+El~Moatez~Billah Nagoudi, AbdelRahim Elmadany, and Muhammad Abdul-Mageed.
+\newblock Turjuman: A public toolkit for neural arabic machine translation.
+\newblock {\em arXiv preprint arXiv:2206.03933v1}, 2022.
+
+\bibitem{hameed22}
+Diadeen~Ali Hameed, Tahseen~Ameen Faisal, Ali~Mustafa Alshaykha, Ghanim~Thiab
+  Hasan, and Harith~Abdullah Ali.
+\newblock Automatic evaluating of russian-arabic machine translation quality
+  using meteor method.
+\newblock {\em AIP Conference Proceedings}, 2386(1):040036, 2022.
+
+\bibitem{baniata22}
+Laith~H. Baniata, Sangwoo Kang, and Isaac. K.~E. Ampomah.
+\newblock A reverse positional encoding multi-head attention-based neural
+  machine translation model for arabic dialects.
+\newblock {\em Mathematics}, 10(19), 2022.
+
+\bibitem{devlin18}
+Haoran Devlin, Benjamin Van~Durme, and Kenton Murray.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock {\em arXiv preprint arXiv:1810.04805}, 2018.
+
+\bibitem{pires19}
+Telmo Pires, Eva Schlinger, and Dan Garrette.
+\newblock How multilingual is multilingual {BERT}?
+\newblock In Anna Korhonen, David Traum, and Llu{\'\i}s M{\`a}rquez, editors,
+  {\em Proceedings of the 57th Annual Meeting of the Association for
+  Computational Linguistics}, pages 4996--5001, Florence, Italy, jul 2019.
+  Association for Computational Linguistics.
+
+\bibitem{radford18}
+Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever, et~al.
+\newblock Improving language understanding by generative pre-training.
+\newblock 2018.
+
+\bibitem{yang23}
+Steve Yang, Zulfikhar Ali, and Bryan Wong.
+\newblock Fluid-gpt (fast learning to understand and investigate dynamics with
+  a generative pre-trained transformer): Efficient predictions of particle
+  trajectories and erosion, 08 2023.
+
+\bibitem{liu21}
+Liyuan Liu, Jialu Liu, and Jiawei Han.
+\newblock Multi-head or single-head? an empirical comparison for transformer
+  training.
+\newblock {\em arXiv preprint arXiv:2106.09650}, 2021.
+
+\bibitem{brants07}
+Thorsten Brants, Ashok Popat, Peng Xu, Franz~Josef Och, and Jeffrey Dean.
+\newblock Large language models in machine translation.
+\newblock In {\em Proceedings of the 2007 Joint Conference on Empirical Methods
+  in Natural Language Processing and Computational Natural Language Learning
+  (EMNLP-CoNLL)}, pages 858--867, 2007.
+
+\bibitem{wang24}
+Yiheng Wang.
+\newblock Large language models evaluate machine translation via polishing.
+\newblock In {\em Proceedings of the 2023 6th International Conference on
+  Algorithms, Computing and Artificial Intelligence}, ACAI '23, page 158–163,
+  New York, NY, USA, 2024. Association for Computing Machinery.
+
+\bibitem{liu24}
+Chaoqun Liu, Wenxuan Zhang, Yiran Zhao, Anh~Tuan Luu, and Lidong Bing.
+\newblock Is translation all you need? a study on solving multilingual tasks
+  with large language models.
+\newblock {\em arXiv preprint arXiv:2403.10258}, 2024.
+
+\bibitem{yang24}
+Jingfeng Yang, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming
+  Jiang, Shaochen Zhong, Bing Yin, and Xia Hu.
+\newblock Harnessing the power of llms in practice: A survey on chatgpt and
+  beyond.
+\newblock {\em ACM Trans. Knowl. Discov. Data}, feb 2024.
+
+\bibitem{lewis19}
+Mike Lewis, Yinhan Liu, Naman Goyal, Marjan Ghazvininejad, Abdelrahman Mohamed,
+  Omer Levy, Ves Stoyanov, and Luke Zettlemoyer.
+\newblock {BART}: Denoising sequence-to-sequence pre-training for natural
+  language generation, translation, and comprehension.
+\newblock {\em arXiv preprint arXiv:1910.13461}, 2019.
+
+\bibitem{lyu23}
+Chenyang Lyu, Jitao Xu, and Longyue Wang.
+\newblock A paradigm shift: The future of machine translation lies with large
+  language models.
+\newblock 2023.
+
+\bibitem{pourkamali24}
+Nooshin Pourkamali and Shler~Ebrahim Sharifi.
+\newblock Machine translation with large language models: Prompt engineering
+  for persian, english, and russian directions.
+\newblock {\em ArXiv}, abs/2401.08429, 2024.
+
+\bibitem{brown20}
+Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared~D Kaplan, Prafulla
+  Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell,
+  Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon
+  Child, Aditya Ramesh, Daniel Ziegler, Jeffrey Wu, Clemens Winter, Chris
+  Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess,
+  Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever,
+  and Dario Amodei.
+\newblock Language models are few-shot learners.
+\newblock In H.~Larochelle, M.~Ranzato, R.~Hadsell, M.F. Balcan, and H.~Lin,
+  editors, {\em Advances in Neural Information Processing Systems}, volume~33,
+  pages 1877--1901. Curran Associates, Inc., 2020.
+
+\bibitem{lu23}
+Qingyu Lu, Baopu Qiu, Liang Ding, Liping Xie, and Dacheng Tao.
+\newblock Error analysis prompting enables human-like translation evaluation in
+  large language models: A case study on chatgpt.
+\newblock {\em ArXiv}, abs/2303.13809, 2023.
+
+\bibitem{peng23}
+Keqin Peng, Liang Ding, Qihuang Zhong, Li~Shen, Xuebo Liu, Min Zhang, Yuanxin
+  Ouyang, and Dacheng Tao.
+\newblock Towards making the most of chatgpt for machine translation.
+\newblock {\em arXiv preprint arXiv:2303.13780}, 2023.
+
+\bibitem{hendy23}
+Amr Hendy, Mohamed~Gomaa Abdelrehim, Amr Sharaf, Vikas Raunak, Mohamed Gabr,
+  Hitokazu Matsushita, Young~Jin Kim, Mohamed Afify, and Hany~Hassan Awadalla.
+\newblock How good are gpt models at machine translation? a comprehensive
+  evaluation.
+\newblock {\em ArXiv}, abs/2302.09210, 2023.
+
+\bibitem{jiao23}
+Wenxiang Jiao, Wenxuan Wang, Jen tse Huang, Xing Wang, and Zhaopeng Tu.
+\newblock Is chatgpt a good translator? a preliminary study.
+\newblock {\em ArXiv}, abs/2301.08745, 2023.
+
+\bibitem{jiang24}
+Zhaokun Jiang and Ziyin Zhang.
+\newblock Can chatgpt rival neural machine translation? a comparative study.
+\newblock {\em ArXiv}, abs/2401.05176, 2024.
+
+\bibitem{koehn17}
+Philipp Koehn and Rebecca Knowles.
+\newblock Six challenges for neural machine translation.
+\newblock {\em arXiv preprint arXiv:1706.03872}, 2017.
+
+\bibitem{haddow22}
+Barry Haddow, Rachel Bawden, Antonio Valerio~Miceli Barone, Jindřich Helcl,
+  and Alexandra Birch.
+\newblock {Survey of Low-Resource Machine Translation}.
+\newblock {\em Computational Linguistics}, 48(3):673--732, 09 2022.
+
+\bibitem{samih17}
+Younes Samih.
+\newblock {\em Dialectal Arabic processing using deep learning}.
+\newblock PhD thesis, Dissertation, D{\"u}sseldorf,
+  Heinrich-Heine-Universit{\"a}t, 2017, 2017.
+
+\bibitem{meftouh15}
+Karima Meftouh, Salima Harrat, Salma Jamoussi, Mourad Abbas, and Kamel Smaili.
+\newblock Machine translation experiments on {PADIC}: A {P}arallel {A}rabic
+  {DI}alect {C}orpus.
+\newblock In {\em Proceedings of the 29th Pacific Asia Conference on Language,
+  Information and Computation}, pages 26--34, Shanghai, China, oct 2015.
+
+\bibitem{bouamor18}
+Houda Bouamor, Nizar Habash, Mohammad Salameh, Wajdi Zaghouani, Owen Rambow,
+  Dana Abdulrahim, Ossama Obeid, Salam Khalifa, Fadhl Eryani, Alexander
+  Erdmann, and Kemal Oflazer.
+\newblock The {MADAR} {A}rabic dialect corpus and lexicon.
+\newblock In {\em Proceedings of the Eleventh International Conference on
+  Language Resources and Evaluation ({LREC} 2018)}, Miyazaki, Japan, may 2018.
+  European Language Resources Association (ELRA).
+
+\bibitem{sutskever14}
+Ilya Sutskever, Oriol Vinyals, and Quoc~V Le.
+\newblock Sequence to sequence learning with neural networks.
+\newblock In {\em Proceedings of the 27th International Conference on Neural
+  Information Processing Systems (NIPS'14)}, pages 3104--3112, 2014.
+
+\bibitem{sennrich16}
+Rico Sennrich, Barry Haddow, and Alexandra Birch.
+\newblock Neural machine translation of rare words with subword units.
+\newblock In {\em Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)}, pages 1715--1725, Berlin,
+  Germany, Aug 2016. Association for Computational Linguistics.
+
+\bibitem{edunov18}
+Sergey Edunov, Myle Ott, Michael Auli, editor = "Riloff~Ellen Grangier, David",
+  David Chiang, Julia Hockenmaier, and Jun{'}ichi Tsujii.
+\newblock Understanding back-translation at scale.
+\newblock In {\em Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing}, pages 489--500, Brussels, Belgium, oct -- nov
+  2018. Association for Computational Linguistics.
+
+\bibitem{zhang20}
+JiaJun Zhang and ChengQing Zong.
+\newblock Neural machine translation: {Challenges}, progress and future.
+\newblock {\em Science China Technological Sciences}, 63(10):2028--2050,
+  October 2020.
+
+\bibitem{ha16}
+Thanh-Le Ha, Jan Niehues, and Alex Waibel.
+\newblock Toward multilingual neural machine translation with universal encoder
+  and decoder.
+\newblock In Mauro Cettolo, Jan Niehues, Sebastian St{\"u}ker, Luisa
+  Bentivogli, Rolando Cattoni, and Marcello Federico, editors, {\em Proceedings
+  of the 13th International Conference on Spoken Language Translation},
+  Seattle, Washington D.C, dec 8-9 2016. International Workshop on Spoken
+  Language Translation.
+
+\bibitem{sanchez21}
+V{\'\i}ctor~M. S{\'a}nchez-Cartagena, Miquel Espl{\`a}-Gomis, Juan~Antonio
+  P{\'e}rez-Ortiz, and Felipe S{\'a}nchez-Mart{\'\i}nez.
+\newblock Rethinking data augmentation for low-resource neural machine
+  translation: A multi-task learning approach.
+\newblock In Marie-Francine Moens, Xuanjing Huang, Lucia Specia, and Scott
+  Wen-tau Yih, editors, {\em Proceedings of the 2021 Conference on Empirical
+  Methods in Natural Language Processing}, pages 8502--8516, Online and Punta
+  Cana, Dominican Republic, nov 2021. Association for Computational
+  Linguistics.
+
+\bibitem{sennrich19}
+Rico Sennrich and Biao Zhang.
+\newblock Revisiting low-resource neural machine translation: A case study.
+\newblock In Anna Korhonen, David Traum, and Llu{\'\i}s M{\`a}rquez, editors,
+  {\em Proceedings of the 57th Annual Meeting of the Association for
+  Computational Linguistics}, pages 211--221, Florence, Italy, jul 2019.
+  Association for Computational Linguistics.
+
+\bibitem{bogoychev19}
+Nikolay Bogoychev and Rico Sennrich.
+\newblock Domain, translationese and noise in synthetic data for neural machine
+  translation.
+\newblock {\em ArXiv}, abs/1911.03362, 2019.
+
+\bibitem{wiki1}
+Wikipedia.
+\newblock {\em Machine translation}, 2020 (accessed February 3, 2020).
+
+\bibitem{bessou15}
+Sadik Bessou.
+\newblock {\em Contribution au Niveau de l'Approche Indirecte à Base de
+  Transfert dans la Traduction Automatique}.
+\newblock PhD thesis, University FERHAT ABBAS, Setif 1, Jun 2015.
+
+\bibitem{anastasiou10}
+Dimitra Anastasiou.
+\newblock {\em Idiom Treatment Experiments in Machine Translation}.
+\newblock PhD thesis, Universit{\"{a}}t des Saarlandes, Jan 2010.
+
+\bibitem{afli14}
+Haithem Afli.
+\newblock {\em La traduction automatique statistique dans un contexte
+  multimodal}.
+\newblock PhD thesis, UNIVERSITÉ DU MAINE, Jul 2014.
+
+\bibitem{hutchins04}
+W.~John Hutchins.
+\newblock The georgetown-ibm experiment demonstrated in january 1954.
+\newblock In {\em Machine Translation: From Real Users to Research}, pages
+  102--114. Springer, 2004.
+
+\bibitem{raphael11}
+Raphaël Rubino.
+\newblock {\em Traduction automatique statistique et adaptation à un domaine
+  spécialisé}.
+\newblock PhD thesis, UNIVERSITÉ D’AVIGNON ET DES PAYS DE VAUCLUSE, Nov
+  2011.
+
+\bibitem{pierce66}
+John Pierce, John Carroll, Eric Hamp, David Hays, Charles Hockett, Anthony
+  Oettinger, and Alan Perlis.
+\newblock Language and machines: Computers in translation and linguistics.
+\newblock Report 1416, National Academy of Sciences/National Research Council,
+  Washington, D. C., 1966.
+
+\bibitem{schneider93}
+Thomas Schneider.
+\newblock {\em Progress in Machine Translation}, chapter~10, pages 99--103.
+\newblock IOS Press, Amsterdam, Netherlands, 1993.
+
+\bibitem{loffler96}
+Anne-Marie Loffler-Laurian.
+\newblock {\em La traduction automatique}, chapter~1, pages 22--23.
+\newblock Presses Universitaires du Septentrion, Villeneuve d'Ascq, France,
+  1996.
+
+\bibitem{hutchins01}
+W.~John Hutchins.
+\newblock {\em An Encyclopaedia of Translation: Chinese-English,
+  English-Chinese}, chapter Machine Translation, page 599.
+\newblock The Chinese University Press, 2001.
+
+\bibitem{boitet82}
+Ch. Boitet and Patrick Guillaume.
+\newblock Ariane-78: an integrated environment for automated translation and
+  human revision.
+\newblock In {\em COLING 1982}, 1982.
+
+\bibitem{maas77}
+H.D. Maas.
+\newblock The saarbr\"{u}cken automatic translation system (susy).
+\newblock In {\em European Congress on Information Systems and Networks,
+  Overcoming the language barrier}, volume~1, pages 585--592. München, May
+  1977.
+
+\bibitem{nagao85}
+Makoto Nagao, Jun ichi Tsujii, and Jun ichi Nakamura.
+\newblock The japanese government project for machine translation.
+\newblock {\em Computational Linguistics}, 11(2-3):91--110, Apr-Sep 1985.
+
+\bibitem{king81}
+Margaret King.
+\newblock Eurotra – a european system for machine translation.
+\newblock {\em Lebende Sprachen}, 26(1):12--14, 1981.
+
+\bibitem{tripathi10}
+Sneha Tripathi and Juran~Krishna Sarkhel.
+\newblock Approaches to machine translation.
+\newblock {\em Annals of Library and Information Studies}, 57:388--393, Dec
+  2010.
+
+\bibitem{muegge06}
+Uwe Muegge.
+\newblock An excellent application for crummy machine translation: Automatic
+  translation of a large database.
+\newblock In {\em Annual Conference of the German Society of Technical
+  Communicators}, pages 18--21, 2006.
+
+\bibitem{dorr87}
+Bonnie~J. Dorr.
+\newblock Unitran: An interlingual approach to machine translation.
+\newblock In {\em AAAI-87 Proceedings}, pages 534--539, 1987.
+
+\bibitem{quah06}
+Chiew~Kin Quah.
+\newblock {\em Machine Translation Systems}, chapter Machine Translation
+  Systems, pages 57--92.
+\newblock Palgrave Macmillan UK, London, 2006.
+
+\bibitem{dorr93}
+Bonnie~J. Dorr.
+\newblock Interlingual machine translation a parameterized approach.
+\newblock {\em Artificial Intelligence}, 63(1):429--492, 1993.
+
+\bibitem{Bar-hillel60}
+Yehoshua Bar-Hillel.
+\newblock {The Present Status of Automatic Translation of Languages}.
+\newblock {\em Advances in Computers}, 1(C):91--163, 1960.
+
+\bibitem{somers99}
+Harold Somers.
+\newblock Review article: Example-based machine translation.
+\newblock {\em Machine Translation}, 14(2):113--157, 1999.
+
+\bibitem{reimers20}
+Nils Reimers and Iryna Gurevych.
+\newblock Making monolingual sentence embeddings multilingual using knowledge
+  distillation.
+\newblock In {\em Proceedings of the 2020 Conference on Empirical Methods in
+  Natural Language Processing}. Association for Computational Linguistics, 11
+  2020.
+
+\bibitem{eisele10}
+Andreas Eisele and Yu~Chen.
+\newblock {M}ulti{UN}: A multilingual corpus from united nation documents.
+\newblock In {\em Proceedings of the Seventh International Conference on
+  Language Resources and Evaluation ({LREC}'10)}, pages 2868--2872, Valletta,
+  Malta, 2010. European Language Resources Association (ELRA).
+
+\bibitem{koehn05}
+Philipp Koehn.
+\newblock Europarl: A parallel corpus for statistical machine translation.
+\newblock In {\em MT Summit X}, pages 79--86, 2005.
+
+\bibitem{simard98}
+Michel Simard.
+\newblock The baf: A corpus of english-french bitext.
+\newblock In {\em First International Conference on Language Resources \&
+  Evaluation}, volume~1, pages 489--494, Granada, Spain, May 1998.
+
+\bibitem{sato90}
+Satoshi SATO and Makoto NAGAO.
+\newblock Toward memory-based translation.
+\newblock In {\em Proc. 13th International Conference on Computational
+  Linguistics (Coling 90)}, pages 247--252, Helsinki, Finland, 1990.
+
+\bibitem{osherson10}
+Anne Osherson and Christiane Fellbaum.
+\newblock The representation of idioms in wordnet.
+\newblock In {\em Principles, Construction and Application of Multilingual
+  Wordnets. Proceedings of the Fifth Global WordNet Conference (GWC 2010),
+  Mumbai, India. Narosa Publishing House}, 2010.
+
+\bibitem{Babych03}
+Bogdan Babych and A.~Hartley.
+\newblock Improving machine translation quality with automatic named entity
+  recognition.
+\newblock 2003.
+
+\bibitem{agrawal12}
+Neeraj Agrawal and Ankush Singla.
+\newblock Using named entity recognition to improve machine translation.
+\newblock {\em Technical report, Standford University, Natural Language
+  Processing}, 2012.
+
+\bibitem{hermjakob08}
+Ulf Hermjakob, Kevin Knight, and Hal Dau\'{m}e.
+\newblock Name translation in statistical machine translation learning when to
+  transliterate.
+\newblock {\em ACL-08: HLT - 46th Annual Meeting of the Association for
+  Computational Linguistics: Human Language Technologies, Proceedings of the
+  Conference}, 06:389--397, 2008.
+
+\bibitem{maamouri04}
+Mohamed Maamouri, Ann Bies, Tim Buckwalter, and Wigdan Mekki.
+\newblock The penn arabic treebank: Building a large-scale annotated arabic
+  corpus.
+\newblock {\em NEMLAR Conference on Arabic Language Resources and Tools}, 01
+  2004.
+
+\bibitem{abuelkhair16}
+Ibrahim {Abu El-khair}.
+\newblock 1.5 billion words arabic corpus.
+\newblock {\em arXiv e-prints}, nov 2016.
+\newblock Provided by the SAO/NASA Astrophysics Data System.
+
+\bibitem{parker11}
+Robert Parker, David Graff, Ke~Chen, Junbo Kong, and Kazuaki Maeda.
+\newblock Arabic gigaword fifth edition {LDC2011T11}.
+
+\bibitem{klein17}
+Guillaume Klein, Yoon Kim, Yuntian Deng, Jean Senellart, and Alexander~M. Rush.
+\newblock Opennmt: Open-source toolkit for neural machine translation.
+\newblock {\em arXiv preprint arXiv:1701.02810}, Mar 2017.
+
+\bibitem{cho14}
+Kyunghyun Cho, Bart Van~Merri{\"e}nboer, Dzmitry Bahdanau, and Yoshua Bengio.
+\newblock On the properties of neural machine translation: Encoder-decoder
+  approaches.
+\newblock In Association for Computational~Linguistics, editor, {\em
+  Proceedings of the 8th Workshop on Syntax, Semantics and Structure in
+  Statistical Translation (SSST’14)}, pages 103--111, 2014.
+
+\bibitem{eriguchi19}
+Akiko Eriguchi, Spencer Rarrick, and Hitokazu Matsushita.
+\newblock Combining translation memory with neural machine translation.
+\newblock In {\em Proceedings of the 6th Workshop on Asian Translation}, pages
+  123--130, 2019.
+
+\bibitem{wu16}
+Yonghui Wu, Mike Schuster, Zhifeng Chen, Quoc~V Le, Mohammad Norouzi, Wolfgang
+  Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et~al.
+\newblock Google's neural machine translation system: Bridging the gap between
+  human and machine translation.
+\newblock {\em arXiv preprint arXiv:1609.08144}, 2016.
+
+\bibitem{johnson17}
+Melvin Johnson, Mike Schuster, Quoc~V Le, Maxim Krikun, Yonghui Wu, Zhifeng
+  Chen, Nikhil Thorat, Fernanda Vi{\'e}gas, Martin Wattenberg, Greg Corrado,
+  et~al.
+\newblock Google’s multilingual neural machine translation system: Enabling
+  zero-shot translation.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  5:339--351, 2017.
+
+\bibitem{shterionov17}
+Dimitar Shterionov, Pat Nagle~Laura Casanellas, Riccardo Superbo, and Tony
+  O’Dowd.
+\newblock Empirical evaluation of nmt and pbsmt quality for large-scale
+  translation production.
+\newblock In {\em Conference Booklet}, page~74, 2017.
+
+\bibitem{bojar17}
+Ond{\v{r}}ej Bojar, Rajen Chatterjee, Christian Federmann, Yvette Graham, Barry
+  Haddow, Shujian Huang, Matthias Huck, Philipp Koehn, Qun Liu, Varvara
+  Logacheva, Christof Monz, Matteo Negri, Matt Post, Raphael Rubino, Lucia
+  Specia, and Marco Turchi.
+\newblock Findings of the 2017 conference on machine translation ({WMT}17).
+\newblock In {\em Proceedings of the Second Conference on Machine Translation},
+  pages 169--214, Copenhagen, Denmark, Sep 2017. Association for Computational
+  Linguistics.
+
+\bibitem{bojar18}
+Ond{\v{r}}ej Bojar, Christian Federmann, Mark Fishel, Yvette Graham, Barry
+  Haddow, Philipp Koehn, and Christof Monz.
+\newblock Findings of the 2018 conference on machine translation ({WMT}18).
+\newblock In {\em Proceedings of the Third Conference on Machine Translation:
+  Shared Task Papers}, pages 272--303, Belgium, Brussels, Oct 2018. Association
+  for Computational Linguistics.
+
+\bibitem{stahlberg20}
+Felix Stahlberg.
+\newblock Neural machine translation: A review and survey.
+\newblock {\em The Journal of Artificial Intelligence Research}, 69:343--418,
+  2020.
+
+\bibitem{gehring17}
+Jonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann~N. Dauphin.
+\newblock Convolutional sequence to sequence learning.
+\newblock In Doina Precup and Yee~Whye Teh, editors, {\em Proceedings of
+  Machine Learning Research}, volume~70, pages 1243--1252, International
+  Convention Centre, Sydney, Australia, 06-11 Aug 2017. PMLR.
+
+\bibitem{xu21}
+Haoran Xu, Benjamin Van~Durme, and Kenton Murray.
+\newblock Bert, mbert, or bibert? a study on contextualized embeddings for
+  neural machine translation.
+\newblock {\em arXiv preprint arXiv:2109.04588}, 2021.
+
+\bibitem{abdaoui21}
+Amine Abdaoui, Mohamed Berrimi, Mourad Oussalah, and Abdelouahab Moussaoui.
+\newblock Dziribert: a pre-trained language model for the algerian dialect.
+\newblock {\em arXiv preprint arXiv:2109.12346}, 2021.
+
+\bibitem{messaoudi21}
+Abir Messaoudi, Hatem Haddad, Moez BenHajhmida, Malek Naski, Ahmed
+  Cheikhrouhou, Nourchene Ferchichi, Abir Korched, Faten Ghriss, and Amine
+  Kerkeni.
+\newblock Tunbert: Pretrained contextualized text representation for tunisian
+  dialect.
+\newblock {\em arXiv preprint arXiv:2111.13138}, 2021.
+
+\bibitem{antoun20}
+Wissam Antoun, Fady Baly, and Hazem Hajj.
+\newblock Arabert: Transformer-based model for arabic language understanding.
+\newblock {\em arXiv preprint arXiv:2003.00104v4}, 2020.
+
+\bibitem{zakraoui20}
+Jezia Zakraoui, Moutaz Saleh, Somaya Al-Maadeed, and Jihad~Mohamad AlJa’am.
+\newblock Evaluation of arabic to english machine translation systems.
+\newblock In {\em 2020 11th International Conference on Information and
+  Communication Systems (ICICS)}, pages 185--190, 2020.
+
+\bibitem{ziemski16}
+Micha{\l} Ziemski, Marcin Junczys-Dowmunt, and Bruno Pouliquen.
+\newblock The {U}nited {N}ations parallel corpus v1.0.
+\newblock In {\em Proceedings of the Tenth International Conference on Language
+  Resources and Evaluation ({LREC}'16)}, pages 3530--3534, Portoro{\v{z}},
+  Slovenia, May 2016. European Language Resources Association (ELRA).
+
+\bibitem{ittycheriah05}
+Abraham Ittycheriah and Salim Roukos.
+\newblock A maximum entropy word aligner for {A}rabic-{E}nglish machine
+  translation.
+\newblock In {\em Proceedings of Human Language Technology Conference and
+  Conference on Empirical Methods in Natural Language Processing}, pages
+  89--96, Vancouver, British Columbia, Canada, Oct 2005. Association for
+  Computational Linguistics.
+
+\bibitem{benajiba10}
+Yassine Benajiba, Imed Zitouni, Mona Diab, and Paolo Rosso.
+\newblock {A}rabic named entity recognition: Using features extracted from
+  noisy data.
+\newblock In {\em Proceedings of the {ACL} 2010 Conference Short Papers}, pages
+  281--285, Uppsala, Sweden, Jul 2010. Association for Computational
+  Linguistics.
+
+\bibitem{aoun94}
+Joseph Aoun, Elabbas Benmamoun, and Dominique Sportiche.
+\newblock Agreement, word order, and conjunction in some varieties of arabic.
+\newblock {\em Linguistic inquiry}, pages 195--220, 1994.
+
+\bibitem{samy06}
+Doaa Samy, Antonio Moreno-Sandoval, Jos{\'e}~Mar{\'\i}a Guirao, and Enrique
+  Alfonseca.
+\newblock Building a parallel multilingual corpus (arabic-spanish-english).
+\newblock In {\em LREC}, pages 2176--2181, 2006.
+
+\bibitem{mostefa09}
+Djamel Mostefa, Mariama La{\"\i}b, St{\'e}phane Chaudiron, Khalid Choukri, and
+  G~Chalendar.
+\newblock A multilingual named entity corpus for arabic, english and french.
+\newblock {\em MEDAR}, 2009:2nd, 2009.
+
+\bibitem{debili92}
+Fathi Debili and Elyes Sammouda.
+\newblock Aligning sentences in bilingual texts {F}rench - {E}nglish and
+  {F}rench - {A}rabic.
+\newblock In {\em {COLING} 1992 Volume 2: The 15th {I}nternational {C}onference
+  on {C}omputational {L}inguistics}, 1992.
+
+\bibitem{moghrabi98}
+Chadia Moghrabi.
+\newblock On parametering the choice of words in text generation and its
+  usefulness in machine translation.
+\newblock In {\em Machine translation: ten years on}, pages 1--9, Cranfield
+  University, England,, Nov 1998. Cranfield University Press.
+
+\bibitem{pedersen04}
+Mark Pedersen, Domenyk Eades, Samir~K. Amin, and Lakshmi Prakash.
+\newblock Relative clauses in {H}indi and {A}rabic: A paninian dependency
+  grammar analysis.
+\newblock In {\em Proceedings of the Workshop on Recent Advances in Dependency
+  Grammar}, pages 9--16, Geneva, Switzerland, Aug 28 2004. COLING.
+
+\bibitem{shaalan10rule}
+Khaled Shaalan.
+\newblock Rule-based approach in arabic natural language processing.
+\newblock {\em The International Journal on Information and Communication
+  Technologies (IJICT)}, 3(3):11--19, 2010.
+
+\bibitem{farghaly10}
+A~Farghali.
+\newblock Arabic machine translation: A developmental perspective.
+\newblock {\em International Journal on Information and Communication
+  Technologies}, 3(3), 2010.
+
+\bibitem{zantout00}
+Rached Zantout and Ahmed Guessoum.
+\newblock Arabic machine translation: A strategic choice for the arab world.
+\newblock {\em Journal of King Saud University - Computer and Information
+  Sciences}, 12:117–144, Dec 2000.
+
+\bibitem{habash10}
+Nizar~Y. Habash.
+\newblock Introduction to arabic natural language processing.
+\newblock {\em Synthesis Lectures on Human Language Technologies}, 3(1):1--187,
+  2010.
+
+\bibitem{habash17}
+Nizar Habash, Nasser Zalmout, Dima Taji, Hieu Hoang, and Maverick Alzate.
+\newblock Parallel corpus for evaluating machine translation between {A}rabic
+  and {E}uropean languages.
+\newblock In {\em Proceedings of the 15th Conference of the {E}uropean Chapter
+  of the Association for Computational Linguistics: Volume 2, Short Papers},
+  pages 235--241, Valencia, Spain, apr 2017. Association for Computational
+  Linguistics.
+
+\bibitem{safaya20}
+Ali Safaya, Moutasem Abdullatif, and Deniz Yuret.
+\newblock Kuisail at semeval-2020 task 12: Bert-cnn for offensive speech
+  identification in social media.
+\newblock In {\em Proceedings of the Fourteenth Workshop on Semantic
+  Evaluation}, pages 2054–--2059, Barcelona, Spain (online), 2020.
+  International Committee for Computational Linguistics.
+
+\bibitem{zhu20}
+Jinhua Zhu, Yingce Xia, Lijun Wu, Di~He, Tao Qin, Wengang Zhou, Houqiang Li,
+  and Tie-Yan Liu.
+\newblock Incorporating {BERT} into {N}eural {M}achine {T}ranslation.
+\newblock In {\em Proceedings of the Eighth International Conference on
+  Learning Representations}, Addis Abbaba, Ethiopia (Online), 2020.
+
+\bibitem{inoue21}
+Go~Inoue, Bashar Alhafni, Nurpeiis Baimukan, Houda Bouamor, and Nizar Habash.
+\newblock The interplay of variant, size, and task type in arabic pre-trained
+  language models.
+\newblock In {\em Proceedings of the Sixth Arabic Natural Language Processing
+  Workshop}, Kyiv, Ukraine (Online), 2021. Association for Computational
+  Linguistics.
+
+\bibitem{abdelali21}
+Ahmed Abdelali, Sabit Hassan, Hamdy Mubarak, Kareem Darwish, and Younes Samiha.
+\newblock Pretraining bert on arabic tweets: Practical considerations.
+\newblock {\em arXiv Preprint:2102.10684}, 2021.
+
+\bibitem{outchakoucht21}
+Aissam Outchakoucht and Hamza Es-Samaali.
+\newblock Moroccan dialect-darija-open dataset.
+\newblock {\em arXiv preprint arXiv:2103.09687}, 2021.
+
+\bibitem{guzman19}
+Francisco Guzm{\'a}n, Peng-Jen Chen, Myle Ott, Juan Pino, Guillaume Lample,
+  Philipp Koehn, Vishrav Chaudhary, and Marc{'}Aurelio Ranzato.
+\newblock The {FLORES} evaluation datasets for low-resource machine
+  translation: {N}epali{--}{E}nglish and {S}inhala{--}{E}nglish.
+\newblock In {\em Proceedings of the 2019 Conference on Empirical Methods in
+  Natural Language Processing and the 9th International Joint Conference on
+  Natural Language Processing (EMNLP-IJCNLP)}, pages 6098--6111, Hong Kong,
+  China, nov 2019. Association for Computational Linguistics.
+
+\bibitem{kunchukuttan18}
+Anoop Kunchukuttan, Pratik Mehta, and Pushpak Bhattacharyya.
+\newblock The {IIT} {B}ombay {E}nglish-{H}indi parallel corpus.
+\newblock In {\em Proceedings of the Eleventh International Conference on
+  Language Resources and Evaluation ({LREC} 2018)}, Miyazaki, Japan, may 2018.
+  European Language Resources Association (ELRA).
+
+\bibitem{ding19}
+Chenchen Ding, Hnin Thu~Zar Aye, Win~Pa Pa, Khin~Thandar Nwet, Khin~Mar Soe,
+  Masao Utiyama, and Eiichiro Sumita.
+\newblock Towards burmese (myanmar) morphological analysis: Syllable-based
+  tokenization and part-of-speech tagging.
+\newblock {\em ACM Trans. Asian Low-Resour. Lang. Inf. Process.}, 19(1), may
+  2019.
+
+\bibitem{liu20}
+Yinhan Liu, Jiatao Gu, Naman Goyal, Xian Li, Sergey Edunov, Marjan
+  Ghazvininejad, Mike Lewis, and Luke Zettlemoyer.
+\newblock Multilingual denoising pre-training for neural machine translation.
+\newblock {\em Transactions of the Association for Computational Linguistics},
+  8:726--742, 2020.
+
+\bibitem{clinchant19}
+Stéphane Clinchant, Kweon~Woo Jung, and Vassilina Nikoulina.
+\newblock On the use of bert for neural machine translation.
+\newblock {\em arXiv Preprint:1909.12744}, 2019.
+
+\bibitem{lan20w}
+Wuwei Lan, Yang Chen, Wei Xu, and Alan Ritter.
+\newblock An empirical study of pre-trained transformers for arabic information
+  extraction.
+\newblock In {\em Proceedings of The 2020 Conference on Empirical Methods on
+  Natural Language Processing (EMNLP)}, 2020.
+
+\bibitem{lan20}
+Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, and
+  Radu Soricut.
+\newblock Albert: A lite bert for self-supervised learning of language
+  representations.
+\newblock In {\em Proceedings of the Eighth International Conference on
+  Learning Representations}, Addis Abbaba, Ethiopia (Online), 2020.
+
+\bibitem{abdulmageed20}
+Muhammad Abdul-Mageed, AbdelRahim Elmadany, and El~Moatez~Billah Nagoudi.
+\newblock Arbert and marbert: Deep bidirectional transformers for arabic.
+\newblock {\em arXiv Preprint:2101.01785}, 2020.
+
+\bibitem{lee03}
+Young-Suk Lee, Kishore Papineni, Salim Roukos, Ossama Emam, and Hany Hassan.
+\newblock Language model based {A}rabic word segmentation.
+\newblock In {\em Proceedings of the 41st Annual Meeting of the Association for
+  Computational Linguistics}, pages 399--406, Sapporo, Japan, Jul 2003.
+  Association for Computational Linguistics.
+
+\bibitem{charoenpornsawat02}
+Paisarn Charoenpornsawat, Virach Sornlertlamvanich, and Thatsanee Charoenporn.
+\newblock Improving translation quality of rule-based machine translation.
+\newblock In {\em {COLING}-02: Machine Translation in Asia}, 2002.
+
+\bibitem{bar14}
+Kfir Bar, Mona Diab, and Abdelati Hawwari.
+\newblock {\em Arabic Multiword Expressions}, pages 64--81.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2014.
+
+\bibitem{beesley96}
+Kenneth~R. Beesley.
+\newblock Arabic finite-state morphological analysis and generation.
+\newblock In {\em Proceedings of the 16th conference on association for
+  computational linguistics}, pages 89--94, Jan 1996.
+
+\bibitem{ditters01}
+Everhard Ditters.
+\newblock A formal grammar for the description of sentence structure in modern
+  standard arabic.
+\newblock In {\em In EACL 2001 Workshop Proceedings on Arabic Language
+  Processing: Status and Prospects}, pages 31--37, 2001.
+
+\bibitem{rafalovitch09}
+Alexandre Rafalovitch and Robert Dale.
+\newblock {U}nited {N}ations general assembly resolutions: A six-language
+  parallel corpus.
+\newblock In {\em Proceedings of Machine Translation Summit XII: Posters},
+  Ottawa, Canada, aug 26-30 2009.
+
+\bibitem{azouaou17}
+Faical Azouaou and Imane Guellil.
+\newblock Alg/fr: A step by step construction of a lexicon between algerian
+  dialect and french.
+\newblock In {\em The 31st Pacific Asia Conference on Language, Information and
+  Computation PACLIC}, volume~31, 2017.
+
+\bibitem{tiedemann12}
+J{\"o}rg Tiedmann.
+\newblock Parallel data, toolsand interfaces in {OPUS}.
+\newblock In {\em Proceedings of the Eighth International Conference on
+  Language Resources and Evaluation ({LREC}'12)}, volume 2012, pages
+  2214--2218, Istanbul, Turkey, may 2012. European Language Resources
+  Association (ELRA).
+
+\bibitem{elkishky20}
+Ahmed El-Kishky, Vishrav Chaudhary, Francisco Guzmán, and Philipp Koehn.
+\newblock {CCAligned}: A massive collection of cross-lingual web-document
+  pairs.
+\newblock In {\em Proceedings of the 2020 Conference on Empirical Methods in
+  Natural Language Processing (EMNLP 2020)}, pages 5960--5969, Online, November
+  2020. Association for Computational Linguistics.
+
+\bibitem{schwenk21}
+Holger Schwenk, Guillaume Wenzek, Sergey Edunov, Edouard Grave, Armand Joulin,
+  and Angela Fan.
+\newblock {CCM}atrix: Mining billions of high-quality parallel sentences on the
+  web.
+\newblock In {\em Proceedings of the 59th Annual Meeting of the Association for
+  Computational Linguistics and the 11th International Joint Conference on
+  Natural Language Processing (Volume 1: Long Papers)}, pages 6490--6500.
+  Association for Computational Linguistics, aug 2021.
+
+\bibitem{lison16}
+Pierre Lison and J{\"o}rg Tiedemann.
+\newblock {O}pen{S}ubtitles2016: Extracting large parallel corpora from movie
+  and {TV} subtitles.
+\newblock In {\em Proceedings of the Tenth International Conference on Language
+  Resources and Evaluation ({LREC}'16)}, pages 923--929, Portoro{\v{z}},
+  Slovenia, may 2016. European Language Resources Association (ELRA).
+
+\bibitem{mubarak18}
+Hamdy Mubarak.
+\newblock {Dial2MSA}: A tweets corpus for converting dialectal arabic to modern
+  standard arabic.
+\newblock In {\em OSACT 3: The 3rd Workshop on Open-Source Arabic Corpora and
+  Processing Tools}, page~49, 2018.
+
+\bibitem{abainia20}
+Kheireddine Abainia.
+\newblock {DZDC12}: a new multipurpose parallel {Algerian} {Arabizi}–{French}
+  code-switched corpus.
+\newblock {\em Language Resources and Evaluation}, 54(2):419--455, jun 2020.
+
+\bibitem{jarrar14}
+Mustafa Jarrar, Nizar Habash, Diyam Akra, and Nasser Zalmout.
+\newblock Building a corpus for palestinian arabic: a preliminary study.
+\newblock In {\em Proceedings of the EMNLP 2014 Workshop on Arabic Natural
+  Langauge Processing (ANLP)}, pages 18--27, Doha, Qatar, oct 2014.
+
+\bibitem{grimes10}
+Stephen Grimes, Xuansong Li, Ann Bies, Seth Kulick, Xiaoyi Ma, and Stephanie
+  Strassel.
+\newblock Creating arabic-english parallel word-aligned treebank corpora at
+  ldc.
+\newblock In {\em Proceedings of Language Resources and Evaluation Conference
+  (LREC’10), Malta}, 2010.
+
+\bibitem{khalifa16}
+Salam Khalifa, Nizar Habash, Dana Abdulrahim, and Sara Hassan.
+\newblock A large scale corpus of {G}ulf {A}rabic.
+\newblock In {\em Proceedings of the Tenth International Conference on Language
+  Resources and Evaluation ({LREC}'16)}, pages 4282--4289, Portoro{\v{z}},
+  Slovenia, may 2016. European Language Resources Association (ELRA).
+
+\bibitem{bies14}
+Ann Bies, Zhiyi Song, Mohamed Maamouri, Stephen Grimes, Haejoong Lee, Jonathan
+  Wright, Stephanie Strassel, Nizar Habash, Ramy Eskander, and Owen Rambow.
+\newblock Transliteration of {A}rabizi into {A}rabic orthography: Developing a
+  parallel annotated {A}rabizi-{A}rabic script {SMS}/chat corpus.
+\newblock In {\em Proceedings of the {EMNLP} 2014 Workshop on {A}rabic Natural
+  Language Processing ({ANLP})}, pages 93--103, Doha, Qatar, oct 2014.
+  Association for Computational Linguistics.
+
+\bibitem{green10}
+Spence Green and Christopher~D. Manning.
+\newblock Better {A}rabic parsing: Baselines, evaluations, and analysis.
+\newblock In {\em Proceedings of the 23rd International Conference on
+  Computational Linguistics (Coling 2010)}, pages 394--402, Beijing, China, aug
+  2010. Coling 2010 Organizing Committee.
+
+\bibitem{kopru09}
+Selçuk K{\"o}pr{\"u} and Jude Miller.
+\newblock A unification based approach to the morphological analysis and
+  generation of arabic.
+\newblock In {\em CAASL3: Proc. of the 3rd Workshop on Computational Approaches
+  to Arabic-script based Languages}, Ottawa, ON, Canada, 2009.
+
+\bibitem{alansary08}
+Sameh Alansary, Magdy Nagi, and Noha Adly.
+\newblock Towards analyzing the international corpus of arabic (ica): Progress
+  of morphological stage.
+\newblock In {\em 8th International Conference on Language Engineering, Egypt},
+  pages 1--23, 2008.
+
+\bibitem{attia08}
+Mohammed Attia.
+\newblock {\em Handling Arabic morphological and syntactic ambiguity within the
+  LFG framework with a view to machine translation}.
+\newblock The University of Manchester (United Kingdom), 2008.
+
+\bibitem{attia05}
+Mohammed Attia.
+\newblock Developing a robust arabic morphological transducer using finite
+  state technology.
+\newblock In {\em 8th annual CLUK research colloquium}, pages 9--18. Citeseer,
+  2005.
+
+\bibitem{othman03}
+Eman Othman, Khaled Shaalan, and Ahmed Rafea.
+\newblock A chart parser for analyzing modern standard {A}rabic sentence.
+\newblock In {\em Workshop on Machine Translation for Semitic languages: issues
+  and approaches}, New Orleans, USA, sep 23-27 2003.
+
+\bibitem{zabokrtsky03}
+Zden\v{e}k \v{Z}abokrtsk\'{y} and Otakar Smr\v{z}.
+\newblock {A}rabic syntactic trees: from constituency to dependency.
+\newblock In {\em 10th Conference of the {E}uropean Chapter of the Association
+  for Computational Linguistics}, Budapest, Hungary, apr 2003. Association for
+  Computational Linguistics.
+
+\bibitem{darwish02}
+Kareem Darwish.
+\newblock Building a shallow {A}rabic morphological analyser in one day.
+\newblock In {\em Proceedings of the {ACL}-02 Workshop on Computational
+  Approaches to {S}emitic Languages}, Philadelphia, Pennsylvania, USA, jul
+  2002. Association for Computational Linguistics.
+
+\bibitem{larkey02}
+Leah~S. Larkey, Lisa Ballesteros, and Margaret~E. Connell.
+\newblock Improving stemming for arabic information retrieval: Light stemming
+  and co-occurrence analysis.
+\newblock In {\em Proceedings of the 25th Annual International ACM SIGIR
+  Conference on Research and Development in Information Retrieval}, SIGIR '02,
+  page 275–282, New York, NY, USA, 2002. Association for Computing Machinery.
+
+\end{thebibliography}
