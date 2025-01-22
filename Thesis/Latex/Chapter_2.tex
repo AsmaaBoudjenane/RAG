@@ -1,414 +1,240 @@
-\chapter{Arabic Language and Machine Translation}
-\pagestyle{fancy}\lhead{\textbf \footnotesize\it{Arabic Machine Translation}}
+\chapter{Large Language Models (LLMs)}
+\pagestyle{fancy}\lhead{\textbf \footnotesize\it{Enhancing Legal Information Access with Retrieval Augmented LLMs for Juridical Data}}
 \pagestyle{fancy}\chead{} \pagestyle{fancy}\rhead{}
-\pagestyle{fancy}\lfoot{\textbf {\small\it{Univ-Mascara/Computer Science: 2024}}} 
+\pagestyle{fancy}\lfoot{\textbf {\small\it{Univ-Mascara/Computer Science: 2025}}} 
 \pagestyle{fancy}\cfoot{} \pagestyle{fancy}\rfoot{\thepage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Overview} \label{start2}
-Translation has become difficult due to the intricate variations across languages \cite{dorr99}. For instance, certain words may have different meanings based on the context, or other words may not have equivalent translations in other languages. Additionally, translating idiomatic expressions calls for a thorough understanding of both the source and target languages. Further, structural variations like word order disparities between languages complicate translation.
+\section{Introduction} \label{start1}
+Large Language Models (LLMs) represent a transformative leap in Natural Language Processing (NLP), allowing machines to perform complex language tasks with remarkable accuracy. From generating coherent text to answering nuanced questions, LLMs have pushed the boundaries of what AI can achieve. This chapter delves into the architecture and principles behind LLMs, their development through scaling and training techniques, and the models that have defined this field. It also addresses the challenges these models face and their expanding role in various real-world applications. 
 
-Another difficulty is that a good translation needs to be faithful and fluent. A faithful translation accurately conveys the sense of the original text, whereas a fluent translation is easy to understand and sounds natural. A literal, faithful translation could result in an unpleasant and unnatural translation in the target language. For example, fluency rather than faithfulness is more critical when translating literary works. We might have to alter some of the meaning to keep the text flowing smoothly. Readers should feel as if it was written in their native language. The faithfulness of the translation, however, is prioritized when translating a technical manual or a legal document. Even if the translation is not fluent, it must be faithful and convey the same meaning. To produce accurate translations that balance faithfulness and fluency, human translators primarily rely on their experience, knowledge, and reasoning abilities. Due to these issues, various human translators will translate the same text in different ways.
+\section{Natural language processing (NLP)}
+Natural Language Processing (NLP) is a field within artificial intelligence (AI) that concentrates on the interaction between computers and human language. It involves the development of algorithms and models  that allow machines to comprehend, interpret, and generate human language in a meaningful context.NLP is crucial for enabling computers to process and respond to human language effectively, as demonstrated by features like Google's predictive text in keyboards and language translation systems that manage multiple languages efficiently \cite{murugan2024nlp}
 
-Despite the complex linguistic distinctions, recent decades have seen significant improvements in machine translation. It is even applied in practical, real-world applications. For instance, we employ machine translation for cross-language information retrieval. It allows people to interact and obtain information in other languages.
-Machine translation is also used to assist human translators. By creating a draft translation that human translators will edit, it expedites a time-consuming translation task (Plitt and Masselot, 2010). In addition, we can employ machine translation for translations that are speech- and image-centric. Speech-centric translation involves translating a text from a speech recognition system into another language before the text is fully formed. As a result, it mimics a live human interpretation.
-Image-centric machine translation uses an optical character recognition system to translate the text included in images, such as billboard advertisements or street signs.
-
-There are various methods for automating the challenging task of translation. Data-driven methods later supplanted the initial rule-based approaches. The most popular data-driven methods are Statistical Machine Translation (SMT) and Neural Machine Translation (NMT). Nevertheless, due to its remarkable successes, NMT has become state-of-the-art.
-
-Language differences and the various machine translation approaches are briefly discussed in the sections that follow, Sections 2.2 and 2.2. Neural networks and NMT are explained in Sections 2.3 and 2.4. The evaluation of machine translation is covered in the final section, Section 2.5.
-
-\section{Arabic Language}
-Arabic is considered as one of the six official languages of the United Nation. It is the official language in 22 countries and spoken by more than 350 million people in 24 countries around the world \cite{almansor18}. The Arabic language is morphologically rich and complex, however, it is considered a low-resource language due to the lack of enough parallel dataset.
-
-Arabic is well known for its complex morphology. It has different possibilities of word order that express the same sentence. According to word orders, Arabic sentences can be classified into 4 types: SVO\footnote{SVO: Subject-Verb-Object}, VSO, VOS and SOV \cite{alqudsi14}.
-
-Translating the Arabic language into other languages engenders multiple linguistic problems, as no two languages can match, either in the meaning given to the conforming symbols or in the ways in which such symbols are arranged in sentences. Lexical, syntactic and semantic problems arise when translating the meaning of Arabic words into English and vice versa. Machine translation into morphologically rich languages (MRL) poses many challenges, from handling a complex and rich vocabulary that can reach hundreds of thousands or even millions, to designing adequate MT metrics that take morphology into consideration. 
-
-Fehri\cite{fehri93}, Chalabi\cite{chalabi00} and Daimi\cite{daimi01} enumerated major issues involving Arabic in the following points:
-\begin{itemize}
-	\item Arabic is written from right to left.
-	\item There are no capital letters in Arabic.
-	\item Gender is used for all nouns (there are no neutral).
-	\item Some letters have different shapes depending on their location within a word. e.g. The shape of letter (\RL{`}) in the start of a word is (\RL{`-}) like in \RL{`lb}, in the middle (\RL{-`-}) like in \RL{l`b} and at the end (\RL{`} or \RL{-`}) like in \RL{bl`} or \RL{wd`}.
-	\item Arabic words can be partially, fully or not vocalized. Unvocalized words may generate ambiguities for MT. See Table~\ref{tab_voc}.
-	\begin{table}[!htb]
-		\centering
-		\begin{tabular}{lll}
-			\hline\\[-1.5ex]
-			\multicolumn{1}{l}{Word} & \multicolumn{1}{l}{Transliteration} & \multicolumn{1}{l}{English meaning} \\[0.5ex]
-			\hline\\[-1.5ex]
-			\RL{`amara} & Eamara & build / live / was populated\\[0.5ex]
-			\RL{`ammara} & Eam\~~ara & Live a long time\\[0.5ex]
-			\RL{`omira} & Eomira & became populous\\[0.5ex]
-			\RL{`ommira} & Eom\~~ira & Given a long life\\[0.5ex]
-			\RL{`omaro} & Eumaru & Omar (noun) / plural of Umrah\\[0.5ex]
-			\RL{`am"ro} & Eamoru & Age of\\[0.5ex]
-			\RL{`om"ro} & Eumoru & Age of\\[0.5ex]
-			\RL{`omoro} & Eumuru & Age of\\[0.5ex]
-			\RL{`am"ruN} & EamorN & Age\\[0.5ex]
-			\RL{`om"ruN} & EumorN & Age\\[0.5ex]
-			\RL{`omoruN} & EumurN & Age\\[0.5ex]
-			\RL{`amaruN} & EamarN & Head cover for women\\[0.5ex]
-			\RL{`amarra} & Eamar\~~a & Strong tough man /\\[0.5ex]
-			&  & Longest of everything /\\[0.5ex]
-			&  & Shrewd malicious guy /\\[0.5ex]
-			&  & Ferocious man\\[0.5ex]
-			\hline
-		\end{tabular}
-		\caption{Possible meanings of the unvocalized Arabic word "\RL{`mr}" (Emr)}
-		\label{tab_voc}
-	\end{table}
-	
-	\item Arabic has a relatively free order of words. See Table~\ref{tab0}.
-	\begin{table}[!htb]
-		\centering
-		\begin{tabular}{lll}
-			\hline\\[-1.5ex]
-			\multicolumn{1}{c}{Order} & \multicolumn{1}{c}{Sentence} & \multicolumn{1}{c}{English translation} \\[0.5ex]
-			\hline\\[-1.5ex]
-			VSO & \RL{^srba `mro almaA'a} & Drank Omar the water\\[0.3ex]
-			OVS & \RL{almA'a ^srba `mro} & The water drank Omar\\[0.3ex]
-			SVO & \RL{`mro ^srba almaA'a} & Omar Drank the water\\[0.5ex]
-			VOS & \RL{^srba almaA'a `mro} & Drank the water Omar\\[0.5ex]
-			\hline
-		\end{tabular}
-		\caption{Arabic free word order}
-		\label{tab0}
-	\end{table}
-	
-	\item Some Arabic vocalized words may have multiple senses (polysemy) depending on its context. See Table~\ref{tab_polysem}. 
-	\begin{table}[!htb]
-		\centering
-		\begin{tabular}{lll}
-			\hline\\[-1.5ex]
-			\multicolumn{1}{l}{Word} & \multicolumn{1}{l}{Transliteration} & \multicolumn{1}{l}{English meanings} \\[0.5ex]
-			\hline\\[-1.5ex]
-			\RL{sA'il} & sA\}il & liquid, beggar, questioner \\[0.5ex]
-			\RL{`ayn} & Eayn & eye, water source, gold \\[0.5ex]
-			\hline
-		\end{tabular}
-		\caption{Examples of vocalized Arabic words polysemy}
-		\label{tab_polysem}
-	\end{table}
-	
-	\item The subject can be omitted. e.g. \RL{y^srb almaA'} (He drinks the water)
-	\item Some words hold the meaning of a whole sentence. e.g. \RL{fa'AsqaynAkomUh} (and We gave it to you to drink).
-	\item Copula verbs "to be" and "to have" do not exist in Arabic.
-	\item The three letters root system can often engender ambiguous words.
-	\item Feminine nouns are often derived from masculine nouns, e.g. \RL{mhnds} (Engineer male) \RL{mhndsT} (Engineer female). In some cases they are totally different, e.g. \RL{wld} (Boy) \RL{bnt} (Girl).
-	\item In English the number system moves from singular to plural form directly, however Arabic language includes dual form by suffixing morpheme (\RL{An}) or (\RL{yn}) to the singular form. e.g. \RL{mhnds} (Engineer male) \RL{mhndsAn} or \RL{mhndsayn} (Two Engineers male).
-	\item The plural form of Arabic masculine nouns is the result of suffixing morpheme (\RL{wn}) or (\RL{yn}) to the singular form.
-	e.g. \RL{mhnds} (Engineer male) \RL{mhndsUn} or \RL{mhndsiyn} (Engineers male).
-	\item  The plural form of Arabic feminine nouns is the result of suffixing morpheme (\RL{At}) to the singular nouns. e.g. \RL{mhndsT} (Engineer female) \RL{mhndsAt} (Engineers female). 
-	\item Some words have no fixed rule for their plural form. e.g. \RL{.tbyb} (Doctor) \RL{'a.tibbaA'} (Doctors).
-\end{itemize}
-In addition to the preceding specific challenges to MT, common standard issues also are present in Arabic language, such as:
-\begin{itemize}
-	\item Multi word expressions (MWE) where the meaning of words collocation varies between partially to completely not derivable from its single constituents \cite{Kordoni14}. e.g. \RL{qA`dT `skryT}, (military base) is a phrase that is highly compositional. \RL{mdynT al-mlAhy}, (amusement park), lit. "city of amusements" is an expression that shows a degree of idiomaticity. In extreme cases the meaning of the expression as a whole is utterly unrelated to the component words, such as, \RL{frs Alnby}, (grasshopper), lit. "Horse of the Prophet".
-	
-	\item Idioms and idiomatic expressions are frequently used by Arabic speakers. They are a special challenge for MT systems, because their translation mainly does not outcome literally, but logically \cite{Zaninello20}. e.g. \RL{'a.zlam mn timsA.h} , lit. "More oppressive than a crocodile", has the idiomatic meaning of (crocodile tears).
-	
-	\item Named entities (NE) refer to abstract entities in the real world such as people (PER) such as \RL{al'amIr `bd-al-qAdr} (Emir Abdelkader), places (LOC) such as \RL{mkT} (Mecca), companies, and organizations that have an appropriate name (ORG) such as \RL{yAhU} (Yahoo). It also refers to expressions of date, time, space and quantity (MISC) such as \RL{sbtmbr} 8 (September 8th), \RL{dj}100 (100DZD) or \RL{k.g}25 (25Kgs).
-	
-	Due to the rich lexical variations and the absence of capitalization in Arabic, the task of named entities recognition (NER) is more difficult. Handling NE in Arabic MT is done very carefully based on :
-	\begin{enumerate}
-		\item meaning translation: e.g. \RL{al-'omam al-motta.hdaT} (The United Nations).
-		\item phoneme transliteration: e.g. \RL{jUjl} (Google).
-		\item mixture of meaning translation and phoneme transliteration: \RL{kArUlAynA al-^smAlyaT} (North Carolina), where "North" is translated and "Carolina" is transliterated.
-	\end{enumerate}   
-\end{itemize}
-
-\section{Social Media}
-Social media involves online spaces where individuals can post and share information with others. They have become crucial in contemporary communication, fundamentally reshaping how individuals connect, information disseminates, and communities form. These online environments, characterized by user-generated content and interactive features \cite{boyd08},  allow for the creation of virtual spaces fostering real-time interaction and knowledge sharing \cite{yaqub23}.
-
-\textbf{Social Networking Sites (SNS):} Platforms like Facebook prioritize building and maintaining online social connections. Users can share personal updates, engage in discussions through comments and reactions, and participate in groups centered around shared interests \cite{segesten22}. Research suggests that SNS use can foster social capital by strengthening existing relationships and enabling the formation of new ones \cite{yoon14}.
-
-\textbf{Media-Sharing Platforms:} Platforms like Instagram and YouTube focus heavily on the creation and dissemination of multimedia content. Users can share and discover photos, videos, and live streams, with features designed to enhance content visibility through hashtags and algorithmic recommendations \cite{rogers21}. Studies highlight the increasing influence of visual communication and the emergence of new social norms surrounding content creation and consumption on these platforms \cite{lu24}.
-
-\textbf{Messaging Applications:} Platforms like WhatsApp and WeChat enable asynchronous and real-time communication between individuals and groups. These applications offer features like text messaging, voice calls, and video conferencing, facilitating private and semi-private communication, often replacing traditional communication methods \cite{lenhart15}. Research suggests that messaging applications can strengthen interpersonal bonds and serve as crucial tools for information sharing and community mobilization \cite{pang20}.
-
-\textbf{Professional Networking Sites:} LinkedIn serves a distinct purpose within the social media landscape, focusing on professional networking and career development. Users create profiles highlighting their skills and experience, connect with colleagues and potential employers, and discover job opportunities \cite{ellison07}. Studies suggest that LinkedIn usage can positively impact career prospects by facilitating professional connections and knowledge exchange \cite{davis20}.
-
-Social media platforms are a goldmine for data collection. 
-However, in the case of Arabic, several issues arise due to the way language is used on these platforms. 
-Users often tend to write in colloquial Arabic or a mix of colloquial Arabic and English characters (often referred to as Arabizi). 
-This deviates from the standard Arabic used in formal writing. 
-This informality poses challenges for data collection and analysis, as algorithms need to be able to understand these diverse and non-standard language patterns.
-Another important aspect of Arabic language on social media is the use of dialects.
-Arabic is a highly diverse language, with many different dialects and variations.
-Users may choose to write in their local dialect, which can vary significantly from Modern Standard Arabic, the standardized form of the language.
-With the spread of social media, new challenges arise to the Arabic MT such as:   
-\begin{itemize}
-	\item  \textbf{Non-standard speech}: which encompasses dialectal languages or the various colloquial forms of standard language. This text frequently contains slang, MWE and unreasonable abbreviations \cite{Moussallem19} like as "idk\footnote{I don’t know}" and "brb\footnote{Be right back}" in English or "hmd\footnote{\RL{al.hmd lillh} (Thank God)}" and "slm\footnote{\RL{salAm} (Peace)}" in Arabic. For best translation results, the MT system is required
-	to identify such argot and try to map it to the target language.
-	
-	\item \textbf{Arabizi} (sometimes known as Arabic chat alphabet, Franco-Arabic, Arabish, Araby and	Mu’arrab): which is defined as writing informal Arabic dialects in Latin characters and Arabic numerals. This new style of writing doesn’t follow any type of rules, which leads to big variations in writing nearly all Arabic words. The following words present some examples of the Arabizi issue that machine translation systems have to solve \cite{Darwish15}:
-	\begin{enumerate}
-		\item The Modern Standard Arabic word \RL{t.hrIr}\footnote{Liberation} has the following popular Arabizi equivalents: ta7rir, tahrir, t7rir, t7reer, ta7reer, tahreer, etc.
-		\item The dialectal spellings of the MSA words \RL{lA-yl`b}\footnote{He does not play} could be \RL{mAyl`b^s}, \RL{mAbyl`b^s}, \RL{myl`b^s}, \RL{myl`b^sI}, \RL{mAyl`b^sI} etc, and the resultant Arabizi could be: mayel3absh, mayel3abch, mabyelaabsh, mabyel3absh, mayel3abshi, mayel3abchi, etc.
-	\end{enumerate}
-\end{itemize}
-
-\section{Natural Language Processing}
-Natural Language Processing (NLP) is a branch of computer science dedicated to facilitating communication between computers and human languages. Its methodologies find application in social media for the analysis and comprehension of the extensive textual data produced by users (Huang, 2021). Below are several applications of NLP in social media:
-\begin{enumerate}
-	\item \textbf{Machine Translation:} NLP techniques are utilized to translate text from one language to another, facilitating cross-lingual communication and information access. Machine translation involves converting text from a source language into a target language while preserving meaning, context, and grammatical structure.
-
-	\item \textbf{Text Classification:} NLP techniques involve categorizing text data into predefined categories or labels based on its content. This involves tasks such as sentiment analysis, spam detection, topic classification, and intent recognition in chatbots. Text classification is essential for organizing and analyzing large volumes of text data efficiently.
-	
-	\item \textbf{Named Entity Recognition (NER):} NLP algorithms aim to identify and extract named entities from unstructured text, such as names of people, organizations, locations, dates, numerical expressions, and other specific entities. NER is crucial for various applications, including information retrieval, entity linking, and knowledge graph construction.
-	
-	\item \textbf{Speech Recognition:} NLP algorithms transcribe spoken language into text, enabling voice-controlled applications, virtual assistants, and speech-to-text transcription services. Speech recognition involves converting audio signals into textual representations, which can then be further processed or analyzed.
-	
-	\item \textbf{Information Extraction:} NLP methodologies focus on extracting structured information from unstructured text sources, enabling the retrieval of specific data points or facts from documents, web pages, or other text-based sources. Information extraction techniques involve identifying relevant entities, relationships, and events mentioned in the text.
-	
-	\item \textbf{Text Generation:} NLP models are employed to generate human-like text based on given prompts or input. This includes tasks such as automated content creation, dialogue generation, language translation, and summarization. Text generation techniques leverage deep learning architectures such as recurrent neural networks (RNNs) and transformer models.
-	
-	\item \textbf{Document Summarization:} NLP techniques condense lengthy documents or articles into shorter summaries while preserving the main points and key information. Document summarization aims to provide a concise overview of the text, facilitating easier comprehension and information retrieval.
-	
-	\item \textbf{Question Answering:} NLP systems process natural language questions and retrieve relevant answers from large text corpora or knowledge bases. Question answering involves understanding the semantics and context of the question, searching for relevant information, and generating accurate responses.
-	
-	\item \textbf{Language Understanding:} NLP models aim to understand the semantics, context, and intent behind natural language expressions. Language understanding involves tasks such as text comprehension, semantic analysis, and context modeling, enabling machines to interpret human communication more effectively.
-
-	\item \textbf{Dialog Systems:} NLP-powered conversational agents interact with users in natural language, providing assistance, answering queries, and engaging in dialogue across various domains. Dialog systems leverage techniques such as natural language understanding (NLU) and natural language generation (NLG) to enable seamless communication between humans and machines.
-\end{enumerate}
-Natural Language Processing (NLP) emerges as a transformative force, enriching our lives by bridging the gap between human language and computing systems. This remarkable technology enables machines to comprehend, interpret, and generate human language, revolutionizing how we interact with technology. Through NLP, machines can analyze vast volumes of textual data from diverse sources such as social media, news articles, and customer reviews, extracting meaningful insights that shape various aspects of our lives. From facilitating accurate language translation and sentiment analysis to powering virtual assistants and chatbots, NLP permeates numerous applications, enhancing efficiency and convenience in our daily activities. Its significance lies in its ability to decipher the intricacies of human communication, empowering individuals and businesses alike with deeper understanding and actionable intelligence.
-
-\section{Machine Translation}
-Machine Translation is a procedure that uses computer pieces of software to express text from one natural language NL (SL i.e. source language) in another NL (TL i.e. target language). In any human or automated translation process, the meaning of the source sentences must be fully reproduced into the target translated sentences, which is only simple on the surface.
-
+\subsection{Historical development of NLP}
+The figure below presents a timeline outlining the key developments in Natural Language Processing (NLP)  beginning with rule-based approaches in the 1950s and progressing through the rise of statistical methods and early neural networks in the late 1980s. It then highlights the impact of deep learning from the 2000s onward, leading to the development of pre-trained models like BERT and GPT. The timeline concludes with the emergence of large language models (LLMs) from 2019 to the present, marking a significant shift in NLP research and applications.
 \begin{figure}[htbp]
-	\centerline{\includegraphics[scale=.7]{Figures/fig1.4.png}}
+	\centerline{\includegraphics[scale=.7]{Figures/the_historyOf_nlp.png}}
 	\caption{The Vauquois triangle, illustrating the foundations of machine translation.}
-	\label{fig1.4.png}
+	\label{the_historyOf_nlp.png}
 \end{figure}
 
-The different approaches to MT fall into three categories: methods that depend on rules and knowledge (linguistic-based). Approaches that are empirical and data-driven (corpus-based); and finally, hybrid methods.
+\subsection{Importance of natural language processing}
 
-\subsection{Linguistic Approaches}
-These MT approaches attempt to formalize all the necessary knowledge required for translation, using expert methods. The "Vauquois triangle" presented in Figure~\ref{fig1.4.png} is a generic representation of these techniques.
+\begin{enumerate}
+	\item \textbf{Efficient Data Processing:} NLP enables businesses to process and analyze large volumes of unstructured, text-heavy data that would be challenging to handle otherwise..
 
-\subsubsection{\textbf{Direct Approach}}
-or Direct MT (DMT) is, the simplest MT approach. It operates at the word level, i.e. the words' translation is done word by word, just, as a dictionary does, and generally without much correspondence of their meaning \cite{okpor14}.
+	\item \textbf{Understanding Human Language:}NLP can interpret complex language elements, such as acronyms, abbreviations, and context, improving the accuracy of machine learning models..
+	
+	\item \textbf{Advancements in Technology:}Improvements in deep learning and machine learning have made NLP more effective, expanding the types of data that can be analyzed.
+	
+	\item \textbf{Natural Interactions:} NLP allows users to interact naturally with AI chatbots and voice assistants, like Siri, without needing to use specific,predefined\cite{techtarget_nlp}.
+	
+\end{enumerate}
 
-\subsubsection{\textbf{Rule-based MT}}
-(RBMT) uses linguistic knowledge of source and target languages fundamentally collected from (bilingual) dictionaries and grammars encompassing the principal morphological, syntactic and/or semantic rules of each language
-respectively \cite{okpor14}. 
-RBMT approach suffers from the impossibility of writing all the rules of all the languages, because this task requires large and important linguistic knowledge. %\cite{Charoenpornsawat02}.
-
-\subsubsection{\textbf{Interlingual MT}}
-The term "Interlingua" refers to a language that serves as a bridge between two languages. In this method, SL is turned into an assistant/mediator language (representation) which is independent of the languages concerned by the translation. This auxiliary form is then used to specify the TL's translated verse. This approach focuses on a single representation for different languages \cite{Ashraf15}.
-
-\subsubsection{\textbf{Transfer-based MT}}
-(TBMT) is similar to Interlingual-MT in that it generates a translation from an intermediate structure that mimics the original sentence's meaning. The source text is translated into a less language-specific intermediate representation. This form is then translated into a target language structure with a comparable structure, and the text is generated in the target language. The source and target languages' morphological, syntactic, and/or semantic information is used in the transfer process. As a result, TBMT can make use of knowledge of both the source and target languages. \cite{DO11}. 
-
-\subsection{Corpus Approaches}
-Corpus techniques use empirical methods to ensure that all linguistic knowledge is learned empirically and automatically from corpora, which are collections of parallel datasets of source and target phrases that are translated to each other.
-
-\subsubsection{\textbf{Example-based MT}}
-The main idea behind (EBMT) is analogy \cite{Nagao84}. The primary concept is to build new translations on top of current examples. Bilingual parallel corpora containing sentence pairs are used to train EBMT systems. It's used to translate similar-sounding sentences by looking for the closest source example to the source word or phrase in parallel corpora. Nagao has appropriately classified this procedure into three steps \cite{Nagao84}:
-\begin{itemize}
-	\item Fragments are matched against a database of real examples.
-	\item Identifying the translation fragments that correlate (Alignment)
-	\item Putting these together to create the target text
-\end{itemize}
-
-\subsubsection{\textbf{Statistical MT}}
-(SMT) generates translation hypotheses in a target language $t$ based on a sentence in a source language $s$ with the highest conditional probability $P(t|s)$ \cite{brown88,brown93}. The translation direction will be inverted to a translation model (TM) $P(s|t)$ and a language model (LM) $P(t)$ will be included by applying the Bayes rule. The following equation~\eqref{eq:eq1} is used to optimize the likelihood of the best translation:
-\begin{equation}
-	\label{eq:eq1}
-	t_{best}=arg_{t}max(P(t|s))=arg_{t}max(P(s|t) \times P(t))
-\end{equation}
-where $P(s|t)$ is the TM and $P(t)$ is the LM.
-
+\section{Neural Networks in NLP}
+A neural network, or artificial neural network, is a machine learning algorithm inspired by the human brain. It is a key component of deep learning, a branch of machine learning effective in solving complex problems like image recognition and language processing. Unlike traditional computer programs that use a step-by-step algorithmic approach, neural networks learn from examples, mimicking the way neurons in the human brain operate. They consist of interconnected nodes (processing elements) that work together in parallel to solve specific problems. \\
+A neural network has three basic sections, or parts, each composed of "nodes." \\ The input layer is the first part, receiving raw data, with each node (or neuron) representing a feature of this data. The hidden layers, which form the intermediate section, perform various transformations and computations, enabling the network to learn complex patterns and relationships. Finally, the output layer, which is the last part, produces the network's output, with the number of nodes corresponding to the desired output classes or regression values \cite{murugan2024nlp}.
 \begin{figure}[htbp]
-	\centerline{\includegraphics[scale=0.3]{Figures/fig1.13.png}}
-	\caption{Statistical Machine Translation approach}
-	\label{fig1.13.png}
+	
+	\centerline{\includegraphics[width=.7\linewidth]{Figures/ANN.png}}
+	\caption{Artificial Neural Network (ANN).}
+	\label{ANN.png}
+\end{figure}  
+
+\subsection{Basics Concepts in Neural Networks}
+\textbf{Weights} \\
+Variables on the edges between nodes that are multiplied with node outputs to form the input for the next layer.Weights are crucial for training and tuning a neural network and are often initialized within a range of -1 to 1.  \\ \\ 
+\textbf{Biases} \\
+Additional nodes in hidden and output layers that connect to every node within their respective layers but not to the previous layer. Biases add a constant value (typically 1 or -1) to the input of a layer, helping shift the activation function and aiding in effective learning. 
+\textbf{Activation Functions} \\
+These functions introduce non-linearity to the network, enabling it to learn and model complex data patterns. Common activation functions include the sigmoid, hyperbolic tangent (tanh), and rectified linear unit (ReLU). \cite{taylor2017neural}.
+
+\subsection{ Recurrent Neural Networks (RNNs)}
+Recurrent neural networks (RNNs) are a type of neural network designed for processing sequential data, such as text or time series, by effectively handling variable-length inputs. An RNN consists of a hidden state h and an optical output y, which operate on a variable  sequence x=($x_1$....$x_t$)At each time step t, the hidden state $h^t$
+of the RNN is updated according to the function $h^{(t)} = f(h^{(t-1)}, x_t)$
+where f is a non-linear activation function, such as a logistic sigmoid or a more complex long short-term memory (LSTM) unit. This design allows RNNs to remember past inputs and incorporate them into future outputs, enabling them to recognize patterns that occur at multiple positions within a sequence. Additionally, RNNs utilize parameter sharing across time steps, which helps in generalizing across sequences of varying lengths and learning complex dependencies over time. Despite challenges with long-term dependencies, RNNs are particularly effective for tasks requiring context or sequential understanding, making them valuable for various applications, including time series analysis and natural language processing\cite{cho2014learning} 
+\begin{figure}[htbp]
+	
+	\centerline{\includegraphics[width=1\linewidth]{Figures/RNN.png}}
+	\caption{RNN Architecture.}
+	\label{RNN.png}
 \end{figure}
+\subsection{ Long-Short Term Memory (LSTM)}
+Long Short-Term Memory (LSTM) networks, designed by Hochreiter and Schmidhuber, are an improved version of recurrent neural networks (RNNs) designed to learn long-term dependencies in sequential data, making them suitable for tasks like time series forecasting and language translation
+They address the limitations of traditional RNNs by introducing a memory cell that maintains information over extended periods. This memory cell is regulated by three gates—input, forget, and output gates—which control the flow of information in and out of the cell as shown in the fig \cite{geeksforgeeks_lstm}
+\begin{figure}[htbp]
+	\centering\includegraphics[width=0.9\linewidth]{Figures/LSTM.png}
+	\caption{LSTM Architecture.}
+	\label{/LSTM.png}
+\end{figure}
+Forget Gate: Decides what information to discard from the cell state
+\[
+f_t = \sigma \left( W_f \cdot [h_{t-1}, x_t] + b_f \right)
+\]
 
-SMT requires a language model, a translation model, and a decoding method in general. The TM, on the one hand, assures that the target hypothesis created matches the source sentence. The LM, on the other hand, ensures that the output is grammatically correct  (Figure~\ref{fig1.13.png}).
+Input Gate: Determines what new information to add to the cell state
+\[
+i_t = \sigma \left( W_i \cdot [h_{t-1}, x_t] + b_i \right)
+\]
+\[
+\tilde{C}_t = \tanh \left( W_c \cdot [h_{t-1}, x_t] + b_c \right)
+\]
 
-\section{Evaluation}
-As an integral part of design science research, evaluation is crucial to assessing the quality of machine translation outputs and comparing different machine translation methods. We need to measure quality to track progress, ideally with a single score.
-However, devising such a score is still an open research question (Koehn, 2020).
-Nonetheless, some best practices have already been established, and in general,
-there is broad consensus on how to track quality gains.
-Human (Section 2.5.1) and automatic (Section 2.5.2) evaluation methods exist.
-Human evaluation seems more accurate than automatic evaluation because the
-translation is, after all, intended for humans. However, running a human evaluation can be time-consuming and expensive.
-In practice, it can be used to compare a small number of variant systems. Therefore, automated metrics are prevalent because they can rapidly evaluate system improvements; they are also used as a loss function for training models.
+Output Gate: Controls what information to output from the cell state
+\[
+o_t = \sigma \left( W_o \cdot [h_{t-1}, x_t] + b_o \right)
+\]
+\[
+h_t = o_t \odot \tanh(C_t)
+\]
 
-\subsection{Human Evaluation}
-Human evaluation can be considered the most common method of judging and measuring translation quality. The linguistics and translation experts can judge the quality of a translation system output from two corners: 
+It is worth mentioning that Bidirectional LSTM networks extend the traditional LSTM architecture by processing data in both forward and backward directions. This approach enables the network to capture dependencies from both past and future contexts, improving its ability to resolve temporal dependencies. Bidirectional LSTMs are particularly effective at handling multidimensional problems, encapsulating spatially and temporally distributed information, and dealing with incomplete data through flexible connection mechanisms \cite{hochreiter1997long}. 
+\section{ Transformer Architecture}
+The Transformer architecture is a deep learning model introduced in June 2017 by Vaswani et al. from Google Brain. Their paper, titled "Attention Is All You Need," presented a groundbreaking approach to processing sequential data through the use of a self-attention mechanism. This innovative method allows the model to assign different levels of importance to various parts of the input, enabling it to capture long-range dependencies much more effectively than earlier models like RNNs and LSTMs.The original Transformer model is structured as a stack of six layers, where the output of each layer i serves as the input to the subsequent layer i+1, continuing this process until the final prediction is reached.It features a six-layer encoder on the left and a corresponding six-layer decoder on the right,  both of which work together to transform input sequences into meaningful outputs. Each encoder and decoder consists of six identical layers that allow the model to process and generate language efficiently \cite{rothman2021transformers}.
+\begin{figure}[htbp]
+	
+	\centerline{\includegraphics[width=.6\linewidth]{
+			Figures/trasformers.png}}
+	\caption{The Transformer - model architecture..}
+	\label{trasformers.png}
+	
+\end{figure}
+\subsection{Encoder and Decoder Stacks}
+\textbf{Encoder:} Each layer in the encoder consists of two sub-layers: \\
+Multi-head self-attention mechanism: This allows the model to focus on different parts of the input sequence. \\
+Position-wise feed-forward network: A fully connected network applied to each position separately and identically. \\
+Residual Connections: Residual connections are applied around each sub-layer, followed by layer normalization. The output of each sub-layer is computed as Layer Norm(x + Sublayer(x)). \\
+Output Dimension: All sub-layers and embedding layers output vectors of dimension d-model = 512.\\
+\textbf{Decoder:} Similar to the encoder, the decoder also has 6 identical layers, each containing the same two sub-layers:
+Multi-head self-attention mechanism ,
+Position-wise feed-forward network. \\
+Additional Sub-layer: The decoder includes a third sub-layer that performs multi-head attention over the output of the encoder stack. \\
+Residual Connections and Normalization: Like the encoder, residual connections are applied around each sub-layer, followed by layer normalization. \\
+Masked Self-Attention: The self-attention mechanism in the decoder is modified to prevent positions from attending to subsequent positions, ensuring that predictions for position i depend only on the known outputs at positions before i \cite{vaswani2017attention}.
+\begin{figure}[htbp]
+	
+	\centerline{\includegraphics[width=.8\linewidth]{
+			Figures/incoderDecoder.png}}
+	\caption{Encoder and Decoder Stacks}
+	\label{incoderDecoder.png}
+	
+\end{figure}
+\subsection{Self-Attention Mechanism}
+Self-attention is a mechanism that allows the model to weigh the importance of different words in a sequence relative to each other. This is crucial for understanding context and relationships between words \cite{vaswani2017attention}.
+\subsection{Query, Key, and Value Vectors:}
+\textbf{Query Vectors (Q):} Generated from the input word's embedding and represent the word's role in finding relevant information in other words.\\
+\textbf{Key Vectors (K):} Derived similarly from embedding and serve as a comparison standard for each word.\\
+\textbf{Value Vectors (V):} Contain the actual information to be passed on and are weighted according to relevance determined by the Query and Key comparison \cite{vaswani2017attention}.. 
+\subsection{Self-Attention Calculation:}
+The score is computed by taking the dot product of the Query vector of a word with the Key vectors of all other words. This score determines how much focus should be placed on each word when encoding the current word.
+The scores are scaled and passed through a softmax function, producing a distribution of attention weights. \\
+Each Value vector is weighted by these attention scores and summed to produce the final output of the self-attention layer\cite{vaswani2017attention}.
+\subsection{Role of Multi-Head Attention}
+Multi-head attention enhances the model’s ability to focus on different aspects of the input by creating multiple sets of Query, Key, and Value vectors. Each set is processed independently and then combined. \\
+This approach allows the model to attend to information from different representation subspaces at different positions, improving its ability to capture complex relationships\cite{vaswani2017attention}.
+\subsection{Positional Encoding:}
+Since self-attention mechanisms do not inherently capture the order of words, positional encoding is added to the word embeddings to provide information about the relative position of each word in the sequence.
+These encodings are added directly to the input embeddings, allowing the model to consider both the position and the content of 
+each word during processing\cite{alammar2018illustratedtransformer}.
+\subsection{Transformers in NLP}
+Transformers have revolutionized the field of Natural Language Processing (NLP) by introducing a powerful and efficient way to handle textual data. This advancement has led to the creation of highly effective models like BERT and GPT, with its deep bidirectional context, excels at understanding and improving performance across various NLP tasks. GPT, on the other hand, is renowned for generating coherent and contextually relevant text, significantly advancing applications such as text generation and translation\cite{devlin2019bert}.\\
+\textbf{Scalability:} Transformers efficiently handle large datasets and long sequences, overcoming the limitations of RNNs. This scalability allows for training with billions of parameters, enhancing model capabilities.\\
+\textbf{Rich Contextual Understanding: }The self-attention mechanism in transformers captures relationships between words across the entire sequence, enabling deep contextual understanding and more accurate language processing.\\
+\textbf{Model Efficiency:} Transformers enable parallel processing, which speeds up training and makes them more efficient than sequential models like RNNs. This efficiency supports the rapid development and deployment of advanced language models\cite{vaswani2017attention}.
+\section{ Emergence of Large Language Models (LLMs)}
+
+Large Language Models (LLMs) are advanced artificial intelligence systems designed to process and generate human-like text. They are typically based on transformer architectures and are characterized by their enormous scale, with billions of parameters. LLMs are pre-trained on vast amounts of text data in a self-supervised manner, enabling them to develop a broad understanding of language. They are capable of performing a wide range of tasks with minimal task-specific fine-tuning, often achieving significant performance improvements through few-shot or zero-shot learning\cite{brown2020language}.
+\subsection{Scaling in Large Language Models (LLMs)}
+Scaling is crucial in the evolution of large language models. The history of scaling shows that increasing both model size and dataset size leads to significant improvements in performance across various NLP tasks. For instance, early work by Brants et al. (2007) demonstrated the benefits of using language models trained on vast datasets, such as 2 trillion tokens, which led to significant advancements in machine translation quality. This was followed by efforts like those of Heafield et al. (2013), who scaled traditional models to Web-scale data, and Jozefowicz et al. (2016), who scaled LSTMs to 1 billion parameters, achieving state-of-the-art results on large benchmarks.The advent of transformer-based models marked a significant shift.Models like BERT, GPT-2, and GPT-3, with their enormous parameter counts—up to 175 billion for GPT-3—demonstrated that scaling up not only the model but also the dataset size yields substantial gains in performance. Researchers like Kaplan et al. (2020) and Hoffmann et al. (2022) studied how scaling affects model performance, proposing power laws that show a predictable relationship between model size, dataset size, and performance. These studies emphasized the importance of scaling for the continued progress of LLMs\cite{touvron2023llama}.
+\subsection{Pre-training}
+Pre-training is a crucial stage in developing Large Language Models (LLMs), where the model learns from extensive unlabeled datasets through a process called self-supervision. This stage allows the model to recognize and internalize a wide range of linguistic patterns, laying the groundwork for fine-tuning on specific tasks.\\
+Several pre-training objectives have been implemented to maximize the effectiveness of this learning process, each offering distinct benefits to the model's performance
+\textbf{Full Language Modeling:} Used since GPT-2, this approach trains decoder-only models to predict the next token in a sequence based on previous tokens. This autoregressive method enables models like GPT-3 to generate coherent and contextually relevant text.\\
+\textbf{Prefix Language Modeling: }Employed in encoder-decoder and non-causal decoder-only models, this technique uses a non-causal (considering both past and future tokens) prefix for predicting subsequent tokens, offering more flexibility and enhancing the model's adaptability across various language tasks.\\
+\textbf{Masked Language Modeling: }Popularized by BERT, this method involves masking certain tokens in the input text and training the model to predict them, helping the model understand word context. An extension, span corruption, masks entire text spans for prediction, further improving contextual comprehension\cite{wang2023language}.
+\begin{figure}[htbp]
+	
+	\includegraphics[width=1\linewidth]{Figures/pretraining.png}
+	\caption{Training Tokenization in Full, Prefix, and Masked Language Modeling.}
+\end{figure}
+\subsection{Fine-tuning }
+Fine-tuning has been the most common approach for adapting LLMs to specific tasks. After pre-training on large datasets, these models are further trained on smaller, supervised datasets tailored to the desired task. Fine-tuning updates the weights of the pre-trained model, allowing it to excel at specific tasks like sentiment analysis, machine translation, or question answering. The main advantage of fine-tuning is that it often results in strong performance on task-specific benchmarks. However, it comes with challenges, such as the need for a new large dataset for every task, the risk of overfitting to narrow distributions, and potential poor generalization to out-of-distribution examples\cite{touvron2023llama}.
+\subsection{Few-Shot, One-Shot, and Zero-Shot Learning}
+Few-shot, one-shot, and zero-shot learning represent different paradigms of using LLMs without extensive fine-tuning. These methods involve using pre-trained models to perform tasks with minimal task-specific data.\\
+\textbf{Few-Shot Learning} involves giving the model a few examples (typically 10-100) of the task during inference. This approach reduces the need for large, task-specific datasets and limits the risk of overfitting to narrow data distributions. However, few-shot results are generally not as strong as those from fully fine-tuned models.\\
+\textbf{One-Shot Learning} is similar to few-shot learning but uses only a single example alongside a natural language description of the task. This method mirrors how humans are often instructed for tasks, making it an interesting approach for tasks where providing multiple examples is impractical.\\
+\textbf{Zero-Shot Learning} requires the model to perform a task based solely on a natural language description, with no examples provided. While this method offers maximum flexibility and robustness, it is also the most challenging for models. Zero-shot performance is often weaker than few-shot or one-shot, but it represents a significant step towards task-agnostic AI, where models can generalize across a wide range of tasks with minimal human intervention\cite{brown2020language}.
+\subsection{Evaluation Datasets and Tasks}
+Evaluating Large Language Models (LLMs) is essential for determining their effectiveness and limitations in comprehending and generating human language. This evaluation typically falls into two primary categories:
 \begin{itemize}
-	\item \textbf{Fluency}: The level of smoothness and coherence of the translated text to target language norms,  such as grammaticality, intelligibility and clarity.  When annotating fluency, the evaluators (fluent only in the target language) have access to only the translation being evaluated and not the source text which is not relevant to the fluency assesment. 
-	\item \textbf{Adequacy}: Also known as accuracy. It stands for the correspondence of the target text to the source text, including the expressive means in translation, and how well the target text represents the informational content of the source text. In this case, the bilingual evaluators (in both the source and target languages) have access to the source text and translations being evaluated and habitually, they take into consideration the context of the sentence.   
+	\item Natural Language Understanding (NLU):This measures the model's proficiency in comprehending language, encompassing tasks such as sentiment analysis, text classification, natural language inference (NLI), question answering (QA), commonsense reasoning (CR), mathematical reasoning (MR), and reading comprehension (RC).
+	\item Natural Language Generation (NLG):This assesses the model's capability to produce text based on given context. It includes tasks like summarization, sentence completion, machine translation (MT), and dialogue generation.
 \end{itemize}
-The fluency and adequacy are usually measured on a 5-point scale, as presented in the following table \ref{tab:table1.1} \cite{mauvcec19}.
-
-\begin{table}[ht]% <--- it say "let figure be here"
+\textbf{Benchmarks} play a critical role in evaluating LLMs, providing standardized tests to measure their performance across various tasks:
+\begin{itemize}
+	\item MMLU: Measures model knowledge from pretraining and evaluates performance in zero-shot and few-shot scenarios across 57 subjects, testing world knowledge and problem-solving abilities.
+	\item SuperGLUE: An advanced benchmark that builds on GLUE, assessing tasks like question answering and natural language inference. It is designed to test deeper aspects of language understanding and requires significant advancements in various learning methodologies.
+	\item BIG-bench: A large-scale benchmark for evaluating LLMs across diverse tasks including reasoning, creativity, ethics, and domain-specific knowledge.
+	\item GLUE: A foundational benchmark for evaluating and analyzing natural language understanding, offering a range of resources for model assessment\cite{Naveed2024}.
+\end{itemize}
+\section{Popular Models and Datasets}
+Large Language Models (LLMs) like GPT-3, GPT-4, and BERT have revolutionized NLP by leveraging vast datasets such as Common Crawl and WebText. These datasets provide a diverse linguistic foundation, enabling models to perform a wide range of tasks with remarkable accuracy and contextual understanding.
+\subsection{GPT-N Models}
+GPT models are advanced autoregressive language models that generate substantial and complex machine-produced text from minimal input. They leverage deep learning techniques to mimic human text generation by predicting the current value based on preceding values.
+NLP models initially struggled with tasks outside their training sets due to data restrictions. OpenAI addressed this with GPT-1,introduced in 2018.
+\begin{itemize}
+	\item GPT-1, trained on the BooksCorpus dataset, utilized a 12-layer transformer decoder with self-attention. Its pre-training allowed for zero-shot performance on various tasks, demonstrating the potential of generative language models.
+	\item In 2019, GPT-2 improved upon GPT-1 by using a larger dataset and 1.5 billion parameters (compared to GPT-1’s 117 million). It excelled in tasks like translation and summarization, enhancing accuracy in recognizing long-distance relationships.
+	\item GPT-3, released later, featured around 175 billion parameters and was trained on the Common Crawl dataset. It could generate human-like text, perform basic math, and write code. Despite its capabilities, its size and cost made it challenging to implement.
+	\item GPT-4, launched in March 2023, advanced further with multimodal capabilities and context windows of up to 32,768 tokens. It incorporates reinforcement learning for better alignment with human input and policy\cite{yenduri2023gpt}
+\end{itemize}
+\subsection{BERT}
+BERT (Bidirectional Encoder Representations from Transformers) is a groundbreaking language representation model that pretrains deep bidirectional representations from unlabeled text by jointly conditioning on both left and right contexts in all layers. This bidirectional approach enables BERT to be fine-tuned with just a single additional output layer for various tasks, such as question answering and language inference, without the need for extensive architectural modifications. BERT has achieved remarkable performance, setting new state-of-the-art results across eleven NLP tasks, including a GLUE score of 80.5\%, MultiNLI accuracy of 86.7\%, SQuAD v1.1 F1 score of 93.2\%, and SQuAD v2.0 F1 score of 83.1\%. Its combination of conceptual simplicity and empirical effectiveness makes BERT a powerful and versatile tool for a wide range of natural language processing applications\cite{devlin2019bert}.
+\subsection{T5}
+The T5 (Text-To-Text Transfer Transformer) model represents a unified framework for natural language processing (NLP), designed to address various text processing tasks by treating them as "text-to-text" problems. This approach involves converting all tasks into a format where both input and output are text, allowing the same model, objective, and training procedure to be applied across different tasks. T5 leverages extensive pre-training on a large, unlabeled dataset, enabling it to develop general-purpose knowledge that enhances its performance on a range of NLP tasks, such as question answering, document summarization, and sentiment classification\cite{raffel2023exploring}.
+\subsection{LLAMA2}
+\subsection{WebText }
+WebText is a dataset developed by OpenAI to encapsulate a wide variety of high-quality web content. It comprises text sourced from outbound links on popular websites like Reddit, chosen based on their popularity and the quality of their content. Unlike Common Crawl, which indiscriminately includes a broad range of web pages, WebText is more selective, focusing on high-quality, engaging material. Although smaller in size compared to Common Crawl, WebText is curated to ensure the text reflects diverse, well-written content, making it particularly valuable for training language models to produce coherent and contextually appropriate text\cite{radford2019language}.
+\subsection{RuleTaker}
+RuleTaker is a collection of datasets designed to assess the deductive reasoning capabilities of language models. Each dataset includes a set of facts, rules, and a boolean question that the model must use logical reasoning to answer. The datasets feature synthetic subsets requiring various levels of reasoning complexity, with different numbers of deduction steps necessary to reach an answer. Among the datasets are the Bird dataset, which illustrates McCarthy’s abnormality problem , the Electricity dataset, which models appliance functions, and the ParaRules corpus, where sentences like “Bob is cold” are paraphrased to “In the snow sits Bob, crying from being cold.” The collection comprises 580,000 training examples, 84,000 validation examples, and 173,000 testing examples\cite{helwe2024}.
+\begin{figure}
 	\centering
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{@{}lccccc@{}}
-			\toprule
-			\multirow{2}{*}{\textbf{Adequacy}} & \textbf{1}           & \textbf{2}           & \textbf{3}           & \textbf{4}           & \textbf{5}           \\ \cmidrule(l){2-6} 
-			& None                 & Little meaning       & Much meaning         & Most meaning         & All meaning          \\ \midrule
-			& \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\ \midrule
-			\multirow{2}{*}{\textbf{Fluency}}  & \textbf{1}           & \textbf{2}           & \textbf{3}           & \textbf{4}           & \textbf{5}           \\ \cmidrule(l){2-6} 
-			& Incomprehensible     & Disfluent language   & Non-native language  & Good language        & Flawless language    \\ \bottomrule
-		\end{tabular}%
-	}
-	\caption{Numeric scale for adequacy and fluency evaluation.}
-	\label{tab:table1.1}
-\end{table}
+	\includegraphics[width=0.7\linewidth]{Figures/dataset-exmple.png}
+	\caption{exammple of RuleTaker dataset }
+\end{figure}
+\section{Challenges and Limitations}
+LLMs have greatly advanced NLP, but they also present challenges such as high computational costs, issues with adversarial robustness, and difficulties in interpretability. As these models scale, they encounter new challenges in scalability, privacy, and real-time processing. Ongoing research is exploring multi-modality, transfer learning, and continuous learning, which bring additional complexities and highlight the evolving impact of LLMs in practical applications\cite{Naveed2024}.
+\subsection{ Computational Cost}
+Training large language models (LLMs) demands significant computational resources, leading to higher production costs and environmental concerns due to the substantial energy used in large-scale training. Although enhancing computational resources can boost performance, the gains diminish over time when the size of the model and dataset stay constant, adhering to the power law of diminishing returns.
+\subsection{Overfitting}
+Despite their advanced learning abilities, they can overfit to noisy or unusual patterns in their large training datasets, which may result in generating nonsensical responses. The ongoing discussion about Memorization versus Generalization in LLMs revolves around finding an optimal balance. Memorization helps the model retain specific details from its training, allowing it to answer precise questions accurately. On the other hand, generalization enables the model to make predictions and generate responses for new, unseen inputs, which is crucial for handling diverse real-world tasks. The challenge is to find the right balance: excessive memorization can lead to overfitting, reducing the model's flexibility and ability to handle novel inputs.
+\subsection{ Interpretability and Explainability}
+The "black-box" nature of LLMs makes it difficult to understand how they make decisions, which is vital for gaining broader acceptance and trust, particularly in sensitive areas. Although these models have advanced capabilities, the lack of transparency into their workings limits their effectiveness and reliability. Efforts are underway to enhance the explainability of LLMs to build user trust and promote responsible use of AI. Understanding how LLMs generate their responses is crucial for ensuring they align with human values and legal standards.
+\subsection{ Hallucinations}
+LLMs sometimes produce "hallucinations," or responses that, despite appearing plausible, are incorrect or do not match the provided information. These hallucinations can be classified into three types:
 
-Human evaluation is intrinsically subjective and expensive in time and money. To reduce the problem of subjectivity, more experts are usually invited to evaluate the same translations in the ES, and their assessments are, eventually, justified statistically.
+\begin{itemize}
+	\item Input-conflicting hallucination: When the model generates responses that do not align with the user's input.
+	\item Context-conflicting hallucination: When the model produces content that contradicts information it has previously generated.
+	\item Fact-conflicting hallucination: When the model creates responses that conflict with established knowledge.
+\end{itemize}
+\subsection{Privacy Concerns}
+As Large Language Models (LLMs) have become more complex and sizable, privacy concerns have intensified, particularly regarding data sharing and potential misuse. Risks include the creation of harmful content, evasion of filters, and issues related to data privacy, especially in areas like e-commerce where safeguarding customer information is vital. When LLMs are trained on private data and then made publicly available, additional privacy risks arise. Since LLMs can memorize phrases from their training data, there's a danger that these phrases could be exploited by malicious actors to retrieve sensitive information, thus threatening personal privacy.
+\subsection{Real-Time Processing}
+Real-time processing in Large Language Models (LLMs) is crucial for many applications, particularly as mobile AI solutions become more popular and concerns about information security and privacy grow. However, LLMs typically consist of hundreds of layers and millions of parameters, which create significant challenges for real-time processing due to their high computational demands and the limited storage capacity of hardware platforms, especially in edge computing environments. Although efforts such as MobileBERT attempt to lessen memory usage, they still encounter considerable execution overhead because of the extensive number of model layers, resulting in high inference latency.
+\section{Domains of Application}
+The use of Large Language Models (LLMs) in various downstream tasks has become increasingly prevalent in both AI research and industry, with new applications being identified and explored regularly. These models, which excel at understanding and generating human-like text, are finding valuable applications across diverse fields. 
+\subsection{Law} 
+In the legal field, Large Language Models (LLMs) can support the analysis of legal documents by assisting with tasks such as generating initial coding for datasets, identifying key themes, and classifying information accordingly. This synergy between legal professionals and LLMs has been effective in examining legal texts, such as court opinions on theft, enhancing both the efficiency and quality of legal research. Additionally, LLMs have been tested for their capability to generate explanations of legal terms, with a focus on improving factual accuracy by integrating sentences from relevant case law. By incorporating pertinent case law, these enhanced models can produce more accurate and relevant explanations with fewer factual errors. Furthermore, LLMs can be specialized with domain-specific knowledge to tackle legal reasoning tasks and address legal queries effectively \cite{Naveed2024}.
+\subsection{Cybersecurity}
+large Language Models (LLMs) have garnered significant attention in the field of cybersecurity. Recent research has highlighted their potential in addressing software bugs created by human developers and identifying cybersecurity threats. For example, Arora et al. have proposed methods for utilizing LLMs to evaluate cyber threats on social media through sentiment analysis. LLMs are also employed to detect cybersecurity-related information in Open Source Intelligence (OSINT), aiding in the identification of potential cyber threats. Additionally, LLMs have shown promise in detecting scams, such as phishing. Initial tests with models like GPT-3.5 and GPT-4 have demonstrated their ability to recognize common phishing indicators in emails. While LLMs exhibit considerable potential in cybersecurity, improving their reasoning abilities could enhance their effectiveness further, such as in uncovering zero-day vulnerabilities in open-source software by analyzing logic and source code\cite{helwe2024}.
+\subsection{Medicine}
+The integration of Large Language Models (LLMs) into medicine is transforming both healthcare delivery and research. In clinical settings, LLMs are increasingly utilized in decision support systems to offer evidence-based treatment recommendations. By analyzing patient data and medical literature, these models can assist in diagnosing conditions, suggesting relevant tests, and proposing effective treatment options. Additionally, LLMs improve patient interactions through applications like chatbots that answer questions about symptoms and medications, schedule appointments, and provide health advice.\\
+In medical research, LLMs help sift through vast amounts of literature to extract, filter, and summarize relevant information, identify key studies, and predict future research directions. They also play a role in medical education by generating training materials, creating exam questions, explaining complex topics, and offering personalized feedback. Furthermore, LLMs simulate patient interactions, aiding students in honing their clinical skills \cite{Naveed2024}.
 
-\subsection{Automatic Evaluation} 
-Generally, translation evaluation methods are based on counting word- and/or sentence-based errors likely to be identified automatically.
-Correlation with human evaluation is the measure of evaluation for metrics.
-Different metrics are used in MT evaluation: BLEU \cite{papineni02}, NIST \cite{doddington02}, METEOR \cite{banerjee05}, TER \cite{snover06}, LEPOR \cite{han12} and many others. 
-All of these metrics require reference translations because they confront the MT output sentences with reference translations and produce comparison scores.\\
-\textbf{BLEU} metric is one of the first and most used metrics to return high correlation with human evaluation of quality. 
-It measures the overlap of single words (unigrams) and \textit{n}-grams between MT output and reference translations. 
-BLEU operates by not only counting matching words between the translation and reference but also accounting for n-gram alignments. 
-This approach values proper word sequencing, enhancing the chances of aligning word pairs (bigrams) or longer sequences like trigrams or 4-grams. 
-Additionally, multiple reference translations can be employed to assess the presence of $n$-gram matches across variations.
-The BLEU score of a machine-translated output relies on the adjusted $n$-gram precision along with a brevity penalty. 
-Essentially, precision measures the proportion of $n$-grams in the machine translation output that align with the reference translation.
-BLEU scores are calculated across an entire test set, typically with one or more reference translations. 
-However, it's uncommon in practice to utilize multiple reference translations.
-\begin{equation}
-	BLEU = BP * exp \sum_{n=1}^N log \frac{matching\_i\_grams}{total\_i\_grams}
-%	BLEU=BP*\left(\sum_{n=1}^N w_n log\left(precision_n\right)\right)
-	\label{eqn:BLEU}
-\end{equation}
-The brevity penalty (BP) in Equation \ref{eqn:BLEU}, which penalizes shorter output, is expressed as:
-\begin{equation*}
-	BP = min(1,\frac{output\_length}{reference\_length}).
-\end{equation*}
-%\[
-%BP=\begin{cases} 
-%	1 & if c > r\\ 
-%	e^{(1-r/c)} & if c \leq r
-%\end{cases}
-%\]
-\\BLEU suffers from notable drawbacks, one of which is its stringent nature. 
-For instance, it incorporates trigram or 4-gram precision in its calculation. 
-However, a translated sentence might lack any trigram or 4-gram matches with the reference translation, leading to a BLEU score of zero.
-\section{Related Work}
-The main focus of AMT (Arabic Machine Translation) research initially was on translating from Modern Standard Arabic (MSA) to English, with significantly less emphasis on the reverse direction, from English to Arabic, and even fewer efforts dedicated to translations between Arabic and other languages. 
-The first direct-based machine translation system from English to Arabic was developed by Weidner Communication Inc. In 1990, Apptek introduced ArabTrans MT, a tool for translating from English to Arabic. 
-Additionally, products like Al-Mutarjim Al-Araby, Al-Alamiyah, and Al-Nakheel were capable of translating between French and Arabic as well as English and Arabic. 
-A critical challenge in using the Interlingua approach for AMT is the construction of representations that resolve ambiguity and accurately reflect the semantic structure of the language. 
-There have been limited studies that have developed and assessed models using this method.
-Table~\ref{tab_linguistic} summarizes the surveyed AMT research studies.
-\begin{small}
-	\begin{longtable}{|l|l|l|l|l|}
-		\hline
-		Year & Research & SL-TL$^{\mathrm{a}}$ & Method & Score\\
-		\hline
-		\endhead
-		%	\hline
-		%	\endfoot
-		
-		\multicolumn{5}{c}{\textbf{\textcolor{blue}{Linguistic-based AMT researches}}}\\
-		%	\hline
-		\multicolumn{5}{l}{\textbf{Direct-based AMT}}\\
-		\hline
-		2005 & Al-Taani \& Hailat \cite{altaani05}					& En$\rightarrow$Ar &-& 57.3\%\\
-		2007 & Ittycheriah \& Roukos \cite{ittycheriah-roukos-07}	& Ar$\rightarrow$En &Word alignment& Bl 51.27\\
-		\hline
-		\multicolumn{5}{l}{\textbf{Rule-based AMT}}\\
-		\hline
-		1995 & Mankai \& Mili \cite{mankai95}				& Ar$\rightarrow$En/Fr &-&\\
-		2008 & Salem et al. \cite{salem08} 					& Ar$\rightarrow$En &-&\\
-		2008 & Nguyen \& Vogel \cite{nguyen08}				& Ar$\rightarrow$En &-& 56.03\\
-		2008 & Samy	\& & Ar-Sp-En &-&\\
-		 & Gonz{\'a}lez-Ledesma \cite{samy08}	&  &-&\\
-		2008 & AbuShuqier \& Sembok \cite{abushquier08} 	& En$\rightarrow$Ar &-& 96.1\%\\
-		2009 & Elming \& Habash \cite{elming09}				& En$\rightarrow$Ar &-&\\
-		2009 & Besançon et al. \cite{besanccon09} 			& En/Fr$\rightarrow$Ar &-&\\
-		2012 & Salloum \& Habash \cite{salloum12}			& DA$\rightarrow$MSA &-&\\
-		2020 & Sghaier \& Zrigui \cite{sghaier20}			& DA$\rightarrow$MSA &-& Bl 55.22\\
-		\hline
-		\multicolumn{5}{l}{\textbf{Interlingua-based AMT}}\\
-		\hline
-		2002 & Soudi et al. \cite{soudi02}					& En$\rightarrow$Ar &-&\\
-		2006 & Shaalan et al. \cite{shaalan06}				& En$\rightarrow$Ar &-&\\
-		2008 & Bouillon et al. \cite{bouillon08}			& Jp$\leftrightarrow$Ar &-&\\
-		2014 & Al Ansary \cite{AlAnsary14}					& En$\rightarrow$Ar &Universal Networking Language&\\
-		\hline
-		\multicolumn{5}{l}{\textbf{Transfer-based AMT}}\\
-		\hline
-		2002 & Attia \cite{attia02}							& En$\rightarrow$Ar &Agreement features&\\
-		2004 & Shaalan et al. \cite{shaalan04}				& En$\rightarrow$Ar &-& 92\%\\
-		2010 & Shirko et al. \cite{shirko10}				& Ar$\rightarrow$En &-& 94.6\%\\
-		2010 & Shaalan et al. \cite{shaalan10a}				& En$\leftrightarrow$Ar &-& 0.450%4
-		/0.458%1
-		\\
-		2011 & Hatem et al. \cite{hatem11}					& En$\rightarrow$Ar &Morphological analysis&\\
-		\hline
-		\multicolumn{5}{c}{\textbf{\textcolor{blue}{Corpus-based AMT researches}}}\\
-		%	\hline
-		\multicolumn{5}{l}{\textbf{Example-based AMT}}\\
-		\hline
-		2002 & Guidere \cite{guidere02}					& Fr-Ar &-&\\
-		2011 & Bar \& Dershowitz \cite{Bar11}			& Ar$\rightarrow$En &Verb paraphrases& 23.98\\
-		2012 & Bar \& Dershowitz \cite{Bar12}			& Ar$\rightarrow$En &Semantic equivalents&\\
-		2012 & Cavalli-Sforza \& Phillips \cite{Cavalli-Sforza12}	& Ar$\rightarrow$En &Morphological analysis&\\
-		2014 & El-Shishtawy 		& En$\rightarrow$Ar &Template-based syntactic &\\
-		&\& El-Sammak \cite{elshishtawy14}		& & matching&\\
-		\hline
-		\multicolumn{5}{l}{\textbf{Statistical-based AMT}}\\
-		\hline
-		2006 & Hasan et al. \cite{hasan06}				& Ar$\rightarrow$Fr &Pre-/Post-processing& 40.8\%\\
-		2007 & Diab et al. \cite{diab07}				& Ar$\rightarrow$En &Pre-/Post-processing& 45.38\%\\
-		2007 & Sarikaya \& Deng \cite{sarikaya07}		& En$\rightarrow$Ar &POS tag$^{\mathrm{b}}$/CDW$^{\mathrm{d}}$&+0.3\\
-		2009 & Badr et al. \cite{badr09}				& En$\rightarrow$Ar &Syntactic phrase reordering&Bl 32.46\\
-		%s		2009 & Mostefa et al. \cite{mostefa09}					& Ar-Fr-En\\[0.3ex]
-		2009 & Habash \& Hu \cite{habash-hu09}		& Ar$\rightarrow$En$\rightarrow$Cn &MT Evaluation&Bl +1.1\\
-		2010 & Carpuat et al. \cite{carpuat10}			& Ar$\rightarrow$En &Word reordering&Bl 51.70\\
-		2010 & Ghurab et al. \cite{ghurab10}			& Ar$\leftrightarrow$Cn &-&0.805%3
-		/0.696%5
-		\\
-		2010 & Bisazza and Federico \cite{bisazza10}	& Ar$\rightarrow$En &Word reordering& 48.96\\
-		2017 & Durrani et al. \cite{durrani17}			& Ar$\leftrightarrow$En &MT Evaluation& Bl +4\\	
-		2017 & Mallek et al. \cite{mallek17}			& Ar$\leftrightarrow$En &Pre- processing& Bl 10.98\\
-		2017 & Ebrahim et al. \cite{ebrahim17}			& En$\rightarrow$Ar &MWE Detection& 19.31/19.22\\
-		2019 & Aqlan et al. \cite{aqlan19a}				& Ar$\rightarrow$Cn &Morpho/Vocab/POS tag& Bl 19.40\\
-		\hline
-		\multicolumn{5}{c}{\textbf{\textcolor{blue}{Hybrid AMT}}}\\
-		\hline
-		2004 & Alsharaf et al. \cite{alsharaf04}	& Fr$\rightarrow$Ar& Direct+Transfer+Pivot+SMT &\\
-		2008 & Toutanova et al. \cite{toutanova08}	& En$\rightarrow$Ar& Inflection prediction models &Bl 36.92\\
-	 & 	& &  + SMT &\\
-		2008 & Hatem \& Nassar \cite{hatem08}		& En$\rightarrow$Ar& Rule-based + Example-based & 68\%\\
-		2009 & Matusov et al. \cite{matusov09} 		& Ar$\rightarrow$En& Multi-engine (5 MT systems) &\\
-		2009 & Habash et al. \cite{habash09}		& Ar$\rightarrow$En& SMT + Rule-based &Bl 0.4162\\
-		2010 & Al Dam \& Guessoum \cite{aldam10}   	& En$\rightarrow$Ar& Transfer-based + ANN &56\%\\
-		2010 & Sawaf \cite{sawaf10}					& DA$\rightarrow$MSA& Rule-based+SMT & 42.1\%\\
-		2011 & Alawneh \& Sembok \cite{alawneh11}	& En$\rightarrow$Ar& Rule-based + Example-based &\\
-		2012 & Shaalan \& Hany \cite{shaalan12}		& Ar$\rightarrow$En& Rule-based + Example-based & WER 88\%\\
-		2014 & Akeel \& Mishra \cite{akeel14}   	& En$\rightarrow$Ar& Rule-based + ANN & 0.6\\
-		2015 & Mohamed \& Sadat	\cite{mohamed15}	& Ar$\rightarrow$Fr& Morphological rule + SMT & 34.7\%\\
-		2015 & Zantout \& Guessoum \cite{zantout15}	& Ar$\rightarrow$En& Transfer-based + ANN &64.50\%\\
-		\hline
-		\multicolumn{3}{l}{$^{\mathrm{a}}$Source language-Target language}&
-		\multicolumn{2}{l}{$^{\mathrm{b}}$Part Of Speech Tagging}\\
-		\multicolumn{3}{l}{$^{\mathrm{c}}$Context Dependent Words}\\
-		\caption{Linguistic-, Corpus-based and Hybrid AMT researches}
-		\label{tab_linguistic}\\
-	\end{longtable}
-\end{small}
+\subsection{journalism}
+Large Language Models (LLMs) offer valuable support to journalists, especially in fact-checking and news verification. They can process and cross-reference large volumes of data with established knowledge bases. Research has demonstrated that LLMs, such as GPT-3.5, can be used to detect fake news by providing rationales that enhance other models like BERT, which can then be fine-tuned for this purpose .
+In addition to fact-checking, LLMs are useful for analyzing political debates, helping journalists to identify key themes, monitor how discussions evolve, and evaluate sentiments. They can also assist in detecting logical fallacies and underlying motives in political discourse and propaganda . By enhancing their reasoning capabilities, LLMs can uncover deeper insights into propaganda and misinformation, making them a powerful tool for modern journalism\cite{helwe2024}.
 
-\section{Summary}
-In conclusion, this chapter has delved into the multifaceted challenges and intricacies surrounding Arabic language processing, with a specific focus on machine translation (MT).
-We have explored the intricate aspects of Arabic, ranging from its morphology and syntax to its diverse array of dialects, all of which present formidable hurdles for natural language processing (NLP) and MT systems alike. 
-Additionally, we have scrutinized the influence of social media on Arabic NLP and MT, taking into account the unique linguistic characteristics and informal language usage prevalent on online platforms. 
- 
-Our examination has encompassed both linguistic and corpus-based approaches to Arabic MT, underscoring the necessity of tailored resources and datasets to capture the language's nuances effectively. 
-Moreover, we have delved into various MT evaluation methods, encompassing both human and automatic assessment techniques. 
- 
-Lastly, we have surveyed the related work in the field, providing insights into recent advancements, methodologies, and the challenges encountered in Arabic language MT research, thus offering valuable perspectives on the current landscape and future trajectories of the field.
+\section{Conclusion}
+This chapter has outlined the evolution and significance of Natural Language Processing (NLP), from early neural networks to advanced Large Language Models (LLMs). We covered key concepts in neural networks and the transformative impact of the Transformer architecture. The exploration of LLMs highlighted their emergence, scaling, and the intricacies of pre-training and fine-tuning. We also discussed various challenges, including computational costs, interpretability, and privacy concerns. Finally, the chapter reviewed the applications of LLMs in fields like law, cybersecurity, medicine, and journalism, showcasing their potential and the ongoing need for further development.
