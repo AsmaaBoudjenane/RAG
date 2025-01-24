@@ -54,6 +54,8 @@
 \usepackage{algorithmicx}%
 \usepackage{algpseudocode}%
 \usepackage{listings}%
+
+
 %%%%
 
 %%%%%=============================================================================%%%%
@@ -89,7 +91,7 @@
 
 \begin{document}
 
-\title[Article Title]{ttttttttttttttttttttt}
+\title[Article Title]{Beyond Static Retrieval: Adaptive Method for Improving RAG Performance}
 
 %%=============================================================%%
 %% GivenName	-> \fnm{Joergen W.}
@@ -100,7 +102,7 @@
 %%  \sfx{IV}}\email{iauthor@gmail.com}
 %%=============================================================%%
 
-\author*[1]{\fnm{Asmaa} \sur{Boudjenane }}\email{}
+\author*[1]{\fnm{Zoubida Asmaa} \sur{Boudjenane }}\email{asmaa.boudj04@gmail.com}
 
 \author[2]{\fnm{Mohammed} \sur{Salem}}\email{salem@univ-mascara.dz}
 \equalcont{These authors contributed equally to this work.}
@@ -127,8 +129,16 @@
 \maketitle
 
 \section{Introduction}\label{sec1}
-
-
+Large Language Models (LLMs) have emerged as state-of-the-art artificial intelligence systems that excel at understanding and generating human-like text,Built on deep learning architectures,particularly transformers \cite{vaswani2017attention}.these models are trained on massive datasets to capture linguistic patterns and semantic relationships showcasing impressive adaptability across diverse tasks such as text generation, summarization, question answering.Notable examples of LLMs include OpenAI GPT series\cite{brown2020language} , Google BERT\cite{devlin2018bert} and T5 \cite{raffel2020exploring} which have set new benchmarks in NLP tasks .\\
+despite their impressive capabilities,LLMs suffer from hallucination where they confidently generate factually incorrect or entirely fabricated information. This poses challenges in applications requiring high accuracy, Additionally significant limitation of LLMs is their static nature, as they are trained on fixed datasets and cannot dynamically update their knowledge which makes them prone to generating outdated or inconsistent responses, especially for time-sensitive or evolving data\cite{Mousavi2025}. \\
+\\
+researchers have explored various approaches To address this limitation, including transfer learning\cite{zhuang2020comprehensive}a technique that improves pre-trained models performance in new tasks by transferring knowledge from related tasks.and fine-tuning \cite{Howard2018} which adapt pre-trained models to specific tasks or domains. While these methods improve performance on targeted tasks,they are computationally expensive and impractical for real-time knowledge updates. A promising alternative is Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval}.which integrates real-time retrieval from external knowledge sources with generative models. RAG enables LLMs to access up-to-date information without retraining, making it particularly useful for applications like open-domain question answering and fact-checking.\\
+\\
+Retrieval-Augmented Generation (RAG) faces several limitations, The performance of RAG heavily depends on the quality of the retriever \cite{karpukhin2020dpr}, as irrelevant or noisy documents can degrade the generator output. Additionally, retrieving and processing a large number of documents increases computational overhead , making RAG less efficient for real-time applications. A critical challenge is determining the optimal number of retrieved passages (K) to feed into the generator\cite{lewis2020retrieval}. Selecting too few passages (small K) risks missing crucial context, while too many (large K) can introduce noise, reduce coherence and increase computational overhead. This trade-off makes K a key factor in balancing performance and efficiency. \\
+\\
+Current approaches, such as static K selection \cite{lewis2020retrieval} involves retrieving a fixed number of top results regardless of the query characteristics ,it struggles in dynamic datasets as it cannot adapt to the complexity of individual queries , dynamic K adjustment attempt to address this trade-off but often introduce complexity or latency ,Hybrid approaches like those proposed yuan et al . \cite{yuan2024hybrid},that integrates static retrieval with dynamic retrieval to improve accuracy and robustness. Furthermore, the "Blended RAG" approach \cite{blended_rag2024} enhances retrieval accuracy by combining semantic search techniques with hybrid query strategies, resulting in improved performance in information retrieval tasks. However, the approach faces significant limitations, including high computational overhead due to the need for multiple retrieval methods and dependency on high-quality metadata for optimal performance. These limitations highlight the need for a more robust approach to K selection, capable of balancing efficiency and accuracy across varying query types.\\
+\\
+In this paper, we investigate the problem of selecting K in RAG and propose a novel approach to dynamically adjust K based on relevance thresholds and a Mixture of Logits (MoL)\cite{ding2024efficient} scoring mechanism, ensuring efficient and context-sensitive candidate selection while reducing computational costs. By using adaptive thresholds the algorithm improves the relevance of retrieved documents, refining the set to include only the most contextually appropriate matches. Unlike traditional approaches, it adapts to the query and dataset characteristics, making it more flexible for diverse contexts. Furthermore, its design for handling large datasets ensures scalable and precise retrieval, which is crucial for RAG systems working with extensive corpora.
 
 \section{Related works}\label{sec2}
 
@@ -154,9 +164,9 @@ $H\psi = E \psi$ is written via the command \verb+$H \psi = E \psi$+.
 For display equations (with auto generated equation numbers)
 one can use the equation or align environments:
 % KAN Archecture
-\begin{equation}
-f(x_1, x_2, \cdots, x_n)=\sum_{q=1}^{2n+1}\Phi_q \left( \sum_{p=1}^{n}\phi_{q, p}(x_p)\right)
-\end{equation}
+%\begin{equation}
+%f(x_1, x_2, \cdots, x_n)=\sum_{q=1}^{2n+1}\Phi_q %\left( \sum_{p=1}^{n}\phi_{q, p}(x_p)\right)
+%\end{equation}
 
 \begin{equation}
 \Phi = \{\phi_{p, q}\}, \qquad p=1,2,\cdots, n_{in},\qquad q=1,2,\cdots, n_{out}
