@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper_RAG.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+The style file: sn-mathphys-num.bst
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: sn-bibliography.bib
+You're missing a field name---line 375 of file sn-bibliography.bib
+ :  author    = "Author Name(s)",  
+ :                                 % Replace with actual author names if available
+I'm skipping whatever remains of this entry
+You're missing a field name---line 427 of file sn-bibliography.bib
+ :  volume    = "arXiv:2406.XXXXX",  
+ :                                   % Replace with the actual arXiv ID if available
+I'm skipping whatever remains of this entry
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--empty title in DynamicKNN2012
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 20 entries,
+            7480 wiz_defined-function locations,
+            1323 strings with 14759 characters,
+and the built_in function-call counts, 434212 in all, are:
+= -- 81085
+> -- 743
+< -- 176
++ -- 50049
+- -- 307
+* -- 10532
+:= -- 75044
+add.period$ -- 33
+call.type$ -- 20
+change.case$ -- 168
+chr.to.int$ -- 431
+cite$ -- 21
+duplicate$ -- 977
+empty$ -- 6160
+format.name$ -- 772
+if$ -- 111687
+int.to.chr$ -- 1
+int.to.str$ -- 33
+missing$ -- 0
+newline$ -- 368
+num.names$ -- 106
+pop$ -- 641
+preamble$ -- 1
+purify$ -- 92
+quote$ -- 0
+skip$ -- 49344
+stack$ -- 0
+substring$ -- 42801
+swap$ -- 433
+text.length$ -- 280
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 681
+warning$ -- 1
+while$ -- 731
+width$ -- 0
+write$ -- 494
+(There were 2 error messages)

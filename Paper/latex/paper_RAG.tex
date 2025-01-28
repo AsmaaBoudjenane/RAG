@@ -129,21 +129,48 @@
 \maketitle
 
 \section{Introduction}\label{sec1}
+
 Large Language Models (LLMs) have emerged as state-of-the-art artificial intelligence systems that excel at understanding and generating human-like text,Built on deep learning architectures,particularly transformers \cite{vaswani2017attention}.these models are trained on massive datasets to capture linguistic patterns and semantic relationships showcasing impressive adaptability across diverse tasks such as text generation, summarization, question answering.Notable examples of LLMs include OpenAI GPT series\cite{brown2020language} , Google BERT\cite{devlin2018bert} and T5 \cite{raffel2020exploring} which have set new benchmarks in NLP tasks .\\
-despite their impressive capabilities,LLMs suffer from hallucination where they confidently generate factually incorrect or entirely fabricated information. This poses challenges in applications requiring high accuracy, Additionally significant limitation of LLMs is their static nature, as they are trained on fixed datasets and cannot dynamically update their knowledge which makes them prone to generating outdated or inconsistent responses, especially for time-sensitive or evolving data\cite{Mousavi2025}. \\
-\\
-researchers have explored various approaches To address this limitation, including transfer learning\cite{zhuang2020comprehensive}a technique that improves pre-trained models performance in new tasks by transferring knowledge from related tasks.and fine-tuning \cite{Howard2018} which adapt pre-trained models to specific tasks or domains. While these methods improve performance on targeted tasks,they are computationally expensive and impractical for real-time knowledge updates. A promising alternative is Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval}.which integrates real-time retrieval from external knowledge sources with generative models. RAG enables LLMs to access up-to-date information without retraining, making it particularly useful for applications like open-domain question answering and fact-checking.\\
-\\
-Retrieval-Augmented Generation (RAG) faces several limitations, The performance of RAG heavily depends on the quality of the retriever \cite{karpukhin2020dpr}, as irrelevant or noisy documents can degrade the generator output. Additionally, retrieving and processing a large number of documents increases computational overhead , making RAG less efficient for real-time applications. A critical challenge is determining the optimal number of retrieved passages (K) to feed into the generator\cite{lewis2020retrieval}. Selecting too few passages (small K) risks missing crucial context, while too many (large K) can introduce noise, reduce coherence and increase computational overhead. This trade-off makes K a key factor in balancing performance and efficiency. \\
-\\
-Current approaches, such as static K selection \cite{lewis2020retrieval} involves retrieving a fixed number of top results regardless of the query characteristics ,it struggles in dynamic datasets as it cannot adapt to the complexity of individual queries , dynamic K adjustment attempt to address this trade-off but often introduce complexity or latency ,Hybrid approaches like those proposed yuan et al . \cite{yuan2024hybrid},that integrates static retrieval with dynamic retrieval to improve accuracy and robustness. Furthermore, the "Blended RAG" approach \cite{blended_rag2024} enhances retrieval accuracy by combining semantic search techniques with hybrid query strategies, resulting in improved performance in information retrieval tasks. However, the approach faces significant limitations, including high computational overhead due to the need for multiple retrieval methods and dependency on high-quality metadata for optimal performance. These limitations highlight the need for a more robust approach to K selection, capable of balancing efficiency and accuracy across varying query types.\\
-\\
+Despite their impressive capabilities,LLMs suffer from hallucination where they confidently generate factually incorrect or entirely fabricated information. This poses challenges in applications requiring high accuracy, Additionally significant limitation of LLMs is their static nature, as they are trained on fixed datasets and cannot dynamically update their knowledge which makes them prone to generating outdated or inconsistent responses, especially for time-sensitive or evolving data\cite{Mousavi2025}. 
+
+
+Researchers have explored various approaches To address this limitation, including transfer learning\cite{zhuang2020comprehensive}a technique that improves pre-trained models performance in new tasks by transferring knowledge from related tasks.and fine-tuning \cite{Howard2018} which adapt pre-trained models to specific tasks or domains. While these methods improve performance on targeted tasks,they are computationally expensive and impractical for real-time knowledge updates. A promising alternative is Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval}.which integrates real-time retrieval from external knowledge sources with generative models.
+
+RAG enables LLMs to access up-to-date information without retraining, making it particularly useful for applications like open-domain question answering and fact-checking.
+Retrieval-Augmented Generation (RAG) faces several limitations, The performance of RAG heavily depends on the quality of the retriever \cite{karpukhin2020dpr}, as irrelevant or noisy documents can degrade the generator output. Additionally, retrieving and processing a large number of documents increases computational overhead , making RAG less efficient for real-time applications. A critical challenge is determining the optimal number of retrieved passages (K) to feed into the generator\cite{lewis2020retrieval}. Selecting too few passages (small K) risks missing crucial context, while too many (large K) can introduce noise, reduce coherence and increase computational overhead. This trade-off makes K a key factor in balancing performance and efficiency. 
+
+Current approaches, such as static K selection \cite{lewis2020retrieval} involves retrieving a fixed number of top results regardless of the query characteristics ,it struggles in dynamic datasets as it cannot adapt to the complexity of individual queries , dynamic K adjustment attempt to address this trade-off but often introduce complexity or latency ,Hybrid approaches like those proposed yuan et al . \cite{yuan2024hybrid},that integrates static retrieval with dynamic retrieval to improve accuracy and robustness. Furthermore, the "Blended RAG" approach \cite{blended_rag2024} enhances retrieval accuracy by combining semantic search techniques with hybrid query strategies, resulting in improved performance in information retrieval tasks. However, the approach faces significant limitations, including high computational overhead due to the need for multiple retrieval methods and dependency on high-quality metadata for optimal performance. These limitations highlight the need for a more robust approach to K selection, capable of balancing efficiency and accuracy across varying query types.
+
+
 In this paper, we investigate the problem of selecting K in RAG and propose a novel approach to dynamically adjust K based on relevance thresholds and a Mixture of Logits (MoL)\cite{ding2024efficient} scoring mechanism, ensuring efficient and context-sensitive candidate selection while reducing computational costs. By using adaptive thresholds the algorithm improves the relevance of retrieved documents, refining the set to include only the most contextually appropriate matches. Unlike traditional approaches, it adapts to the query and dataset characteristics, making it more flexible for diverse contexts. Furthermore, its design for handling large datasets ensures scalable and precise retrieval, which is crucial for RAG systems working with extensive corpora.
 
+Our contributions in this paper are the following :
+\begin{itemize}
+	\item we review existing approaches to Retrieval-Augmented Generation (RAG), with a specific focus on static , dynamic and Hybrid selection strategies. We critically analyze the strengths and limitations of these methods, identifying key gaps in their design and performance. These gaps motivate the need for an improved approach that addresses the challenges of both static and dynamic relevance in retrieval-augmented systems.
+	\item Overview of Retrieval-Augmented Generation (RAG) in This section We provide a detailed explanation of the RAG framework, including its components and how it operates. Key concepts, such as retrievers, generators, and augmented are discussed to establish the foundational context.
+	\item Proposed Solution: This section introduces our novel hybrid dynamic  selection algorithm. We describe its methodology, explain its design, and discuss how it overcomes the limitations of existing static and dynamic approaches. The benefits of this approach, particularly in improving retrieval accuracy and computational efficiency, are emphasized.
+	\item Results : We present experimental results to demonstrate the effectiveness of our hybrid dynamic  selection algorithm. Comparisons with baseline method highlight its superiority in terms of retrieval performance and adaptability to diverse query complexities.
+\end{itemize}
+
+
 \section{Related works}\label{sec2}
+The selection of an optimal number of retrieved items (K) in Retrieval-Augmented Generation (RAG) systems plays a crucial role in ensuring accurate and efficient responses.Several methods, including static, dynamic, and hybrid approaches have been proposed to address this challenge While these methods show promise in improving performance,they often face trade-offs between adaptability, efficiency when applied to complex or diverse query patterns. In this section, we will explore these methods, highlight their respective strengths and weaknesses, and introduce our hybrid solution as a more robust and adaptable alternative. \\
+\textbf{Static Top-K selection in Retrieval} 
 
-\section{section1 }\label{sec3}
 
+In traditional Retrieval-Augmented Generation (RAG) systems, static K-selection is a widely used method where a fixed number of top-k documents are retrieved based on their relevance scores. Sparse retrieval methods where the "keys" represent documents to be retrieved, and the "values" are the same documents in this context such as query likelihood models\cite{Lafferty2001} ,TF-IDF\cite{Robertson1997} and BM25\cite{Zaragoza2009} often rely on this static approach to identify and rank documents. For instance, if k  =5, the system retrieves the top 5 documents deemed most relevant to a query, regardless of the query's complexity or the variability in relevance distribution among documents.
+A major drawback of this approach is its rigidity. Since the number of retrieved documents (k) is fixed, it fails to adapt to the varying complexity of queries. For simple queries, retrieving too many documents may introduce noise, while for complex queries, retrieving too few may result in incomplete or insufficient information. This one-size-fits-all strategy can lead to suboptimal performance across diverse datasets or tasks.\\
+\textbf{Dynamic top-k Selection in Retrieval}
+
+Dynamic k-selection addresses the limitations of static k by varying the number of retrieved documents based on the specific query or context. These approaches typically involve heuristics, machine learning models, or adaptive algorithms to determine the optimal K for each query such as Dynamic Query Cutoff (DQC)\cite{Culpepper2016} This approach uses machine learning models trained on query-document features to predict the optimal k for retrieval , A reinforcement learning-based approach\cite{Zhou2021} where the agent learns to adjust k by maximizing downstream task performance (e.g accurate response generation in RAG) Another example is the Dynamic Selection of k Nearest Neighbors \cite{DynamicKNN2012} where the selection process often depends on the distribution of neighbors, their distances to the query point, or their relevance scores.
+However, these methods come with limitations.They often introduce computational overhead due to the need for dynamic evaluation, which can increase latency in large-scale systems. Additionally, their performance heavily depends on the quality of the underlying models or distance metrics, making them sensitive to noisy data or poorly tuned hyperparameters. As a result, achieving generalization across diverse datasets or domains remains a significant challenge. \\
+\textbf{Hybrid Approaches}
+
+Hybrid approaches combine elements of static and dynamic K-selection to achieve a balance between simplicity and adaptability.These systems might use a static 
+k as a baseline but dynamically adjust such as STAYKATE (Static-Dynamic Hybrid Selection)\cite{Zhu2024} Combines static (active learning-inspired) and dynamic (KATE-based) example selection strategies to create STAYKATE. Another example is DR-RAG (Dynamic Relevance for Retrieval-Augmented Generation)\cite{Hei2024} retrieval framework designed to improve the relevance between queries and documents. In the first stage, a similarity matching method retrieves an initial set of documents. In the second stage, a deeper analysis is performed to identify dynamic-relevant documents, supported by a classifier that filters out irrelevant ones . however hybrid methods may face challenges in determining when to apply static or dynamic k-selection effectively, leading to potential trade-offs between retrieval accuracy and system efficiency. These limitations highlight the ongoing need for robust mechanisms that dynamically and efficiently adapt k to the unique characteristics of each query and dataset.
+
+Our method leverages adaptive thresholds to dynamically refine the set of retrieved documents, ensuring that only the most contextually relevant matches are included. Unlike traditional static or fixed 
+K-selection methods, which apply a uniform retrieval strategy across all queries, our approach adapts to the specific characteristics of both the query and the dataset. This flexibility allows the algorithm to better accommodate diverse contexts, enhancing the relevance and quality of retrieval results.Through its adaptive nature, the method not only improves retrieval accuracy but also minimizes computational overhead by focusing resources on the most pertinent results. 
 \subsection{section1}\label{subsec2}
 
 \section{section1}\label{sec3}
@@ -352,15 +379,15 @@ Write('Pascal keywords.');
 
 \section{Cross referencing}\label{sec8}
 
-Environments such as figure, table, equation and align can have a label
-declared via the \verb+\label{#label}+ command. For figures and table
-environments use the \verb+\label{}+ command inside or just
-below the \verb+\caption{}+ command. You can then use the
-\verb+\ref{#label}+ command to cross-reference them. As an example, consider
-the label declared for Figure~\ref{fig1} which is
-\verb+\label{fig1}+. To cross-reference it, use the command 
-\verb+Figure \ref{fig1}+, for which it comes up as
-``Figure~\ref{fig1}''. 
+%Environments such as figure, table, equation and align can have a label
+%declared via the \verb+\label{#label}+ command. For figures and table
+%environments use the \verb+\label{}+ command inside or just
+%below the \verb+\caption{}+ command. You can then use the
+%\verb+\ref{#label}+ command to cross-reference them. As an example, consider
+%the label declared for Figure~\ref{fig1} which is
+%\verb+\label{fig1}+. To cross-reference it, use the command 
+%\verb+Figure \ref{fig1}+, for which it comes up as
+%``Figure~\ref{fig1}''. 
 
 To reference line numbers in an algorithm, consider the label declared for the line number 2 of Algorithm~\ref{algo1} is \verb+\label{algln2}+. To cross-reference it, use the command \verb+\ref{algln2}+ for which it comes up as line~\ref{algln2} of Algorithm~\ref{algo1}.
 
@@ -368,9 +395,9 @@ To reference line numbers in an algorithm, consider the label declared for the l
 
 Standard \LaTeX\ permits only numerical citations. To support both numerical and author-year citations this template uses \verb+natbib+ \LaTeX\ package. For style guidance please refer to the template user manual.
 
-Here is an example for \verb+\cite{...}+: \cite{bib1}. Another example for \verb+\citep{...}+: \citep{bib2}. For author-year citation mode, \verb+\cite{...}+ prints Jones et al. (1990) and \verb+\citep{...}+ prints (Jones et al., 1990).
+%Here is an example for \verb+\cite{...}+: \cite{bib1}. Another example for %\verb+\citep{...}+: \citep{bib2}. For author-year citation mode, \verb+\cite{...}+ %prints Jones et al. (1990) and \verb+\citep{...}+ prints (Jones et al., 1990).
 
-All cited bib entries are printed at the end of this article: \cite{bib3}, \cite{bib4}, \cite{bib5}, \cite{bib6}, \cite{bib7}, \cite{bib8}, \cite{bib9}, \cite{bib10}, \cite{bib11}, \cite{bib12} and \cite{bib13}.
+%All cited bib entries are printed at the end of this article: \cite{bib3}, %\cite{bib4}, \cite{bib5}, \cite{bib6}, \cite{bib7}, \cite{bib8}, \cite{bib9}, %\cite{bib10}, \cite{bib11}, \cite{bib12} and \cite{bib13}.
 
 
 \section{Examples for theorem like environments}\label{sec10}
