@@ -39,7 +39,33 @@
 	url = "https://arxiv.org/abs/1910.10683"
 }
 
+@article{ji2023survey,
+	title = "Survey of Hallucination in Natural Language Generation",
+	author = "Z. Ji and N. Lee and R. Frieske and T. Yu and D. Su and Y. Xu and E. Ishii and Y. Bang and A. Madotto and P. Fung",
+	journal = "ACM Computing Surveys",
+	volume = "55",
+	number = "12",
+	pages = "1--38",
+	year = "2023",
+	doi = "10.1145/3571730"
+}
+@inproceedings{kandpal2023large,
+	title = "Large Language Models Struggle to Learn Long-Tail Knowledge",
+	author = "N. Kandpal and H. Deng and A. Roberts and E. Wallace and C. Raffel",
+	booktitle = "International Conference on Machine Learning",
+	year = "2023",
+	pages = "15696--15707",
+	publisher = "PMLR"
+}
 
+@article{bender2021dangers,
+	title = "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?",
+	author = "E. M. Bender and T. Gebru and A. McMillan-Major and S. Shmitchell",
+	journal = "Proceedings of the ACM Conference on Fairness, Accountability, and Transparency (FAccT)",
+	year = "2021",
+	pages = "610--623",
+	doi = "10.1145/3442188.3445922"
+}
 %% Journal article
 @article{Mousavi2025,
 	author    = "Seyed Mahed Mousavi and Simone Alghisi and Giuseppe Riccardi",
@@ -185,7 +211,7 @@
 	note      = "[cs.IR]",
 }
 @inproceedings{DynamicKNN2012,
-	author    = "Author Name(s)",  % Replace with actual author names if available
+	author    = "Carl Hulett and Andy Hall and Guangzhi Qu",  
 	title     = "Dynamic selection of k nearest neighbors in instance-based learning",
 	booktitle = "2012 IEEE 13th International Conference on Information Reuse \& Integration (IRI)",
 	year      = "2012",
@@ -206,15 +232,74 @@
 	url       = "https://arxiv.org/pdf/2412.20043",
 	note      = "[cs.CL]",
 }
-@article{Hei2024,
-	author    = "Zijian Hei and Weiling Liu and Wenjie Ou and Juyi Qiao and Junming Jiao and Guowen Song and Ting Tian and Yi Lin",
-	title     = "DR-RAG: Applying Dynamic Document Relevance to Retrieval-Augmented Generation for Question-Answering",
-	journal   = "arXiv preprint",
+
+@misc{hei2024drragapplyingdynamicdocument,
+	title="DR-RAG: Applying Dynamic Document Relevance to Retrieval-Augmented Generation for Question-Answering", 
+	author="Zijian Hei and Weiling Liu and Wenjie Ou and Juyi Qiao and Junming Jiao and Guowen Song and Ting Tian and Yi Lin",
+	year="2024",
+	eprint="2406.07348",
+	archivePrefix="arXiv",
+	primaryClass="cs.LG",
+	url="https://arxiv.org/abs/2406.07348",
+	}
+@misc{awsRAG,
+	author    = "Amazon Web Services",
+	title     = "What is RAG- Retrieval-Augmented Generation AI Explained - AWS",
 	year      = "2024",
-	volume    = "arXiv:2406.XXXXX",  % Replace with the actual arXiv ID if available
-	month     = "June",
-	note      = "Submitted on 11 Jun 2024 (v1), last revised 16 Jun 2024 (this version, v3)",
-	url       = "https://arxiv.org/abs/2406.XXXXX",  % Replace with the actual arXiv URL
+	url       = "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+	note      = "Accessed: 2025-01-29"
+}
+@article{ilin2023advancedrag,
+	author    = " Ivan Ilin",
+	title     = "Advanced RAG Techniques An Illustrated Overview",
+	journal   = "Towards AI",
+	year      = "2023",
+	month     = "December",
+	url       = "https://towardsai.net/p/advanced-rag-techniques-an-illustrated-overview",
+	note      = "Accessed: 2025-01-29"
+}
+
+@misc{zhao2024retrievalaugmentedgenerationaigeneratedcontent,
+	title="Retrieval-Augmented Generation for AI-Generated Content: A Survey", 
+	author="Penghao Zhao and Hailin Zhang and Qinhan Yu and Zhengren Wang and Yunteng Geng and Fangcheng Fu and Ling Yang and Wentao Zhang and Jie Jiang and Bin Cui",
+	year="2024",
+	eprint="2402.19473",
+	archivePrefix="arXiv",
+	primaryClass="cs.CV",
+	url="https://arxiv.org/abs/2402.19473", 
+}
+@misc{gupta2024comprehensivesurveyretrievalaugmentedgeneration,
+	title="A Comprehensive Survey of Retrieval-Augmented Generation (RAG): Evolution, Current Landscape and Future Directions", 
+	author="Shailja Gupta and Rajesh Ranjan and Surya Narayan Singh",
+	year="2024",
+	eprint="2410.12837",
+	archivePrefix="arXiv",
+	primaryClass="cs.CL",
+	url="https://arxiv.org/abs/2410.12837" 
+}
+@article{lewis2019bart,
+	title="BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+	author="Lewis, Mike and Liu, Yinhan and Goyal, Naman and Ghazvininejad, Marjan and Mohamed, Abdelrahman and Levy, Omer and Stoyanov, Ves and Zettlemoyer, Luke",
+	journal="arXiv preprint arXiv:1910.13461",
+	year="2019"
+}
+@misc{radford2021learningtransferablevisualmodels,
+	title={Learning Transferable Visual Models From Natural Language Supervision}, 
+	author={Alec Radford and Jong Wook Kim and Chris Hallacy and Aditya Ramesh and Gabriel Goh and Sandhini Agarwal and Girish Sastry and Amanda Askell and Pamela Mishkin and Jack Clark and Gretchen Krueger and Ilya Sutskever},
+	year={2021},
+	eprint={2103.00020},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	url={https://arxiv.org/abs/2103.00020}, 
+}
+@misc{chen2021evaluatinglargelanguagemodels,
+	title="Evaluating Large Language Models Trained on Code", 
+	author="Mark Chen and Jerry Tworek and Heewoo Jun and Qiming Yuan and Henrique Ponde de Oliveira Pinto and Jared Kaplan and Harri Edwards and Yuri Burda and Nicholas Joseph and Greg Brockman and Alex Ray and Raul Puri and Gretchen Krueger and Michael Petrov and Heidy Khlaaf and Girish Sastry and Pamela Mishkin and Brooke Chan and Scott Gray and Nick Ryder and Mikhail Pavlov and Alethea Power and Lukasz Kaiser and Mohammad Bavarian and Clemens Winter and Philippe Tillet and Felipe Petroski Such and Dave Cummings and Matthias Plappert and Fotios Chantzis and Elizabeth Barnes and Ariel Herbert-Voss and William Hebgen Guss and Alex Nichol and Alex Paino and Nikolas Tezak and Jie Tang and Igor Babuschkin and Suchir Balaji and Shantanu Jain and William Saunders and Christopher Hesse and Andrew N. Carr and Jan Leike and Josh Achiam and Vedant Misra and Evan Morikawa and Alec Radford and Matthew Knight and Miles Brundage and Mira Murati and Katie Mayer and Peter Welinder and Bob McGrew and Dario Amodei and Sam McCandlish and Ilya Sutskever and Wojciech Zaremba",
+	year="2021",
+	eprint="2107.03374",
+	archivePrefix="arXiv",
+	primaryClass="cs.LG",
+	url="https://arxiv.org/abs/2107.03374", 
 }
 %%============================================================================%%
 %% while using chicago reference style, both abbreviated and expanded form of %%

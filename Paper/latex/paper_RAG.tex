@@ -131,7 +131,7 @@
 \section{Introduction}\label{sec1}
 
 Large Language Models (LLMs) have emerged as state-of-the-art artificial intelligence systems that excel at understanding and generating human-like text,Built on deep learning architectures,particularly transformers \cite{vaswani2017attention}.these models are trained on massive datasets to capture linguistic patterns and semantic relationships showcasing impressive adaptability across diverse tasks such as text generation, summarization, question answering.Notable examples of LLMs include OpenAI GPT series\cite{brown2020language} , Google BERT\cite{devlin2018bert} and T5 \cite{raffel2020exploring} which have set new benchmarks in NLP tasks .\\
-Despite their impressive capabilities,LLMs suffer from hallucination where they confidently generate factually incorrect or entirely fabricated information. This poses challenges in applications requiring high accuracy, Additionally significant limitation of LLMs is their static nature, as they are trained on fixed datasets and cannot dynamically update their knowledge which makes them prone to generating outdated or inconsistent responses, especially for time-sensitive or evolving data\cite{Mousavi2025}. 
+Despite their impressive capabilities,LLMs suffer from hallucination\cite{ji2023survey} where they confidently generate factually incorrect or entirely fabricated information. This poses challenges in applications requiring high accuracy like knowledge-intensive tasks\cite{kandpal2023large} , Additionally significant limitation of LLMs is their static nature, as they are trained on fixed datasets\cite{bender2021dangers} and cannot dynamically update their knowledge which makes them prone to generating outdated or inconsistent responses, especially for time-sensitive or evolving data\cite{Mousavi2025}. 
 
 
 Researchers have explored various approaches To address this limitation, including transfer learning\cite{zhuang2020comprehensive}a technique that improves pre-trained models performance in new tasks by transferring knowledge from related tasks.and fine-tuning \cite{Howard2018} which adapt pre-trained models to specific tasks or domains. While these methods improve performance on targeted tasks,they are computationally expensive and impractical for real-time knowledge updates. A promising alternative is Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval}.which integrates real-time retrieval from external knowledge sources with generative models.
@@ -145,12 +145,10 @@ Current approaches, such as static K selection \cite{lewis2020retrieval} involve
 In this paper, we investigate the problem of selecting K in RAG and propose a novel approach to dynamically adjust K based on relevance thresholds and a Mixture of Logits (MoL)\cite{ding2024efficient} scoring mechanism, ensuring efficient and context-sensitive candidate selection while reducing computational costs. By using adaptive thresholds the algorithm improves the relevance of retrieved documents, refining the set to include only the most contextually appropriate matches. Unlike traditional approaches, it adapts to the query and dataset characteristics, making it more flexible for diverse contexts. Furthermore, its design for handling large datasets ensures scalable and precise retrieval, which is crucial for RAG systems working with extensive corpora.
 
 Our contributions in this paper are the following :
-\begin{itemize}
-	\item we review existing approaches to Retrieval-Augmented Generation (RAG), with a specific focus on static , dynamic and Hybrid selection strategies. We critically analyze the strengths and limitations of these methods, identifying key gaps in their design and performance. These gaps motivate the need for an improved approach that addresses the challenges of both static and dynamic relevance in retrieval-augmented systems.
-	\item Overview of Retrieval-Augmented Generation (RAG) in This section We provide a detailed explanation of the RAG framework, including its components and how it operates. Key concepts, such as retrievers, generators, and augmented are discussed to establish the foundational context.
-	\item Proposed Solution: This section introduces our novel hybrid dynamic  selection algorithm. We describe its methodology, explain its design, and discuss how it overcomes the limitations of existing static and dynamic approaches. The benefits of this approach, particularly in improving retrieval accuracy and computational efficiency, are emphasized.
-	\item Results : We present experimental results to demonstrate the effectiveness of our hybrid dynamic  selection algorithm. Comparisons with baseline method highlight its superiority in terms of retrieval performance and adaptability to diverse query complexities.
-\end{itemize}
+we review existing approaches to Retrieval-Augmented Generation (RAG), with a specific focus on static , dynamic and Hybrid selection strategies. We critically analyze the strengths and limitations of these methods, identifying key gaps in their design and performance. These gaps motivate the need for an improved approach that addresses the challenges of both static and dynamic relevance in retrieval-augmented systems. \\
+Overview of Retrieval-Augmented Generation (RAG) in This section We provide a detailed explanation of the RAG framework, including its components and how it operates. Key concepts, such as retrievers, generators, and augmented are discussed to establish the foundational context.\\
+Proposed Solution: This section introduces our novel hybrid dynamic  selection algorithm. We describe its methodology, explain its design, and discuss how it overcomes the limitations of existing static and dynamic approaches. The benefits of this approach, particularly in improving retrieval accuracy and computational efficiency, are emphasized.\\
+Results :in This section We present experimental results to demonstrate the effectiveness of our hybrid dynamic  selection algorithm. Comparisons with baseline method highlight its superiority in terms of retrieval performance and adaptability to diverse query complexities.
 
 
 \section{Related works}\label{sec2}
@@ -167,18 +165,44 @@ However, these methods come with limitations.They often introduce computational 
 \textbf{Hybrid Approaches}
 
 Hybrid approaches combine elements of static and dynamic K-selection to achieve a balance between simplicity and adaptability.These systems might use a static 
-k as a baseline but dynamically adjust such as STAYKATE (Static-Dynamic Hybrid Selection)\cite{Zhu2024} Combines static (active learning-inspired) and dynamic (KATE-based) example selection strategies to create STAYKATE. Another example is DR-RAG (Dynamic Relevance for Retrieval-Augmented Generation)\cite{Hei2024} retrieval framework designed to improve the relevance between queries and documents. In the first stage, a similarity matching method retrieves an initial set of documents. In the second stage, a deeper analysis is performed to identify dynamic-relevant documents, supported by a classifier that filters out irrelevant ones . however hybrid methods may face challenges in determining when to apply static or dynamic k-selection effectively, leading to potential trade-offs between retrieval accuracy and system efficiency. These limitations highlight the ongoing need for robust mechanisms that dynamically and efficiently adapt k to the unique characteristics of each query and dataset.
+k as a baseline but dynamically adjust such as STAYKATE (Static-Dynamic Hybrid Selection)\cite{Zhu2024} Combines static (active learning-inspired) and dynamic (KATE-based) example selection strategies to create STAYKATE. Another example is DR-RAG (Dynamic Relevance for Retrieval-Augmented Generation)\cite{hei2024drragapplyingdynamicdocument} retrieval framework designed to improve the relevance between queries and documents. In the first stage, a similarity matching method retrieves an initial set of documents. In the second stage, a deeper analysis is performed to identify dynamic-relevant documents, supported by a classifier that filters out irrelevant ones . however hybrid methods may face challenges in determining when to apply static or dynamic k-selection effectively, leading to potential trade-offs between retrieval accuracy and system efficiency. These limitations highlight the ongoing need for robust mechanisms that dynamically and efficiently adapt k to the unique characteristics of each query and dataset.
 
-Our method leverages adaptive thresholds to dynamically refine the set of retrieved documents, ensuring that only the most contextually relevant matches are included. Unlike traditional static or fixed 
-K-selection methods, which apply a uniform retrieval strategy across all queries, our approach adapts to the specific characteristics of both the query and the dataset. This flexibility allows the algorithm to better accommodate diverse contexts, enhancing the relevance and quality of retrieval results.Through its adaptive nature, the method not only improves retrieval accuracy but also minimizes computational overhead by focusing resources on the most pertinent results. 
-\subsection{section1}\label{subsec2}
+Our method leverages adaptive thresholds to dynamically refine the list of retrieved documents, to make sure that only the most contextually relevant matches are included. In contrast to traditional static or fixed K-selection techniques, which employ a consistent retrieval strategy for every query, our approach adapts to the specific characteristics of both the query and the dataset. This flexibility allows the algorithm to better accommodate diverse contexts, enhancing the relevance and quality of retrieval results.Through its adaptive nature, the method not only improves retrieval accuracy but also minimizes computational overhead by focusing resources on the most pertinent results. 
 
-\section{section1}\label{sec3}
-\subsection{section1}\label{subsec2}
-\subsection{section1}\label{subsec2}
+\section{Overview of Retrieval-Augmented Generation }\label{sec3}
+Retrieval-Augmented Generation (RAG) is a method designed to enhance the performance of large language models (LLMs) by integrating external, reliable knowledge sources into their response generation process\cite{awsRAG}. RAG combines search capabilities with LLM prompting. The process involves feeding both the userss query and the relevant information retrieved by a search algorithm into the LLMs prompt\cite{ilin2023advancedrag}, enabling the model to generate answers based on the provided context.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{rag.PNG}
+	\caption{RAG system component }\label{fig1}
+\end{figure}
+As illustrated in Figure 1, the RAG system is built around two main components:the retriever and the generator. The retriever?s role is to find relevant information from a pre-built data store, while the generator utilizes this retrieved data to produce coherent and contextually appropriate content. The overall RAG process operates as follows:
+\subsection{Retrieval in RAG Systems}\label{subsec2}
+
+Retrieval is the process of identifying and gathering information system resources that match a specific information need. To break it down, imagine these resources as a key-value store, represented as pairs:
+
+\[
+\{(k_i, v_i)\}_{i=1}^{N}
+\]
+
+where each key \( k_i \) is linked to a corresponding value \( v_i \) (often, the key and value are the same). When a query \( q \) is provided, the goal is to find the top-\( k \) keys that are most similar to the query using a similarity function \( s \), and then retrieve their associated values.
+
+Depending on the similarity function used, retrieval methods can be grouped into categories such as sparse retrieval, dense retrieval, and others. For the widely used sparse and dense retrieval approaches, the process typically involves two main steps:  \\
+1. Encoding each object into a specific representation.\\
+2. Building an index to organize the data for efficient searching .
+
+This structured approach ensures that the most relevant information is retrieved quickly and accurately\cite{zhao2024retrievalaugmentedgenerationaigeneratedcontent}.
+
+\subsection{Generator  in RAG Systems}\label{subsec2}
+In Retrieval-Augmented Generation (RAG) systems, the generator is a key component responsible for crafting the final output. It works by combining the retrieved information with the users input query to produce a well-structured and contextually relevant response \cite{gupta2024comprehensivesurveyretrievalaugmentedgeneration}.
+
+Once the retriever fetches relevant data from external sources,the generator processes and integrates this information into a well-structured and meaningful answer. At the core of this process is a Large Language Model (LLM), which ensures that the generated text is not only fluent and accurate but also remains relevant to the original query.
+
+In various generative tasks, different models are selected based on the specific requirements: Models like BART\cite{lewis2019bart} and GPT\cite{brown2020language}are commonly used for tasks such as text summarization and translation ,Vision-Language Models (VLMs) \cite{radford2021learningtransferablevisualmodels} are employed to generate textual descriptions from images , for ext-to-Code Generation: Models like OpenAIs Codex \cite{chen2021evaluatinglargelanguagemodels} are designed to translate natural language prompts into executable code.
 
 
-\section{section1n}\label{sec3}
+\section{proposed Slution}\label{sec3}
 
 
 \section{Experimental Results}\label{sec3}
