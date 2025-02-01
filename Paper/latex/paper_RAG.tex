@@ -175,9 +175,9 @@ Retrieval-Augmented Generation (RAG) is a method designed to enhance the perform
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\textwidth]{rag.PNG}
-	\caption{RAG system component }\label{fig1}
+	\caption{RAG system component }\label{rag.PNG}
 \end{figure}
-As illustrated in Figure 1, the RAG system is built around two main components:the retriever and the generator. The retriever?s role is to find relevant information from a pre-built data store, while the generator utilizes this retrieved data to produce coherent and contextually appropriate content. The overall RAG process operates as follows:
+As illustrated in figure \ref{rag.PNG}, the RAG system is built around two main components:the retriever and the generator. The retriever?s role is to find relevant information from a pre-built data store, while the generator utilizes this retrieved data to produce coherent and contextually appropriate content. The overall RAG process operates as follows:
 \subsection{Retrieval in RAG Systems}\label{subsec2}
 
 Retrieval is the process of identifying and gathering information system resources that match a specific information need. To break it down, imagine these resources as a key-value store, represented as pairs:
@@ -186,7 +186,7 @@ Retrieval is the process of identifying and gathering information system resourc
 \{(k_i, v_i)\}_{i=1}^{N}
 \]
 
-where each key \( k_i \) is linked to a corresponding value \( v_i \) (often, the key and value are the same). When a query \( q \) is provided, the goal is to find the top-\( k \) keys that are most similar to the query using a similarity function \( s \), and then retrieve their associated values.
+where each key \( k_i \) is linked to a corresponding value \( v_i \) (often, the key and value are the same). When a query \( q \) is provided, the goal is to find the top-\( k \) keys that are most similar to the query using a similarity function \( s \), and then retrieve their associated values\cite{gupta2024comprehensivesurveyretrievalaugmentedgeneration}.
 
 Depending on the similarity function used, retrieval methods can be grouped into categories such as sparse retrieval, dense retrieval, and others. For the widely used sparse and dense retrieval approaches, the process typically involves two main steps:  \\
 1. Encoding each object into a specific representation.\\
@@ -195,7 +195,7 @@ Depending on the similarity function used, retrieval methods can be grouped into
 This structured approach ensures that the most relevant information is retrieved quickly and accurately\cite{zhao2024retrievalaugmentedgenerationaigeneratedcontent}.
 
 \subsection{Generator  in RAG Systems}\label{subsec2}
-In Retrieval-Augmented Generation (RAG) systems, the generator is a key component responsible for crafting the final output. It works by combining the retrieved information with the users input query to produce a well-structured and contextually relevant response \cite{gupta2024comprehensivesurveyretrievalaugmentedgeneration}.
+In Retrieval-Augmented Generation (RAG) systems, the generator is a key component responsible for crafting the final output. It works by combining the retrieved information with the users input query to produce a well-structured and contextually relevant response .
 
 Once the retriever fetches relevant data from external sources,the generator processes and integrates this information into a well-structured and meaningful answer. At the core of this process is a Large Language Model (LLM), which ensures that the generated text is not only fluent and accurate but also remains relevant to the original query.
 
@@ -203,63 +203,115 @@ In various generative tasks, different models are selected based on the specific
 
 
 \section{proposed Slution}\label{sec3}
+In traditional candidate selection systems, the reliance on static or fixed top-K retrieval lead to suboptimal retrieval performance, especially in scenarios where the relevance distribution of candidates is highly variable. To address these limitations, we propose Dynamic Candidate Selection, a novel algorithm that adaptively refines the candidate selection process by leveraging component-level embeddings and a Mixture of Logits (MoL) scoring mechanism.
 
 
+The \textbf{Mixture of Logits (MoL)}\cite{zhai2023revisiting} methode provides a flexible and adaptive mechanism for computing similarity scores between queries and items. Given a query \( q \) and an item \( x \), MoL assumes that both are mapped to \( P \) groups of low-rank embeddings, denoted as \( f_p(q) \) and \( g_p(x) \), respectively. These embeddings are parameterized by neural networks that extract features from the query and item. The similarity between \( q \) and \( x \) is computed as a weighted sum of the inner products of these embeddings, where the weights \( \pi_p(q, x) \)\cite{zhai2023revisiting} are adaptive gating parameters constrained to sum to 1:
+\[
+\text{Similarity}(q, x) = \sum_{p=1}^P \pi_p(q, x) \cdot \langle f_p(q), g_p(x) \rangle.
+\]
+This formulation allows MoL to capture complex relationships between queries and items, making it particularly suitable for dynamic candidate selection tasks.
+
+
+Inspired by the approach in\cite{ding2024efficient}, we introduce an adaptive threshold mechanism (\textbf{Dynamic Candidate Selection}), the MoL framework is employed to refine the candidate retrieval process. Specifically:
+\begin{enumerate}
+	\item \textbf{Component-Level Embeddings:}  
+	 generate component-level embeddings for all items in \( X \). These embeddings allow efficient similarity computations during retrieval.
+	\begin{equation*}
+		X_p \leftarrow \{ g_p(x) \mid x \in X \}
+	\end{equation*}
+	
+	\item \textbf{Dynamic Threshold Adjustment:}  
+	To refine retrieval quality, we compute Mixture of Logits (MoL) scores for each candidate \( x \in G \).  
+	The adaptive gating weights \( \pi_p(q, x) \) enable the algorithm to dynamically adjust the retrieval threshold \( T_{\text{adaptive}} \) based on the computed MoL scores.
+	\begin{equation*}
+		\varphi(q, x) = \sum_{p=1}^{P} \pi_p(q, x) \cdot \langle f_p(q), g_p(x) \rangle
+	\end{equation*}
+	\begin{equation*}
+		T_{\text{adaptive}} = \min \{ s \mid s \in G \}
+	\end{equation*}
+	
+	\item \textbf{Refinement and Top-K Selection:}  
+	Additional relevant candidates are retrieved using the adaptive threshold \( T_{\text{adaptive}} \), expanding the candidate set \( G' \). The algorithm then selects the most relevant top-k results by sorting \( G' \) based on MoL scores.
+	\begin{equation*}
+		G' \leftarrow G \cup \{ x \mid s_p \geq T_{\text{adaptive}} \}
+	\end{equation*}
+	Finally, we sort candidates by MoL scores and extract the exact top-k:
+	\begin{equation*}
+		G_{\text{final}} = \text{Top-}k(G', \varphi(q, x))
+	\end{equation*}
+\end{enumerate}
+the flowchart provided in Figure~\ref{fig2} describes the step-by-step process of the proposed algorithm. It visualizes the key stages of the solution
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Flowchart_Steps.PNG}
+	\caption{Algorithm workflow. }\label{fig2}
+\end{figure}
+
+
+As shown in Algorithm~\ref{Algo1}, the retrieval process dynamically adjusts the threshold based on MoL scores.
+\begin{algorithm}
+	\caption{Hybrid Exact Top-k with Threshold-Based k Selection}\label{ALgo1}
+	\begin{algorithmic}[1]
+		\State \textbf{Input:}
+		\begin{itemize}
+			\item Query $q$
+			\item Set of items $X$
+			\item Component-level embeddings: $f_p(q)$, $g_p(x)$ for $p \in P$, $x \in X$
+			\item Initial threshold $T_{\text{init}}$
+		\end{itemize}
+		
+		\State \textbf{Output:}
+		\begin{itemize}
+			\item Exact top $k$ items based on dynamic threshold selection, $G_{\text{final}}$
+		\end{itemize}
+		
+		\State \textbf{1. Initialize:}
+		\begin{itemize}
+			\item Set $G \gets \emptyset$ \Comment{Initial candidate set}
+		\end{itemize}
+		
+		\State \textbf{2. Generate Component-Level Embeddings:}
+		\For{each component $p \in P$}
+		\State $X_p \gets \{g_p(x) \mid x \in X\}$ \Comment{Precompute embeddings}
+		\EndFor
+		
+		\State \textbf{3. Initial Candidate Retrieval:}
+		\For{each component $p \in P$}
+		\State Compute dot product scores: 
+		\[
+		S_p = \{ \langle f_p(q), g_p(x) \rangle : x \in X_p \}
+		\]
+		\State Retrieve items with scores $S_p \geq T_{\text{init}}$
+		\State Add these items to $G$
+		\EndFor
+		
+		\State \textbf{4. Adjust k Dynamically:}
+		\For{each $x \in G$}
+		\State Compute MoL scores $s = \phi(q, x)$ for each $x \in G$ using:
+		\[
+		\phi(q, x) = \sum_{p=1}^{P} \pi_p(q, x) \cdot \langle f_p(q), g_p(x) \rangle
+		\]
+		\State Set $T_{\text{adaptive}} = \min \{s : s \in G\}$
+		\EndFor
+		
+		\State \textbf{5. Refine Candidate Set with Adaptive k:}
+		\For{each component $p \in P$}
+		\State Retrieve items from $X_p$ with scores $S_p \geq T_{\text{adaptive}}$
+		\State Add these items to $G'$
+		\EndFor
+		
+		\State \textbf{6. Select Exact Top-k Items:}
+		\State Compute MoL scores for all items in $G'$
+		\State Sort $G'$ by MoL scores in descending order
+		\State Select the top $k$ items from $G'$ where $k$ is the number of items in $G'$ exceeding $T_{\text{adaptive}}$
+		
+		\State \textbf{7. Return:} $G_{\text{final}}$ \Comment{Top $k$ items from $G'$}
+	\end{algorithmic}
+\end{algorithm}
 \section{Experimental Results}\label{sec3}
 \subsection{Experiments settings}\label{subsec2}
 
-Equations in \LaTeX\ can either be inline or on-a-line by itself (``display equations''). For
-inline equations use the \verb+$...$+ commands. E.g.: The equation
-$H\psi = E \psi$ is written via the command \verb+$H \psi = E \psi$+.
-
-For display equations (with auto generated equation numbers)
-one can use the equation or align environments:
-% KAN Archecture
-%\begin{equation}
-%f(x_1, x_2, \cdots, x_n)=\sum_{q=1}^{2n+1}\Phi_q %\left( \sum_{p=1}^{n}\phi_{q, p}(x_p)\right)
-%\end{equation}
-
-\begin{equation}
-\Phi = \{\phi_{p, q}\}, \qquad p=1,2,\cdots, n_{in},\qquad q=1,2,\cdots, n_{out}
-\end{equation}
-
-\begin{equation}
-x_{l+1,j}=\sum_{i=1}^{n_l}\phi_{l, j, i}(x_{l,i}), \qquad j=1,2,\cdots n_{l+1}
-\end{equation}
-
-\begin{equation}
-\mathbf{x}_{l+1} = \begin{pmatrix}
-\phi_{l,1,1}(\cdot)& \phi_{l,1,2}(\cdot) &\cdots &\phi_{l,1,n_l}(\cdot)  \\
-\phi_{l,2,1}(\cdot)&\phi_{l,2,2}(\cdot)  & \cdots &  \phi_{l,2,n_l}(\cdot)\\
-\vdots&\vdots  &\ddots  &\vdots  \\
-\phi_{l,n_{l+1},1}(\cdot)& \phi_{l,n_{l+1},2}(\cdot) &\cdots  & \phi_{l,n_{l+1},n_l}(\cdot)
-\end{pmatrix}\mathbf{x}_{l} =\mathbf{ \Phi}_{l}\mathbf{x}_{l}
-\end{equation}
-\begin{equation}
-\mathbf{KAN(x)}=(\mathbf{\Phi}_{L-1}\circ \mathbf{\Phi}_{L-2}\circ \cdots \circ \mathbf{\Phi}_{1}\circ \mathbf{\Phi}_{0})\mathbf{x}
-\end{equation}
-% models equations
-% system 2
-\begin{equation}
-y_p(k+1) = f\big[y_p(k), y_p(k-1)\big] + u(k)
-\end{equation}
-where
-\begin{equation*}
-f\big[y_p(k), y_p(k-1)\big]=\dfrac{y_p(k)y_p(k-1)[y_p(k)+2.5]}{1+y_p^2(k)+y_p^2(k-1)}
-\end{equation*}
-
-% system 3
-\begin{equation}
-y_p(k+1) = \dfrac{y_p(k)}{1+y_p^2(k)}+ u^3(k)
-\end{equation}
-% system 4
-\begin{equation}
-y_p(k+1) = f\big[y_p(k), y_p(k-1), y_p(k-2), u(k), u(k-1)\big] 
-\end{equation}
-where
-\begin{equation*}
-f\big[x_1, x_2, x_3,x_4, x_5\big]=\dfrac{x_1x_2x_3x_5(x_3-1)+x_4}{1+x_2^2+x_3^2}
-\end{equation*}
 
 \section{Tables}\label{sec5}
 
@@ -319,23 +371,11 @@ Element 6 & 500 A & 961  & $922\pm10$  & 900 A & 1268 & $1092\pm40$ \\
 \footnotetext[1]{This is an example of table footnote.}
 \end{sidewaystable}
 
-\section{Figures}\label{sec6}
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.9\textwidth]{fig.eps}
-\caption{This is a widefig. This is an example of long caption this is an example of long caption  this is an example of long caption this is an example of long caption}\label{fig1}
-\end{figure}
 
-In case of double column layout, the above format puts figure captions/images to single column width. To get spanned images, we need to provide \verb+\begin{figure*}+ \verb+...+ \verb+\end{figure*}+.
 
-For sample purpose, we have included the width of images in the optional argument of \verb+\includegraphics+ tag. Please ignore this. 
 
-\section{Algorithms, Program codes and Listings}\label{sec7}
 
-You may refer above listed package documentations for more details before setting \verb+algorithm+ environment. For program codes, the ``verbatim'' package is required and the command to be used is \verb+\begin{verbatim}+ \verb+...+ \verb+\end{verbatim}+. 
-
-Similarly, for \verb+listings+, use the \verb+listings+ package. \verb+\begin{lstlisting}+ \verb+...+ \verb+\end{lstlisting}+ is used to set environments similar to \verb+verbatim+ environment. Refer to the \verb+lstlisting+ package documentation for more details.
 
 A fast exponentiation procedure:
 
@@ -358,30 +398,6 @@ proc expt($x,n$) $\equiv$
 end
 \end{lstlisting}
 
-\begin{algorithm}
-\caption{Calculate $y = x^n$}\label{algo1}
-\begin{algorithmic}[1]
-\Require $n \geq 0 \vee x \neq 0$
-\Ensure $y = x^n$ 
-\State $y \Leftarrow 1$
-\If{$n < 0$}\label{algln2}
-        \State $X \Leftarrow 1 / x$
-        \State $N \Leftarrow -n$
-\Else
-        \State $X \Leftarrow x$
-        \State $N \Leftarrow n$
-\EndIf
-\While{$N \neq 0$}
-        \If{$N$ is even}
-            \State $X \Leftarrow X \times X$
-            \State $N \Leftarrow N / 2$
-        \Else[$N$ is odd]
-            \State $y \Leftarrow y \times X$
-            \State $N \Leftarrow N - 1$
-        \EndIf
-\EndWhile
-\end{algorithmic}
-\end{algorithm}
 
 %%=============================================%%
 %% For presentation purpose, we have included  %%
@@ -413,7 +429,7 @@ Write('Pascal keywords.');
 %\verb+Figure \ref{fig1}+, for which it comes up as
 %``Figure~\ref{fig1}''. 
 
-To reference line numbers in an algorithm, consider the label declared for the line number 2 of Algorithm~\ref{algo1} is \verb+\label{algln2}+. To cross-reference it, use the command \verb+\ref{algln2}+ for which it comes up as line~\ref{algln2} of Algorithm~\ref{algo1}.
+
 
 \subsection{Details on reference citations}\label{subsec7}
 
