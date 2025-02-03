@@ -310,94 +310,95 @@ As shown in Algorithm~\ref{Algo1}, the retrieval process dynamically adjusts the
 	\end{algorithmic}
 \end{algorithm}
 \section{Experimental Results}\label{sec3}
-\subsection{Experiments settings}\label{subsec2}
+We evaluate the performance of our hybrid retrieval algorithm and the Mixture-of-Logits (MoL) approach on the next-item prediction task in recommendation systems\cite{Zhu_2018}\cite{kang2018selfattentivesequentialrecommendation}. We conducted experiments using two MovieLens datasets: ML-100K and ML-1M \cite{Harper2015}  which are widely used benchmarks for evaluating sequential recommendation models.\\
+\textbf{MovieLens-100K} \\
+100,000 ratings (1-5 scale) from 943 users on 1,682 movies\\
+Each user has rated at least 20 movies \\
+Includes user demographic information (age, gender, occupation, zip code)\\
+\textbf{MovieLens-1M} \\
+1,000,209 ratings from 6,040 users on approximately 3,900 movies \\
+Data collected from users who joined MovieLens in 2000 \\
+Represents a larger-scale recommendation scenario \\
+\subsection{ Setup }
+For both datasets, We utilize the SASRec architecture as our sequential user encoder, a model renowned for achieving state-of-the-art performance in next-item prediction tasks. This architecture processes the user's historical interaction sequence, generating embeddings that encapsulate the user's preferences at each time step. These embeddings serve as the foundation for predicting the next item in the sequence.\\
+
+The query q represents the user's state at a specific time step, derived from their interaction history. In the MoL (Mixture of Logits) framework, q is transformed into Pq
+embeddings through a multi-layer perceptron (MLP). While our hybrid algorithm does not explicitly employ an MLP for this transformation
+\subsection{Hyperparameter settings.}
+For fair comparison, we maintained consistent architectural choices and training conditions across all experiments , We conducted an extensive hyperparameter analysis comparing both approaches (Hybrid+SAS and MoL+SAS) across different architectural configurations.All experiments were performed on Google Colab using T4 GPU.We implemented the model using TensorFlow .We discuss detailed
+hyperparameter settings Table\ref{tab:100k_movies},table\ref{tab:1m_movies}
 
 
-\section{Tables}\label{sec5}
-
-Tables can be inserted via the normal table and tabular environment. To put
-footnotes inside tables you should use \verb+\footnotetext[]{...}+ tag.
-The footnote appears just below the table itself (refer Tables~\ref{tab1} and \ref{tab2}). 
-For the corresponding footnotemark use \verb+\footnotemark[...]+
-
-\begin{table}[h]
-\caption{Caption text}\label{tab1}%
-\begin{tabular}{@{}llll@{}}
-\toprule
-Column 1 & Column 2  & Column 3 & Column 4\\
-\midrule
-row 1    & data 1   & data 2  & data 3  \\
-row 2    & data 4   & data 5\footnotemark[1]  & data 6  \\
-row 3    & data 7   & data 8  & data 9\footnotemark[2]  \\
-\botrule
-\end{tabular}
-\footnotetext{Source: This is an example of table footnote. This is an example of table footnote.}
-\footnotetext[1]{Example for a first table footnote. This is an example of table footnote.}
-\footnotetext[2]{Example for a second table footnote. This is an example of table footnote.}
+\begin{table}[htht]
+	\centering
+	\resizebox{\textwidth}{!}{ % Scales the table to text width
+		\begin{tabular}{lcccccccccc}
+			\toprule
+			Model & Max Seq Len & Embed Dim & Num Heads & FF Dim & Batch Size & Epochs & Val Loss & Val Accuracy \\
+			\midrule
+			Hybrid+SAS & 50  & 128  & 2 & 128  & 128 & 12 & 5.3036 & 0.1584  \\
+			MoL+SAS    & 50  & 128  & 2 & 128  & 128 & 12 & 5.3152 & 0.1582  \\
+			Hybrid+SAS & 128 & 256  & 4 & 256  & 128 & 10 & 3.6364 & 0.4301  \\
+			MoL+SAS    & 128 & 256  & 4 & 256  & 128 & 10 & 3.6374 & 0.4299 \\
+			Hybrid+SAS & 512 & 512  & 4 & 512  & 128 & 10 & 1.2808 & 0.8120 \\
+			MoL+SAS    & 512 & 512  & 4 & 512  & 128 & 10 & 1.3050 & 0.8016 \\
+			\bottomrule
+		\end{tabular}
+	}
+	\caption{Results on 100kMovies dataset}
+	\label{tab:100k_movies}
 \end{table}
 
 \begin{table}[h]
-\caption{Example of a lengthy table which is set to full textwidth}\label{tab2}
-\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcccccc}
-\toprule%
-& \multicolumn{3}{@{}c@{}}{Element 1\footnotemark[1]} & \multicolumn{3}{@{}c@{}}{Element 2\footnotemark[2]} \\\cmidrule{2-4}\cmidrule{5-7}%
-Project & Energy & $\sigma_{calc}$ & $\sigma_{expt}$ & Energy & $\sigma_{calc}$ & $\sigma_{expt}$ \\
-\midrule
-Element 3  & 990 A & 1168 & $1547\pm12$ & 780 A & 1166 & $1239\pm100$\\
-Element 4  & 500 A & 961  & $922\pm10$  & 900 A & 1268 & $1092\pm40$\\
-\botrule
-\end{tabular*}
-\footnotetext{Note: This is an example of table footnote. This is an example of table footnote this is an example of table footnote this is an example of~table footnote this is an example of table footnote.}
-\footnotetext[1]{Example for a first table footnote.}
-\footnotetext[2]{Example for a second table footnote.}
+	\centering
+	\resizebox{\textwidth}{!}{ 
+		\begin{tabular}{lcccccccccc}
+			\toprule
+			Model & Max Seq Len & Embed Dim & Num Heads & FF Dim & Batch Size & Epochs & Val Loss & Val Accuracy  \\
+			\midrule
+			Hybrid+SAS & 50  & 128  & 2 & 128  & 128 & 10 & 4.5721 & 0.1530  \\
+			MoL+SAS    & 50  & 128  & 2 & 128  & 128 & 10 & 4.5733 & 0.1526  \\
+			Hybrid+SAS & 128 & 256  & 4 & 256  & 128 & 10 & 3.4152 & 0.3680  \\
+			MoL+SAS    & 128 & 256  & 4 & 256  & 128 & 10 & 3.4671 & 0.3627  \\
+			Hybrid+SAS & 512 & 512  & 4 & 512  & 128 & 10 & 1.0275 & 0.8350  \\
+			MoL+SAS    & 512 & 512  & 4 & 512  & 128 & 10 & 1.0350 & 0.8276  \\
+			\bottomrule
+		\end{tabular}
+	}
+	\caption{Results on 1M Movies dataset}
+	\label{tab:1m_movies}
 \end{table}
 
-In case of double column layout, tables which do not fit in single column width should be set to full text width. For this, you need to use \verb+\begin{table*}+ \verb+...+ \verb+\end{table*}+ instead of \verb+\begin{table}+ \verb+...+ \verb+\end{table}+ environment. Lengthy tables which do not fit in textwidth should be set as rotated table. For this, you need to use \verb+\begin{sidewaystable}+ \verb+...+ \verb+\end{sidewaystable}+ instead of \verb+\begin{table*}+ \verb+...+ \verb+\end{table*}+ environment. This environment puts tables rotated to single column width. For tables rotated to double column width, use \verb+\begin{sidewaystable*}+ \verb+...+ \verb+\end{sidewaystable*}+.
+Both approaches demonstrate significant performance improvements as model capacity increases, with larger configurations consistently delivering better results. For instance, when increasing the model's capacity?such as expanding the (Max Sequence Length: 512, Embedding Dimension: 512, Number of Heads: 4, Feed-Forward Dimension: 512) the hybrid algorithm combined with SASRec (Hybrid+SAS) achieves notable gains, particularly in the most resource-intensive setup. On the ML-100K dataset, Hybrid+SAS reaches a score of\textbf{ 0.8120} compared to the baseline's 0.8016\textbf{0.8016}, while on ML-1M, it achieves \textbf{0.8350} versus \textbf{0.8276.} The ML-1M dataset generally benefits more from increased capacity, with the performance gap between datasets narrowing as the model scales. While smaller configurations provide a balance of efficiency and performance, the largest configuration, despite its higher computational demands, yields the best results, making it suitable for scenarios where resources are not a constraint. Both approaches show similar benefits from scaling, but Hybrid+SAS maintains a consistent edge in performance.
+\subsection{metrics }
 
-\begin{sidewaystable}
-\caption{Tables which are too long to fit, should be written using the ``sidewaystable'' environment as shown here}\label{tab3}
-\begin{tabular*}{\textheight}{@{\extracolsep\fill}lcccccc}
-\toprule%
-& \multicolumn{3}{@{}c@{}}{Element 1\footnotemark[1]}& \multicolumn{3}{@{}c@{}}{Element\footnotemark[2]} \\\cmidrule{2-4}\cmidrule{5-7}%
-Projectile & Energy	& $\sigma_{calc}$ & $\sigma_{expt}$ & Energy & $\sigma_{calc}$ & $\sigma_{expt}$ \\
-\midrule
-Element 3 & 990 A & 1168 & $1547\pm12$ & 780 A & 1166 & $1239\pm100$ \\
-Element 4 & 500 A & 961  & $922\pm10$  & 900 A & 1268 & $1092\pm40$ \\
-Element 5 & 990 A & 1168 & $1547\pm12$ & 780 A & 1166 & $1239\pm100$ \\
-Element 6 & 500 A & 961  & $922\pm10$  & 900 A & 1268 & $1092\pm40$ \\
-\botrule
-\end{tabular*}
-\footnotetext{Note: This is an example of table footnote this is an example of table footnote this is an example of table footnote this is an example of~table footnote this is an example of table footnote.}
-\footnotetext[1]{This is an example of table footnote.}
-\end{sidewaystable}
+We employ standard ranking metrics widely used in sequential recommendation:
+\textbf{Hit Rate at k (HR@k)}: Measures the proportion of cases where the target item appears in the top-k recommendations ,
+\textbf{Mean Reciprocal Rank (MRR):} Evaluates the average reciprocal of the rank at which the first relevant item is retrieved and
+\textbf{Normalized Discounted Cumulative Gain (NDCG):} Assesses the ranking quality while accounting for position importance The following table\ref{tab:results} summarizes the performance of our hybrid algorithm compared to the MoL-based approach on the MovieLens 100K,1M datasets:
+
+\begin{table}[h]
+	\centering
+	\label{tab:results}
+	\begin{tabular}{|l|c|c|c|c|c|c|}
+		\hline
+		\textbf{Model} & \textbf{HR@1} & \textbf{HR@10} & \textbf{HR@50} & \textbf{HR@200} & \textbf{MRR} & \textbf{NDCG} \\ \hline
+		\multicolumn{7}{|c|}{\textbf{MovieLens 100K}} \\ \hline
+		SASRec+Hybrid & 0.0070 & 0.0775 & 0.2606 & 0.5704 & 0.0363 & 0.1241 \\ \hline
+		SASRec+MoL    & 0.0000 & 0.0775 & 0.2887 & 0.5775 & 0.0285 & 0.1182 \\ \hline
+		\multicolumn{7}{|c|}{\textbf{MovieLens 1M}} \\ \hline
+		SASRec+Hybrid & 0.0464 & 0.1810 & 0.3819 & 0.6159 & 0.0925 & 0.1829 \\ \hline
+		SASRec+MoL    & 0.0508 & 0.1799 & 0.3896 & 0.6126 & 0.0971 & 0.1859 \\ \hline
+	\end{tabular}
+			\caption{Performance Comparison of SASRec+Hybrid and SASRec+MoL on MovieLens 100K and 1M Datasets}
+\end{table}
+
+On the ML-100K dataset, our hybrid approach shows comparable performance to MoL in terms of \textbf{HR@10 (0.0775 for both)} while achieving better results in\textbf{ MRR (0.0363 vs 0.0285)} and \textbf{NDCG (0.1241 vs 0.1182)}. The hybrid algorithm particularly excels in early position recommendations, as evidenced by the non-zero HR@1 score.
+
+On the larger ML-1M dataset, both approaches show significant improvement in performance compared to ML-100K. Our hybrid algorithm achieves slightly better \textbf{HR@10 (0.1810 vs 0.1799)} \textbf{and HR@200 (0.6159 vs 0.6126)} compared to MoL, while MoL maintains a small edge in other metrics.
 
 
-
-
-
-
-
-A fast exponentiation procedure:
-
-\lstset{texcl=true,basicstyle=\small\sf,commentstyle=\small\rm,mathescape=true,escapeinside={(*}{*)}}
-\begin{lstlisting}
-begin
-  for $i:=1$ to $10$ step $1$ do
-      expt($2,i$);  
-      newline() od                (*\textrm{Comments will be set flush to the right margin}*)
-where
-proc expt($x,n$) $\equiv$
-  $z:=1$;
-  do if $n=0$ then exit fi;
-     do if odd($n$) then exit fi;                 
-        comment: (*\textrm{This is a comment statement;}*)
-        $n:=n/2$; $x:=x*x$ od;
-     { $n>0$ };
-     $n:=n-1$; $z:=z*x$ od;
-  print($z$). 
-end
-\end{lstlisting}
-
+\newpage
 
 %%=============================================%%
 %% For presentation purpose, we have included  %%
@@ -407,42 +408,18 @@ end
 \begin{minipage}{\hsize}%
 \lstset{frame=single,framexleftmargin=-1pt,framexrightmargin=-17pt,framesep=12pt,linewidth=0.98\textwidth,language=pascal}% Set your language (you can change the language for each code-block optionally)
 %%% Start your code-block
-\begin{lstlisting}
-for i:=maxint to 0 do
-begin
-{ do nothing }
-end;
-Write('Case insensitive ');
-Write('Pascal keywords.');
-\end{lstlisting}
+
 \end{minipage}
 
-\section{Cross referencing}\label{sec8}
-
-%Environments such as figure, table, equation and align can have a label
-%declared via the \verb+\label{#label}+ command. For figures and table
-%environments use the \verb+\label{}+ command inside or just
-%below the \verb+\caption{}+ command. You can then use the
-%\verb+\ref{#label}+ command to cross-reference them. As an example, consider
-%the label declared for Figure~\ref{fig1} which is
-%\verb+\label{fig1}+. To cross-reference it, use the command 
-%\verb+Figure \ref{fig1}+, for which it comes up as
-%``Figure~\ref{fig1}''. 
 
 
 
-\subsection{Details on reference citations}\label{subsec7}
-
-Standard \LaTeX\ permits only numerical citations. To support both numerical and author-year citations this template uses \verb+natbib+ \LaTeX\ package. For style guidance please refer to the template user manual.
 
 %Here is an example for \verb+\cite{...}+: \cite{bib1}. Another example for %\verb+\citep{...}+: \citep{bib2}. For author-year citation mode, \verb+\cite{...}+ %prints Jones et al. (1990) and \verb+\citep{...}+ prints (Jones et al., 1990).
 
 %All cited bib entries are printed at the end of this article: \cite{bib3}, %\cite{bib4}, \cite{bib5}, \cite{bib6}, \cite{bib7}, \cite{bib8}, \cite{bib9}, %\cite{bib10}, \cite{bib11}, \cite{bib12} and \cite{bib13}.
 
 
-\section{Examples for theorem like environments}\label{sec10}
-
-For theorem like environments, we require \verb+amsthm+ package. There are three types of predefined theorem styles exists---\verb+thmstyleone+, \verb+thmstyletwo+ and \verb+thmstylethree+ 
 
 %%=============================================%%
 %% For presentation purpose, we have included  %%
@@ -457,9 +434,6 @@ For theorem like environments, we require \verb+amsthm+ package. There are three
 \end{tabular}
 
 
-\section{Discussion}\label{sec12}
-
-Discussions should be brief and focused. In some disciplines use of Discussion or `Conclusion' is interchangeable. It is not mandatory to use both. Some journals prefer a section `Results and Discussion' followed by a section `Conclusion'. Please refer to Journal-level guidance for any specific requirements. 
 
 \section{Conclusion}\label{sec13}
 
