@@ -1,4 +1,4 @@
-%Version 3 October 2023
+	%Version 3 October 2023
 % See section 11 of the User Manual for version history
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -325,11 +325,9 @@ For both datasets, We utilize the SASRec architecture as our sequential user enc
 The query q represents the user's state at a specific time step, derived from their interaction history. In the MoL (Mixture of Logits) framework, q is transformed into Pq
 embeddings through a multi-layer perceptron (MLP). While our hybrid algorithm does not explicitly employ an MLP for this transformation
 \subsection{Hyperparameter settings.}
-For fair comparison, we maintained consistent architectural choices and training conditions across all experiments , We conducted an extensive hyperparameter analysis comparing both approaches (Hybrid+SAS and MoL+SAS) across different architectural configurations.All experiments were performed on Google Colab using T4 GPU.We implemented the model using TensorFlow .We discuss detailed
+For fair comparison, we maintained consistent architectural choices and training conditions across all experiments , We conducted an extensive hyperparameter analysis comparing both approaches (Hybrid+SAS and MoL+SAS) across different architectural configurations.All experiments were pmplemented in TensorFlow and trained on a Google Colab environment with a T4 GPU. We use the Adam optimizer with a learning rate of 0.001. For the hybrid algorithm, we initialize the threshold (Tinit) to 0.3 and adaptively adjust it during training. .We discuss detailed
 hyperparameter settings Table\ref{tab:100k_movies},table\ref{tab:1m_movies}
-
-
-\begin{table}[htht]
+\begin{table}[h]
 	\centering
 	\resizebox{\textwidth}{!}{ % Scales the table to text width
 		\begin{tabular}{lcccccccccc}
@@ -368,15 +366,14 @@ hyperparameter settings Table\ref{tab:100k_movies},table\ref{tab:1m_movies}
 	\caption{Results on 1M Movies dataset}
 	\label{tab:1m_movies}
 \end{table}
-
-Both approaches demonstrate significant performance improvements as model capacity increases, with larger configurations consistently delivering better results. For instance, when increasing the model's capacity?such as expanding the (Max Sequence Length: 512, Embedding Dimension: 512, Number of Heads: 4, Feed-Forward Dimension: 512) the hybrid algorithm combined with SASRec (Hybrid+SAS) achieves notable gains, particularly in the most resource-intensive setup. On the ML-100K dataset, Hybrid+SAS reaches a score of\textbf{ 0.8120} compared to the baseline's 0.8016\textbf{0.8016}, while on ML-1M, it achieves \textbf{0.8350} versus \textbf{0.8276.} The ML-1M dataset generally benefits more from increased capacity, with the performance gap between datasets narrowing as the model scales. While smaller configurations provide a balance of efficiency and performance, the largest configuration, despite its higher computational demands, yields the best results, making it suitable for scenarios where resources are not a constraint. Both approaches show similar benefits from scaling, but Hybrid+SAS maintains a consistent edge in performance.
+\newpage
+Both approaches demonstrate significant performance improvements as model capacity increases, with larger configurations consistently delivering better results. For instance, when increasing the model's capacity?such as expanding the (Max Sequence Length: 512, Embedding Dimension: 512, Number of Heads: 4, Feed-Forward Dimension: 512) the hybrid algorithm combined with SASRec (Hybrid+SAS) achieves notable gains, particularly in the most resource-intensive setup. On the ML-100K dataset, Hybrid+SAS reaches a score of\textbf{ 0.8120} compared to the baseline's \textbf{0.8016}, while on ML-1M, it achieves \textbf{0.8350} versus \textbf{0.8276.} The ML-1M dataset generally benefits more from increased capacity, with the performance gap between datasets narrowing as the model scales. While smaller configurations provide a balance of efficiency and performance, the largest configuration, despite its higher computational demands, yields the best results, making it suitable for scenarios where resources are not a constraint. Both approaches show similar benefits from scaling, but Hybrid+SAS maintains a consistent edge in performance.
 \subsection{metrics }
 
 We employ standard ranking metrics widely used in sequential recommendation:
 \textbf{Hit Rate at k (HR@k)}: Measures the proportion of cases where the target item appears in the top-k recommendations ,
 \textbf{Mean Reciprocal Rank (MRR):} Evaluates the average reciprocal of the rank at which the first relevant item is retrieved and
 \textbf{Normalized Discounted Cumulative Gain (NDCG):} Assesses the ranking quality while accounting for position importance The following table\ref{tab:results} summarizes the performance of our hybrid algorithm compared to the MoL-based approach on the MovieLens 100K,1M datasets:
-
 \begin{table}[h]
 	\centering
 	\label{tab:results}
@@ -392,14 +389,13 @@ We employ standard ranking metrics widely used in sequential recommendation:
 	\end{tabular}
 			\caption{Performance Comparison of SASRec+Hybrid and SASRec+MoL on MovieLens 100K and 1M Datasets}
 \end{table}
-
+\newpage
 On the ML-100K dataset, our hybrid approach shows comparable performance to MoL in terms of \textbf{HR@10 (0.0775 for both)} while achieving better results in\textbf{ MRR (0.0363 vs 0.0285)} and \textbf{NDCG (0.1241 vs 0.1182)}. The hybrid algorithm particularly excels in early position recommendations, as evidenced by the non-zero HR@1 score.
 
-On the larger ML-1M dataset, both approaches show significant improvement in performance compared to ML-100K. Our hybrid algorithm achieves slightly better \textbf{HR@10 (0.1810 vs 0.1799)} \textbf{and HR@200 (0.6159 vs 0.6126)} compared to MoL, while MoL maintains a small edge in other metrics.
+On the larger ML-1M dataset, both approaches show significant improvement in performance compared to ML-100K. Our hybrid algorithm achieves slightly better \textbf{HR@10 (0.1810 vs 0.1799)} \textbf{and HR@200 (0.6159 vs 0.6126)} compared to MoL, while MoL maintains a small edge in other metrics.\\
 
 
-\newpage
-
+The results demonstrate that our hybrid algorithm effectively leverages both sequential user behavior and item metadata to improve recommendation quality. The adaptive MoL threshold allows the model to dynamically refine candidate items during training, leading to better performance. The improvements are consistent across both datasets, highlighting the robustness of our approach.
 %%=============================================%%
 %% For presentation purpose, we have included  %%
 %% \bigskip command. Please ignore this.       %%
@@ -411,66 +407,24 @@ On the larger ML-1M dataset, both approaches show significant improvement in per
 
 \end{minipage}
 
-
-
-
-
 %Here is an example for \verb+\cite{...}+: \cite{bib1}. Another example for %\verb+\citep{...}+: \citep{bib2}. For author-year citation mode, \verb+\cite{...}+ %prints Jones et al. (1990) and \verb+\citep{...}+ prints (Jones et al., 1990).
 
 %All cited bib entries are printed at the end of this article: \cite{bib3}, %\cite{bib4}, \cite{bib5}, \cite{bib6}, \cite{bib7}, \cite{bib8}, \cite{bib9}, %\cite{bib10}, \cite{bib11}, \cite{bib12} and \cite{bib13}.
-
-
-
 %%=============================================%%
 %% For presentation purpose, we have included  %%
 %% \bigskip command. Please ignore this.       %%
 %%=============================================%%
-\bigskip
-\begin{tabular}{|l|p{19pc}|}
-\hline
-\verb+thmstyleone+ & Numbered, theorem head in bold font and theorem text in italic style \\\hline
-\verb+thmstyletwo+ & Numbered, theorem head in roman font and theorem text in italic style \\\hline
-\verb+thmstylethree+ & Numbered, theorem head in bold font and theorem text in roman style \\\hline
-\end{tabular}
-
-
 
 \section{Conclusion}\label{sec13}
 
-Conclusions may be used to restate your hypothesis or research question, restate your major findings, explain the relevance and the added value of your work, highlight any limitations of your study, describe future directions for research and recommendations. 
+Choosing the right value for K in retrieval-based systems is a significant challenge, as it directly impacts both the efficiency and accuracy of information retrieval. While using a fixed K is straightforward, it often fails to adapt to the varying complexities of different queries. This can result in either missing important information or retrieving too much irrelevant data, which adds noise to the results. On the other hand, dynamically adjusting K offers greater flexibility but comes with its own set of challenges, such as increased computational costs and inconsistencies in determining the optimal retrieval size.\\
+To address these limitations, we introduced a hybrid dynamic K selection strategy that strikes a balance between adaptability and efficiency. Our approach adjusts K based on the unique characteristics of each query while keeping computational demands manageable. This method has shown promising results, improving retrieval performance by minimizing unnecessary noise and ensuring that critical information is consistently captured.\\
+Future work can explore enhancing our model with learning-based retrieval strategie such as reinforcement learning or attention mechanisms?could refine the dynamic selection of K Additionally, testing our approach in real-world scenarios and conducting large-scale evaluations across diverse domains will help validate its robustness and adaptability in various knowledge bases and retrieval settings.
 
-In some disciplines use of Discussion or 'Conclusion' is interchangeable. It is not mandatory to use both. Please refer to Journal-level guidance for any specific requirements. 
 
-\backmatter
 
-\bmhead{Supplementary information}
 
-If your article has accompanying supplementary file/s please state so here. 
-
-Authors reporting data from electrophoretic gels and blots should supply the full unprocessed scans for key as part of their Supplementary information. This may be requested by the editorial team/s if it is missing.
-
-Please refer to Journal-level guidance for any specific requirements.
-
-\bmhead{Acknowledgements}
-
-Acknowledgements are not compulsory. Where included they should be brief. Grant or contribution numbers may be acknowledged.
-
-Please refer to Journal-level guidance for any specific requirements.
-
-\section*{Declarations}
-
-Some journals require declarations to be submitted in a standardised format. Please check the Instructions for Authors of the journal to which you are submitting to see if you need to complete this section. If yes, your manuscript must contain the following sections under the heading `Declarations':
-
-\begin{itemize}
-\item Funding
-\item Conflict of interest/Competing interests (check journal-specific guidelines for which heading to use)
-\item Ethics approval and consent to participate
-\item Consent for publication
-\item Data availability 
-\item Materials availability
-\item Code availability 
-\item Author contribution
-\end{itemize}
+\newpage
 
 %%===================================================%%
 %% For presentation purpose, we have included        %%
