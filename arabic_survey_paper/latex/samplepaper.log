@@ -1,0 +1,494 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.27)  15 FEB 2025 20:33
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./samplepaper.tex
+(samplepaper.tex
+LaTeX2e <2024-11-01> patch level 1
+L3 programming layer <2024-12-25>
+(llncs.cls
+Document Class: llncs 2022/01/12 v2.21 
+ LaTeX document class for Lecture Notes in Computer Science
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
+\c@tracingmulticols=\count270
+\mult@box=\box52
+\multicol@leftmargin=\dimen142
+\c@unbalance=\count271
+\c@collectmore=\count272
+\doublecol@number=\count273
+\multicoltolerance=\count274
+\multicolpretolerance=\count275
+\full@width=\dimen143
+\page@free=\dimen144
+\premulticols=\dimen145
+\postmulticols=\dimen146
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box53
+\last@line=\box54
+\mc@boxedresult=\box55
+\maxbalancingoverflow=\dimen147
+\mult@rightbox=\box56
+\mult@grightbox=\box57
+\mult@firstbox=\box58
+\mult@gfirstbox=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\c@minrows=\count276
+\c@columnbadness=\count277
+\c@finalcolumnbadness=\count278
+\last@try=\dimen148
+\multicolovershoot=\dimen149
+\multicolundershoot=\dimen150
+\mult@nat@firstbox=\box96
+\colbreak@box=\box97
+\mc@col@check@num=\count279
+)
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\aliascnt.st
+y
+Package: aliascnt 2018/09/07 v1.5 Alias counters (HO)
+)
+\c@chapter=\count280
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 362.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 363.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 364.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 365.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 366.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 367.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 368.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 369.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 370.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 371.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
+\tocchpnum=\dimen151
+\tocsecnum=\dimen152
+\tocsectotal=\dimen153
+\tocsubsecnum=\dimen154
+\tocsubsectotal=\dimen155
+\tocsubsubsecnum=\dimen156
+\tocsubsubsectotal=\dimen157
+\tocparanum=\dimen158
+\tocparatotal=\dimen159
+\tocsubparanum=\dimen160
+\@tempcntc=\count281
+\fnindent=\dimen161
+\c@@inst=\count282
+\c@@auth=\count283
+\c@auco=\count284
+\instindent=\dimen162
+\authrun=\box98
+\authorrunning=\toks17
+\tocauthor=\toks18
+\titrun=\box99
+\titlerunning=\toks19
+\toctitle=\toks20
+\c@theorem=\count285
+\c@case=\count286
+\c@conjecture=\count287
+\c@corollary=\count288
+\c@definition=\count289
+\c@example=\count290
+\c@exercise=\count291
+\c@lemma=\count292
+\c@note=\count293
+\c@problem=\count294
+\c@property=\count295
+\c@proposition=\count296
+\c@question=\count297
+\c@solution=\count298
+\c@remark=\count299
+\headlineindent=\dimen163
+) (C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
+y
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.st
+y
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphic
+s.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.
+def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen164
+\Gin@req@width=\dimen165
+)
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
+
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
+fg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.l
+tx))
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
+pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count300
+\l__pdf_internal_box=\box100
+) (samplepaper.aux)
+\openout1 = `samplepaper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
+.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count301
+\scratchdimen=\dimen166
+\scratchbox=\box101
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen167
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks23
+)
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
+f-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sy
+s.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 45.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 45.
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/bx/n/9 Addressed Chal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 Semantic Em-bed-dings
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+\T1/cmr/m/n/9 for Ara-bic Re-trieval
+ []
+
+
+Underfull \hbox (badness 4454) in paragraph at lines 100--100
+\T1/cmr/m/n/9 Aug-mented Gen-er-a-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/bx/n/9 Retrieval \T1/cmr/m/n/9 :Se-man-tic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 Arabic Read-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+\T1/cmr/m/n/9 Com-pre-hen-sion
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 -Embedding Size Con-
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 Evaluation of Se-man-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/bx/n/9 Retrieval \T1/cmr/m/n/9 :Se-man-tic
+ []
+
+
+Underfull \hbox (badness 5681) in paragraph at lines 100--100
+\T1/cmr/m/n/9 with ver-i-fi-able an-
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 -Embedding size con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 Arabic RAG Leader-
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 100--100
+\T1/cmr/m/n/9 Frame-work for Eval-u-
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 100--100
+\T1/cmr/m/n/9 at-ing Ara-bic Lan-guage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/bx/n/9 Retrieval\T1/cmr/m/n/9 : Se-man-tic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+\T1/cmr/bx/n/9 Reranking\T1/cmr/m/n/9 :Refine re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 Retrieval:"Web
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+\T1/cmr/m/n/9 Reranking:sourced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 Arabic's mor-pho-log-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/bx/n/9 RAG Com-po-nent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 Exploring Re-trieval
+ []
+
+
+Underfull \hbox (badness 4454) in paragraph at lines 100--100
+\T1/cmr/m/n/9 Aug-mented Gen-er-a-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/bx/n/9 Retrieval\T1/cmr/m/n/9 : Se-man-tic
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 100--100
+\T1/cmr/m/n/9 ,Ope-nAI ,Co-here, Mi-crosoft's
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/bx/n/9 Retrival\T1/cmr/m/n/9 :Recall@K
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 100--100
+\T1/cmr/bx/n/9 Generator\T1/cmr/m/n/9 : F1 Score
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 Evaluating RAG
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+\T1/cmr/m/n/9 Pipelines for Ara-bic
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 100--100
+[]\T1/cmr/bx/n/9 Retrieval\T1/cmr/m/n/9 : Word Em-
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 100--100
+\T1/cmr/m/n/9 Ara-bic lex-i-cal in-for-ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/bx/n/9 Retrival\T1/cmr/m/n/9 :CAMeLBERT,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+\T1/cmr/m/n/9 1.5-flash, SILMA-9B-Instruct,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 Riyadh dic-tio-nary
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 100--100
+[]\T1/cmr/bx/n/9 Retrival \T1/cmr/m/n/9 Top-k Re-call
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+\T1/cmr/bx/n/9 Generator\T1/cmr/m/n/9 :F1-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+\T1/cmr/m/n/9 score(F1), Ac-cu-racy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+[]\T1/cmr/m/n/9 -handling of di-alec-tal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+\T1/cmr/m/n/9 -Disparity in per-for-
+ []
+
+
+
+[1
+
+{C:/Users/GIGALINE/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Underfull \hbox (badness 6284) in paragraph at lines 178--179
+\T1/cmr/m/n/9 Avail-able on-line at: https://huggingface.co/spaces/Navid-AI/The
+-Arabic-Rag-
+ []
+
+
+
+[2] (samplepaper.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 1
+L3 programming layer <2024-12-25>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 2131 strings out of 473535
+ 32365 string characters out of 5713483
+ 446441 words of memory out of 5000000
+ 25351 multiletter control sequences out of 15000+600000
+ 571826 words of font info for 65 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,12n,65p,603b,314s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
+cti0900.pk> <C:\Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1200.pk> <C:\Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
+nappen/ec/dpi600\tcrm0900.pk> <C:\Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\GIGALINE\AppData\Local\MiKTeX\
+fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\GIGALINE\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\GIGALINE\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\GIG
+ALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/U
+sers/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+6.pfb><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi7.pfb><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmib10.pfb><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/GIGALINE/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/GIGALINE/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on samplepaper.pdf (2 pages, 122341 bytes).
+PDF statistics:
+ 265 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
