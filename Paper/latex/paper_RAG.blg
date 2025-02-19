@@ -39,45 +39,45 @@ Too many commas in name 1 of "Rogers, A., Boyd Graber, J., Okazaki, N." for entr
 while executing---line 2870 of file sn-mathphys-num.bst
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 39 entries,
+You've used 41 entries,
             7480 wiz_defined-function locations,
-            1448 strings with 20699 characters,
-and the built_in function-call counts, 925664 in all, are:
-= -- 171415
-> -- 1702
-< -- 353
-+ -- 104999
-- -- 730
-* -- 24094
-:= -- 160554
-add.period$ -- 67
-call.type$ -- 39
-change.case$ -- 326
-chr.to.int$ -- 890
-cite$ -- 39
-duplicate$ -- 2120
-empty$ -- 14367
-format.name$ -- 1855
-if$ -- 236909
-int.to.chr$ -- 2
-int.to.str$ -- 60
+            1460 strings with 21302 characters,
+and the built_in function-call counts, 931800 in all, are:
+= -- 172168
+> -- 1750
+< -- 356
++ -- 105091
+- -- 748
+* -- 24606
+:= -- 161785
+add.period$ -- 70
+call.type$ -- 41
+change.case$ -- 332
+chr.to.int$ -- 893
+cite$ -- 41
+duplicate$ -- 2177
+empty$ -- 14829
+format.name$ -- 1920
+if$ -- 238220
+int.to.chr$ -- 1
+int.to.str$ -- 61
 missing$ -- 0
-newline$ -- 736
-num.names$ -- 204
-pop$ -- 1526
+newline$ -- 763
+num.names$ -- 214
+pop$ -- 1582
 preamble$ -- 1
-purify$ -- 176
+purify$ -- 183
 quote$ -- 0
-skip$ -- 103438
+skip$ -- 103722
 stack$ -- 0
-substring$ -- 93591
-swap$ -- 981
-text.length$ -- 548
+substring$ -- 94599
+swap$ -- 1000
+text.length$ -- 561
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1358
+type$ -- 1415
 warning$ -- 0
-while$ -- 1604
+while$ -- 1652
 width$ -- 0
-write$ -- 980
+write$ -- 1019
 (There were 6 error messages)
