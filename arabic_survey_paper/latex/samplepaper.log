@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.27)  15 FEB 2025 20:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.27)  23 FEB 2025 00:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -250,245 +250,306 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 45.
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/bx/n/9 Addressed Chal-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 Semantic Em-bed-dings
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\T1/cmr/m/n/9 for Ara-bic Re-trieval
- []
-
-
-Underfull \hbox (badness 4454) in paragraph at lines 100--100
-\T1/cmr/m/n/9 Aug-mented Gen-er-a-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/bx/n/9 Retrieval \T1/cmr/m/n/9 :Se-man-tic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 Arabic Read-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\T1/cmr/m/n/9 Com-pre-hen-sion
- []
-
-
-Underfull \hbox (badness 2503) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 -Embedding Size Con-
- []
-
-
-Underfull \hbox (badness 6859) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 Evaluation of Se-man-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/bx/n/9 Retrieval \T1/cmr/m/n/9 :Se-man-tic
- []
-
-
-Underfull \hbox (badness 5681) in paragraph at lines 100--100
-\T1/cmr/m/n/9 with ver-i-fi-able an-
- []
-
-
-Underfull \hbox (badness 7631) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 -Embedding size con-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 Arabic RAG Leader-
- []
-
-
-Underfull \hbox (badness 5064) in paragraph at lines 100--100
-\T1/cmr/m/n/9 Frame-work for Eval-u-
- []
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 100--100
-\T1/cmr/m/n/9 at-ing Ara-bic Lan-guage
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/bx/n/9 Retrieval\T1/cmr/m/n/9 : Se-man-tic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\T1/cmr/bx/n/9 Reranking\T1/cmr/m/n/9 :Refine re-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 Retrieval:"Web
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\T1/cmr/m/n/9 Reranking:sourced
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 Arabic's mor-pho-log-i-cal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/bx/n/9 RAG Com-po-nent
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 Exploring Re-trieval
- []
-
-
-Underfull \hbox (badness 4454) in paragraph at lines 100--100
-\T1/cmr/m/n/9 Aug-mented Gen-er-a-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/bx/n/9 Retrieval\T1/cmr/m/n/9 : Se-man-tic
- []
-
-
-Underfull \hbox (badness 2894) in paragraph at lines 100--100
-\T1/cmr/m/n/9 ,Ope-nAI ,Co-here, Mi-crosoft's
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/bx/n/9 Retrival\T1/cmr/m/n/9 :Recall@K
- []
-
-
-Underfull \hbox (badness 4673) in paragraph at lines 100--100
-\T1/cmr/bx/n/9 Generator\T1/cmr/m/n/9 : F1 Score
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 Evaluating RAG
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\T1/cmr/m/n/9 Pipelines for Ara-bic
- []
-
-
-Underfull \hbox (badness 2698) in paragraph at lines 100--100
-[]\T1/cmr/bx/n/9 Retrieval\T1/cmr/m/n/9 : Word Em-
- []
-
-
-Underfull \hbox (badness 1072) in paragraph at lines 100--100
-\T1/cmr/m/n/9 Ara-bic lex-i-cal in-for-ma-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/bx/n/9 Retrival\T1/cmr/m/n/9 :CAMeLBERT,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\T1/cmr/m/n/9 1.5-flash, SILMA-9B-Instruct,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 Riyadh dic-tio-nary
- []
-
-
-Underfull \hbox (badness 1424) in paragraph at lines 100--100
-[]\T1/cmr/bx/n/9 Retrival \T1/cmr/m/n/9 Top-k Re-call
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\T1/cmr/bx/n/9 Generator\T1/cmr/m/n/9 :F1-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\T1/cmr/m/n/9 score(F1), Ac-cu-racy
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-[]\T1/cmr/m/n/9 -handling of di-alec-tal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--100
-\T1/cmr/m/n/9 -Disparity in per-for-
- []
-
+Title too long for running head. Please supply
+a shorter form with \titlerunning prior to \maketitle
 
 
 [1
 
 {C:/Users/GIGALINE/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 6284) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 Semantic Em-bed-dings
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 for Ara-bic Re-trieval
+ []
+
+
+Underfull \hbox (badness 4454) in paragraph at lines 123--123
+\T1/cmr/m/n/9 Aug-mented Gen-er-a-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/bx/n/9 Retrieval \T1/cmr/m/n/9 :Se-man-tic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 Arabic Read-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 Com-pre-hen-sion
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 -Embedding Size Con-
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 Evaluation of Se-man-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/bx/n/9 Retrieval \T1/cmr/m/n/9 :Se-man-tic
+ []
+
+
+Underfull \hbox (badness 5681) in paragraph at lines 123--123
+\T1/cmr/m/n/9 with ver-i-fi-able an-
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 -Embedding size con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 Arabic RAG Leader-
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 123--123
+\T1/cmr/m/n/9 Frame-work for Eval-u-
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 123--123
+\T1/cmr/m/n/9 at-ing Ara-bic Lan-guage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/bx/n/9 Retrieval\T1/cmr/m/n/9 : Se-man-tic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/bx/n/9 Reranking\T1/cmr/m/n/9 :Refine re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 Retrieval:"Web
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 Reranking:sourced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 Arabic's mor-pho-log-i-cal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/bx/n/9 RAG Com-po-nent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 Exploring Re-trieval
+ []
+
+
+Underfull \hbox (badness 4454) in paragraph at lines 123--123
+\T1/cmr/m/n/9 Aug-mented Gen-er-a-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/bx/n/9 Retrieval\T1/cmr/m/n/9 : Se-man-tic
+ []
+
+
+Underfull \hbox (badness 2894) in paragraph at lines 123--123
+\T1/cmr/m/n/9 ,Ope-nAI ,Co-here, Mi-crosoft's
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/bx/n/9 Retrival\T1/cmr/m/n/9 :Recall@K
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 123--123
+\T1/cmr/bx/n/9 Generator\T1/cmr/m/n/9 : F1 Score
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 Evaluating RAG
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 Pipelines for Ara-bic
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 123--123
+[]\T1/cmr/bx/n/9 Retrieval\T1/cmr/m/n/9 : Word Em-
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 123--123
+\T1/cmr/m/n/9 Ara-bic lex-i-cal in-for-ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/bx/n/9 Retrival\T1/cmr/m/n/9 :CAMeLBERT,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 1.5-flash, SILMA-9B-Instruct,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 Riyadh dic-tio-nary
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 123--123
+[]\T1/cmr/bx/n/9 Retrival \T1/cmr/m/n/9 Top-k Re-call
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/bx/n/9 Generator\T1/cmr/m/n/9 :F1-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 score(F1), Ac-cu-racy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 -handling of di-alec-tal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 -Disparity in per-for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 Retrieval-Augmented
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 Gen-er-a-tion (RAG)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 based Re-trieval with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/bx/n/9 Reranker
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 (CrossEncoder-based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/bx/n/9 Generator \T1/cmr/m/n/9 (Ara-bic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/bx/n/9 Reranker\T1/cmr/m/n/9 :ARA-Reranker-V1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]\T1/cmr/m/n/9 Capturing Ara-bic se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+\T1/cmr/m/n/9 man-tic nu-ances and
+ []
+
+
+Overfull \hbox (2.901pt too wide) in paragraph at lines 69--125
+\T1/cmr/m/n/10 guage sup-port.Finally,A Sur-vey on Mul-ti-lin-gual Large Lan-gu
+age Mod-els:Corpora,
+ []
+
+
+
+[2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[3]
+
+[4]
+Underfull \hbox (badness 6284) in paragraph at lines 201--202
 \T1/cmr/m/n/9 Avail-able on-line at: https://huggingface.co/spaces/Navid-AI/The
 -Arabic-Rag-
  []
 
 
 
-[2] (samplepaper.aux)
+[5]
+
+[6] (samplepaper.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2131 strings out of 473535
- 32365 string characters out of 5713483
- 446441 words of memory out of 5000000
- 25351 multiletter control sequences out of 15000+600000
- 571826 words of font info for 65 fonts, out of 8000000 for 9000
+ 2146 strings out of 473535
+ 32583 string characters out of 5713483
+ 457484 words of memory out of 5000000
+ 25365 multiletter control sequences out of 15000+600000
+ 572602 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,65p,603b,314s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,13n,65p,1486b,312s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
 cti0900.pk> <C:\Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1200.pk> <C:\Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
-nappen/ec/dpi600\tcrm0900.pk> <C:\Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\GIGALINE\AppData\Local\MiKTeX\
-fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\GIGALINE\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\GIGALINE\App
-Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\GIG
-ALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/U
-sers/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
-6.pfb><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi7.pfb><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmib10.pfb><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/GIGALINE/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/GIGALINE/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on samplepaper.pdf (2 pages, 122341 bytes).
+/dpi600\ecbx1000.pk> <C:\Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
+nappen/ec/dpi600\ecbx1200.pk> <C:\Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\tcrm0900.pk> <C:\Users\GIGALINE\AppData\Local\MiKTeX\
+fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\GIGALINE\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\GIGALINE\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\GIG
+ALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\
+Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440
+.pk><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi6.pfb><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi7.pfb><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/GIGALINE/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/GIGALINE/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/GIGALINE/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on samplepaper.pdf (6 pages, 171908 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
+ 393 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
