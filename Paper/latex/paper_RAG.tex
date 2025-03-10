@@ -120,7 +120,7 @@
 %% Sample for unstructured abstract %%
 %%==================================%%
 
-\abstract{Retrieval-Augmented Generation (RAG) improves the quality of language model responses by incorporating external knowledge. However, using a fixed number of retrieved documents (K) fails to adapt to varying query complexity, often leading to suboptimal retrieval either including irrelevant documents or missing crucial ones. To address this issue, we propose a hybrid approach that dynamically adjusts K based on query characteristics while maintaining computational efficiency. Our method improves retrieval performance by maximizing relevant information and minimizing noise. Experimental results show that it outperforms fixed-K retrieval, offering a more effective solution for optimizing RAG systems. Future work will explore learning-based techniques to further refine dynamic K selection.}
+\abstract{Retrieval-Augmented Generation (RAG) enhances language model responses by incorporating external knowledge. However, its effectiveness heavily depends on the quality of the retrieved documents. Using a fixed number of retrieved documents (k) may fail  to adapt to varying query complexity, often leading to suboptimal retrieval either including irrelevant documents or missing crucial ones. To address this issue, we propose a hybrid approach that dynamically adjusts K based on query characteristics while maintaining computational efficiency. Our method improves retrieval performance by maximizing relevant information and minimizing noise. Experimental results show that it outperforms fixed-K retrieval, offering a more effective solution for optimizing RAG systems. Future work will explore learning-based techniques to further refine dynamic K selection.}
 
 %%\pacs[JEL Classification]{D8, H51}
 
@@ -130,18 +130,18 @@
 
 \section{Introduction}\label{sec1}
 
-Large Language Models (LLMs)\cite{Radford2019} have emerged as state-of-the-art artificial intelligence systems that excel at understanding and generating human-like text,Built on deep learning architectures,particularly transformers \cite{vaswani2017attention},these models showcase impressive adaptability across diverse tasks, such as machine translation\cite{Gu2018SearchEngine}, text generation\cite{liang2024controllabletextgenerationlarge} and question answering\cite{Zhang2023}.Notable examples of LLMs include OpenAI GPT series\cite{brown2020language} , Google BERT\cite{devlin2018bert} and T5 \cite{raffel2020exploring}.Despite their impressive capabilities,LLMs suffer from hallucination\cite{ji2023survey} suffer from hallucination, often generating confident but incorrect information.This is a critical challenge for knowledge-intensive tasks requiring high accuracy\cite{kandpal2023large}.Additionally, their static nature?being trained on fixed datasets\cite{bender2021dangers} mits their ability to update knowledge dynamically, making them prone to outdated or inconsistent responses, especially for time-sensitive information.\cite{Mousavi2025}. 
+Large Language Models (LLMs)\cite{Radford2019} have emerged as state-of-the-art artificial intelligence systems that excel at understanding and generating human-like text,Built on deep learning architectures,particularly transformers \cite{vaswani2017attention},these models showcase impressive adaptability across diverse tasks, such as machine translation\cite{Gu2018SearchEngine}, text generation\cite{liang2024controllabletextgenerationlarge} and question answering\cite{Zhang2023}.Notable examples of LLMs include OpenAI GPT series\cite{brown2020language}, Google BERT\cite{devlin2018bert} and T5 \cite{raffel2020exploring}.Despite their impressive capabilities,LLMs suffer from hallucination\cite{ji2023survey}, often generating confident but incorrect information.This is a critical challenge for knowledge-intensive tasks requiring high accuracy\cite{kandpal2023large}.Additionally, their static nature being trained on fixed datasets\cite{bender2021dangers} limits their ability to update knowledge dynamically, making them prone to outdated or inconsistent responses, especially for time-sensitive information.\cite{Mousavi2025}. 
 
 
-Researchers have explored various approaches to address this limitation, including transfer learning\cite{zhuang2020comprehensive}a technique that improves pre-trained models performance in new tasks .Another technique is fine-tuning \cite{Howard2018} which adapt pre-trained models to specific tasks or domains. despite their strengths,they are computationally expensive and impractical for real-time knowledge updates. A promising alternative is Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval}.which integrates real-time retrieval from external knowledge sources with generative models enables LLMs to access up-to-date information without retraining, making it particularly useful for applications like open-domain question answering.However,(RAG) faces several limitations. For instance,The performance of RAG heavily depends on the quality of the retriever \cite{karpukhin2020dpr}, as irrelevant or noisy documents can degrade the generator output. Additionally,A critical challenge is determining the optimal number of retrieved passages (K) to feed into the generator\cite{lewis2020retrieval}. often resulting in either insufficient or excessive information being retrieved, reduce coherence and increase computational overhead. This trade-off makes K a key factor in balancing performance and efficiency. 
+Researchers have explored various approaches to address this limitation, including transfer learning\cite{zhuang2020comprehensive}a technique that improves pre-trained models performance in new tasks .Another technique is fine-tuning \cite{Howard2018} which adapt pre-trained models to specific tasks.Despite their strengths,they are computationally expensive and impractical for real-time knowledge updates. A promising alternative is Retrieval-Augmented Generation (RAG) \cite{lewis2020retrieval}.which integrates real-time retrieval from external knowledge sources with generative models enables LLMs to access up-to-date information without retraining, making it particularly useful for applications like open-domain question answering.However,(RAG) faces several limitations. For instance,The performance of RAG heavily depends on the quality of the retriever \cite{karpukhin2020dpr}, as irrelevant or noisy documents can degrade the generator output. Additionally,A critical challenge is determining the optimal number of retrieved passages (K) to feed into the generator\cite{lewis2020retrieval}. often resulting in either insufficient or excessive information being retrieved, reduce coherence and increase computational overhead. This trade-off makes K a key factor in balancing performance and efficiency. 
 
-Current approaches, such as static K selection \cite{lewis2020retrieval}, dynamic K adjustment attempt to address this trade-off but often introduce complexity or latency,Hybrid approaches like those proposed yuan et al.\cite{yuan2024hybrid},that integrates static retrieval with dynamic retrieval . Furthermore, the "Blended RAG"\cite{sawarkar2024blendedragimprovingrag} approach enhances retrieval accuracy by combining semantic search techniques with hybrid query strategies. However, the approach faces significant limitations, including high computational overhead and dependency on high-quality metadata for optimal performance. These limitations highlight the need for a more robust approach to K selection, capable of balancing efficiency and accuracy across varying query types.
+Current approaches, such as static K selection \cite{lewis2020retrieval}, dynamic K adjustment attempt to address this trade-off but often introduce complexity or latency,Hybrid approaches like those proposed yuan et al.\cite{yuan2024hybrid},that integrates static retrieval with dynamic retrieval. However, these approaches face significant limitations, including a lack of adaptability, high computational overhead, and a dependency on high-quality metadata for optimal performance. These limitations highlight the need for a more robust approach to K selection, capable of balancing efficiency and accuracy across varying query types.
 
 
 In this paper, we investigate the problem of selecting K in RAG and propose a novel approach to dynamically adjust K based on  thresholds and a Mixture of Logits (MoL)\cite{ding2024efficient} scoring mechanism, ensuring efficient and context-sensitive candidate selection while reducing computational costs. the use of  adaptive thresholds algorithm improves the relevance of retrieved documents, refining the set to include only the most contextually appropriate matches. Unlike traditional approaches, it adapts to the query and dataset characteristics, making it more flexible for diverse contexts. Furthermore, its design for handling large datasets ensures scalable and precise retrieval, which is crucial for RAG systems working with extensive corpora.
 
 This paper contributes to the existing literature by reviewing the various approaches to Retrieval-Augmented Generation (RAG), with a specific focus on static, dynamic, and Hybrid selection strategies. Additionally, it provides a critical analysis of the strengths and limitations of these methods, as it identifies key gaps in their design and performance. On account of this, there arises a pressing need for an improved approach capable of addressing the challenges of both static and dynamic in retrieval-augmented systems. \\
-The first section, Overview of Retrieval-Augmented Generation (RAG), aims to provide an a detailed explanation of the RAG framework, including its components and how it operates. Key concepts, such as retrievers, generators are discussed to establish the foundational context.\\
+The first section, Overview of Retrieval-Augmented Generation (RAG), aims to provide an a detailed explanation of the RAG framework, including its components and how it operates.\\
 The following section,introduces the novel hybrid dynamic selection algorithm. Additionally, it provides detailed description of its methodology, explains its design, and discusses the manner in which it overcomes the limitations of existing static and dynamic approaches. Particular emphasis is placed on the benefits of this approach, particularly in improving retrieval accuracy and computational efficiency.\\
 The final section presents experimental results that demonstrate the effectiveness of the hybrid dynamic selection algorithm.highlight its superiority in terms of retrieval performance and adaptability to diverse query complexities
 
@@ -157,10 +157,9 @@ Dynamic top-k Selection in Retrieval :addresses the limitations of static k by v
 However, these methods come with limitations.They often introduce computational overhead due to the need for dynamic evaluation, which can increase latency in large-scale systems. Additionally, their performance heavily depends on the quality of the underlying models or distance metrics, making them sensitive to noisy data. As a result, achieving generalization across diverse datasets or domains remains a significant challenge.
 
  
-Hybrid Approaches For Top-K selection in Retrieval :combine elements of static and dynamic K-selection to achieve a balance between simplicity and adaptability.These systems might use a static 
-k as a baseline but dynamically adjust such as STAYKATE (Static-Dynamic Hybrid Selection)\cite{Zhu2024} Combines static (active learning-inspired) and dynamic (KATE-based) example selection strategies to create STAYKATE. Another example is DR-RAG (Dynamic Relevance for Retrieval-Augmented Generation)\cite{hei2024drragapplyingdynamicdocument} retrieval framework designed to improve the relevance between queries and documents. In the first stage, a similarity matching method retrieves an initial set of documents. In the second stage, a deeper analysis is performed to identify dynamic-relevant documents, supported by a classifier that filters out irrelevant ones . however hybrid methods may face challenges in determining when to apply static or dynamic k-selection effectively, leading to potential trade-offs between retrieval accuracy and system efficiency. These limitations highlight the ongoing need for robust mechanisms that dynamically and efficiently adapt k to the unique characteristics of each query and dataset.
+Hybrid Approaches For Top-K selection in Retrieval :combine elements of static and dynamic K-selection to achieve a balance between simplicity and adaptability.These systems might use a static k as a baseline but dynamically adjust it such as ,the "Blended RAG"\cite{sawarkar2024blendedragimprovingrag} approach enhances retrieval accuracy by combining semantic search techniques with hybrid query strategies,Furthermore STAYKATE (Static-Dynamic Hybrid Selection)\cite{Zhu2024} Combines static (active learning-inspired) and dynamic (KATE-based) example selection strategies to create STAYKATE. Another example is DR-RAG (Dynamic Relevance for Retrieval-Augmented Generation)\cite{hei2024drragapplyingdynamicdocument} retrieval framework designed to improve the relevance between queries and documents. In the first stage, a similarity matching method retrieves an initial set of documents. In the second stage, a deeper analysis is performed to identify dynamic-relevant documents, supported by a classifier that filters out irrelevant ones . however hybrid methods may face challenges in determining when to apply static or dynamic k-selection effectively, leading to potential trade-offs between retrieval accuracy and system efficiency. These limitations highlight the ongoing need for robust mechanisms that dynamically and efficiently adapt k to the unique characteristics of each query and dataset.
 
-Our method leverages adaptive thresholds to dynamically refine the list of retrieved documents, to make sure that only the most contextually relevant matches are included. In contrast to traditional static or fixed K-selection techniques, which employ a consistent retrieval strategy for every query, our approach adapts to the specific characteristics of both the query and the dataset. This flexibility allows the algorithm to better accommodate diverse contexts, enhancing the relevance and quality of retrieval results.Through its adaptive nature, the method not only improves retrieval accuracy but also minimizes computational overhead by focusing resources on the most pertinent results. 
+Our method leverages adaptive thresholds to dynamically refine the list of retrieved documents, to make sure that only the most contextually relevant matches are included. In contrast to traditional static or fixed K-selection techniques, which employ a consistent retrieval strategy for every query, our approach adapts to the specific characteristics of both the query and the dataset. This flexibility allows the algorithm to better accommodate diverse contexts, enhancing the relevance and quality of retrieval results.
 
 \section{Overview of Retrieval-Augmented Generation }\label{sec3}
 Retrieval-Augmented Generation (RAG) is a method designed to enhance the performance of large language models (LLMs) by integrating external, reliable knowledge sources into their response generation process\cite{awsRAG}. RAG combines search capabilities with LLM prompting. The process involves feeding both the userss query and the relevant information retrieved by a search algorithm into the LLMs prompt\cite{ilin2023advancedrag}, enabling the model to generate answers based on the provided context.
@@ -198,21 +197,10 @@ In various generative tasks, different models are selected based on the specific
 \section{Proposed Solution}\label{sec3}
 In traditional candidate selection systems, the reliance on static or fixed top-K retrieval lead to suboptimal retrieval performance, especially in scenarios where the relevance distribution of candidates is highly variable. In this section, we introduce the Mixture of Logits (MoL) and describe its role in representing a learned similarity function. Table \ref{tab:Notations_table} summarizes the notations used in this paper and we propose Dynamic Candidate Selection, a novel algorithm that adaptively refines the candidate selection process by leveraging component-level embeddings and a Mixture of Logits (MoL) scoring mechanism.
 
-
-\subsection{Mixture of Logits} 
-
-The Mixture of Logits (MoL)\cite{zhai2023revisiting} methode provides a flexible and adaptive mechanism for computing similarity scores between queries and items. Given a query \( q \) and an item \( x \), MoL assumes that both are mapped to \( P \) groups of low-rank embeddings, denoted as \( f_p(q) \) and \( g_p(x) \), respectively. These embeddings are parameterized by neural networks that extract features from the query and item. The similarity between \( q \) and \( x \) is computed as a weighted sum of the inner products of these embeddings, where the weights \( \pi_p(q, x) \)\cite{zhai2023revisiting} are adaptive gating parameters constrained to sum to 1:
-
-\begin{equation}
-	\text{Similarity}(q, x) = \sum_{p=1}^P \pi_p(q, x) \cdot \langle f_p(q), g_p(x) \rangle.
-\end{equation}
-
-This formulation allows MoL to capture complex relationships between queries and items, making it particularly suitable for dynamic candidate selection tasks.
-
-\begin{table}[h!]
+\begin{table}[h]
 	\centering
 	\large  % Increase overall font size
-	\begin{tabular}{|c|p{11cm}|}  % Use p{width} for text wrapping
+	\begin{tabular}{|c|p{10cm}|}  % Use p{width} for text wrapping
 		\hline
 		\textbf{Notation} & \textbf{Description} \\ \hline
 		\( q \) (\( Q \), \( |Q| \)) & A single query (set of all queries, total number of queries). \\ \hline
@@ -224,39 +212,65 @@ This formulation allows MoL to capture complex relationships between queries and
 		\( g(x) \) (\( g_p(x) \)) & Learned embedding for the item (\( p \)-th component-level embedding for \( x \)). \\ \hline
 		\( \langle f(q), g(x) \rangle \) & Dot product similarity function: \( \langle f(q), g(x) \rangle = g(x)^T f(q) \). \\ \hline
 	\end{tabular}
-	\caption{Notation Table}
+	\caption{Notation Table }
 	\label{tab:Notations_table}
 \end{table}
 
+
+\subsection{Mixture of Logits} 
+
+The Mixture of Logits (MoL)\cite{zhai2023revisiting,ding2024efficient} methode provides a flexible and adaptive mechanism for computing similarity scores between queries and items. Given a query \( q \) and an item \( x \), MoL assumes that both are mapped to \( P \) groups of low-rank embeddings, denoted as \( f_p(q) \) and \( g_p(x) \), respectively. These embeddings are parameterized by neural networks that extract features from the query and item. The similarity between \( q \) and \( x \) is computed as a weighted sum of the inner products of these embeddings, where the weights \( \pi_p(q, x) \)\cite{zhai2023revisiting,ding2024efficient} are adaptive gating parameters constrained to sum to 1:
+
+\begin{equation}
+	\text{Similarity}(q, x) = \sum_{p=1}^P \pi_p(q, x) \cdot \langle f_p(q), g_p(x) \rangle.
+\end{equation}
+
+This formulation allows MoL to capture complex relationships between queries and items, making it particularly suitable for dynamic candidate selection tasks.
+
+To efficiently scale MoL for large datasets and hardware-optimized implementations, the formulation is extended by decomposing the dot products into batched outer products of query-side and document-side embeddings. This decomposition improves computational efficiency, particularly on accelerators like GPUs, by normalizing the embeddings using the \( l_2 \)-norm:\cite{zhai2023revisiting}
+
+\begin{equation}
+	\phi(q,x) = \sum_{pq=1}^{P_q} \sum_{px=1}^{P_x} \pi_{pq,px}(q,x) \frac{\langle f_{pq}(q), g_{px}(x) \rangle}{|| f_{pq}(q) ||_2 || g_{px}(x) ||_2}
+\end{equation}
+
+
+Since embedding normalization can be precomputed, both formulations remain interchangeable in practical applications. Furthermore, it is possible to decompose any high-rank matrix into a mixture of logits based on low-rank matrices, demonstrating the flexibility and scalability of this approach in large-scale information retrieval tasks. 
+
 \subsection{Retrieval Algorithm}
-Inspired by the approach in\cite{ding2024efficient}, we introduce an adaptive threshold mechanism (\textbf{Dynamic Candidate Selection}), the MoL framework is employed to refine the candidate retrieval process. Specifically:
-\begin{enumerate}
-	\item \textbf{Component-Level Embeddings:}  
-	 generate component-level embeddings for all items in \( X \). These embeddings allow efficient similarity computations during retrieval.
-	\begin{equation}
-		X_p \leftarrow \{ g_p(x) \mid x \in X \}
-	\end{equation}
-	
-	\item \textbf{Dynamic Threshold Adjustment:}  
-	To refine retrieval quality, we compute Mixture of Logits (MoL) scores for each candidate \( x \in G \).  
-	The adaptive gating weights \( \pi_p(q, x) \) enable the algorithm to dynamically adjust the retrieval threshold \( T_{\text{adaptive}} \) based on the computed MoL scores.
-	\begin{equation}
-		\varphi(q, x) = \sum_{p=1}^{P} \pi_p(q, x) \cdot \langle f_p(q), g_p(x) \rangle
-	\end{equation}
-	\begin{equation}
-		T_{\text{adaptive}} = \min \{ s \mid s \in G \}
-	\end{equation}
-	
-	\item \textbf{Refinement and Top-K Selection:}  
-	Additional relevant candidates are retrieved using the adaptive threshold \( T_{\text{adaptive}} \), expanding the candidate set \( G' \). The algorithm then selects the most relevant top-k results by sorting \( G' \) based on MoL scores.
-	\begin{equation}
-		G' \leftarrow G \cup \{ x \mid s_p \geq T_{\text{adaptive}} \}
-	\end{equation}
-	\item \textbf{ Select Exact Top-k Items:} Finally, we sort candidates by MoL scores and extract the exact top-k:
-	\begin{equation}
-		G_{\text{final}} = \text{Top-}k(G', \varphi(q, x))
-	\end{equation}
-\end{enumerate}
+We propose an \textbf{adaptive threshold mechanism} (referred to as (Dynamic Candidate Selection) that leverages the Mixture of Logits (MoL)framework to enhance the candidate retrieval process. The mechanism operates as follows:
+
+\noindent
+1. \textbf{Component-Level Embeddings}:  
+Component-level embeddings are generated for all items in the dataset \(X\). These embeddings facilitate efficient similarity computations during retrieval. Formally,
+\begin{equation}
+	X_p \leftarrow \{g_p(x) \mid x \in X\}.
+\end{equation}
+
+\noindent
+2. \textbf{Dynamic Threshold Adjustment}:  
+To improve retrieval quality, \textbf{Mixture of Logits (MoL)} scores are computed for each candidate \(x \in G\). The adaptive gating weights \(\pi_p(q, x)\) allow the algorithm to dynamically adjust the retrieval threshold \(T_{\text{adaptive}}\) based on the MoL scores. The scoring function is defined as:
+\begin{equation}
+	\phi(q, x) = \sum_{p=1}^{P} \pi_p(q, x) \cdot \langle f_p(q), g_p(x) \rangle.
+\end{equation}
+The adaptive threshold \(T_{\text{adaptive}}\) is set as the minimum score among the candidates:
+\begin{equation}
+	T_{\text{adaptive}} = \min\{s \mid s \in G\}.
+\end{equation}
+
+\noindent
+3. \textbf{Refinement and Top-K Selection}:  
+Using the adaptive threshold \(T_{\text{adaptive}}\), additional relevant candidates are retrieved, expanding the candidate set \(G'\). This is achieved by including candidates whose scores exceed the threshold:
+\begin{equation}
+	G' \leftarrow G \cup \{x \mid s_p \geq T_{\text{adaptive}}\}.
+\end{equation}
+The algorithm then sorts \(G'\) based on MoL scores to select the most relevant top-k candidates.
+
+\noindent
+4. \textbf{Exact Top-K Selection}:  
+Finally, the candidates in \(G'\) are sorted by their MoL scores, and the exact top-k items are extracted:
+\begin{equation}
+	G_{\text{final}} = \text{Top-k}(G', \phi(q, x)).
+\end{equation}
 As shown in Algorithm\ref{ALgo1}, the retrieval process dynamically adjusts the threshold based on MoL scores.
 \begin{algorithm}
 \caption{Hybrid Exact Top-k with Threshold-Based k Selection}
@@ -306,7 +320,7 @@ As shown in Algorithm\ref{ALgo1}, the retrieval process dynamically adjusts the 
 \end{algorithm}
 \newpage
 \section{Experimental Results}\label{sec3}
-We evaluate the performance of our hybrid retrieval algorithm and the Mixture-of-Logits (MoL) approach on the next-item prediction task in recommendation systems\cite{Zhu_2018}\cite{kang2018selfattentivesequentialrecommendation}. We conducted experiments using two MovieLens datasets: ML-100K and ML-1M \cite{Harper2015}  which are widely used benchmarks for evaluating sequential recommendation models.\\
+We evaluate the performance of the retrieval algorithm and the Mixture-of-Logits (MoL) approach on the next-item prediction task in recommendation systems\cite{Zhu_2018}\cite{kang2018selfattentivesequentialrecommendation}. We conducted experiments using two MovieLens datasets: ML-100K and ML-1M \cite{Harper2015}  which are widely used benchmarks for evaluating sequential recommendation models.\\
 \textbf{MovieLens-100K} \\
 100,000 ratings (1-5 scale) from 943 users on 1,682 movies\\
 Each user has rated at least 20 movies \\

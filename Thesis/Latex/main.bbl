@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{evidentlyai2025}
+Evidently AI.
+\newblock Ranking and recommendation metrics guide: Precision and recall at k
+  in ranking and recommendations, 2025.
+\newblock Last updated: January 9, 2025.
+
 \bibitem{murugan2024nlp}
 Mohana Murugan.
 \newblock {\em Natural Language Processing (NLP)}, 2024.
@@ -85,8 +91,8 @@ Thomas Wang, Adam Roberts, Daniel Hesslow, Teven Le~Scao, Hyung~Won Chung,
 \newblock {\em arXiv preprint arXiv:2302.03072}, 2023.
 
 \bibitem{Naveed2024}
-Shi Qiu Muhammad Saqib Saeed Anwar Muhammad Usman Naveed Akhtar Nick Barnes
-  Ajmal~Miani Humza~Naveed, Asad Ullah~Khan.
+Humza Naveed, Asad~Ullah Khan, Shi Qiu, Muhammad Saqib, Saeed Anwar, Muhammad
+  Usmana, Naveed Akhtar, Nick Barnes, and Ajmal Miani.
 \newblock A comprehensive overview of large language models.
 \newblock {\em arXiv preprint arXiv:2307.06435}, April 2024.
 \newblock Version 9, 9 Apr 2024.
@@ -124,17 +130,16 @@ Chadi Helwe.
   n°626, École doctorale de l’Institut Polytechnique de Paris (ED IP
   Paris), Spécialité de doctorat: Informatique, Données, IA.
 
+\bibitem{selvaraj2024}
+Natassha Selvaraj.
+\newblock What is retrieval augmented generation (rag)?, 2024.
+\newblock Updated Jan 30, 2024.
+
 \bibitem{gao2024retrieval}
 Yunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi~Dai,
   Jiawei Sun, Meng Wang, and Haofen Wang.
 \newblock Retrieval-augmented generation for large language models: A survey.
 \newblock {\em arXiv preprint arXiv:2312.10997v5}, 2024.
-
-\bibitem{karpukhin2020dense}
-Vladimir Karpukhin, Barlas  ~Oguz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey
-  Edunov, Danqi Chen, and Wen-tau Yih.
-\newblock Dense passage retrieval for open-domain question answering.
-\newblock {\em arXiv preprint arXiv:2004.04906}, 2020.
 
 \bibitem{lewis2020retrieval}
 Patrick Lewis, Ethan Perez, Aleksandra~  Piktus, Fabio Petroni, Vladimir
@@ -142,21 +147,29 @@ Patrick Lewis, Ethan Perez, Aleksandra~  Piktus, Fabio Petroni, Vladimir
   Rocktäschel, Sebastian Riedel, and Douwe Kiela.
 \newblock Retrieval-augmented generation for knowledge-intensive nlp tasks.
 
+\bibitem{karpukhin2020dense}
+Vladimir Karpukhin, Barlas  ~Oguz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey
+  Edunov, Danqi Chen, and Wen-tau Yih.
+\newblock Dense passage retrieval for open-domain question answering.
+\newblock {\em arXiv preprint arXiv:2004.04906}, 2020.
+
 \bibitem{mombaerts2024meta}
 Laurent Mombaerts, Terry Ding, Florian Felice, Jonathan Taws, Adi Banerjee, and
   Tarik Borogovac.
 \newblock Meta knowledge for retrieval augmented large language models.
 \newblock {\em arXiv preprint arXiv:2408.09017v1}, 2024.
 
-\bibitem{selvaraj2024}
-Natassha Selvaraj.
-\newblock What is retrieval augmented generation (rag)?, 2024.
-\newblock Updated Jan 30, 2024.
-
 \bibitem{sbert2024}
 Nils Reimers and Iryna Gurevych.
 \newblock Semantic search - sentence transformers, 2024.
 \newblock Accessed: 2024-11-01.
+
+\bibitem{zhou2020trustworthiness}
+Yujia Zhou, Yan Liu, Xiaoxi Li, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo
+  Li, Zhicheng Dou, Tsung-Yi Ho, and Philip~S. Yu.
+\newblock Trustworthiness in retrieval-augmented generation systems: A survey.
+\newblock {\em arXiv preprint arXiv:2409.10102}, September 2020.
+\newblock Accessed: [add the date you accessed the paper].
 
 \bibitem{zhao2024retrieval}
 Penghao Zhao, Hailin Zhang, Qinhan Yu, Zhengren Wang, Yunteng Geng, Fangcheng
@@ -165,11 +178,69 @@ Penghao Zhao, Hailin Zhang, Qinhan Yu, Zhengren Wang, Yunteng Geng, Fangcheng
 \newblock {\em arXiv preprint arXiv:2402.19473}, February 2024.
 \newblock Accessed: [add the date you accessed the paper].
 
-\bibitem{zhou2020trustworthiness}
-Yujia Zhou, Yan Liu, Xiaoxi Li, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo
-  Li, Zhicheng Dou, Tsung-Yi Ho, and Philip~S. Yu.
-\newblock Trustworthiness in retrieval-augmented generation systems: A survey.
-\newblock {\em arXiv preprint arXiv:2409.10102}, September 2020.
-\newblock Accessed: [add the date you accessed the paper].
+\bibitem{pareto2024rag}
+Pareto AI.
+\newblock The ultimate guide to retrieval-augmented generation (rag), 2024.
+\newblock Accessed: 2025-03-05.
+
+\bibitem{Rossi_2024}
+Nicholas Rossi, Juexin Lin, Feng Liu, Zhen Yang, Tony Lee, Alessandro Magnani,
+  and Ciya Liao.
+\newblock Relevance filtering for embedding-based retrieval.
+\newblock In {\em Proceedings of the 33rd ACM International Conference on
+  Information and Knowledge Management}, CIKM ’24, page 4828–4835. ACM,
+  October 2024.
+
+\bibitem{geeksforgeeks2022precision}
+GeeksforGeeks.
+\newblock Precision and recall in information retrieval, 2022.
+\newblock Accessed: 2025-03-06.
+
+\bibitem{deconvoluteai2024metrics}
+David Kirchhoff.
+\newblock Metrics for evaluation of retrieval in retrieval-augmented
+  generation, 2024.
+\newblock Accessed: 2025-03-06.
+
+\bibitem{manning2008ir}
+Christopher~D. Manning, Prabhakar Raghavan, and Hinrich Schütze.
+\newblock {\em Introduction to Information Retrieval}.
+\newblock Cambridge University Press, 2008.
+
+\bibitem{enwiki:1262179867}
+{Wikipedia contributors}.
+\newblock Ranking (information retrieval) --- {Wikipedia}{,} the free
+  encyclopedia.
+\newblock
+  \url{https://en.wikipedia.org/w/index.php?title=Ranking_(information_retrieval)&oldid=1262179867},
+  2024.
+\newblock [Online; accessed 7-March-2025].
+
+\bibitem{salemi2023evaluating}
+Alireza Salemi and Hamed Zamani.
+\newblock Evaluating retrieval quality in retrieval-augmented generation.
+\newblock Amherst, MA, United States, 2023. ACM.
+\newblock Accessed via
+  \url{https://dl.acm.org/doi/pdf/10.1145/3626772.3657957?utm_source=chatgpt.com}.
+
+\bibitem{wan2025cognitivealigneddocumentselectionretrievalaugmented}
+Bingyu Wan, Fuxi Zhang, Zhongpeng Qi, Jiayi Ding, Jijun Li, Baoshi Fan, Yijia
+  Zhang, and Jun Zhang.
+\newblock Cognitive-aligned document selection for retrieval-augmented
+  generation, 2025.
+
+\bibitem{freitag-al-onaizan-2017-beam}
+Markus Freitag and Yaser Al-Onaizan.
+\newblock Beam search strategies for neural machine translation.
+\newblock In Thang Luong, Alexandra Birch, Graham Neubig, and Andrew Finch,
+  editors, {\em Proceedings of the First Workshop on Neural Machine
+  Translation}, pages 56--60, Vancouver, August 2017. Association for
+  Computational Linguistics.
+
+\bibitem{tensorrt_llm_beam_search}
+NVIDIA.
+\newblock Best practices for tuning the performance of {TensorRT-LLM} beam
+  search, 2023.
+\newblock [Accessed: 7-March-2025].
 
 \end{thebibliography}

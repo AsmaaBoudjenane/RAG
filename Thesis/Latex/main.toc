@@ -79,6 +79,25 @@
 \contentsline {subsection}{\numberline {2.7.3}Interaction of Retrieval and Generation}{30}{subsection.2.7.3}%
 \contentsline {subsection}{\numberline {2.7.4}Long Context Generation:}{30}{subsection.2.7.4}%
 \contentsline {section}{\numberline {2.8}Conclusion}{31}{section.2.8}%
-\contentsline {chapter}{Bibliography}{32}{chapter*.17}%
+\contentsline {chapter}{\numberline {3}k Selection in Retrieval}{32}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{32}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Defining k: The Number of Retrieved Documents}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Impact of k on Retrieval Performance}{33}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Recall vs. Precision}{33}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Retrieval Speed and Computational Cost}{34}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Document Ranking Quality}{35}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Impact of k on Generation Quality}{36}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Trade-off Between Diversity and Relevance}{36}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Effect on Text Generation Models}{37}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Existing Solutions for k Selection}{37}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Static k Selection}{37}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Dynamic k Selection}{37}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Hybrid k Selection}{37}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6} Proposed Solution}{37}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Mixture of Logits-Based k Selection}{37}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Algorithm Design}{37}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Pseudocode}{37}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7} Conclusion }{37}{section.3.7}%
+\contentsline {chapter}{Bibliography}{38}{chapter*.20}%
 \contentsline {chapter}{\numberline {A}Title of Appendix A}{}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Title of Appendix B}{}{appendix.B}%
