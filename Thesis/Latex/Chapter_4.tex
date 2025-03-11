@@ -114,10 +114,163 @@ As the beam width is increased, the model must process and retain more candidate
 \section{Existing Solutions for k Selection}
 Selecting an optimalnk plays a crucial role in balancing retrieval effectiveness and generation quality.Over the years, various strategies have been proposed to determine k, ranging from static selection to dynamic and hybrid approaches.
 \subsection{Static k Selection}
+In Retrieval-Augmented Generation (RAG) systems, "static k selection" means, refers to the process of setting a fixed number of top documents (k) to retrieve for every query, irrespective of how simple or complex the query might be. This approach simplifies the retrieval process by maintaining a consistent retrieval count across all queries
+
+\textbf{ Sparse Retrieval with Fixed k} \\
+Sparse retrieval is a method of finding relevant documents from a large collection by representing both queries and documents as vectors where most values are zero. This focus on only the most important terms leads to faster, more accurate searches, especially useful when combining information from different sources \cite{zheng2024enhancing}.
+
+Common approaches include \textbf{BM25}\cite{10.1561/1500000019} where documents are scored for relevance by considering term frequency and inverse document frequency,it selects the 'k' documents with the highest BM25 scores for each query,\textbf{TF-IDF} (Term Frequency-Inverse Document Frequency)\cite{gfg2025tfidf}in this method the retrieved documents would be those with the highest weighted term importance, Other methods like \textbf{QLM }(Query Likelihood Model)\cite{10.1007/978-3-030-72240-1_49}use probabilistic models to evaluate the likelihood of a query and rank documents according to textual similarity.
+
+\textbf{Dense Retrieval with Fixed k} \\
+Dense retrieval \cite{karpukhin2020dense} is a method for retrieving information that uses deep learning models to convert documents and queries into high-dimensional vector embeddings,A fixed number of top-k documents are selected based on similarity scores between the query embedding and document embeddings in a continuous vector space, the retrieval process allows the system to capture semantic elationships beyond exact term matches.
+
+Methods such as dual-encoder architectures (e.g., DPR - Dense Passage Retrieval)\cite{chen-etal-2024-dense} utilize separate neural networks (encoders) for queries and documents enable efficient retrieval, while Approximate Nearest Neighbor (ANN) search techniques (e.g., FAISS)\cite{enwiki:1276232158} optimize search efficiency in large-scale datasets .
 \subsection{Dynamic k Selection}
+In retrieval, dynamic k selection is the process of varying the quantity of documents (k) that are retrieved according to the properties of the query, such as its ambiguity, complexity, or relevance score distribution. This approach is crucial for enhancing the effectiveness and efficiency of information retrieval systems.
+
+\textbf{Dynamic Trade-Off Prediction in Multi-Stage Retrieval Systems }\\ This approach predicts the optimal number of documents (k) to retrieve. It uses pre-retrieval features to balance the trade-off between retrieval efficiency and effectiveness, ensuring that the system retrieves an appropriate number of documents for each query\cite{culpepper2016dynamictradeoffpredictionmultistage}.
+
+\textbf{Dynamic Pruning Methods:}\\
+This approach addresses the challenge of balancing effectiveness and efficiency in large-scale Information Retrieval (IR) systems, particularly under temporal constraints. The goal is to process queries within a specified time limit while minimizing the loss in retrieval effectiveness. The authors propose and evaluate three techniques for temporally constrained top-K query processing \cite{10.1007/978-3-319-70145-5_1}.
 \subsection{Hybrid k Selection}
+hybrid methods aim to achieve optimal retrieval By merging static and dynamic k selection, These methods balance computational efficiency (from static k) with adaptive flexibility (from dynamic k) ensuring high-quality retrieval Below are some key hybrid strategies.
+
+\textbf{Blended RAG} \\
+An innovative method to improve Retrieval-Augmented Generation (RAG) systems, which integrate private document collections with Large Language Models (LLMs) for Generative Question-Answering (QA) it employs a hybrid retrieval approach, combining Dense Vector indexes and Sparse Encoder indexes with sophisticated query strategies, Blended RAG provides a scalable and efficient solution for enhancing RAG systems, showcasing the effectiveness of merging dense and sparse retrieval techniques\cite{sawarkar2024blendedragimprovingrag}.
+
+\textbf{ STAYKATE (Static-Dynamic Hybrid Selection)} \\
+A new approach for selecting in-context examples to improve the performance of large language models (LLMs) in scientific information extraction. Scientific tasks often struggle with limited training data and expensive annotation processes. STAYKATE tackles these challenges by merging static and dynamic selection strategies, combining representativeness sampling from active learning with retrieval-based methods. This hybrid approach ensures the selection of high-quality, informative examples, enhancing in-context learning for LLMs\cite{zhu2024staykatehybridincontextexample}.
 \section{ Proposed Solution}
-\subsection{Mixture of Logits-Based k Selection}
+While existing k-selection approaches—static, dynamic, and hybrid—offer distinct advantages, they also present notable limitations, such as lack of adaptability in static k selection, which fails to adjust for query complexity, leading to either missing relevant documents or retrieving irrelevant ones. Dynamic k selection, while more flexible, introduces higher computational costs and requires carefully tuned heuristics, making it challenging to scale. Hybrid approaches, attempt to balance both strategies but suffer from increased system complexity.
+
+To address these challenges, we propose an enhanced k-selection strategy that optimally balances retrieval efficiency and relevance, leveraging adaptive mechanisms to improve performance across diverse query types
+\subsection{Mixture of Logits (MoL)}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Figures/mol.png}
+	\caption{Mixture of Logits(MoL) learned similarity.\cite{Ding2024}}
+	\label{Mixture_of_Logits }	
+\end{figure}
+The \textbf{Mixture of Logits (MoL)}\cite{zhai2023revisiting}\cite{Ding2024} approach is designed to enhance retrieval and ranking by leveraging multiple low-rank embeddings. It assumes that both the \textbf{query} (\( q \)) and \textbf{document/item} (\( x \)) are mapped into \( P \) groups of low-dimensional embeddings, denoted as \( f_p(q) \) and \( g_p(x) \), which are generated by neural networks based on their respective features.
+
+To determine the similarity between a query and a document, MoL assigns \textbf{adaptive gating weights} \( \pi_p(q,x) \) to the inner products of these low-rank embeddings\cite{zhai2023revisiting}:
+
+\begin{equation}
+	\phi(q,x) = \sum_{p=1}^{P} \pi_p(q,x) \langle f_p(q), g_p(x) \rangle
+\end{equation}
+
+where \( \pi_p(q,x) \) represents the learned weights for each component, ensuring that their sum equals one. These weights are typically parameterized using a neural network that takes embeddings and their inner products as input features.
+
+To efficiently scale MoL for large datasets and hardware-optimized implementations, the formulation is extended by decomposing the dot products into \textbf{batched outer products} of query-side and document-side embeddings. This decomposition improves computational efficiency, particularly on accelerators like GPUs, by normalizing the embeddings using the \( l_2 \)-norm:\cite{zhai2023revisiting}
+
+\begin{equation}
+	\phi(q,x) = \sum_{pq=1}^{P_q} \sum_{px=1}^{P_x} \pi_{pq,px}(q,x) \frac{\langle f_{pq}(q), g_{px}(x) \rangle}{|| f_{pq}(q) ||_2 || g_{px}(x) ||_2}
+\end{equation}
+
+Since embedding normalization can be precomputed, both formulations remain interchangeable in practical applications. Furthermore, it is possible to \textbf{decompose any high-rank matrix} into a mixture of logits based on low-rank matrices, demonstrating the flexibility and scalability of this approach in large-scale information retrieval tasks.
 \subsection{Algorithm Design}
+
+we introduce an adaptive threshold mechanism
+(Dynamic Candidate Selection), the MoL framework is employed to refine the
+candidate retrieval process. 
+1. \textbf{Component-Level Embeddings}:  
+Component-level embeddings are generated for all items in the dataset \(X\). These embeddings facilitate efficient similarity computations during retrieval. Formally,
+\begin{equation}
+	X_p \leftarrow \{g_p(x) \mid x \in X\}.
+\end{equation}
+
+\noindent
+2. \textbf{Dynamic Threshold Adjustment}:  
+To improve retrieval quality, \textbf{Mixture of Logits (MoL)} scores are computed for each candidate \(x \in G\). The adaptive gating weights \(\pi_p(q, x)\) allow the algorithm to dynamically adjust the retrieval threshold \(T_{\text{adaptive}}\) based on the MoL scores. The scoring function is defined as:
+\begin{equation}
+	\phi(q, x) = \sum_{p=1}^{P} \pi_p(q, x) \cdot \langle f_p(q), g_p(x) \rangle.
+\end{equation}
+The adaptive threshold \(T_{\text{adaptive}}\) is set as the minimum score among the candidates:
+\begin{equation}
+	T_{\text{adaptive}} = \min\{s \mid s \in G\}.
+\end{equation}
+
+\noindent
+3. \textbf{Refinement and Top-K Selection}:  
+Using the adaptive threshold \(T_{\text{adaptive}}\), additional relevant candidates are retrieved, expanding the candidate set \(G'\). This is achieved by including candidates whose scores exceed the threshold:
+\begin{equation}
+	G' \leftarrow G \cup \{x \mid s_p \geq T_{\text{adaptive}}\}.
+\end{equation}
+The algorithm then sorts \(G'\) based on MoL scores to select the most relevant top-k candidates.
+
+\noindent
+4. \textbf{Exact Top-K Selection}:  
+Finally, the candidates in \(G'\) are sorted by their MoL scores, and the exact top-k items are extracted:
+\begin{equation}
+	G_{\text{final}} = \text{Top-k}(G', \phi(q, x)).
+\end{equation}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Figures/propused _solution_steps.png}
+	\caption{propused solution steps}
+	\label{propused _solution_steps}	
+\end{figure}
+
 \subsection{Pseudocode}
+
+\textbf{Input:} Query $q$, Set of items $X$, Component-level embeddings: $f_p(q)$, $g_p(x)$ for $p \in P$, $x \in X$, Initial threshold $T_{\text{init}}$ \\
+\textbf{Output:} Exact top $k$ items based on dynamic threshold selection, $G_{\text{final}}$ \\
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+
+\begin{algorithm}[H]
+	\small
+	
+	\caption{Hybrid Exact Top-k with Threshold-Based k Selection}
+	\label{ALgo1}
+	\SetKwProg{Init}{Initialization}{}{}
+	\Init{
+		$G \gets \emptyset$ \tcp{Initial candidate set}
+		\ForEach{component $p \in P$}{
+			$X_p \gets \{g_p(x) \mid x \in X\}$ \tcp{Precompute embeddings}
+		}
+	}
+	
+
+	\textbf{1. Initial Candidate Retrieval:} \\
+	\ForEach{component $p \in P$}{
+		Compute dot product scores: 
+		\[
+		S_p \gets \{ \langle f_p(q), g_p(x) \rangle : x \in X_p \}
+		\]
+		Retrieve items with scores $S_p \geq T_{\text{init}}$ \\
+		Add these items to $G$
+	}
+	
+
+	\textbf{2. Adjust k Dynamically:} \\
+	\ForEach{$x \in G$}{
+		Compute MoL scores $s \gets \phi(q, x)$ where:
+		\[
+		\phi(q, x) \gets \sum_{p=1}^{P} \pi_p(q, x) \cdot \langle f_p(q), g_p(x) \rangle
+		\]
+		Set $T_{\text{adaptive}} = \min \{s : s \in G\}$
+	}
+	
+	\BlankLine
+	\textbf{3. Refine Candidate Set with Adaptive k:} \\
+	$G' \gets \emptyset$ \\
+	\ForEach{component $p \in P$}{
+		Retrieve items from $X_p$ with scores $S_p \geq T_{\text{adaptive}}$ \\
+		Add these items to $G'$
+	}
+	
+
+	\textbf{4. Select Exact Top-k Items:} \\
+	\ForEach{component $p \in P$}{
+		Compute MoL scores for all items in $G'$ \\
+		Sort $G'$ by MoL scores in descending order \\
+		Select the top $k$ items from $G'$ where $k$ is the number of items in $G'$ exceeding $T_{\text{adaptive}}$
+	}
+	
+
+	\textbf{Return:} $G_{\text{final}}$ \tcp{Retrieve Top $k$ items from $G'$}
+\end{algorithm}
 \section{ Conclusion }
+The selection of k in retrieval plays a pivotal role in balancing relevance, efficiency, and computational cost. Throughout this chapter, we explored how different approaches—static, dynamic, and hybrid—impact retrieval performance and generation quality. While static selection provides consistency, it lacks adaptability to varying query complexities. Dynamic methods introduce flexibility but come with computational overhead, whereas hybrid strategies aim to balance both. The Hybrid Exact Top-k with Threshold-Based k Selection method offers an advanced solution by leveraging adaptive weighting to enhance ranking effectiveness. Ultimately, an effective k-selection strategy is essential for optimizing retrieval systems, ensuring both efficiency and high-quality results in knowledge-augmented applications.

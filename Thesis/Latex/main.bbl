@@ -6,6 +6,10 @@ Evidently AI.
   in ranking and recommendations, 2025.
 \newblock Last updated: January 9, 2025.
 
+\bibitem{Ding2024}
+Bailu Ding and Jiaqi Zhai.
+\newblock Efficient retrieval with learned similarities, 07 2024.
+
 \bibitem{murugan2024nlp}
 Mohana Murugan.
 \newblock {\em Natural Language Processing (NLP)}, 2024.
@@ -242,5 +246,75 @@ NVIDIA.
 \newblock Best practices for tuning the performance of {TensorRT-LLM} beam
   search, 2023.
 \newblock [Accessed: 7-March-2025].
+
+\bibitem{zheng2024enhancing}
+Buqian Zheng.
+\newblock Enhancing information retrieval with learned sparse retrieval, 2024.
+\newblock Accessed: 2025-03-09.
+
+\bibitem{10.1561/1500000019}
+Stephen Robertson and Hugo Zaragoza.
+\newblock The probabilistic relevance framework: Bm25 and beyond.
+\newblock {\em Found. Trends Inf. Retr.}, 3(4):333–389, April 2009.
+
+\bibitem{gfg2025tfidf}
+{GeeksforGeeks}.
+\newblock Understanding tf-idf (term frequency-inverse document frequency),
+  2025.
+\newblock Last Updated: 07 Feb, 2025. Accessed: 2025-03-09.
+
+\bibitem{10.1007/978-3-030-72240-1_49}
+Shengyao Zhuang, Hang Li, and Guido Zuccon.
+\newblock Deep query likelihood model for information retrieval.
+\newblock In {\em Advances in Information Retrieval: 43rd European Conference
+  on IR Research, ECIR 2021, Virtual Event, March 28 – April 1, 2021,
+  Proceedings, Part II}, page 463–470, Berlin, Heidelberg, 2021.
+  Springer-Verlag.
+
+\bibitem{chen-etal-2024-dense}
+Tong Chen, Hongwei Wang, Sihao Chen, Wenhao Yu, Kaixin Ma, Xinran Zhao,
+  Hongming Zhang, and Dong Yu.
+\newblock Dense {X} retrieval: What retrieval granularity should we use?
+\newblock In Yaser Al-Onaizan, Mohit Bansal, and Yun-Nung Chen, editors, {\em
+  Proceedings of the 2024 Conference on Empirical Methods in Natural Language
+  Processing}, pages 15159--15177, Miami, Florida, USA, November 2024.
+  Association for Computational Linguistics.
+
+\bibitem{enwiki:1276232158}
+{Wikipedia contributors}.
+\newblock Faiss --- {Wikipedia}{,} the free encyclopedia, 2025.
+\newblock [Online; accessed 9-March-2025].
+
+\bibitem{culpepper2016dynamictradeoffpredictionmultistage}
+J.~Shane Culpepper, Charles L.~A. Clarke, and Jimmy Lin.
+\newblock Dynamic trade-off prediction in multi-stage retrieval systems, 2016.
+
+\bibitem{10.1007/978-3-319-70145-5_1}
+Hao Wu, Kuang Lu, Xiaoming Li, and Hui Fang.
+\newblock Improving retrieval effectiveness for temporal-constrained top-k
+  query processing.
+\newblock In Won-Kyung Sung, Hanmin Jung, Shuo Xu, Krisana Chinnasarn,
+  Kazutoshi Sumiya, Jeonghoon Lee, Zhicheng Dou, Grace~Hui Yang, Young-Guk Ha,
+  and Seungbock Lee, editors, {\em Information Retrieval Technology}, pages
+  3--15, Cham, 2017. Springer International Publishing.
+
+\bibitem{sawarkar2024blendedragimprovingrag}
+Kunal Sawarkar, Abhilasha Mangal, and Shivam~Raj Solanki.
+\newblock Blended rag: Improving rag (retriever-augmented generation) accuracy
+  with semantic search and hybrid query-based retrievers, 2024.
+
+\bibitem{zhu2024staykatehybridincontextexample}
+Chencheng Zhu, Kazutaka Shimada, Tomoki Taniguchi, and Tomoko Ohkuma.
+\newblock Staykate: Hybrid in-context example selection combining
+  representativeness sampling and retrieval-based approach -- a case study on
+  science domains, 2024.
+
+\bibitem{zhai2023revisiting}
+Jiaqi Zhai, Zhaojie Gong, Yueming Wang, Xiao Sun, Zheng Yan, Fu~Li, and Xing
+  Liu.
+\newblock Revisiting neural retrieval on accelerators.
+\newblock In {\em Proceedings of the 29th ACM SIGKDD Conference on Knowledge
+  Discovery and Data Mining}, KDD '23, pages 5520--5531, New York, NY, USA,
+  2023. Association for Computing Machinery.
 
 \end{thebibliography}

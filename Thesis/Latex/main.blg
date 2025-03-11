@@ -1,6 +1,10 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
+White space in argument---line 216 of file main.aux
+ : \citation{zhai2023revisiting
+ :                              }
+I'm skipping whatever remains of this command
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 7 items.
@@ -18,52 +22,50 @@ I was expecting an "="---line 355 of file Biblio.bib
  :  journal={arXiv preprint arXiv:2005.11401},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 543 of file Biblio.bib
- : @misc{evidentlyai2025
- :                      ,
-I'm skipping whatever remains of this entry
+Warning--entry type for "Ding2024" isn't style-file defined
+--line 893 of file Biblio.bib
 Warning--empty journal in lewis2020retrieval
 Warning--empty year in lewis2020retrieval
 Warning--empty booktitle in salemi2023evaluating
-You've used 37 entries,
+You've used 49 entries,
             1791 wiz_defined-function locations,
-            636 strings with 11965 characters,
-and the built_in function-call counts, 8333 in all, are:
-= -- 613
-> -- 624
-< -- 4
-+ -- 224
-- -- 187
-* -- 526
-:= -- 1418
-add.period$ -- 121
-call.type$ -- 37
-change.case$ -- 32
+            700 strings with 14639 characters,
+and the built_in function-call counts, 11500 in all, are:
+= -- 882
+> -- 805
+< -- 8
++ -- 288
+- -- 239
+* -- 712
+:= -- 1883
+add.period$ -- 157
+call.type$ -- 49
+change.case$ -- 44
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 339
-empty$ -- 720
-format.name$ -- 187
-if$ -- 1810
+cite$ -- 52
+duplicate$ -- 479
+empty$ -- 1019
+format.name$ -- 239
+if$ -- 2552
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 26
-newline$ -- 194
-num.names$ -- 39
-pop$ -- 167
+int.to.str$ -- 49
+missing$ -- 31
+newline$ -- 250
+num.names$ -- 55
+pop$ -- 236
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 179
+skip$ -- 283
 stack$ -- 0
-substring$ -- 216
-swap$ -- 91
-text.length$ -- 4
+substring$ -- 368
+swap$ -- 151
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 55
-width$ -- 39
-write$ -- 400
+while$ -- 80
+width$ -- 51
+write$ -- 526
 (There were 3 error messages)

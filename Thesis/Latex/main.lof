@@ -14,5 +14,7 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Basic retrieval}}{33}{figure.caption.17}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Precision in Document Ranking\cite {evidentlyai2025}}}{35}{figure.caption.18}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Recall in Document Ranking\cite {evidentlyai2025}}}{36}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Mixture of Logits(MoL) learned similarity.\cite {Ding2024}}}{39}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces propused solution steps}}{41}{figure.caption.21}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

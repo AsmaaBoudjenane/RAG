@@ -91,13 +91,13 @@
 \contentsline {subsection}{\numberline {3.4.2}Effect on Text Generation Models}{37}{subsection.3.4.2}%
 \contentsline {section}{\numberline {3.5}Existing Solutions for k Selection}{37}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Static k Selection}{37}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Dynamic k Selection}{37}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Hybrid k Selection}{37}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6} Proposed Solution}{37}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Mixture of Logits-Based k Selection}{37}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Algorithm Design}{37}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Pseudocode}{37}{subsection.3.6.3}%
-\contentsline {section}{\numberline {3.7} Conclusion }{37}{section.3.7}%
-\contentsline {chapter}{Bibliography}{38}{chapter*.20}%
+\contentsline {subsection}{\numberline {3.5.2}Dynamic k Selection}{38}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Hybrid k Selection}{38}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6} Proposed Solution}{39}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Mixture of Logits (MoL)}{39}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Algorithm Design}{40}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Pseudocode}{41}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7} Conclusion }{43}{section.3.7}%
+\contentsline {chapter}{Bibliography}{44}{chapter*.22}%
 \contentsline {chapter}{\numberline {A}Title of Appendix A}{}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Title of Appendix B}{}{appendix.B}%
