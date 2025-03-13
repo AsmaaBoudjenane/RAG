@@ -25,59 +25,46 @@ Database file #1: sn-bibliography.bib
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Too many commas in name 1 of "Rogers, A., Boyd Graber, J., Okazaki, N." for entry Zhang2023
-while executing---line 2870 of file sn-mathphys-num.bst
-Too many commas in name 1 of "Rogers, A., Boyd Graber, J., Okazaki, N." for entry Zhang2023
-while executing---line 2870 of file sn-mathphys-num.bst
-Too many commas in name 1 of "Rogers, A., Boyd Graber, J., Okazaki, N." for entry Zhang2023
-while executing---line 2870 of file sn-mathphys-num.bst
-Too many commas in name 1 of "Rogers, A., Boyd Graber, J., Okazaki, N." for entry Zhang2023
-while executing---line 2870 of file sn-mathphys-num.bst
-Too many commas in name 1 of "Rogers, A., Boyd Graber, J., Okazaki, N." for entry Zhang2023
-while executing---line 2870 of file sn-mathphys-num.bst
-Too many commas in name 1 of "Rogers, A., Boyd Graber, J., Okazaki, N." for entry Zhang2023
-while executing---line 2870 of file sn-mathphys-num.bst
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 41 entries,
+You've used 43 entries,
             7480 wiz_defined-function locations,
-            1460 strings with 21302 characters,
-and the built_in function-call counts, 931800 in all, are:
-= -- 172168
-> -- 1750
-< -- 356
-+ -- 105091
-- -- 748
-* -- 24606
-:= -- 161785
-add.period$ -- 70
-call.type$ -- 41
-change.case$ -- 332
-chr.to.int$ -- 893
-cite$ -- 41
-duplicate$ -- 2177
-empty$ -- 14829
-format.name$ -- 1920
-if$ -- 238220
+            1476 strings with 21830 characters,
+and the built_in function-call counts, 983520 in all, are:
+= -- 182062
+> -- 1810
+< -- 383
++ -- 111391
+- -- 776
+* -- 25689
+:= -- 170512
+add.period$ -- 79
+call.type$ -- 43
+change.case$ -- 347
+chr.to.int$ -- 961
+cite$ -- 43
+duplicate$ -- 2244
+empty$ -- 15347
+format.name$ -- 1960
+if$ -- 251690
 int.to.chr$ -- 1
-int.to.str$ -- 61
+int.to.str$ -- 65
 missing$ -- 0
-newline$ -- 763
-num.names$ -- 214
-pop$ -- 1582
+newline$ -- 795
+num.names$ -- 224
+pop$ -- 1646
 preamble$ -- 1
-purify$ -- 183
+purify$ -- 193
 quote$ -- 0
-skip$ -- 103722
+skip$ -- 109648
 stack$ -- 0
-substring$ -- 94599
-swap$ -- 1000
-text.length$ -- 561
+substring$ -- 99699
+swap$ -- 1040
+text.length$ -- 594
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1415
+type$ -- 1496
 warning$ -- 0
-while$ -- 1652
+while$ -- 1718
 width$ -- 0
-write$ -- 1019
-(There were 6 error messages)
+write$ -- 1063

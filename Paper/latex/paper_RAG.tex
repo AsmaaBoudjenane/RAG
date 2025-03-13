@@ -166,7 +166,7 @@ Retrieval-Augmented Generation (RAG) is a method designed to enhance the perform
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\textwidth]{rag.PNG}
+	\includegraphics[width=0.9\textwidth]{rag.JPG}
 	\caption{RAG system component\cite{sharma2024rag}. }\label{rag.PNG}
 \end{figure}
 As illustrated in figure \ref{rag.PNG}, the RAG system is built around two main components:the retriever and the generator. The retriever's role is to find relevant information from a pre-built data store, while the generator utilizes this retrieved data to produce coherent and contextually appropriate content. The overall RAG process operates as follows :
@@ -276,8 +276,9 @@ As shown in Algorithm\ref{ALgo1}, the retrieval process dynamically adjusts the 
 \caption{Hybrid Exact Top-k with Threshold-Based k Selection}
 \label{ALgo1}
 	\begin{algorithmic}[1]
-     \textbf{Input:} Query $q$ , Set of items $X$ ,Component-level embeddings: $f_p(q)$, $g_p(x)$ for $p \in P$, $x \in X$ , Initial threshold $T_{\text{init}}$  \newline
-      \textbf{Output:}Exact top $k$ items based on dynamic threshold selection, $G_{\text{final}}$ \newline
+     \State \textbf{Input:} Query $q$, Set of items $X$, Component-level embeddings: $f_p(q)$, $g_p(x)$ for $p \in P$, $x \in X$, Initial threshold $T_{\text{init}}$ 
+    \State \textbf{Output:} Exact top $k$ items based on dynamic threshold   selection, $G_{\text{final}}$
+      
       	\State Set $G \gets \emptyset$     \Comment{Initial candidate set}
 		\For{each component $p \in P$}
 		\State $X_p \gets \{g_p(x) \mid x \in X\}$ \Comment{Precompute embeddings}
@@ -335,43 +336,50 @@ For both datasets, We utilize the SASRec architecture as our sequential user enc
 The query q represents the user's state at a specific time step, derived from their interaction history. In the MoL (Mixture of Logits) framework, q is transformed into Pq
 embeddings through a multi-layer perceptron (MLP). While our hybrid algorithm does not explicitly employ an MLP for this transformation
 \subsection{Hyperparameter settings.}
-For fair comparison, we maintained consistent architectural choices and training conditions across all experiments , We conducted an extensive hyperparameter analysis comparing both approaches (Hybrid+SAS and MoL+SAS) across different architectural configurations.All experiments were Implemented in TensorFlow and trained on a Google Colab environment with a T4 GPU. We use the Adam optimizer with a learning rate of 0.001. For the hybrid algorithm, we initialize the threshold (Tinit) to 0.3 and adaptively adjust it during training.We discuss detailed hyperparameter settings in  Table\ref{tab:100k_movies},table\ref{tab:1m_movies}
-\begin{table}[h]
- \centering
-\normalsize 
-\resizebox{\textwidth}{!}{ 
-	\begin{tabular}{lccccccccc}
-			\toprule
+For fair comparison, we maintained consistent architectural choices and training conditions across all experiments , We conducted an extensive hyperparameter analysis comparing both approaches (Hybrid+SAS and MoL+SAS) across different architectural configurations.All experiments were Implemented in TensorFlow and trained on a Google Colab environment with a T4 GPU. We use the Adam optimizer with a learning rate of 0.001. For the hybrid algorithm, we initialize the threshold (Tinit) to 0.3 and adaptively adjust it during training.We discuss detailed hyperparameter settings in  
+
+\setlength{\tabcolsep}{1pt} % Increase column padding
+
+\begin{table}[ht]
+	\centering
+	\large
+	\renewcommand{\arraystretch}{1.5} % Increase row spacing
+	\resizebox{\textwidth}{!}{  % Scale table to fit width
+		\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+			\hline
 			\textbf{Model} & \textbf{Max Sequence Length} & \textbf{Embedding Dimension} & \textbf{Number of Heads} & \textbf{Feedforward Dimension} & \textbf{Batch Size} & \textbf{Epochs} & \textbf{Val Loss} & \textbf{Val Accuracy} \\ 
-			\midrule
-			Hybrid+SAS & 50  & 128  & 2 & 128  & 128 & 12 & 5.3036 & 0.1584  \\
-			MoL+SAS    & 50  & 128  & 2 & 128  & 128 & 12 & 5.3152 & 0.1582  \\
-			Hybrid+SAS & 128 & 256  & 4 & 256  & 128 & 10 & 3.6364 & 0.4301  \\
-			MoL+SAS    & 128 & 256  & 4 & 256  & 128 & 10 & 3.6374 & 0.4299 \\
-			Hybrid+SAS & 512 & 512  & 4 & 512  & 128 & 10 & 1.2808 & 0.8120 \\
-			MoL+SAS    & 512 & 512  & 4 & 512  & 128 & 10 & 1.3050 & 0.8016 \\
-			\bottomrule
-		\end{tabular}
-	}
-	\caption{Results on 100kMovies dataset}
-	\label{tab:100k_movies}
+			\hline
+			Hybrid+SAS & 50  & 128  & 2 & 128  & 128 & 12 & 5.3036 & 0.1584  \\ \hline
+			MoL+SAS    & 50  & 128  & 2 & 128  & 128 & 12 & 5.3152 & 0.1582  \\ \hline
+			Hybrid+SAS & 128 & 256  & 4 & 256  & 128 & 10 & 3.6364 & 0.4301  \\ \hline
+			MoL+SAS    & 128 & 256  & 4 & 256  & 128 & 10 & 3.6374 & 0.4299 \\\hline
+			Hybrid+SAS & 512 & 512  & 4 & 512  & 128 & 10 & 1.2808 & 0.8120 \\ \hline
+			MoL+SAS    & 512 & 512  & 4 & 512  & 128 & 10 & 1.3050 & 0.8016 \\\hline
+   \end{tabular}
+}
+\caption{Results on 100kMovies dataset}
+\label{tab:100k_movies}
 \end{table}
 
-\begin{table}[h]
-	 \centering
-	\normalsize % or \large for larger text
-	\resizebox{\textwidth}{!}{ % Scales the table to text width
-		\begin{tabular}{lccccccccc}
-			\toprule
+
+\setlength{\tabcolsep}{1pt} % Increase column padding
+
+\begin{table}[ht]
+	\centering
+	\large
+	\renewcommand{\arraystretch}{1.5} % Increase row spacing
+	\resizebox{\textwidth}{!}{  % Scale table to fit width
+		\begin{tabular}{|l|c|c|c|c|c|c|c|c|}
+			\hline
 		\textbf{Model} & \textbf{Max Sequence Length} & \textbf{Embedding Dimension} & \textbf{Number of Heads} & \textbf{Feedforward Dimension} & \textbf{Batch Size} & \textbf{Epochs} & \textbf{Val Loss} & \textbf{Val Accuracy} \\ 
-			\midrule
-			Hybrid+SAS & 50  & 128  & 2 & 128  & 128 & 10 & 4.5721 & 0.1530  \\
-			MoL+SAS    & 50  & 128  & 2 & 128  & 128 & 10 & 4.5733 & 0.1526  \\
-			Hybrid+SAS & 128 & 256  & 4 & 256  & 128 & 10 & 3.4152 & 0.3680  \\
-			MoL+SAS    & 128 & 256  & 4 & 256  & 128 & 10 & 3.4671 & 0.3627  \\
-			Hybrid+SAS & 512 & 512  & 4 & 512  & 128 & 10 & 1.0275 & 0.8350  \\
-			MoL+SAS    & 512 & 512  & 4 & 512  & 128 & 10 & 1.0350 & 0.8276  \\
-			\bottomrule
+		\hline
+			Hybrid+SAS & 50  & 128  & 2 & 128  & 128 & 10 & 4.5721 & 0.1530  \\ \hline
+			MoL+SAS    & 50  & 128  & 2 & 128  & 128 & 10 & 4.5733 & 0.1526  \\ \hline
+			Hybrid+SAS & 128 & 256  & 4 & 256  & 128 & 10 & 3.4152 & 0.3680  \\ \hline
+			MoL+SAS    & 128 & 256  & 4 & 256  & 128 & 10 & 3.4671 & 0.3627  \\ \hline
+			Hybrid+SAS & 512 & 512  & 4 & 512  & 128 & 10 & 1.0275 & 0.8350  \\ \hline
+			MoL+SAS    & 512 & 512  & 4 & 512  & 128 & 10 & 1.0350 & 0.8276  \\ \hline
+			
 		\end{tabular}
 	}
 	\caption{Results on 1M Movies dataset}
@@ -383,26 +391,27 @@ Both approaches demonstrate significant performance improvements as model capaci
 We employ standard ranking metrics widely used in sequential recommendation:
 
 \begin{itemize}
-	\item \textbf{Hit Rate at \( k \) (HR@\( k \))}: Measures the proportion of cases where the target item appears in the top-\( k \) recommendations. The HR@\( k \) is computed as:
-	\[
+	\item \textbf{Hit Rate at \( k \) (HR@\( k \))}: Measures the proportion of cases where the target item appears in the top-\( k \) recommendations. The HR@\( k \) is computed as:\cite{Tamm_2021}
+	\begin{equation}
 	\text{HR@}k = \frac{1}{|U|} \sum_{u=1}^{|U|} \mathbb{I}(\text{rank}_u \leq k),
-	\]
+    \end{equation}
 	where \( |U| \) is the number of users, \( \text{rank}_u \) is the rank of the target item for user \( u \), and \( \mathbb{I}(\cdot) \) is the indicator function that returns 1 if the condition is true and 0 otherwise.
 	
-	\item \textbf{Mean Reciprocal Rank (MRR)}: Evaluates the average reciprocal of the rank at which the first relevant item is retrieved. The MRR is defined as:
-	\[
+	\item \textbf{Mean Reciprocal Rank (MRR)}:is a ranking quality metric that measures how quickly a system retrieves the first relevant item. It is calculated as the average of reciprocal ranks across all users or queries,MRR ranges from 0 to 1, with higher values indicating better performance \cite{eviden2025mrr}.
+	\begin{equation}
 	\text{MRR} = \frac{1}{|U|} \sum_{u=1}^{|U|} \frac{1}{\text{rank}_u},
-	\]
-	where \( \text{rank}_u \) is the rank of the first relevant item for user \( u \).
+	\end{equation}
+	where \( \text{rank}_u \) is the position of the first relevant item for user \( u \) within the top-K results. \\ 
+	U represents the total number of users (for recommendation systems) or queries (for information retrieval tasks) in the dataset.
 	
-	\item \textbf{Normalized Discounted Cumulative Gain (NDCG)}: Assesses the ranking quality while accounting for position importance. The NDCG@\( k \) is computed as:
-	\[
+	\item \textbf{Normalized Discounted Cumulative Gain (NDCG)}: Assesses the ranking quality while accounting for position importance. The NDCG@\( k \) is computed as:\cite{Tamm_2021}
+	\begin{equation}
 	\text{NDCG@}k = \frac{1}{|U|} \sum_{u=1}^{|U|} \frac{\text{DCG@}k}{\text{IDCG@}k},
-	\]
+     \end{equation}
 	where \( \text{DCG@}k \) is the Discounted Cumulative Gain at position \( k \):
-	\[
+	\begin{equation}
 	\text{DCG@}k = \sum_{i=1}^{k} \frac{2^{\text{rel}_i} - 1}{\log_2(i + 1)},
-	\]
+\end{equation}
 	and \( \text{IDCG@}k \) is the Ideal DCG@\( k \), computed by sorting the items by their true relevance scores.
 \end{itemize}  
 Table \ref{tab:results_tab} summarizes the performance of our hybrid algorithm compared to the MoL-based approach on the MovieLens 100K and 1M datasets, both tested using a Max Sequence Length of 50, an Embedding Dimension of 128, 2 Attention Heads, a Feedforward Dimension of 128, a Batch Size of 128, and trained for 10 epochs .
@@ -410,6 +419,8 @@ Table \ref{tab:results_tab} summarizes the performance of our hybrid algorithm c
 
 \begin{table}[h]
 	\centering
+		\large
+	\renewcommand{\arraystretch}{1.5}
 	\begin{tabular}{|l|c|c|c|c|c|c|}
 		\hline
 		\textbf{Model} & \textbf{HR@1} & \textbf{HR@10} & \textbf{HR@50} & \textbf{HR@200} & \textbf{MRR} & \textbf{NDCG} \\ \hline
@@ -424,12 +435,12 @@ Table \ref{tab:results_tab} summarizes the performance of our hybrid algorithm c
 				\label{tab:results_tab}
 \end{table}
 
-On the ML-100K dataset, our hybrid approach shows comparable performance to MoL in terms of \textbf{HR@10 (0.0775 for both)} while achieving better results in\textbf{ MRR (0.0363 vs 0.0285)} and \textbf{NDCG (0.1241 vs 0.1182)}. The hybrid algorithm particularly excels in early position recommendations, as evidenced by the non-zero HR@1 score.
+On the ML-100K dataset, our approach shows comparable performance to MoL in terms of \textbf{HR@10 (0.0775 for both)} while achieving better results in\textbf{ MRR (0.0363 vs 0.0285)} and \textbf{NDCG (0.1241 vs 0.1182)}. The hybrid algorithm particularly excels in early position recommendations, as evidenced by the non-zero HR@1 score.
 
 On the larger ML-1M dataset, both approaches show significant improvement in performance compared to ML-100K. Our hybrid algorithm achieves slightly better \textbf{HR@10 (0.1810 vs 0.1799)} \textbf{and HR@200 (0.6159 vs 0.6126)} compared to MoL, while MoL maintains a small edge in other metrics.\\
 
 
-The results demonstrate that our hybrid algorithm effectively leverages both sequential user behavior and item metadata to improve recommendation quality. The adaptive MoL threshold allows the model to dynamically refine candidate items during training, leading to better performance. The improvements are consistent across both datasets, highlighting the robustness of our approach.
+The results demonstrate that the Hybrid Exact Top-k algorithm effectively leverages both sequential user behavior and item metadata to improve recommendation quality. The adaptive MoL threshold allows the model to dynamically refine candidate items during training, leading to better performance. The improvements are consistent across both datasets, highlighting the robustness of our approach.
 %%=============================================%%
 %% For presentation purpose, we have included  %%
 %% \bigskip command. Please ignore this.       %%
