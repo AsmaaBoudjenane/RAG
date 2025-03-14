@@ -10,6 +10,16 @@ Evidently AI.
 Bailu Ding and Jiaqi Zhai.
 \newblock Efficient retrieval with learned similarities, 07 2024.
 
+\bibitem{zhang2021recsys}
+Shuai Zhang, Aston Zhang, and Yi~Tay.
+\newblock {\em Recommender Systems}.
+\newblock 2021.
+\newblock Accessed: March 13, 2025.
+
+\bibitem{kang2018selfat}
+Wang-Cheng Kang and Julian McAuley.
+\newblock Self-attentive sequential recommendation, 2018.
+
 \bibitem{murugan2024nlp}
 Mohana Murugan.
 \newblock {\em Natural Language Processing (NLP)}, 2024.
@@ -316,5 +326,40 @@ Jiaqi Zhai, Zhaojie Gong, Yueming Wang, Xiao Sun, Zheng Yan, Fu~Li, and Xing
 \newblock In {\em Proceedings of the 29th ACM SIGKDD Conference on Knowledge
   Discovery and Data Mining}, KDD '23, pages 5520--5531, New York, NY, USA,
   2023. Association for Computing Machinery.
+
+\bibitem{Roy2022}
+Deepjyoti Roy and Mala Dutta.
+\newblock A systematic review and research perspective on recommender systems.
+\newblock {\em Journal of Big Data}, 9(1):59, 2022.
+
+\bibitem{5174476}
+Choonsung Shin and Woontack Woo.
+\newblock Socially aware tv program recommender for multiple viewers.
+\newblock {\em IEEE Transactions on Consumer Electronics}, 55(2):927--932,
+  2009.
+
+\bibitem{WANG201110831}
+Shu-Lin Wang and Chun-Yi Wu.
+\newblock Application of context-aware and personalized recommendation to
+  implement an adaptive ubiquitous learning system.
+\newblock {\em Expert Systems with Applications}, 38(9):10831--10838, 2011.
+
+\bibitem{Harper2015}
+F.~Maxwell Harper and Joseph~A. Konstan.
+\newblock The movielens datasets: History and context.
+\newblock {\em ACM Transactions on Interactive Intelligent Systems}, 5(4), dec
+  2015.
+
+\bibitem{Tamm_2021}
+Yan-Martin Tamm, Rinchin Damdinov, and Alexey Vasilev.
+\newblock Quality metrics in recommender systems: Do we calculate metrics
+  consistently?
+\newblock In {\em Fifteenth ACM Conference on Recommender Systems}, RecSys
+  ’21, page 708–713. ACM, September 2021.
+
+\bibitem{eviden2025mrr}
+{Evidently AI}.
+\newblock {Mean Reciprocal Rank (MRR) Explained}, 2025.
+\newblock Last accessed: March 13, 2025.
 
 \end{thebibliography}
