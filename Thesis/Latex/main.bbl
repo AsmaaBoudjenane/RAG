@@ -8,7 +8,8 @@ Evidently AI.
 
 \bibitem{Ding2024}
 Bailu Ding and Jiaqi Zhai.
-\newblock Efficient retrieval with learned similarities, 07 2024.
+\newblock Efficient retrieval with learned similarities.
+\newblock In {\em THE WEB CONFERENCE 2025}, 2025.
 
 \bibitem{zhang2021recsys}
 Shuai Zhang, Aston Zhang, and Yi~Tay.
@@ -104,12 +105,19 @@ Thomas Wang, Adam Roberts, Daniel Hesslow, Teven Le~Scao, Hyung~Won Chung,
   for zero-shot generalization?
 \newblock {\em arXiv preprint arXiv:2302.03072}, 2023.
 
+\bibitem{dong2019unified}
+Li~Dong, Nan Yang, Wenhui Wang, Furu Wei, Xiaodong Liu, Yu~Wang, Jianfeng Gao,
+  Ming Zhou, and Hsiao-Wuen Hon.
+\newblock Unified language model pre-training for natural language
+  understanding and generation.
+\newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  volume~32, 2019.
+
 \bibitem{Naveed2024}
 Humza Naveed, Asad~Ullah Khan, Shi Qiu, Muhammad Saqib, Saeed Anwar, Muhammad
-  Usmana, Naveed Akhtar, Nick Barnes, and Ajmal Miani.
-\newblock A comprehensive overview of large language models.
-\newblock {\em arXiv preprint arXiv:2307.06435}, April 2024.
-\newblock Version 9, 9 Apr 2024.
+  Usman, Naveed Akhtar, Nick Barnes, and Ajmal Mian.
+\newblock A comprehensive overview of large language models, 2024.
+\newblock \url{https://arxiv.org/abs/2307.06435}.
 
 \bibitem{yenduri2023gpt}
 Gokul Yenduri, M~Ramalingam, Chemmalar~G Selvi, Y~Supriya, Gautam Srivastava,
@@ -128,11 +136,33 @@ Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael
 \newblock {\em arXiv preprint arXiv:1910.10683v4}, September 2023.
 \newblock Editor: Ivan Titov.
 
-\bibitem{radford2019language}
-Alec Radford, Jeffrey Wu, Dario Amodei, Jack Clark, Miles Brundage, Ilya
-  Sutskever, et~al.
-\newblock Language models are unsupervised multitask learners.
-\newblock {\em OpenAI Blog}, 1(8):9, 2019.
+\bibitem{touvron2023llama2openfoundation}
+Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine
+  Babaei, et~al.
+\newblock Llama 2: Open foundation and fine-tuned chat models, 2023.
+
+\bibitem{sengupta2023jaisjaischatarabiccentricfoundation}
+Neha Sengupta, Sunil~Kumar Sahu, Bokang Jia, Satheesh Katipomu, et~al.
+\newblock Jais and jais-chat: Arabic-centric foundation and instruction-tuned
+  open generative large language models, 2023.
+
+\bibitem{Bender2021}
+Emily~M Bender, Timnit Gebru, Angelina McMillan-Major, and Shmargaret
+  Shmitchell.
+\newblock On the dangers of stochastic parrots: Can language models be too big?
+\newblock In {\em Proceedings of the 2021 ACM Conference on Fairness,
+  Accountability, and Transparency}, 2021.
+
+\bibitem{Chalk2020}
+Matthew Chalk et~al.
+\newblock Legal-bert: The muppets meet the supreme court.
+\newblock {\em arXiv preprint arXiv:2010.02010}, 2020.
+
+\bibitem{Bommarito2018}
+Michael Bommarito and Daniel~Martin Katz.
+\newblock Predicting the behavior of the supreme court of the united states: A
+  general approach.
+\newblock {\em arXiv preprint arXiv:1807.09850}, 2018.
 
 \bibitem{helwe2024}
 Chadi Helwe.
@@ -153,13 +183,25 @@ Natassha Selvaraj.
 Yunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi~Dai,
   Jiawei Sun, Meng Wang, and Haofen Wang.
 \newblock Retrieval-augmented generation for large language models: A survey.
-\newblock {\em arXiv preprint arXiv:2312.10997v5}, 2024.
+\newblock 2024.
 
 \bibitem{lewis2020retrieval}
 Patrick Lewis, Ethan Perez, Aleksandra~  Piktus, Fabio Petroni, Vladimir
   Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim
   Rocktäschel, Sebastian Riedel, and Douwe Kiela.
 \newblock Retrieval-augmented generation for knowledge-intensive nlp tasks.
+
+\bibitem{howard2018universal}
+Jeremy Howard and Sebastian Ruder.
+\newblock Universal language model fine-tuning for text classification.
+\newblock In {\em Proceedings of the 56th Annual Meeting of the Association for
+  Computational Linguistics}, 2018.
+
+\bibitem{devlin2018bert}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock {\em arXiv preprint arXiv:1810.04805}, 2018.
 
 \bibitem{karpukhin2020dense}
 Vladimir Karpukhin, Barlas  ~Oguz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey
@@ -172,30 +214,43 @@ Laurent Mombaerts, Terry Ding, Florian Felice, Jonathan Taws, Adi Banerjee, and
   Tarik Borogovac.
 \newblock Meta knowledge for retrieval augmented large language models.
 \newblock {\em arXiv preprint arXiv:2408.09017v1}, 2024.
+\newblock \url{https://arxiv.org/abs/2408.09017v1}.
 
-\bibitem{sbert2024}
-Nils Reimers and Iryna Gurevych.
-\newblock Semantic search - sentence transformers, 2024.
-\newblock Accessed: 2024-11-01.
+\bibitem{lexemoRAG}
+Lexemo.
+\newblock Retrieval-augmented generation (rag) in legal research.
+\newblock [Online; accessed April 2025].
+
+\bibitem{asteraRAG}
+Astera.
+\newblock Legal document data extraction with rag: A new era for law firms.
+\newblock
+  \url{https://www.astera.com/type/blog/rag-driven-legal-data-extraction-for-faster-case-management/}.
 
 \bibitem{zhou2020trustworthiness}
 Yujia Zhou, Yan Liu, Xiaoxi Li, Jiajie Jin, Hongjin Qian, Zheng Liu, Chaozhuo
   Li, Zhicheng Dou, Tsung-Yi Ho, and Philip~S. Yu.
 \newblock Trustworthiness in retrieval-augmented generation systems: A survey.
 \newblock {\em arXiv preprint arXiv:2409.10102}, September 2020.
-\newblock Accessed: [add the date you accessed the paper].
+\newblock \url{https://arxiv.org/abs/2409.10102v1}.
 
 \bibitem{zhao2024retrieval}
 Penghao Zhao, Hailin Zhang, Qinhan Yu, Zhengren Wang, Yunteng Geng, Fangcheng
   Fu, Ling Yang, Wentao Zhang, and Bin Cui.
 \newblock Retrieval-augmented generation for ai-generated content: A survey.
 \newblock {\em arXiv preprint arXiv:2402.19473}, February 2024.
-\newblock Accessed: [add the date you accessed the paper].
+\newblock \url{https://arxiv.org/abs/2402.19473v1}.
+
+\bibitem{gupta2024comprehensive}
+Shailja Gupta, Rajesh Ranjan, and Surya~Narayan Singh.
+\newblock A comprehensive survey of retrieval-augmented generation (rag):
+  Evolution, current landscape and future directions, 2024.
+\newblock \url{https://arxiv.org/abs/2410.12837}.
 
 \bibitem{pareto2024rag}
 Pareto AI.
 \newblock The ultimate guide to retrieval-augmented generation (rag), 2024.
-\newblock Accessed: 2025-03-05.
+\newblock \url{https://pareto.ai/blog/retrieval-augmented-generation}.
 
 \bibitem{Rossi_2024}
 Nicholas Rossi, Juexin Lin, Feng Liu, Zhen Yang, Tony Lee, Alessandro Magnani,
@@ -208,18 +263,20 @@ Nicholas Rossi, Juexin Lin, Feng Liu, Zhen Yang, Tony Lee, Alessandro Magnani,
 \bibitem{geeksforgeeks2022precision}
 GeeksforGeeks.
 \newblock Precision and recall in information retrieval, 2022.
-\newblock Accessed: 2025-03-06.
+\newblock
+  \url{https://www.geeksforgeeks.org/precision-and-recall-in-information-retrieval/}.
 
 \bibitem{deconvoluteai2024metrics}
 David Kirchhoff.
 \newblock Metrics for evaluation of retrieval in retrieval-augmented
   generation, 2024.
-\newblock Accessed: 2025-03-06.
+\newblock \url {https://deconvoluteai.com/blog/rag/metrics-retrieval}.
 
 \bibitem{manning2008ir}
 Christopher~D. Manning, Prabhakar Raghavan, and Hinrich Schütze.
 \newblock {\em Introduction to Information Retrieval}.
 \newblock Cambridge University Press, 2008.
+\newblock \url{https://nlp.stanford.edu/IR-book/}.
 
 \bibitem{enwiki:1262179867}
 {Wikipedia contributors}.
@@ -263,7 +320,7 @@ Buqian Zheng.
 \newblock Accessed: 2025-03-09.
 
 \bibitem{10.1561/1500000019}
-Stephen Robertson and Hugo Zaragoza.
+Stephen Robertson and Zaragoza.
 \newblock The probabilistic relevance framework: Bm25 and beyond.
 \newblock {\em Found. Trends Inf. Retr.}, 3(4):333–389, April 2009.
 
@@ -282,8 +339,8 @@ Shengyao Zhuang, Hang Li, and Guido Zuccon.
   Springer-Verlag.
 
 \bibitem{chen-etal-2024-dense}
-Tong Chen, Hongwei Wang, Sihao Chen, Wenhao Yu, Kaixin Ma, Xinran Zhao,
-  Hongming Zhang, and Dong Yu.
+Tong Chen, Hongwei Wang, Sihao Chen, Wenhao Yu, Kaixin Ma, Xinran, Hongming
+  Zhang, and Dong Yu.
 \newblock Dense {X} retrieval: What retrieval granularity should we use?
 \newblock In Yaser Al-Onaizan, Mohit Bansal, and Yun-Nung Chen, editors, {\em
   Proceedings of the 2024 Conference on Empirical Methods in Natural Language
@@ -344,12 +401,6 @@ Shu-Lin Wang and Chun-Yi Wu.
   implement an adaptive ubiquitous learning system.
 \newblock {\em Expert Systems with Applications}, 38(9):10831--10838, 2011.
 
-\bibitem{Harper2015}
-F.~Maxwell Harper and Joseph~A. Konstan.
-\newblock The movielens datasets: History and context.
-\newblock {\em ACM Transactions on Interactive Intelligent Systems}, 5(4), dec
-  2015.
-
 \bibitem{Tamm_2021}
 Yan-Martin Tamm, Rinchin Damdinov, and Alexey Vasilev.
 \newblock Quality metrics in recommender systems: Do we calculate metrics
@@ -358,8 +409,14 @@ Yan-Martin Tamm, Rinchin Damdinov, and Alexey Vasilev.
   ’21, page 708–713. ACM, September 2021.
 
 \bibitem{eviden2025mrr}
-{Evidently AI}.
-\newblock {Mean Reciprocal Rank (MRR) Explained}, 2025.
+Evidently AI.
+\newblock Mean reciprocal rank (mrr) explained, 2025.
 \newblock Last accessed: March 13, 2025.
+
+\bibitem{Harper2015}
+F.~Maxwell Harper and Joseph~A. Konstan.
+\newblock The movielens datasets: History and context.
+\newblock {\em ACM Transactions on Interactive Intelligent Systems}, 5(4), dec
+  2015.
 
 \end{thebibliography}

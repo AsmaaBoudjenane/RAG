@@ -277,5 +277,56 @@ Finally, the candidates in \(G'\) are sorted by their MoL scores, and the exact 
 
 	\textbf{Return:} $G_{\text{final}}$ \tcp{Retrieve Top $k$ items from $G'$}
 \end{algorithm}
+\section{Recommendation System Overview}
+Modern technology and online services have enabled unprecedented access to vast amounts of data. However, this abundance of information creates an overload, making it harder for users to find relevant content efficiently. Recommender systems address this by filtering information and delivering personalized suggestions, saving users time and effortz\cite{Roy2022}. These systems are now integral to platforms like e-commerce, television programs\cite{5174476}, e-learning\cite{WANG201110831}, tourism, and more, though further improvements are needed to enhance their versatility and accuracy.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Figures/RS.png}
+	\caption{Recommendation System Process\cite{zhang2021recsys}}
+	\label{Recommendation_System _Process}	
+\end{figure}
+\subsection{SASRec: Self-Attentive Sequential Recommendation}
+Sequential recommendation systems aim to predict a user’s next interaction based on their historical behavior while incorporating contextual information from recent actions. However, effectively capturing patterns in sequential data is challenging due to the exponential growth of the input space as more past interactions are considered.\cite{kang2018selfat}
+\subsection{SASRec Model Architecture}
+SASRec leverages self-attention to assign adaptive weights to past items at each time step. The key components include:\\
+\textbf{ Embedding Layer:} Converts user interactions into dense vector representations. \\
+\textbf{ Self-Attention Layer: }Captures dependencies between different interactions in the sequence, allowing for long-range modeling.\\
+\textbf{ Point-Wise Feed Forward Network (FFN)}: Enhances feature extraction for better predictions.\\
+\textbf{Prediction Layer:} Computes the likelihood of the next interaction based on learned patterns.\\
+A visual representation of SASRec’s training process (Figure \ref{the_training_process_of_SASRec}) illustrates how the model uses self-attention to focus on relevant past interactions when making predictions
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6\linewidth]{Figures/sasrec.png}
+	\caption{the training process of SASRec\cite{kang2018selfat}}
+	\label{the_training_process_of_SASRec}	
+\end{figure}
+\section{Evaluation Metrics}
+We employ standard ranking metrics widely used in sequential recommendation:
+
+\begin{itemize}
+	\item \textbf{Hit Rate at \( k \) (HR@\( k \))}: Measures the proportion of cases where the target item appears in the top-\( k \) recommendations. The HR@\( k \) is computed as:\cite{Tamm_2021}
+	\begin{equation}
+		\text{HR@}k = \frac{1}{|U|} \sum_{u=1}^{|U|} \mathbb{I}(\text{rank}_u \leq k),
+	\end{equation}
+	where \( |U| \) is the number of users, \( \text{rank}_u \) is the rank of the target item for user \( u \), and \( \mathbb{I}(\cdot) \) is the indicator function that returns 1 if the condition is true and 0 otherwise.
+	
+	\item \textbf{Mean Reciprocal Rank (MRR)}:is a ranking quality metric that measures how quickly a system retrieves the first relevant item. It is calculated as the average of reciprocal ranks across all users or queries,MRR ranges from 0 to 1, with higher values indicating better performance \cite{eviden2025mrr}.
+	\begin{equation}
+		\text{MRR} = \frac{1}{|U|} \sum_{u=1}^{|U|} \frac{1}{\text{rank}_u},
+	\end{equation}
+	where \( \text{rank}_u \) is the position of the first relevant item for user \( u \) within the top-K results. \\ 
+	U represents the total number of users (for recommendation systems) or queries (for information retrieval tasks) in the dataset.
+	
+	\item \textbf{Normalized Discounted Cumulative Gain (NDCG)}: Assesses the ranking quality while accounting for position importance. The NDCG@\( k \) is computed as:\cite{Tamm_2021}
+	\begin{equation}
+		\text{NDCG@}k = \frac{1}{|U|} \sum_{u=1}^{|U|} \frac{\text{DCG@}k}{\text{IDCG@}k},
+	\end{equation}
+	where \( \text{DCG@}k \) is the Discounted Cumulative Gain at position \( k \):
+	\begin{equation}
+		\text{DCG@}k = \sum_{i=1}^{k} \frac{2^{\text{rel}_i} - 1}{\log_2(i + 1)},
+	\end{equation}
+	and \( \text{IDCG@}k \) is the Ideal DCG@\( k \), computed by sorting the items by their true relevance scores.
+\end{itemize}  
+Table \ref{tab:results_tab} summarizes the performance of our hybrid algorithm compared to the MoL-based approach on the MovieLens 100K and 1M datasets, both tested using a Max Sequence Length of 50, an Embedding Dimension of 128, 2 Attention Heads, a Feedforward Dimension of 128, a Batch Size of 128, and trained for 10 epochs 
 \section{ Conclusion }
 The selection of k in retrieval plays a pivotal role in balancing relevance, efficiency, and computational cost. Throughout this chapter, we explored how different approaches—static, dynamic, and hybrid—impact retrieval performance and generation quality. While static selection provides consistency, it lacks adaptability to varying query complexities. Dynamic methods introduce flexibility but come with computational overhead, whereas hybrid strategies aim to balance both. The Hybrid Exact Top-k with Threshold-Based k Selection method offers an advanced solution by leveraging adaptive weighting to enhance ranking effectiveness. Ultimately, an effective k-selection strategy is essential for optimizing retrieval systems, ensuring both efficiency and high-quality results in knowledge-augmented applications.

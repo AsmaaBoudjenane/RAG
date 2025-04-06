@@ -9,60 +9,71 @@ A level-1 auxiliary file: Appendix_A.aux
 Reallocating 'name_of_file' (item size: 1) to 15 items.
 A level-1 auxiliary file: Appendix_B.aux
 Database file #1: Biblio.bib
-I was expecting a `,' or a `}'---line 339 of file Biblio.bib
+Warning--I'm ignoring pareto2024rag's extra "note" field
+--line 251 of file Biblio.bib
+I was expecting a `,' or a `}'---line 447 of file Biblio.bib
  :  year={2020} 
  :               
 I'm skipping whatever remains of this entry
-I was expecting an "="---line 355 of file Biblio.bib
+I was expecting an "="---line 461 of file Biblio.bib
  :  
  :  journal={arXiv preprint arXiv:2005.11401},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--entry type for "Ding2024" isn't style-file defined
---line 893 of file Biblio.bib
+Warning--I'm ignoring asteraRAG's extra "note" field
+--line 495 of file Biblio.bib
+Warning--I'm ignoring zhao2024retrieval's extra "note" field
+--line 545 of file Biblio.bib
+Warning--I'm ignoring zhou2020trustworthiness's extra "note" field
+--line 583 of file Biblio.bib
+Warning--I'm ignoring geeksforgeeks2022precision's extra "note" field
+--line 623 of file Biblio.bib
+Warning--I'm ignoring deconvoluteai2024metrics's extra "note" field
+--line 637 of file Biblio.bib
 Warning--empty publisher in zhang2021recsys
+Warning--empty journal in gao2024retrieval
 Warning--empty journal in lewis2020retrieval
 Warning--empty year in lewis2020retrieval
 Warning--empty booktitle in salemi2023evaluating
-You've used 57 entries,
+You've used 66 entries,
             1791 wiz_defined-function locations,
-            745 strings with 15788 characters,
-and the built_in function-call counts, 13198 in all, are:
-= -- 1035
-> -- 871
-< -- 9
-+ -- 313
-- -- 256
-* -- 806
-:= -- 2133
-add.period$ -- 182
-call.type$ -- 57
-change.case$ -- 51
+            787 strings with 17836 characters,
+and the built_in function-call counts, 14770 in all, are:
+= -- 1133
+> -- 980
+< -- 10
++ -- 353
+- -- 287
+* -- 866
+:= -- 2390
+add.period$ -- 209
+call.type$ -- 66
+change.case$ -- 60
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 565
-empty$ -- 1195
-format.name$ -- 256
-if$ -- 2953
+cite$ -- 71
+duplicate$ -- 640
+empty$ -- 1377
+format.name$ -- 287
+if$ -- 3308
 int.to.chr$ -- 0
-int.to.str$ -- 57
-missing$ -- 38
-newline$ -- 290
-num.names$ -- 63
-pop$ -- 265
+int.to.str$ -- 66
+missing$ -- 43
+newline$ -- 335
+num.names$ -- 72
+pop$ -- 328
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 340
+skip$ -- 371
 stack$ -- 0
-substring$ -- 446
-swap$ -- 179
-text.length$ -- 9
+substring$ -- 443
+swap$ -- 192
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 92
-width$ -- 59
-write$ -- 612
+warning$ -- 5
+while$ -- 100
+width$ -- 68
+write$ -- 699
 (There were 2 error messages)
