@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.27)  6 APR 2025 01:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.1.27)  8 APR 2025 00:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1471,7 +1471,7 @@ File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 54
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 51
 .
 
 (C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
@@ -1481,30 +1481,30 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 LaTeX Warning: Label `rag_architectur.png' multiply defined.
 
-(Appendix_A.aux) (Appendix_B.aux))
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Info: Redefining \degres on input line 54.
-LaTeX Info: Redefining \up on input line 54.
-Package hyperref Info: Link coloring ON on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Info: Redefining \degres on input line 51.
+LaTeX Info: Redefining \up on input line 51.
+Package hyperref Info: Link coloring ON on input line 51.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1585,10 +1585,10 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 54.
+ on input line 51.
 
 (Cover_page.tex
-<Figures/Logo_UM.jpg, id=469, 124.96687pt x 118.19156pt>
+<Figures/Logo_UM.jpg, id=462, 124.96687pt x 118.19156pt>
 File: Figures/Logo_UM.jpg Graphic file (type jpg)
 <use Figures/Logo_UM.jpg>
 Package pdftex.def Info: Figures/Logo_UM.jpg  used on input line 10.
@@ -1646,54 +1646,88 @@ Logo_UM.jpg>])
 [2
 
 ] (Dedication.tex
-<Figures/bgg4.png, id=484, 362.35374pt x 513.92pt>
+<Figures/bgg4.png, id=477, 362.35374pt x 513.92pt>
 File: Figures/bgg4.png Graphic file (type png)
 <use Figures/bgg4.png>
 Package pdftex.def Info: Figures/bgg4.png  used on input line 4.
 (pdftex.def)             Requested size: 614.36214pt x 795.03076pt.
 LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
 (Font)              scaled to size 17.28003pt on input line 8.
+LaTeX Font Info:    Trying to load font information for T1+pzc on input line 30
+.
+
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pzc.fd
+File: t1pzc.fd 2020/03/25 font definitions for T1/pzc.
 )
-<Abstract.pdf, id=486, 597.50829pt x 845.0471pt>
+LaTeX Font Info:    Font shape `T1/pzc/m/n' in size <12> not available
+(Font)              Font shape `T1/pzc/m/it' tried instead on input line 30.
+LaTeX Font Info:    Font shape `T1/pzc/m/n' in size <17.28> not available
+(Font)              Font shape `T1/pzc/m/it' tried instead on input line 30.
+)
+<Abstract.pdf, id=479, 597.50829pt x 845.0471pt>
 File: Abstract.pdf Graphic file (type pdf)
 <use Abstract.pdf>
-Package pdftex.def Info: Abstract.pdf  used on input line 69.
+Package pdftex.def Info: Abstract.pdf  used on input line 66.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: Abstract.pdf Graphic file (type pdf)
 <use Abstract.pdf>
-Package pdftex.def Info: Abstract.pdf  used on input line 69.
+Package pdftex.def Info: Abstract.pdf  used on input line 66.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<Abstract.pdf, id=489, page=1, 597.50829pt x 845.0471pt>
+<Abstract.pdf, id=482, page=1, 597.50829pt x 845.0471pt>
 File: Abstract.pdf Graphic file (type pdf)
 <use Abstract.pdf, page 1>
-Package pdftex.def Info: Abstract.pdf , page1 used on input line 69.
+Package pdftex.def Info: Abstract.pdf , page1 used on input line 66.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: Abstract.pdf Graphic file (type pdf)
 <use Abstract.pdf, page 1>
-Package pdftex.def Info: Abstract.pdf , page1 used on input line 69.
+Package pdftex.def Info: Abstract.pdf , page1 used on input line 66.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 
 
-[3 <./Figures/bgg4.png>]
+[3{C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+ <./Figures/bgg4.png>]
 File: Abstract.pdf Graphic file (type pdf)
 <use Abstract.pdf, page 1>
-Package pdftex.def Info: Abstract.pdf , page1 used on input line 69.
+Package pdftex.def Info: Abstract.pdf , page1 used on input line 66.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 File: Abstract.pdf Graphic file (type pdf)
 <use Abstract.pdf, page 1>
-Package pdftex.def Info: Abstract.pdf , page1 used on input line 69.
+Package pdftex.def Info: Abstract.pdf , page1 used on input line 66.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 
 
 File: Abstract.pdf Graphic file (type pdf)
 <use Abstract.pdf, page 1>
-Package pdftex.def Info: Abstract.pdf , page1 used on input line 69.
+Package pdftex.def Info: Abstract.pdf , page1 used on input line 66.
 (pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
 [4
 
- <./Abstract.pdf>] (main.toc
+ <./Abstract.pdf>] (Images_sources.tex
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7
+.
+
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \hbox (9.93832pt too wide) in paragraph at lines 7--22
+\T1/lmr/m/n/12 Figure 1.4 from [][]$\T1/lmtt/m/n/12 www . researchgate . net / 
+publication / 336092695 _ Densely _ Connected _ Convolutional _ Networks _ With
+ _ Attention _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--22
+
+ []
+
+
+
+[5
+
+]) (main.toc
 
 [1
+
 
 ]
 
@@ -1709,7 +1743,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63 ...}Objective Metrics:}{28}{subsection.2.6.4}
+l.63 ...}Objective Metrics:}{30}{subsection.2.6.4}
                                                   % [2]
 
 
@@ -1724,7 +1758,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 ....2.1}MovieLens-100K}{45}{subsection.4.2.1}
+l.98 ....2.1}MovieLens-100K}{47}{subsection.4.2.1}
                                                   % [3])
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -1743,7 +1777,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 	\newpage
+l.88 	\newpage
                [4] (main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
@@ -1755,7 +1789,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.104 	\newpage
+l.101 	\newpage
                 [1
 
 ] (main.lot)
@@ -1769,7 +1803,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.117 	\newpage
+l.114 	\newpage
                 [1
 
 ] (Abbreviations.tex)
@@ -1779,12 +1813,45 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.129 	\newpage
+l.126 	\newpage
                 [1
 
-] (Introduction.tex) (Chapter_2.tex
+] (General Introduction.tex
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19 \begin{itemize}
+                     [1
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+0.
+
+(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+(Chapter_1.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Large Language Models (LLMs)} [2{C:/Users/GIGALINE/AppData/Local/P
+rograms/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
 Chapter 1.
-<Figures/the_historyOf_nlp.png, id=724, 769.6755pt x 305.943pt>
+<Figures/the_historyOf_nlp.png, id=736, 769.6755pt x 305.943pt>
 File: Figures/the_historyOf_nlp.png Graphic file (type png)
 <use Figures/the_historyOf_nlp.png>
 Package pdftex.def Info: Figures/the_historyOf_nlp.png  used on input line 16.
@@ -1792,15 +1859,15 @@ Package pdftex.def Info: Figures/the_historyOf_nlp.png  used on input line 16.
 
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.20 
-      [1
+      [3
 
 ]
-<Figures/ANN.png, id=731, 489.027pt x 372.1905pt>
+<Figures/ANN.png, id=743, 489.027pt x 372.1905pt>
 File: Figures/ANN.png Graphic file (type png)
 <use Figures/ANN.png>
 Package pdftex.def Info: Figures/ANN.png  used on input line 39.
@@ -1815,52 +1882,46 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.43 
-      [2 <./Figures/the_historyOf_nlp.png>]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.54 
-      [3 <./Figures/ANN.png>]
-<Figures/RNN.png, id=748, 633.567pt x 221.02576pt>
-File: Figures/RNN.png Graphic file (type png)
-<use Figures/RNN.png>
-Package pdftex.def Info: Figures/RNN.png  used on input line 71.
-(pdftex.def)             Requested size: 472.03123pt x 164.6728pt.
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.78 
-      [4{C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-
-mathit.enc}{C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/
-lm-rm.enc}{C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/l
-m-mathsy.enc} <./Figures/RNN.png>]
-<Figures/LSTM.png, id=762, 666.69075pt x 311.36325pt>
+l.43 
+      [4 <./Figures/the_historyOf_nlp.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.54 
+      [5 <./Figures/ANN.png>]
+<Figures/RNN.png, id=759, 1284.8pt x 428.60126pt>
+File: Figures/RNN.png Graphic file (type png)
+<use Figures/RNN.png>
+Package pdftex.def Info: Figures/RNN.png  used on input line 71.
+(pdftex.def)             Requested size: 472.03123pt x 157.46819pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6{C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit
+.enc}{C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.
+enc}{C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-math
+sy.enc} <./Figures/RNN.png>]
+<Figures/LSTM.png, id=774, 666.69075pt x 311.36325pt>
 File: Figures/LSTM.png Graphic file (type png)
 <use Figures/LSTM.png>
 Package pdftex.def Info: Figures/LSTM.png  used on input line 86.
@@ -1874,13 +1935,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5 <./Figures/LSTM.png>]
-<Figures/trasformers.png, id=776, 333.04425pt x 339.06676pt>
+[7 <./Figures/LSTM.png>]
+<Figures/trasformers.png, id=789, 333.04425pt x 339.06676pt>
 File: Figures/trasformers.png Graphic file (type png)
 <use Figures/trasformers.png>
 Package pdftex.def Info: Figures/trasformers.png  used on input line 128.
 (pdftex.def)             Requested size: 283.22162pt x 288.35295pt.
-<Figures/incoderDecoder.png, id=778, 1405.25pt x 257.96375pt>
+<Figures/incoderDecoder.png, id=791, 1405.25pt x 257.96375pt>
 File: Figures/incoderDecoder.png Graphic file (type png)
 <use Figures/incoderDecoder.png>
 Package pdftex.def Info: Figures/incoderDecoder.png  used on input line 148.
@@ -1894,7 +1955,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6]
+[8]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1903,7 +1964,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7 <./Figures/trasformers.png>]
+[9 <./Figures/trasformers.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1912,8 +1973,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8{C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex
-.enc} <./Figures/incoderDecoder.png (PNG copy)>]
+[10{C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathe
+x.enc} <./Figures/incoderDecoder.png (PNG copy)>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1922,8 +1983,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9]
-<Figures/pretraining.png, id=816, 404.712pt x 144.54pt>
+[11]
+<Figures/pretraining.png, id=828, 404.712pt x 144.54pt>
 File: Figures/pretraining.png Graphic file (type png)
 <use Figures/pretraining.png>
 Package pdftex.def Info: Figures/pretraining.png  used on input line 194.
@@ -1937,7 +1998,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10]
+[12]
 Overfull \hbox (4.27786pt too wide) in paragraph at lines 202--203
 []\T1/lmr/m/n/12 Another ap-proach is \T1/lmr/bx/n/12 in-struc-tion tun-ing\T1/
 lmr/m/n/12 , which in-volves fine-tuning the model on datasets
@@ -1952,32 +2013,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11 <./Figures/pretraining.png>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-15.
-
-(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[12{C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.e
-nc}]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13]
+[13 <./Figures/pretraining.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2013,7 +2049,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17]) (Chapter_3.tex
+[17]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2023,10 +2059,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19]) (Chapter_2.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20]
 Chapter 2.
 
 
-[19
+[21
 
 ]
 
@@ -2037,8 +2091,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20]
-<Figures/rag_types.png, id=904, 555.2745pt x 342.078pt>
+[22]
+<Figures/rag_types.png, id=915, 555.2745pt x 342.078pt>
 File: Figures/rag_types.png Graphic file (type png)
 <use Figures/rag_types.png>
 Package pdftex.def Info: Figures/rag_types.png  used on input line 33.
@@ -2052,7 +2106,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21 <./Figures/rag_types.png>]
+[23 <./Figures/rag_types.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2061,7 +2115,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22]
+[24]
 Overfull \hbox (0.54642pt too wide) in paragraph at lines 74--75
 []\T1/lmr/m/n/12 Task Adapter Mod-ule: Tai-lors RAG to var-i-ous down-stream ta
 sks by au-tomat-ing prompt
@@ -2082,7 +2136,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23]
+[25]
 Overfull \hbox (8.1922pt too wide) in paragraph at lines 88--89
 \T1/lmr/m/n/12 RAG sys-tems com-bine para-met-ric mem-ory (a pre-trained lan-gu
 age model) with non-parametric
@@ -2097,8 +2151,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24]
-<Figures/rag_architectur.png, id=925, 524.55975pt x 338.4645pt>
+[26]
+<Figures/rag_architectur.png, id=937, 524.55975pt x 338.4645pt>
 File: Figures/rag_architectur.png Graphic file (type png)
 <use Figures/rag_architectur.png>
 Package pdftex.def Info: Figures/rag_architectur.png  used on input line 102.
@@ -2112,31 +2166,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25 <./Figures/rag_architectur.png>]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[26]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[27]
-Overfull \hbox (9.41762pt too wide) in paragraph at lines 160--161
-\T1/lmr/m/n/12 The qual-ity of re-trieval re-sults can sig-nif-i-cantly im-pact
- the per-for-mance of Retrieval-Augmented
- []
-
-
+[27 <./Figures/rag_architectur.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2154,7 +2184,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29]) (Chapter_4.tex
+[29]
+Overfull \hbox (9.41762pt too wide) in paragraph at lines 160--161
+\T1/lmr/m/n/12 The qual-ity of re-trieval re-sults can sig-nif-i-cantly im-pact
+ the per-for-mance of Retrieval-Augmented
+ []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2164,8 +2200,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [30]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31]) (Chapter_3.tex
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32]
 Chapter 3.
-<Figures/topk.png, id=967, 567.3195pt x 257.16075pt>
+<Figures/topk.png, id=979, 567.3195pt x 257.16075pt>
 File: Figures/topk.png Graphic file (type png)
 <use Figures/topk.png>
 Package pdftex.def Info: Figures/topk.png  used on input line 15.
@@ -2180,7 +2234,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[31
+[33
 
 ]
 
@@ -2191,7 +2245,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32 <./Figures/topk.png>]
+[34 <./Figures/topk.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2200,17 +2254,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-<Figures/precisionR.png, id=992, 531.1845pt x 322.20375pt>
+<Figures/precisionR.png, id=1003, 531.1845pt x 322.20375pt>
 File: Figures/precisionR.png Graphic file (type png)
 <use Figures/precisionR.png>
 Package pdftex.def Info: Figures/precisionR.png  used on input line 90.
 (pdftex.def)             Requested size: 330.42041pt x 200.43289pt.
-<Figures/recalR.png, id=995, 518.53725pt x 308.95425pt>
+<Figures/recalR.png, id=1004, 518.53725pt x 308.95425pt>
 File: Figures/recalR.png Graphic file (type png)
 <use Figures/recalR.png>
 Package pdftex.def Info: Figures/recalR.png  used on input line 98.
@@ -2227,7 +2281,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34 <./Figures/precisionR.png>]
+[36 <./Figures/precisionR.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2236,7 +2290,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35 <./Figures/recalR.png>]
+[37 <./Figures/recalR.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2245,7 +2299,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36]
+[38]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2254,8 +2308,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37]
-<Figures/mol.png, id=1046, 392.06474pt x 135.50626pt>
+[39]
+<Figures/mol.png, id=1054, 392.06474pt x 135.50626pt>
 File: Figures/mol.png Graphic file (type png)
 <use Figures/mol.png>
 Package pdftex.def Info: Figures/mol.png  used on input line 155.
@@ -2269,7 +2323,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38 <./Figures/mol.png>]
+[40 <./Figures/mol.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2278,8 +2332,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39]
-<Figures/propused _solution_steps.png, id=1071, 626.94225pt x 354.123pt>
+[41]
+<Figures/propused _solution_steps.png, id=1077, 626.94225pt x 354.123pt>
 File: Figures/propused _solution_steps.png Graphic file (type png)
 <use Figures/propused _solution_steps.png>
 Package pdftex.def Info: Figures/propused _solution_steps.png  used on input li
@@ -2292,11 +2346,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--226
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 240.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-40.
-(C:\Users\GIGALINE\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2305,8 +2355,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40 <./Figures/propused _solution_steps.png>]
-<Figures/RS.png, id=1085, 407.72325pt x 223.43475pt>
+[42 <./Figures/propused _solution_steps.png>]
+<Figures/RS.png, id=1091, 407.72325pt x 223.43475pt>
 File: Figures/RS.png Graphic file (type png)
 <use Figures/RS.png>
 Package pdftex.def Info: Figures/RS.png  used on input line 284.
@@ -2320,8 +2370,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[41]
-<Figures/sasrec.png, id=1128, 473.3685pt x 383.63326pt>
+[43]
+<Figures/sasrec.png, id=1133, 473.3685pt x 383.63326pt>
 File: Figures/sasrec.png Graphic file (type png)
 <use Figures/sasrec.png>
 Package pdftex.def Info: Figures/sasrec.png  used on input line 299.
@@ -2335,7 +2385,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42 <./Figures/RS.png>]
+[44 <./Figures/RS.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2344,7 +2394,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[43 <./Figures/sasrec.png>]) (Chapter_6.tex
+[45 <./Figures/sasrec.png>]) (Chapter_4.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2353,7 +2403,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[44]
+[46]
 Chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--23
@@ -2362,7 +2412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
 
 
-[45
+[47
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2380,7 +2430,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46]
+[48]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2398,7 +2448,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[47])
+[49]) (Conclusion.tex
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2407,26 +2457,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[48] (main.bbl
+[50])
 
-[49
+[51
 
-]
-Underfull \hbox (badness 2970) in paragraph at lines 72--76
+] (main.bbl
+Underfull \hbox (badness 2970) in paragraph at lines 61--65
 []\T1/lmr/m/n/12 Jay Alam-mar.  The il-lus-trated trans-former.  [][]$\T1/lmtt/
 m/n/12 https : / / jalammar . github . io /
  []
 
 
 
+[52
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[50]
+]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2435,13 +2480,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[51]
-Underfull \hbox (badness 10000) in paragraph at lines 225--229
+[53]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 214--218
 []\T1/lmr/m/n/12 Astera.  Le-gal doc-u-ment data ex-trac-tion with rag: A
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--229
+Underfull \hbox (badness 10000) in paragraph at lines 214--218
 \T1/lmr/m/n/12 new era for law firms.  [][]$\T1/lmtt/m/n/12 https : / / www . a
 stera . com / type / blog /
  []
@@ -2455,7 +2509,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[52]
+[55]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2464,8 +2518,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[53]
-Underfull \hbox (badness 1418) in paragraph at lines 374--378
+[56]
+Underfull \hbox (badness 1418) in paragraph at lines 363--367
 []\T1/lmr/m/n/12 Chencheng Zhu, Kazu-taka Shi-mada, Tomoki Taniguchi, and Tomok
 o Ohkuma.
  []
@@ -2479,7 +2533,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[54])
+[57])
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2493,73 +2547,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.151 	\include{Appendix_A}
-                           % Appendix A [1]
-\openout2 = `Appendix_A.aux'.
-
- (Appendix_A.tex
-Appendix A.
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.9 \newpage
-             [1
-
-
-])
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.151 	\include{Appendix_A}
-                           % Appendix A [2]
-\openout2 = `Appendix_B.aux'.
-
- (Appendix_B.tex
-Appendix B.
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.9 \newpage
-             [1
-
-
-
-
-])
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.152 	\include{Appendix_B}
-                           % Appendix B [2] (main.aux (Appendix_A.aux)
-(Appendix_B.aux))
+l.147 \end{document}
+                     [1] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
@@ -2569,16 +2558,16 @@ L3 programming layer <2024-12-25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0AB719F675BDFC0CE45A8DF60D735E32;18876.
+(rerunfilecheck)             Checksum: EC61CFC9B416363101AA191431C6932D;18568.
  ) 
 Here is how much of TeX's memory you used:
- 48141 strings out of 473535
- 1127893 string characters out of 5713483
- 1737996 words of memory out of 5000000
- 70180 multiletter control sequences out of 15000+600000
- 647183 words of font info for 99 fonts, out of 8000000 for 9000
+ 48125 strings out of 473535
+ 1127174 string characters out of 5713483
+ 1737080 words of memory out of 5000000
+ 70165 multiletter control sequences out of 15000+600000
+ 650539 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,17n,96p,1348b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,17n,96p,1348b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\GIGALINE\AppData\Local\MiKTeX\fonts/pk/ljfour/public/calligra/dpi6
 91\callig15.pk><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/arabi/ae_almateen.pfb><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/font
@@ -2607,10 +2596,11 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/GIGALINE/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/GIGALINE
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/GIGAL
 INE/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pf
-b>
-Output written on main.pdf (70 pages, 2425781 bytes).
+b><C:/Users/GIGALINE/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfchan/uzc
+mi8a.pfb>
+Output written on main.pdf (70 pages, 2423856 bytes).
 PDF statistics:
- 1417 PDF objects out of 1440 (max. 8388607)
- 302 named destinations out of 1000 (max. 500000)
- 1123 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1418 PDF objects out of 1440 (max. 8388607)
+ 303 named destinations out of 1000 (max. 500000)
+ 1107 words of extra memory for PDF output out of 10000 (max. 10000000)
 

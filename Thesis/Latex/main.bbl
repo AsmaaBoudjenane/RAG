@@ -1,21 +1,10 @@
 \begin{thebibliography}{10}
 
-\bibitem{evidentlyai2025}
-Evidently AI.
-\newblock Ranking and recommendation metrics guide: Precision and recall at k
-  in ranking and recommendations, 2025.
-\newblock Last updated: January 9, 2025.
-
 \bibitem{Ding2024}
 Bailu Ding and Jiaqi Zhai.
 \newblock Efficient retrieval with learned similarities.
 \newblock In {\em THE WEB CONFERENCE 2025}, 2025.
-
-\bibitem{zhang2021recsys}
-Shuai Zhang, Aston Zhang, and Yi~Tay.
-\newblock {\em Recommender Systems}.
-\newblock 2021.
-\newblock Accessed: March 13, 2025.
+\newblock \url{https://openreview.net/forum?id=eHF4pDRWjT}.
 
 \bibitem{kang2018selfat}
 Wang-Cheng Kang and Julian McAuley.

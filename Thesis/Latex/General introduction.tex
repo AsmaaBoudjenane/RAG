@@ -1,0 +1,41 @@
+\chapter*{General introduction}
+\pagestyle{fancy}\lhead{\textbf \footnotesize\it{General introduction}}
+\pagestyle{fancy}\chead{} \pagestyle{fancy}\rhead{}
+\pagestyle{fancy}\lfoot{\textbf {\small\it{Univ-MascaraComputer Science: 2025}}}
+\pagestyle{fancy}\cfoot{} \pagestyle{fancy}\rfoot{\thepage}
+\pagenumbering{arabic}
+\addcontentsline{toc}{chapter}{General introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{Context :}
+In recent years, the legal domain has witnessed a growing interest in the application of advanced natural language processing techniques to improve access to legal information and automate reasoning over juridical data. Legal texts—such as statutes, court decisions, and regulatory documents—are often dense, context-dependent, and linguistically complex, making them challenging to interpret both for non-experts and legal professionals. This complexity is further amplified in multilingual and region-specific legal systems, such as Algeria's, where access to structured and searchable legal data remains limited.
+
+Large Language Models (LLMs) have emerged as powerful tools for understanding and generating human-like text, showing promise in tasks such as legal question answering, case summarization, and document classification. However, their reliance on static training data and the inherent difficulty in capturing fine-grained, up-to-date legal knowledge limits their effectiveness in dynamic and high-stakes domains like law. To bridge this gap, Retrieval-Augmented Generation (RAG) architectures have been proposed, combining the linguistic capabilities of LLMs with external knowledge retrieval systems. This hybrid approach enables models to access and reason over relevant documents at inference time, offering a more grounded and contextually aware output.
+
+Despite these advances, several challenges persist—particularly in the selection of the most relevant documents from large legal corpora. Poor retrieval quality can significantly degrade the performance and reliability of RAG-based systems. Therefore, refining the retrieval process remains a crucial area of research, especially in low-resource and domain-specific contexts such as Arabic legal data in Algeria.\\
+\textbf{Problem Statement :} 
+While LLMs and RAG architectures provide a strong foundation for legal AI applications, their effectiveness is often undermined by limitations in the retrieval process. The selection of irrelevant or marginally related documents can lead to hallucinated or misleading responses, which is especially problematic in legal reasoning tasks. In the Algerian legal context, where structured resources are scarce and many legal documents exist only in unstructured Arabic text, the challenge of effective document retrieval becomes even more critical. This thesis addresses the specific problem of optimizing the retrieval step in RAG pipelines by introducing a more adaptive and context-sensitive document selection mechanism tailored to the legal domain.\\
+\textbf{Objectives:} 
+This research aims to explore and improve the integration of LLMs and retrieval systems in the legal field, with a focus on the Algerian legal context. The main objectives are as follows:
+\begin{itemize}
+	\item To investigate the potential of LLMs and Retrieval-Augmented Generation models for processing Arabic legal texts .
+	\item To identify and address challenges in document retrieval, particularly the issue of selecting the optimal number of candidate documents (the k-selection problem).
+	\item To develop and share a curated dataset of Arabic legal case texts from Algeria, contributing to resources in low-resource legal NLP.
+\end{itemize}
+\textbf{Contributions :} This thesis makes the following key contributions:
+\begin{itemize}
+	\item A domain-specific chatbot designed to assist users in navigating Algerian legal case information using natural language queries.
+	\item The creation of a new dataset of Arabic-language  legal cases from Algeria, filling a gap in publicly available legal resources for this jurisdiction.
+	\item A Dynamic Candidate Selection mechanism, which improves the retrieval phase of RAG by adaptively selecting relevant documents based on contextual thresholds.
+\end{itemize}
+\textbf{Structure :} 
+The thesis is organized into four main chapters: 
+\begin{itemize}
+	\item Chapter 1: Large Language Models – An overview of LLMs and their capabilities, with a focus on applications in legal NLP.
+	
+	\item Chapter 2: Retrieval-Augmented Generation – A detailed examination of RAG architectures, their strengths, and limitations in legal contexts.
+
+	\item Chapter 3: Candidate Selection in Retrieval – The chapter reviews existing k selection methods, followed by a proposed dynamic selection method to improve retrieval efficiency and generation quality.
+
+	\item Chapter 4: Experimental Results – Summarizes the dataset, experimental setup, and key findings, with analysis of hyperparameter effects and system performance.
+\end{itemize}
+%%%\newpage
