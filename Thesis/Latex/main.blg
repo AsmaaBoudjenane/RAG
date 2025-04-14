@@ -5,72 +5,71 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 Database file #1: Biblio.bib
+I was expecting an "="---line 67 of file Biblio.bib
+ : 
+ : journal={arXiv preprint arXiv:2005.11401},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--I'm ignoring pareto2024rag's extra "note" field
---line 265 of file Biblio.bib
-I was expecting a `,' or a `}'---line 461 of file Biblio.bib
+--line 335 of file Biblio.bib
+I was expecting a `,' or a `}'---line 515 of file Biblio.bib
  :  year={2020} 
  :               
 I'm skipping whatever remains of this entry
-I was expecting an "="---line 475 of file Biblio.bib
- :  
- :  journal={arXiv preprint arXiv:2005.11401},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--I'm ignoring asteraRAG's extra "note" field
---line 509 of file Biblio.bib
+--line 551 of file Biblio.bib
 Warning--I'm ignoring zhao2024retrieval's extra "note" field
---line 559 of file Biblio.bib
+--line 601 of file Biblio.bib
 Warning--I'm ignoring zhou2020trustworthiness's extra "note" field
---line 597 of file Biblio.bib
+--line 639 of file Biblio.bib
 Warning--I'm ignoring geeksforgeeks2022precision's extra "note" field
---line 637 of file Biblio.bib
+--line 679 of file Biblio.bib
 Warning--I'm ignoring deconvoluteai2024metrics's extra "note" field
---line 651 of file Biblio.bib
-Warning--I didn't find a database entry for "evidentlyai2025"
-Warning--I didn't find a database entry for "zhang2021recsys"
-Warning--empty journal in gao2024retrieval
+--line 693 of file Biblio.bib
+Warning--empty booktitle in inproceedings
 Warning--empty journal in lewis2020retrieval
 Warning--empty year in lewis2020retrieval
+Warning--empty journal in gao2024retrieval
 Warning--empty booktitle in salemi2023evaluating
-You've used 64 entries,
+You've used 66 entries,
             1791 wiz_defined-function locations,
-            781 strings with 17648 characters,
-and the built_in function-call counts, 14465 in all, are:
-= -- 1111
-> -- 965
-< -- 10
-+ -- 347
-- -- 283
-* -- 855
-:= -- 2343
-add.period$ -- 203
-call.type$ -- 64
-change.case$ -- 59
+            790 strings with 18109 characters,
+and the built_in function-call counts, 15171 in all, are:
+= -- 1171
+> -- 1004
+< -- 12
++ -- 360
+- -- 294
+* -- 901
+:= -- 2447
+add.period$ -- 210
+call.type$ -- 66
+change.case$ -- 61
 chr.to.int$ -- 0
-cite$ -- 68
-duplicate$ -- 625
-empty$ -- 1340
-format.name$ -- 283
-if$ -- 3238
+cite$ -- 71
+duplicate$ -- 660
+empty$ -- 1404
+format.name$ -- 294
+if$ -- 3406
 int.to.chr$ -- 0
-int.to.str$ -- 64
-missing$ -- 41
-newline$ -- 325
-num.names$ -- 70
-pop$ -- 313
+int.to.str$ -- 66
+missing$ -- 43
+newline$ -- 335
+num.names$ -- 74
+pop$ -- 325
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 366
+skip$ -- 389
 stack$ -- 0
-substring$ -- 443
-swap$ -- 190
-text.length$ -- 10
+substring$ -- 479
+swap$ -- 204
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 98
-width$ -- 66
-write$ -- 680
+warning$ -- 5
+while$ -- 106
+width$ -- 68
+write$ -- 703
 (There were 2 error messages)

@@ -1,14 +1,30 @@
 \begin{thebibliography}{10}
 
-\bibitem{Ding2024}
-Bailu Ding and Jiaqi Zhai.
-\newblock Efficient retrieval with learned similarities.
-\newblock In {\em THE WEB CONFERENCE 2025}, 2025.
-\newblock \url{https://openreview.net/forum?id=eHF4pDRWjT}.
+\bibitem{inproceedings}
+Abdellah Hamouda~Sidhoum, Mataoui M’hamed, Sebbak Faouzi, Ouazene Aymen,
+  Hussine Fedoua, Amrani Mohamed~Chakib, and Boumediri Takieddine.
+\newblock Transforming legal documents into knowledge goldmines: Application on
+  the algerian official journal.
+\newblock pages 1--7, 09 2024.
 
-\bibitem{kang2018selfat}
-Wang-Cheng Kang and Julian McAuley.
-\newblock Self-attentive sequential recommendation, 2018.
+\bibitem{Naveed2024}
+Humza Naveed, Asad~Ullah Khan, Shi Qiu, Muhammad Saqib, Saeed Anwar, Muhammad
+  Usman, Naveed Akhtar, Nick Barnes, and Ajmal Mian.
+\newblock A comprehensive overview of large language models, 2024.
+\newblock \url{https://arxiv.org/abs/2307.06435}.
+
+\bibitem{lewis2020retrieval}
+Patrick Lewis, Ethan Perez, Aleksandra~  Piktus, Fabio Petroni, Vladimir
+  Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim
+  Rocktäschel, Sebastian Riedel, and Douwe Kiela.
+\newblock Retrieval-augmented generation for knowledge-intensive nlp tasks.
+
+\bibitem{Information_Retrieval}
+Imen~Bouaziz Mezghanni and Faiez Gargouri.
+\newblock Information retrieval from unstructured arabic legal data.
+\newblock In Richard Booth and Min-Ling Zhang, editors, {\em PRICAI 2016:
+  Trends in Artificial Intelligence}, pages 44--54, Cham, 2016. Springer
+  International Publishing.
 
 \bibitem{murugan2024nlp}
 Mohana Murugan.
@@ -102,12 +118,6 @@ Li~Dong, Nan Yang, Wenhui Wang, Furu Wei, Xiaodong Liu, Yu~Wang, Jianfeng Gao,
 \newblock In {\em Advances in Neural Information Processing Systems (NeurIPS)},
   volume~32, 2019.
 
-\bibitem{Naveed2024}
-Humza Naveed, Asad~Ullah Khan, Shi Qiu, Muhammad Saqib, Saeed Anwar, Muhammad
-  Usman, Naveed Akhtar, Nick Barnes, and Ajmal Mian.
-\newblock A comprehensive overview of large language models, 2024.
-\newblock \url{https://arxiv.org/abs/2307.06435}.
-
 \bibitem{yenduri2023gpt}
 Gokul Yenduri, M~Ramalingam, Chemmalar~G Selvi, Y~Supriya, Gautam Srivastava,
   Praveen Kumar~Reddy Maddikunta, Deepti Raj, Rutvij~H Jhaveri, B~Prabadevi,
@@ -173,12 +183,6 @@ Yunfan Gao, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi~Dai,
   Jiawei Sun, Meng Wang, and Haofen Wang.
 \newblock Retrieval-augmented generation for large language models: A survey.
 \newblock 2024.
-
-\bibitem{lewis2020retrieval}
-Patrick Lewis, Ethan Perez, Aleksandra~  Piktus, Fabio Petroni, Vladimir
-  Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim
-  Rocktäschel, Sebastian Riedel, and Douwe Kiela.
-\newblock Retrieval-augmented generation for knowledge-intensive nlp tasks.
 
 \bibitem{howard2018universal}
 Jeremy Howard and Sebastian Ruder.
@@ -373,6 +377,12 @@ Jiaqi Zhai, Zhaojie Gong, Yueming Wang, Xiao Sun, Zheng Yan, Fu~Li, and Xing
   Discovery and Data Mining}, KDD '23, pages 5520--5531, New York, NY, USA,
   2023. Association for Computing Machinery.
 
+\bibitem{Ding2024}
+Bailu Ding and Jiaqi Zhai.
+\newblock Efficient retrieval with learned similarities.
+\newblock In {\em THE WEB CONFERENCE 2025}, 2025.
+\newblock \url{https://openreview.net/forum?id=eHF4pDRWjT}.
+
 \bibitem{Roy2022}
 Deepjyoti Roy and Mala Dutta.
 \newblock A systematic review and research perspective on recommender systems.
@@ -389,6 +399,10 @@ Shu-Lin Wang and Chun-Yi Wu.
 \newblock Application of context-aware and personalized recommendation to
   implement an adaptive ubiquitous learning system.
 \newblock {\em Expert Systems with Applications}, 38(9):10831--10838, 2011.
+
+\bibitem{kang2018selfat}
+Wang-Cheng Kang and Julian McAuley.
+\newblock Self-attentive sequential recommendation, 2018.
 
 \bibitem{Tamm_2021}
 Yan-Martin Tamm, Rinchin Damdinov, and Alexey Vasilev.

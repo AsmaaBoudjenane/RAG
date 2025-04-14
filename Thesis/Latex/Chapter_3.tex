@@ -174,10 +174,16 @@ To efficiently scale MoL for large datasets and hardware-optimized implementatio
 
 Since embedding normalization can be precomputed, both formulations remain interchangeable in practical applications. Furthermore, it is possible to \textbf{decompose any high-rank matrix} into a mixture of logits based on low-rank matrices, demonstrating the flexibility and scalability of this approach in large-scale information retrieval tasks.
 \subsection{Algorithm Design}
-
 we introduce an adaptive threshold mechanism
 (Dynamic Candidate Selection), the MoL framework is employed to refine the
-candidate retrieval process. 
+candidate retrieval process. \\
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Figures/propused _solution_steps.png}
+	\caption{propused solution steps}
+	\label{propused _solution_steps}	
+\end{figure}
+\noindent
 1. \textbf{Component-Level Embeddings}:  
 Component-level embeddings are generated for all items in the dataset \(X\). These embeddings facilitate efficient similarity computations during retrieval. Formally,
 \begin{equation}
@@ -185,10 +191,21 @@ Component-level embeddings are generated for all items in the dataset \(X\). The
 \end{equation}
 
 \noindent
-2. \textbf{Dynamic Threshold Adjustment}:  
+2.\textbf{ Initial Candidate Retrieval:} This step involves computing similarity scores between a query representation and item representations for each feature component $p \in P$.  
+
+\begin{equation}
+	S_p \gets  \{ \langle f_p(q), g_p(x) \rangle : x \in X_p \}
+	\label{eq:initial_retrieval}
+\end{equation}
+Here, $f_p(q)$ and $g_p(x)$ represent the feature embeddings of the query $q$ and item $x$ for the $p$-th component, respectively. The dot product $\langle f_p(q), g_p(x) \rangle$ measures the relevance of each item $x \in X_p$ with respect to $q$, producing a set of scores $S_p$ .
+
+
+\noindent
+3. \textbf{Dynamic Threshold Adjustment}:  
 To improve retrieval quality, \textbf{Mixture of Logits (MoL)} scores are computed for each candidate \(x \in G\). The adaptive gating weights \(\pi_p(q, x)\) allow the algorithm to dynamically adjust the retrieval threshold \(T_{\text{adaptive}}\) based on the MoL scores. The scoring function is defined as:
 \begin{equation}
 	\phi(q, x) = \sum_{p=1}^{P} \pi_p(q, x) \cdot \langle f_p(q), g_p(x) \rangle.
+	\label{similarity_function}
 \end{equation}
 The adaptive threshold \(T_{\text{adaptive}}\) is set as the minimum score among the candidates:
 \begin{equation}
@@ -196,7 +213,7 @@ The adaptive threshold \(T_{\text{adaptive}}\) is set as the minimum score among
 \end{equation}
 
 \noindent
-3. \textbf{Refinement and Top-K Selection}:  
+4. \textbf{Refinement and Top-K Selection}:  
 Using the adaptive threshold \(T_{\text{adaptive}}\), additional relevant candidates are retrieved, expanding the candidate set \(G'\). This is achieved by including candidates whose scores exceed the threshold:
 \begin{equation}
 	G' \leftarrow G \cup \{x \mid s_p \geq T_{\text{adaptive}}\}.
@@ -209,18 +226,13 @@ Finally, the candidates in \(G'\) are sorted by their MoL scores, and the exact 
 \begin{equation}
 	G_{\text{final}} = \text{Top-k}(G', \phi(q, x)).
 \end{equation}
+As shown in Algorithm\ref{ALgo1}, the retrieval process dynamically adjusts the threshold based on MoL scores.
+\textbf{Input:} Query $q$, Set of items $X$, Component-level embeddings: $f_p(q)$, $g_p(x)$ for $p \in P$, $x \in X$, Initial threshold $T_{\text{init}}$ \\
+\textbf{Output:} Exact top $k$ items based on dynamic threshold selection, $G_{\text{final}}$ \\
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.7\linewidth]{Figures/propused _solution_steps.png}
-	\caption{propused solution steps}
-	\label{propused _solution_steps}	
-\end{figure}
 
 \subsection{Pseudocode}
 
-\textbf{Input:} Query $q$, Set of items $X$, Component-level embeddings: $f_p(q)$, $g_p(x)$ for $p \in P$, $x \in X$, Initial threshold $T_{\text{init}}$ \\
-\textbf{Output:} Exact top $k$ items based on dynamic threshold selection, $G_{\text{final}}$ \\
 \SetKwInOut{Input}{Input}
 \SetKwInOut{Output}{Output}
 
@@ -237,24 +249,19 @@ Finally, the candidates in \(G'\) are sorted by their MoL scores, and the exact 
 		}
 	}
 	
-
+	
 	\textbf{1. Initial Candidate Retrieval:} \\
 	\ForEach{component $p \in P$}{
 		Compute dot product scores: 
-		\[
-		S_p \gets \{ \langle f_p(q), g_p(x) \rangle : x \in X_p \}
-		\]
+		with (eq\eqref{eq:initial_retrieval}
 		Retrieve items with scores $S_p \geq T_{\text{init}}$ \\
 		Add these items to $G$
 	}
 	
-
+	
 	\textbf{2. Adjust k Dynamically:} \\
 	\ForEach{$x \in G$}{
-		Compute MoL scores $s \gets \phi(q, x)$ where:
-		\[
-		\phi(q, x) \gets \sum_{p=1}^{P} \pi_p(q, x) \cdot \langle f_p(q), g_p(x) \rangle
-		\]
+		Compute MoL scores $s \gets \phi(q, x)$  using : eq\eqref{similarity_function}
 		Set $T_{\text{adaptive}} = \min \{s : s \in G\}$
 	}
 	
@@ -266,7 +273,7 @@ Finally, the candidates in \(G'\) are sorted by their MoL scores, and the exact 
 		Add these items to $G'$
 	}
 	
-
+	
 	\textbf{4. Select Exact Top-k Items:} \\
 	\ForEach{component $p \in P$}{
 		Compute MoL scores for all items in $G'$ \\
@@ -274,9 +281,12 @@ Finally, the candidates in \(G'\) are sorted by their MoL scores, and the exact 
 		Select the top $k$ items from $G'$ where $k$ is the number of items in $G'$ exceeding $T_{\text{adaptive}}$
 	}
 	
-
+	
 	\textbf{Return:} $G_{\text{final}}$ \tcp{Retrieve Top $k$ items from $G'$}
 \end{algorithm}
+
+\newpage
+
 \section{Recommendation System Overview}
 Modern technology and online services have enabled unprecedented access to vast amounts of data. However, this abundance of information creates an overload, making it harder for users to find relevant content efficiently. Recommender systems address this by filtering information and delivering personalized suggestions, saving users time and effortz\cite{Roy2022}. These systems are now integral to platforms like e-commerce, television programs\cite{5174476}, e-learning\cite{WANG201110831}, tourism, and more, though further improvements are needed to enhance their versatility and accuracy.
 \begin{figure}[ht]

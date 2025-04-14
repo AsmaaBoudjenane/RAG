@@ -1,21 +1,23 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Historical development of (NLP)}}{4}{figure.caption.8}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Artificial Neural Network (ANN).}}{5}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Recurrent Neural Networks (RNNs).}}{6}{figure.caption.10}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Long-Short Term Memory (LSTM).}}{7}{figure.caption.11}%
-\contentsline {figure}{\numberline {1.5}{\ignorespaces The Transformer - model architecture..}}{9}{figure.caption.12}%
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Encoder and Decoder Stacks}}{10}{figure.caption.13}%
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Training Tokenization in Full, Prefix, and Masked Language Modeling.}}{13}{figure.caption.14}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Historical development of (NLP)}}{5}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Artificial Neural Network (ANN).}}{6}{figure.caption.14}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Recurrent Neural Networks (RNNs).}}{7}{figure.caption.15}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Long-Short Term Memory (LSTM).}}{8}{figure.caption.16}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces The Transformer - model architecture..}}{10}{figure.caption.17}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Encoder and Decoder Stacks}}{11}{figure.caption.18}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Training Tokenization in Full, Prefix, and Masked Language Modeling.}}{14}{figure.caption.19}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Types of RAG Systems}}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Rag architecture}}{27}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Types of RAG Systems}}{24}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Rag architecture}}{28}{figure.caption.21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Basic retrieval}}{34}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Precision in Document Ranking}}{36}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Recall in Document Ranking}}{37}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Mixture of Logits(MoL) learned similarity.}}{40}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces propused solution steps}}{42}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Recommendation System Process}}{44}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces the training process of SASRec}}{45}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Basic retrieval}}{35}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Precision in Document Ranking}}{37}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Recall in Document Ranking}}{38}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Mixture of Logits(MoL) learned similarity.}}{41}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces propused solution steps}}{43}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Recommendation System Process}}{45}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces the training process of SASRec}}{46}{figure.caption.28}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comparison of K changes across epochs for different datasets}}{51}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparison of Models Across Evaluation Metrics}}{52}{figure.caption.33}%
