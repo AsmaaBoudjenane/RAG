@@ -1,0 +1,699 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{37}
+% BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
+\ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
+\ifx \binits  \undefined \def \binits#1{#1}\fi
+\ifx \bauthor  \undefined \def \bauthor#1{#1}\fi
+\ifx \batitle  \undefined \def \batitle#1{#1}\fi
+\ifx \bjtitle  \undefined \def \bjtitle#1{#1}\fi
+\ifx \bvolume  \undefined \def \bvolume#1{\textbf{#1}}\fi
+\ifx \byear  \undefined \def \byear#1{#1}\fi
+\ifx \bissue  \undefined \def \bissue#1{#1}\fi
+\ifx \bfpage  \undefined \def \bfpage#1{#1}\fi
+\ifx \blpage  \undefined \def \blpage #1{#1}\fi
+\ifx \burl  \undefined \def \burl#1{\textsf{#1}}\fi
+\ifx \doiurl  \undefined \def \doiurl#1{\url{https://doi.org/#1}}\fi
+\ifx \betal  \undefined \def \betal{\textit{et al.}}\fi
+\ifx \binstitute  \undefined \def \binstitute#1{#1}\fi
+\ifx \binstitutionaled  \undefined \def \binstitutionaled#1{#1}\fi
+\ifx \bctitle  \undefined \def \bctitle#1{#1}\fi
+\ifx \beditor  \undefined \def \beditor#1{#1}\fi
+\ifx \bpublisher  \undefined \def \bpublisher#1{#1}\fi
+\ifx \bbtitle  \undefined \def \bbtitle#1{#1}\fi
+\ifx \bedition  \undefined \def \bedition#1{#1}\fi
+\ifx \bseriesno  \undefined \def \bseriesno#1{#1}\fi
+\ifx \blocation  \undefined \def \blocation#1{#1}\fi
+\ifx \bsertitle  \undefined \def \bsertitle#1{#1}\fi
+\ifx \bsnm \undefined \def \bsnm#1{#1}\fi
+\ifx \bsuffix \undefined \def \bsuffix#1{#1}\fi
+\ifx \bparticle \undefined \def \bparticle#1{#1}\fi
+\ifx \barticle \undefined \def \barticle#1{#1}\fi
+\bibcommenthead
+\ifx \bconfdate \undefined \def \bconfdate #1{#1}\fi
+\ifx \botherref \undefined \def \botherref #1{#1}\fi
+\ifx \url \undefined \def \url#1{\textsf{#1}}\fi
+\ifx \bchapter \undefined \def \bchapter#1{#1}\fi
+\ifx \bbook \undefined \def \bbook#1{#1}\fi
+\ifx \bcomment \undefined \def \bcomment#1{#1}\fi
+\ifx \oauthor \undefined \def \oauthor#1{#1}\fi
+\ifx \citeauthoryear \undefined \def \citeauthoryear#1{#1}\fi
+\ifx \endbibitem  \undefined \def \endbibitem {}\fi
+\ifx \bconflocation  \undefined \def \bconflocation#1{#1}\fi
+\ifx \arxivurl  \undefined \def \arxivurl#1{\textsf{#1}}\fi
+\csname PreBibitemsHook\endcsname
+
+%%% 1
+\bibitem[\protect\citeauthoryear{Naveed et~al.}{2023}]{Radford2019}
+\begin{botherref}
+\oauthor{\bsnm{Naveed}, \binits{H.}},
+\oauthor{\bsnm{Khan}, \binits{A.U.}},
+\oauthor{\bsnm{Qiu}, \binits{S.}},
+\oauthor{\bsnm{Saqib}, \binits{M.}},
+\oauthor{\bsnm{Anwar}, \binits{S.}},
+\oauthor{\bsnm{Usman}, \binits{M.}},
+\oauthor{\bsnm{Barnes}, \binits{N.}},
+\oauthor{\bsnm{Mian}, \binits{A.}}:
+A comprehensive overview of large language models.
+CoRR
+\textbf{abs/2307.06435}
+(2023)
+\doiurl{10.48550/ARXIV.2307.06435}
+\end{botherref}
+\endbibitem
+
+%%% 2
+\bibitem[\protect\citeauthoryear{Vaswani et~al.}{2017}]{vaswani2017attention}
+\begin{bchapter}
+\bauthor{\bsnm{Vaswani}, \binits{A.}},
+\bauthor{\bsnm{Shazeer}, \binits{N.}},
+\bauthor{\bsnm{Parmar}, \binits{N.}},
+\bauthor{\bsnm{Uszkoreit}, \binits{J.}},
+\bauthor{\bsnm{Jones}, \binits{L.}},
+\bauthor{\bsnm{Gomez}, \binits{A.N.}},
+\bauthor{\bsnm{Kaiser}, \binits{L.}},
+\bauthor{\bsnm{Polosukhin}, \binits{I.}}:
+\bctitle{Attention is all you need}.
+In: \bbtitle{Advances in Neural Information Processing Systems},
+vol. \bseriesno{30}
+(\byear{2017}).
+\burl{https://arxiv.org/abs/1706.03762}
+\end{bchapter}
+\endbibitem
+
+%%% 3
+\bibitem[\protect\citeauthoryear{Gu et~al.}{2018}]{Gu2018SearchEngine}
+\begin{bchapter}
+\bauthor{\bsnm{Gu}, \binits{J.}},
+\bauthor{\bsnm{Wang}, \binits{Y.}},
+\bauthor{\bsnm{Cho}, \binits{K.}},
+\bauthor{\bsnm{Li}, \binits{V.O.}}:
+\bctitle{Search engine guided neural machine translation}.
+In: \bbtitle{Proceedings of the AAAI Conference on Artificial Intelligence},
+vol. \bseriesno{32},
+pp. \bfpage{5133}--\blpage{5140}
+(\byear{2018}).
+\doiurl{10.1609/AAAI.V32I1.12013}
+\end{bchapter}
+\endbibitem
+
+%%% 4
+\bibitem[\protect\citeauthoryear{Liang
+  et~al.}{2024}]{liang2024controllabletextgenerationlarge}
+\begin{botherref}
+\oauthor{\bsnm{Liang}, \binits{X.}},
+\oauthor{\bsnm{Wang}, \binits{H.}},
+\oauthor{\bsnm{Wang}, \binits{Y.}},
+\oauthor{\bsnm{Song}, \binits{S.}},
+\oauthor{\bsnm{Yang}, \binits{J.}},
+\oauthor{\bsnm{Niu}, \binits{S.}},
+\oauthor{\bsnm{Hu}, \binits{J.}},
+\oauthor{\bsnm{Liu}, \binits{D.}},
+\oauthor{\bsnm{Yao}, \binits{S.}},
+\oauthor{\bsnm{Xiong}, \binits{F.}},
+\oauthor{\bsnm{Li}, \binits{Z.}}:
+Controllable text generation for large language models: {A} survey.
+CoRR
+\textbf{abs/2408.12599}
+(2024)
+\doiurl{10.48550/ARXIV.2408.12599}
+\end{botherref}
+\endbibitem
+
+%%% 5
+\bibitem[\protect\citeauthoryear{Zhang et~al.}{2023}]{Zhang2023}
+\begin{bchapter}
+\bauthor{\bsnm{Zhang}, \binits{Q.}},
+\bauthor{\bsnm{Chen}, \binits{S.}},
+\bauthor{\bsnm{Xu}, \binits{D.}},
+\bauthor{\bsnm{Cao}, \binits{Q.}},
+\bauthor{\bsnm{Chen}, \binits{X.}},
+\bauthor{\bsnm{Cohn}, \binits{T.}},
+\bauthor{\bsnm{Fang}, \binits{M.}}:
+\bctitle{A survey for efficient open domain question answering}.
+In: \beditor{\bsnm{Rogers}, \binits{A.}},
+\beditor{\bsnm{Graber}, \binits{J.B.}},
+\beditor{\bsnm{Okazaki}, \binits{N.}} (eds.)
+\bbtitle{Proceedings of the 61st Annual Meeting of the Association for
+  Computational Linguistics (Volume 1: Long Papers)},
+\bconflocation{Toronto, Canada},
+pp. \bfpage{14447}--\blpage{14465}
+(\byear{2023}).
+\doiurl{10.18653/v1/2023.acl-long.808}
+\end{bchapter}
+\endbibitem
+
+%%% 6
+\bibitem[\protect\citeauthoryear{Brown et~al.}{2020}]{brown2020language}
+\begin{botherref}
+\oauthor{\bsnm{Brown}, \binits{T.B.}},
+\oauthor{\bsnm{Mann}, \binits{B.}},
+\oauthor{\bsnm{Ryder}, \binits{N.}},
+\oauthor{\bsnm{Subbiah}, \binits{M.}},
+\oauthor{\bsnm{Kaplan}, \binits{J.}},
+\oauthor{\bsnm{Dhariwal}, \binits{P.}},
+\oauthor{\bsnm{Neelakantan}, \binits{A.}},
+\oauthor{\bsnm{Shyam}, \binits{P.}},
+\oauthor{\bsnm{Sastry}, \binits{G.}},
+\oauthor{\bsnm{Askell}, \binits{A.}}, et al.:
+Language models are few-shot learners.
+CoRR
+\textbf{abs/2005.14165}
+(2020)
+\end{botherref}
+\endbibitem
+
+%%% 7
+\bibitem[\protect\citeauthoryear{Devlin et~al.}{2019}]{devlin2018bert}
+\begin{bchapter}
+\bauthor{\bsnm{Devlin}, \binits{J.}},
+\bauthor{\bsnm{Chang}, \binits{M.-W.}},
+\bauthor{\bsnm{Lee}, \binits{K.}},
+\bauthor{\bsnm{Toutanova}, \binits{K.}}:
+\bctitle{{BERT}: Pre-training of deep bidirectional transformers for language
+  understanding}.
+In: \beditor{\bsnm{Burstein}, \binits{J.}},
+\beditor{\bsnm{Doran}, \binits{C.}},
+\beditor{\bsnm{Solorio}, \binits{T.}} (eds.)
+\bbtitle{Proceedings of the 2019 Conference of the North {A}merican Chapter of
+  the Association for Computational Linguistics: Human Language Technologies},
+\bconflocation{Minneapolis, Minnesota}
+(\byear{2019}).
+\doiurl{10.18653/v1/N19-1423}
+\end{bchapter}
+\endbibitem
+
+%%% 8
+\bibitem[\protect\citeauthoryear{Raffel et~al.}{2020}]{raffel2020exploring}
+\begin{barticle}
+\bauthor{\bsnm{Raffel}, \binits{C.}},
+\bauthor{\bsnm{Shazeer}, \binits{N.}},
+\bauthor{\bsnm{Roberts}, \binits{A.}},
+\bauthor{\bsnm{Lee}, \binits{K.}},
+\bauthor{\bsnm{Narang}, \binits{S.}},
+\bauthor{\bsnm{Matena}, \binits{M.}},
+\bauthor{\bsnm{Zhou}, \binits{Y.}},
+\bauthor{\bsnm{Li}, \binits{W.}},
+\bauthor{\bsnm{Liu}, \binits{P.J.}}:
+\batitle{Exploring the limits of transfer learning with a unified text-to-text
+  transformer}.
+\bjtitle{J. Mach. Learn. Res.}
+\bvolume{21},
+\bfpage{140}--\blpage{114067}
+(\byear{2020})
+\end{barticle}
+\endbibitem
+
+%%% 9
+\bibitem[\protect\citeauthoryear{Mousavi et~al.}{2025}]{Mousavi2025}
+\begin{botherref}
+\oauthor{\bsnm{Mousavi}, \binits{S.M.}},
+\oauthor{\bsnm{Alghisi}, \binits{S.}},
+\oauthor{\bsnm{Riccardi}, \binits{G.}}:
+Llms as repositories of factual knowledge: Limitations and solutions.
+CoRR
+\textbf{abs/2501.12774}
+(2025)
+\doiurl{10.48550/ARXIV.2501.12774}
+\end{botherref}
+\endbibitem
+
+%%% 10
+\bibitem[\protect\citeauthoryear{Zhuang et~al.}{2021}]{zhuang2020comprehensive}
+\begin{barticle}
+\bauthor{\bsnm{Zhuang}, \binits{F.}},
+\bauthor{\bsnm{Qi}, \binits{Z.}},
+\bauthor{\bsnm{Duan}, \binits{K.}},
+\bauthor{\bsnm{Xi}, \binits{D.}},
+\bauthor{\bsnm{Zhu}, \binits{Y.}},
+\bauthor{\bsnm{Zhu}, \binits{H.}},
+\bauthor{\bsnm{Xiong}, \binits{H.}},
+\bauthor{\bsnm{He}, \binits{Q.}}:
+\batitle{A comprehensive survey on transfer learning}.
+\bjtitle{Proceedings of the IEEE}
+\bvolume{109}(\bissue{1}),
+\bfpage{43}--\blpage{76}
+(\byear{2021})
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem[\protect\citeauthoryear{Howard and Ruder}{2018}]{Howard2018}
+\begin{bchapter}
+\bauthor{\bsnm{Howard}, \binits{J.}},
+\bauthor{\bsnm{Ruder}, \binits{S.}}:
+\bctitle{Universal language model fine-tuning for text classification}.
+In: \bbtitle{Proceedings of the 56th Annual Meeting of the Association for
+  Computational Linguistics, {ACL} , Melbourne, Australia,},
+pp. \bfpage{328}--\blpage{339}
+(\byear{2018}).
+\doiurl{10.18653/V1/P18-1031}
+\end{bchapter}
+\endbibitem
+
+%%% 12
+\bibitem[\protect\citeauthoryear{Lewis et~al.}{2020}]{lewis2020retrieval}
+\begin{botherref}
+\oauthor{\bsnm{Lewis}, \binits{P.}},
+\oauthor{\bsnm{Perez}, \binits{E.}},
+\oauthor{\bsnm{Piktus}, \binits{A.}},
+\oauthor{\bsnm{Petroni}, \binits{F.}},
+\oauthor{\bsnm{Karpukhin}, \binits{V.}},
+\oauthor{\bsnm{Goyal}, \binits{N.}},
+\oauthor{\bsnm{K{\"u}ttler}, \binits{H.}},
+\oauthor{\bsnm{Lewis}, \binits{M.}},
+\oauthor{\bsnm{Yih}, \binits{W.-t.}}, et al.:
+Retrieval-augmented generation for knowledge-intensive nlp tasks.
+CoRR
+\textbf{abs/2005.11401}
+(2020)
+\end{botherref}
+\endbibitem
+
+%%% 13
+\bibitem[\protect\citeauthoryear{Karpukhin et~al.}{2020}]{karpukhin2020dpr}
+\begin{botherref}
+\oauthor{\bsnm{Karpukhin}, \binits{V.}},
+\oauthor{\bsnm{Oguz}, \binits{B.}},
+\oauthor{\bsnm{Min}, \binits{S.}},
+\oauthor{\bsnm{Wu}, \binits{L.}},
+\oauthor{\bsnm{Edunov}, \binits{S.}},
+\oauthor{\bsnm{Chen}, \binits{D.}},
+\oauthor{\bsnm{Yih}, \binits{W.}}:
+Dense passage retrieval for open-domain question answering.
+CoRR
+\textbf{abs/2004.04906}
+(2020)
+\end{botherref}
+\endbibitem
+
+%%% 14
+\bibitem[\protect\citeauthoryear{Yuan et~al.}{2024}]{yuan2024hybrid}
+\begin{botherref}
+\oauthor{\bsnm{Yuan}, \binits{Y.}},
+\oauthor{\bsnm{Liu}, \binits{C.}},
+\oauthor{\bsnm{Yuan}, \binits{J.}},
+\oauthor{\bsnm{Sun}, \binits{G.}},
+\oauthor{\bsnm{Li}, \binits{S.}},
+\oauthor{\bsnm{Zhang}, \binits{M.}}:
+A hybrid {RAG} system with comprehensive enhancement on complex reasoning.
+CoRR
+\textbf{abs/2408.05141}
+(2024)
+\doiurl{10.48550/ARXIV.2408.05141}
+\end{botherref}
+\endbibitem
+
+%%% 15
+\bibitem[\protect\citeauthoryear{Ding and Zhai}{2024}]{ding2024efficient}
+\begin{botherref}
+\oauthor{\bsnm{Ding}, \binits{B.}},
+\oauthor{\bsnm{Zhai}, \binits{J.}}:
+Efficient retrieval with learned similarities.
+CoRR
+\textbf{abs/2407.15462}
+(2024)
+\doiurl{10.48550/ARXIV.2407.15462}
+\end{botherref}
+\endbibitem
+
+%%% 16
+\bibitem[\protect\citeauthoryear{Bai
+  et~al.}{2020}]{bai2020spartermlearningtermbasedsparse}
+\begin{botherref}
+\oauthor{\bsnm{Bai}, \binits{Y.}},
+\oauthor{\bsnm{Li}, \binits{X.}},
+\oauthor{\bsnm{Wang}, \binits{G.}},
+\oauthor{\bsnm{Zhang}, \binits{C.}},
+\oauthor{\bsnm{Shang}, \binits{L.}},
+\oauthor{\bsnm{Xu}, \binits{J.}},
+\oauthor{\bsnm{Wang}, \binits{Z.}},
+\oauthor{\bsnm{Wang}, \binits{F.}},
+\oauthor{\bsnm{Liu}, \binits{Q.}}:
+Sparterm: Learning term-based sparse representation for fast text retrieval.
+CoRR
+\textbf{abs/2010.00768}
+(2020)
+\end{botherref}
+\endbibitem
+
+%%% 17
+\bibitem[\protect\citeauthoryear{Lafferty and Zhai}{2017}]{Lafferty2001}
+\begin{barticle}
+\bauthor{\bsnm{Lafferty}, \binits{J.}},
+\bauthor{\bsnm{Zhai}, \binits{C.}}:
+\batitle{Document language models, query models, and risk minimization for
+  information retrieval}.
+\bjtitle{{SIGIR} Forum}
+\bvolume{51}(\bissue{2}),
+\bfpage{251}--\blpage{259}
+(\byear{2017})
+\doiurl{10.1145/3130348.3130375}
+\end{barticle}
+\endbibitem
+
+%%% 18
+\bibitem[\protect\citeauthoryear{Robertson and Walker}{1997}]{Robertson1997}
+\begin{bchapter}
+\bauthor{\bsnm{Robertson}, \binits{S.E.}},
+\bauthor{\bsnm{Walker}, \binits{S.}}:
+\bctitle{On relevance weights with little relevance information}.
+In: \beditor{\bsnm{Belkin}, \binits{N.J.}},
+\beditor{\bsnm{Narasimhalu}, \binits{A.D.}},
+\beditor{\bsnm{Willett}, \binits{P.}},
+\beditor{\bsnm{Hersh}, \binits{W.R.}},
+\beditor{\bsnm{Can}, \binits{F.}},
+\beditor{\bsnm{Voorhees}, \binits{E.M.}} (eds.)
+\bbtitle{SIGIR '97: Proceedings of the 20th Annual International ACM SIGIR
+  Conference on Research and Development in Information Retrieval},
+\bconflocation{Philadelphia, PA, USA},
+pp. \bfpage{16}--\blpage{24}
+(\byear{1997}).
+\doiurl{10.1145/258525.258529}
+\end{bchapter}
+\endbibitem
+
+%%% 19
+\bibitem[\protect\citeauthoryear{Zaragoza and Robertson}{2009}]{Zaragoza2009}
+\begin{barticle}
+\bauthor{\bsnm{Zaragoza}, \binits{H.}},
+\bauthor{\bsnm{Robertson}, \binits{S.E.}}:
+\batitle{The probabilistic relevance framework: {BM25} and beyond}.
+\bjtitle{Foundations and Trends{\textregistered} in Information Retrieval}
+\bvolume{3}(\bissue{4}),
+\bfpage{333}--\blpage{389}
+(\byear{2009})
+\doiurl{10.1561/1500000019}
+\end{barticle}
+\endbibitem
+
+%%% 20
+\bibitem[\protect\citeauthoryear{Culpepper et~al.}{2016}]{Culpepper2016}
+\begin{bchapter}
+\bauthor{\bsnm{Culpepper}, \binits{J.S.}},
+\bauthor{\bsnm{Clarke}, \binits{C.L.A.}},
+\bauthor{\bsnm{Lin}, \binits{J.}}:
+\bctitle{Dynamic cutoff prediction in multi-stage retrieval systems}.
+In: \bbtitle{Proceedings of the 21st Australasian Document Computing
+  Symposium},
+\bconflocation{Melbourne, Australia}
+(\byear{2016}).
+\burl{https://culpepper.io/publications/ccl16-adcs.pdf}
+\end{bchapter}
+\endbibitem
+
+%%% 21
+\bibitem[\protect\citeauthoryear{Zhou and Agichtein}{2020}]{Zhou2021}
+\begin{bchapter}
+\bauthor{\bsnm{Zhou}, \binits{J.}},
+\bauthor{\bsnm{Agichtein}, \binits{E.}}:
+\bctitle{Rlirank: Learning to rank with reinforcement learning for dynamic
+  search}.
+In: \beditor{\bsnm{Huang}, \binits{Y.}},
+\beditor{\bsnm{King}, \binits{I.}},
+\beditor{\bsnm{Liu}, \binits{T.}},
+\beditor{\bsnm{Steen}, \binits{M.}} (eds.)
+\bbtitle{{WWW} '20: The Web Conference 2020, Taipei, Taiwan, April 20-24},
+pp. \bfpage{2842}--\blpage{2848}
+(\byear{2020}).
+\doiurl{10.1145/3366423.3380047}
+\end{bchapter}
+\endbibitem
+
+%%% 22
+\bibitem[\protect\citeauthoryear{Hulett et~al.}{2012}]{DynamicKNN2012}
+\begin{bchapter}
+\bauthor{\bsnm{Hulett}, \binits{C.}},
+\bauthor{\bsnm{Hall}, \binits{A.}},
+\bauthor{\bsnm{Qu}, \binits{G.}}:
+\bctitle{Dynamic selection of k nearest neighbors in instance-based learning}.
+In: \bbtitle{2012 IEEE 13th International Conference on Information Reuse \&
+  Integration (IRI)},
+\bconflocation{Las Vegas, NV, USA}
+(\byear{2012}).
+\doiurl{10.1109/IRI.2012.6302995}
+\end{bchapter}
+\endbibitem
+
+%%% 23
+\bibitem[\protect\citeauthoryear{Sawarkar
+  et~al.}{2024}]{sawarkar2024blendedragimprovingrag}
+\begin{botherref}
+\oauthor{\bsnm{Sawarkar}, \binits{K.}},
+\oauthor{\bsnm{Mangal}, \binits{A.}},
+\oauthor{\bsnm{Solanki}, \binits{S.R.}}:
+Blended {RAG:} improving {RAG} (retriever-augmented generation) accuracy with
+  semantic search and hybrid query-based retrievers.
+CoRR
+\textbf{abs/2404.07220}
+(2024)
+\doiurl{10.48550/ARXIV.2404.07220}
+\end{botherref}
+\endbibitem
+
+%%% 24
+\bibitem[\protect\citeauthoryear{Zhu et~al.}{2024}]{Zhu2024}
+\begin{botherref}
+\oauthor{\bsnm{Zhu}, \binits{C.}},
+\oauthor{\bsnm{Shimada}, \binits{K.}},
+\oauthor{\bsnm{Taniguchi}, \binits{T.}},
+\oauthor{\bsnm{Ohkuma}, \binits{T.}}:
+{STAYKATE:} hybrid in-context example selection combining representativeness
+  sampling and retrieval-based approach - {A} case study on science domains.
+CoRR
+\textbf{abs/2412.20043}
+(2024)
+\doiurl{10.48550/ARXIV.2412.20043}
+\end{botherref}
+\endbibitem
+
+%%% 25
+\bibitem[\protect\citeauthoryear{Hei
+  et~al.}{2024}]{hei2024drragapplyingdynamicdocument}
+\begin{botherref}
+\oauthor{\bsnm{Hei}, \binits{Z.}},
+\oauthor{\bsnm{Liu}, \binits{W.}},
+\oauthor{\bsnm{Ou}, \binits{W.}},
+\oauthor{\bsnm{Qiao}, \binits{J.}},
+\oauthor{\bsnm{Jiao}, \binits{J.}},
+\oauthor{\bsnm{Song}, \binits{G.}},
+\oauthor{\bsnm{Tian}, \binits{T.}},
+\oauthor{\bsnm{Lin}, \binits{Y.}}:
+{DR-RAG:} applying dynamic document relevance to retrieval-augmented generation
+  for question-answering.
+CoRR
+\textbf{abs/2406.07348}
+(2024)
+\doiurl{10.48550/ARXIV.2406.07348}
+\end{botherref}
+\endbibitem
+
+%%% 26
+\bibitem[\protect\citeauthoryear{Gao et~al.}{2023}]{ilin2023advancedrag}
+\begin{botherref}
+\oauthor{\bsnm{Gao}, \binits{Y.}},
+\oauthor{\bsnm{Xiong}, \binits{Y.}},
+\oauthor{\bsnm{Gao}, \binits{X.}},
+\oauthor{\bsnm{Jia}, \binits{K.}},
+\oauthor{\bsnm{Pan}, \binits{J.}},
+\oauthor{\bsnm{Bi}, \binits{Y.}},
+\oauthor{\bsnm{Dai}, \binits{Y.}},
+\oauthor{\bsnm{Sun}, \binits{J.}},
+\oauthor{\bsnm{Guo}, \binits{Q.}},
+\oauthor{\bsnm{Wang}, \binits{M.}},
+\oauthor{\bsnm{Wang}, \binits{H.}}:
+Retrieval-augmented generation for large language models: {A} survey.
+CoRR
+\textbf{abs/2312.10997}
+(2023)
+\end{botherref}
+\endbibitem
+
+%%% 27
+\bibitem[\protect\citeauthoryear{Gupta et~al.}{2024}]{gupta20241}
+\begin{botherref}
+\oauthor{\bsnm{Gupta}, \binits{S.}},
+\oauthor{\bsnm{Ranjan}, \binits{R.}},
+\oauthor{\bsnm{Singh}, \binits{S.N.}}:
+A comprehensive survey of retrieval-augmented generation {(RAG):} evolution,
+  current landscape and future directions.
+CoRR
+\textbf{abs/2410.12837}
+(2024)
+\doiurl{10.48550/ARXIV.2410.12837}
+\end{botherref}
+\endbibitem
+
+%%% 28
+\bibitem[\protect\citeauthoryear{Zhao
+  et~al.}{2024}]{zhao2024retrievalaugmentedgenerationaigeneratedcontent}
+\begin{botherref}
+\oauthor{\bsnm{Zhao}, \binits{P.}},
+\oauthor{\bsnm{Zhang}, \binits{H.}},
+\oauthor{\bsnm{Yu}, \binits{Q.}},
+\oauthor{\bsnm{Wang}, \binits{Z.}},
+\oauthor{\bsnm{Geng}, \binits{Y.}},
+\oauthor{\bsnm{Fu}, \binits{F.}},
+\oauthor{\bsnm{Yang}, \binits{L.}},
+\oauthor{\bsnm{Zhang}, \binits{W.}},
+\oauthor{\bsnm{Cui}, \binits{B.}}:
+Retrieval-augmented generation for ai-generated content: {A} survey.
+CoRR
+\textbf{abs/2402.19473}
+(2024)
+\doiurl{10.48550/ARXIV.2402.19473}
+\end{botherref}
+\endbibitem
+
+%%% 29
+\bibitem[\protect\citeauthoryear{Huang and
+  Huang}{2024}]{huang2024surveyretrievalaugmentedtextgeneration}
+\begin{botherref}
+\oauthor{\bsnm{Huang}, \binits{Y.}},
+\oauthor{\bsnm{Huang}, \binits{J.}}:
+A survey on retrieval-augmented text generation for large language models.
+CoRR
+\textbf{abs/2404.10981}
+(2024)
+\doiurl{10.48550/ARXIV.2404.10981}
+\end{botherref}
+\endbibitem
+
+%%% 30
+\bibitem[\protect\citeauthoryear{Lewis et~al.}{2020}]{lewis2019bart}
+\begin{botherref}
+\oauthor{\bsnm{Lewis}, \binits{M.}},
+\oauthor{\bsnm{Liu}, \binits{Y.}},
+\oauthor{\bsnm{Goyal}, \binits{N.}},
+\oauthor{\bsnm{Ghazvininejad}, \binits{M.}},
+\oauthor{\bsnm{Mohamed}, \binits{A.}},
+\oauthor{\bsnm{Levy}, \binits{O.}},
+\oauthor{\bsnm{Stoyanov}, \binits{V.}},
+\oauthor{\bsnm{Zettlemoyer}, \binits{L.}}:
+{BART:} denoising sequence-to-sequence pre-training for natural language
+  generation, translation, and comprehension,
+7871--7880
+(2020)
+\doiurl{10.18653/V1/2020.ACL-MAIN.703}
+\end{botherref}
+\endbibitem
+
+%%% 31
+\bibitem[\protect\citeauthoryear{Radford
+  et~al.}{2021}]{radford2021learningtransferablevisualmodels}
+\begin{botherref}
+\oauthor{\bsnm{Radford}, \binits{A.}},
+\oauthor{\bsnm{Kim}, \binits{J.W.}},
+\oauthor{\bsnm{Hallacy}, \binits{C.}},
+\oauthor{\bsnm{Ramesh}, \binits{A.}},
+\oauthor{\bsnm{Goh}, \binits{G.}},
+\oauthor{\bsnm{Agarwal}, \binits{S.}},
+\oauthor{\bsnm{Sastry}, \binits{G.}},
+\oauthor{\bsnm{Askell}, \binits{A.}},
+\oauthor{\bsnm{Mishkin}, \binits{P.}},
+\oauthor{\bsnm{Clark}, \binits{J.}},
+\oauthor{\bsnm{Krueger}, \binits{G.}},
+\oauthor{\bsnm{Sutskever}, \binits{I.}}:
+Learning transferable visual models from natural language supervision.
+CoRR
+\textbf{abs/2103.00020}
+(2021)
+\end{botherref}
+\endbibitem
+
+%%% 32
+\bibitem[\protect\citeauthoryear{Chen
+  et~al.}{2021}]{chen2021evaluatinglargelanguagemodels}
+\begin{botherref}
+\oauthor{\bsnm{Chen}, \binits{M.}},
+\oauthor{\bsnm{Tworek}, \binits{J.}},
+\oauthor{\bsnm{Jun}, \binits{H.}},
+\oauthor{\bsnm{Yuan}, \binits{Q.}},
+\oauthor{\bsnm{Oliveira~Pinto}, \binits{H.P.}},
+\oauthor{\bsnm{Kaplan}, \binits{J.}},
+\oauthor{\bsnm{Edwards}, \binits{H.}},
+\oauthor{\bsnm{Burda}, \binits{Y.}},
+\oauthor{\bsnm{Joseph}, \binits{N.}},
+\oauthor{\bsnm{Brockman}, \binits{G.}},
+\oauthor{\bsnm{Ray}, \binits{A.}}, et al.:
+Evaluating large language models trained on code.
+CoRR
+\textbf{abs/2107.03374}
+(2021)
+\end{botherref}
+\endbibitem
+
+%%% 33
+\bibitem[\protect\citeauthoryear{Zhai et~al.}{2023}]{zhai2023revisiting}
+\begin{botherref}
+\oauthor{\bsnm{Zhai}, \binits{J.}},
+\oauthor{\bsnm{Gong}, \binits{Z.}},
+\oauthor{\bsnm{Wang}, \binits{Y.}},
+\oauthor{\bsnm{Sun}, \binits{X.}},
+\oauthor{\bsnm{Yan}, \binits{Z.}},
+\oauthor{\bsnm{Li}, \binits{F.}},
+\oauthor{\bsnm{Liu}, \binits{X.}}:
+Revisiting neural retrieval on accelerators.
+CoRR
+\textbf{abs/2306.04039}
+(2023)
+\doiurl{10.48550/ARXIV.2306.04039}
+\end{botherref}
+\endbibitem
+
+%%% 34
+\bibitem[\protect\citeauthoryear{Jadon and Patil}{2023}]{eviden2025mrr}
+\begin{botherref}
+\oauthor{\bsnm{Jadon}, \binits{A.}},
+\oauthor{\bsnm{Patil}, \binits{A.}}:
+A comprehensive survey of evaluation techniques for recommendation systems.
+CoRR
+\textbf{abs/2312.16015}
+(2023)
+\doiurl{10.48550/ARXIV.2312.16015}
+\end{botherref}
+\endbibitem
+
+%%% 35
+\bibitem[\protect\citeauthoryear{Zhu et~al.}{2018}]{Zhu_2018}
+\begin{botherref}
+\oauthor{\bsnm{Zhu}, \binits{H.}},
+\oauthor{\bsnm{Zhang}, \binits{P.}},
+\oauthor{\bsnm{Li}, \binits{G.}},
+\oauthor{\bsnm{He}, \binits{J.}},
+\oauthor{\bsnm{Li}, \binits{H.}},
+\oauthor{\bsnm{Gai}, \binits{K.}}:
+Learning tree-based deep model for recommender systems.
+CoRR
+\textbf{abs/1801.02294}
+(2018)
+\end{botherref}
+\endbibitem
+
+%%% 36
+\bibitem[\protect\citeauthoryear{Kang and
+  McAuley}{2018}]{kang2018selfattentivesequentialrecommendation}
+\begin{botherref}
+\oauthor{\bsnm{Kang}, \binits{W.}},
+\oauthor{\bsnm{McAuley}, \binits{J.J.}}:
+Self-attentive sequential recommendation.
+CoRR
+\textbf{abs/1808.09781}
+(2018)
+\end{botherref}
+\endbibitem
+
+%%% 37
+\bibitem[\protect\citeauthoryear{Harper and Konstan}{2015}]{Harper2015}
+\begin{botherref}
+\oauthor{\bsnm{Harper}, \binits{F.M.}},
+\oauthor{\bsnm{Konstan}, \binits{J.A.}}:
+The movielens datasets: History and context.
+ACM Transactions on Interactive Intelligent Systems
+\textbf{5}(4)
+(2015)
+\doiurl{10.1145/2827872}
+\end{botherref}
+\endbibitem
+
+\end{thebibliography}

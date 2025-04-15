@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: RAG_PAPER2.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+The style file: sn-mathphys-num.bst
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: sn-bibliography.bib
+Warning--I didn't find a database entry for "awsRAG"
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 37 entries,
+            7480 wiz_defined-function locations,
+            1426 strings with 19529 characters,
+and the built_in function-call counts, 828567 in all, are:
+= -- 154342
+> -- 1471
+< -- 307
++ -- 94844
+- -- 670
+* -- 20479
+:= -- 143490
+add.period$ -- 45
+call.type$ -- 37
+change.case$ -- 322
+chr.to.int$ -- 757
+cite$ -- 37
+duplicate$ -- 1875
+empty$ -- 12092
+format.name$ -- 1592
+if$ -- 212615
+int.to.chr$ -- 1
+int.to.str$ -- 58
+missing$ -- 0
+newline$ -- 675
+num.names$ -- 197
+pop$ -- 1288
+preamble$ -- 1
+purify$ -- 168
+quote$ -- 0
+skip$ -- 93974
+stack$ -- 0
+substring$ -- 82260
+swap$ -- 830
+text.length$ -- 548
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1232
+warning$ -- 0
+while$ -- 1450
+width$ -- 0
+write$ -- 910
+(There was 1 warning)
