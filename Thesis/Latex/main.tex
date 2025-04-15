@@ -41,10 +41,7 @@
 \usepackage{algpseudocode}%
 \usepackage{listings}%
 \usepackage[ruled, lined, linesnumbered, commentsnumbered, longend]{algorithm2e}
-
-
 \usepackage{soul}
-
 % Setup TikZ
 \usepackage{tikz}
 \usetikzlibrary{arrows,shapes,positioning}
@@ -69,7 +66,7 @@
 	\includepdf[pages=-]{Abstract.pdf}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%% Copyright declaration %%%%%%%%%%%%%%%%%%%%%%%
 	% Images sources for copyright purposes 
-	%%%\input{Images_sources.tex}
+	\input{Images_sources.tex}
 	%\includepdf{Copyright.pdf}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%% Table of contents %%%%%%%%%%%%%%%%%%%%%%%%%%
 	\newpage
@@ -78,7 +75,7 @@
 	\pagestyle{fancy}\lhead{\textbf \footnotesize\it{Contents}} 
 	\pagestyle{fancy}\chead{} 
 	\pagestyle{fancy}\rhead{}
-	\pagestyle{fancy}\lfoot{\textbf {\small\it{Univ-Mascara/Computer Science: 2024}}} 
+	\pagestyle{fancy}\lfoot{\textbf {\small\it{Univ-Mascara/Computer Science: 2025}}} 
 	\pagestyle{fancy}\cfoot{} 
 	\pagestyle{fancy}\rfoot{}
 	\pagenumbering{gobble}
@@ -128,19 +125,14 @@
 	%%%%%%%%%%%%%%%%%%%%% Main document %%%%%%%%%%%%%%%%%%
 	\newpage
 	\pagenumbering{arabic} 
-	\input{Introduction}
-	%\input{Part_1}
-	\input{Chapter_2}
-	\input{Chapter_3} 
+	\input{General Introduction}
+	\input{Chapter_1}
+	\input{Chapter_2} 
+	\input{Chapter_3}
 	\input{Chapter_4}
-	%\input{Part_2}
-    %\input{Chapter_5}
-	\input{Chapter_6}
-	%\input{Chapter_7}
-	%\input{Conclusion}
+	\input{Conclusion}
 	%%%%%%%%%%%%%%%%%%%%% For bibliography %%%%%%%%%%%%%%%%%%
 	\newpage
-	\nocite{*}
 	\bibliographystyle{unsrt}
 	\bibliography{Biblio}
 	\pagestyle{fancy}\lhead{\textbf \footnotesize\it{Bibliography}}
@@ -148,8 +140,8 @@
 	\pagenumbering{gobble} % To suppress numbering 
 	%\addcontentsline{toc}{chapter}{Bibliography}
 	%%%%%%%%%%%%%%%%%%%%% For appendices %%%%%%%%%%%%%%%%%%%
-	\appendix
-	\include{Appendix_A}% Appendix A
-	\include{Appendix_B}% Appendix B
+	%\appendix
+	%\include{Appendix_A}% Appendix A
+	%\include{Appendix_B}% Appendix B
 	%\addcontentsline{toc}{chapter}{Appendices}
 \end{document}
