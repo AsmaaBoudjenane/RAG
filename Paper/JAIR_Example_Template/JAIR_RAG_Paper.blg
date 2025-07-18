@@ -1,0 +1,101 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: JAIR_RAG_Paper.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+The style file: ACM-Reference-Format.bst
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: sn-bibliography.bib
+Warning--I didn't find a database entry for "awsRAG"
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--page numbers missing in both pages and numpages fields in bai2020spartermlearningtermbasedsparse
+Warning--page numbers missing in both pages and numpages fields in brown2020language
+Warning--page numbers missing in both pages and numpages fields in chen2021evaluatinglargelanguagemodels
+Warning--page numbers missing in both pages and numpages fields in Chuyuan2025
+Warning--empty publisher in Culpepper2016
+Warning--page numbers missing in both pages and numpages fields in Culpepper2016
+Warning--empty publisher in devlin2018bert
+Warning--page numbers missing in both pages and numpages fields in devlin2018bert
+Warning--page numbers missing in both pages and numpages fields in ding2024efficient
+Warning--page numbers missing in both pages and numpages fields in ilin2023advancedrag
+Warning--empty publisher in Gu2018SearchEngine
+Warning--empty address in Gu2018SearchEngine
+Warning--page numbers missing in both pages and numpages fields in gupta20241
+Warning--page numbers missing in both pages and numpages fields in Harper2015
+Warning--page numbers missing in both pages and numpages fields in hei2024drragapplyingdynamicdocument
+Warning--empty publisher in Howard2018
+Warning--empty address in Howard2018
+Warning--page numbers missing in both pages and numpages fields in huang2024surveyretrievalaugmentedtextgeneration
+Warning--empty publisher in DynamicKNN2012
+Warning--page numbers missing in both pages and numpages fields in DynamicKNN2012
+Warning--page numbers missing in both pages and numpages fields in eviden2025mrr
+Warning--page numbers missing in both pages and numpages fields in kang2018selfattentivesequentialrecommendation
+Warning--page numbers missing in both pages and numpages fields in karpukhin2020dpr
+Warning--no journal in lewis2019bart
+Warning--no number and no volume in lewis2019bart
+Warning--page numbers missing in both pages and numpages fields in lewis2020retrieval
+Warning--page numbers missing in both pages and numpages fields in liang2024controllabletextgenerationlarge
+Warning--page numbers missing in both pages and numpages fields in Mousavi2025
+Warning--page numbers missing in both pages and numpages fields in Radford2019
+Warning--page numbers missing in both pages and numpages fields in radford2021learningtransferablevisualmodels
+Warning--empty publisher in Robertson1997
+Warning--page numbers missing in both pages and numpages fields in sawarkar2024blendedragimprovingrag
+Warning--empty publisher in vaswani2017attention
+Warning--empty address in vaswani2017attention
+Warning--page numbers missing in both pages and numpages fields in vaswani2017attention
+Warning--page numbers missing in both pages and numpages fields in yuan2024hybrid
+Warning--page numbers missing in both pages and numpages fields in zhai2023revisiting
+Warning--empty publisher in Zhang2023
+Warning--page numbers missing in both pages and numpages fields in zhao2024retrievalaugmentedgenerationaigeneratedcontent
+Warning--empty publisher in Zhou2021
+Warning--empty address in Zhou2021
+Warning--page numbers missing in both pages and numpages fields in Zhu2024
+Warning--page numbers missing in both pages and numpages fields in Zhu_2018
+You've used 38 entries,
+            5981 wiz_defined-function locations,
+            1724 strings with 28026 characters,
+and the built_in function-call counts, 47146 in all, are:
+= -- 6387
+> -- 2161
+< -- 0
++ -- 773
+- -- 766
+* -- 3863
+:= -- 4788
+add.period$ -- 189
+call.type$ -- 38
+change.case$ -- 369
+chr.to.int$ -- 37
+cite$ -- 81
+duplicate$ -- 3540
+empty$ -- 2537
+format.name$ -- 907
+if$ -- 11595
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 161
+newline$ -- 458
+num.names$ -- 273
+pop$ -- 1576
+preamble$ -- 1
+purify$ -- 671
+quote$ -- 0
+skip$ -- 1146
+stack$ -- 0
+substring$ -- 2730
+swap$ -- 255
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 731
+warning$ -- 43
+while$ -- 189
+width$ -- 0
+write$ -- 858
+(There were 44 warnings)

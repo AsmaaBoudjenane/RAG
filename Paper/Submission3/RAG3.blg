@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: RAG3.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: SageH.bst
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Database file #1: sn-bibliography.bib
+Warning--I didn't find a database entry for "awsRAG"
+Warning--empty pages in Culpepper2016
+Warning--empty pages in devlin2018bert
+Warning--empty pages in DynamicKNN2012
+Warning--empty journal in lewis2019bart
+Warning--empty pages in vaswani2017attention
+You've used 38 entries,
+            2921 wiz_defined-function locations,
+            852 strings with 15023 characters,
+and the built_in function-call counts, 54078 in all, are:
+= -- 5564
+> -- 1890
+< -- 17
++ -- 733
+- -- 677
+* -- 4132
+:= -- 6672
+add.period$ -- 121
+call.type$ -- 38
+change.case$ -- 428
+chr.to.int$ -- 39
+cite$ -- 43
+duplicate$ -- 5387
+empty$ -- 3723
+format.name$ -- 814
+if$ -- 10923
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 482
+newline$ -- 198
+num.names$ -- 160
+pop$ -- 2711
+preamble$ -- 1
+purify$ -- 372
+quote$ -- 0
+skip$ -- 768
+stack$ -- 0
+substring$ -- 5794
+swap$ -- 1116
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 342
+warning$ -- 5
+while$ -- 379
+width$ -- 0
+write$ -- 539
+(There were 6 warnings)

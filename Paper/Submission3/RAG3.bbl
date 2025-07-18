@@ -1,0 +1,285 @@
+\begin{thebibliography}{38}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Bai et~al.(2020)Bai, Li, Wang, Zhang, Shang, Xu, Wang, Wang and
+  Liu}]{bai2020spartermlearningtermbasedsparse}
+Bai Y, Li X, Wang G, Zhang C, Shang L, Xu J, Wang Z, Wang F and Liu Q (2020)
+  Sparterm: Learning term-based sparse representation for fast text retrieval.
+\newblock \emph{CoRR} abs/2010.00768.
+\newblock \urlprefix\url{https://arxiv.org/abs/2010.00768}.
+
+\bibitem[{Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
+  Neelakantan, Shyam, Sastry, Askell et~al.}]{brown2020language}
+Brown TB, Mann B, Ryder N, Subbiah M, Kaplan J, Dhariwal P, Neelakantan A,
+  Shyam P, Sastry G, Askell A et~al. (2020) Language models are few-shot
+  learners.
+\newblock \emph{CoRR} abs/2005.14165.
+\newblock \urlprefix\url{https://arxiv.org/abs/2005.14165}.
+
+\bibitem[{Chen et~al.(2021)Chen, Tworek, Jun, Yuan, de~Oliveira~Pinto, Kaplan,
+  Edwards, Burda, Joseph, Brockman, Ray
+  et~al.}]{chen2021evaluatinglargelanguagemodels}
+Chen M, Tworek J, Jun H, Yuan Q, de~Oliveira~Pinto HP, Kaplan J, Edwards H,
+  Burda Y, Joseph N, Brockman G, Ray A et~al. (2021) Evaluating large language
+  models trained on code.
+\newblock \emph{CoRR} abs/2107.03374.
+\newblock \urlprefix\url{https://arxiv.org/abs/2107.03374}.
+
+\bibitem[{Chuyuan et~al.(2025)Chuyuan, Ke, Shengda, Hongchun, Shuqiang and
+  Jie}]{Chuyuan2025}
+Chuyuan W, Ke D, Shengda Z, Hongchun W, Shuqiang H and Jie L (2025) Enhanced
+  recommendation systems with retrieval-augmented large language model.
+\newblock \emph{JAIR} 82.
+\newblock \doi{https://doi.org/10.1613/jair.1.17809}.
+
+\bibitem[{Culpepper et~al.(2016)Culpepper, Clarke and Lin}]{Culpepper2016}
+Culpepper JS, Clarke CLA and Lin J (2016) Dynamic cutoff prediction in
+  multi-stage retrieval systems.
+\newblock In: \emph{Proceedings of the 21st Australasian Document Computing
+  Symposium}. Melbourne, Australia.
+\newblock \urlprefix\url{https://culpepper.io/publications/ccl16-adcs.pdf}.
+
+\bibitem[{Devlin et~al.(2019)Devlin, Chang, Lee and Toutanova}]{devlin2018bert}
+Devlin J, Chang MW, Lee K and Toutanova K (2019) {BERT}: Pre-training of deep
+  bidirectional transformers for language understanding.
+\newblock In: Burstein J, Doran C and Solorio T (eds.) \emph{Proceedings of the
+  2019 Conference of the North {A}merican Chapter of the Association for
+  Computational Linguistics: Human Language Technologies}. Minneapolis,
+  Minnesota.
+\newblock \doi{10.18653/v1/N19-1423}.
+
+\bibitem[{Ding and Zhai(2024)}]{ding2024efficient}
+Ding B and Zhai J (2024) Efficient retrieval with learned similarities.
+\newblock \emph{CoRR} abs/2407.15462.
+\newblock \doi{10.48550/ARXIV.2407.15462}.
+
+\bibitem[{Gao et~al.(2023)Gao, Xiong, Gao, Jia, Pan, Bi, Dai, Sun, Guo, Wang
+  and Wang}]{ilin2023advancedrag}
+Gao Y, Xiong Y, Gao X, Jia K, Pan J, Bi Y, Dai Y, Sun J, Guo Q, Wang M and Wang
+  H (2023) Retrieval-augmented generation for large language models: {A}
+  survey.
+\newblock \emph{CoRR} abs/2312.10997.
+\newblock \urlprefix\url{https://doi.org/10.48550/arXiv.2312.10997}.
+
+\bibitem[{Gu et~al.(2018)Gu, Wang, Cho and Li}]{Gu2018SearchEngine}
+Gu J, Wang Y, Cho K and Li VO (2018) Search engine guided neural machine
+  translation.
+\newblock In: \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~32. pp. 5133--5140.
+\newblock \doi{10.1609/AAAI.V32I1.12013}.
+
+\bibitem[{Gupta et~al.(2024)Gupta, Ranjan and Singh}]{gupta20241}
+Gupta S, Ranjan R and Singh SN (2024) A comprehensive survey of
+  retrieval-augmented generation {(RAG):} evolution, current landscape and
+  future directions.
+\newblock \emph{CoRR} abs/2410.12837.
+\newblock \doi{10.48550/ARXIV.2410.12837}.
+
+\bibitem[{Harper and Konstan(2015)}]{Harper2015}
+Harper FM and Konstan JA (2015) The movielens datasets: History and context.
+\newblock \emph{ACM Transactions on Interactive Intelligent Systems} 5(4).
+\newblock \doi{10.1145/2827872}.
+
+\bibitem[{Hei et~al.(2024)Hei, Liu, Ou, Qiao, Jiao, Song, Tian and
+  Lin}]{hei2024drragapplyingdynamicdocument}
+Hei Z, Liu W, Ou W, Qiao J, Jiao J, Song G, Tian T and Lin Y (2024) {DR-RAG:}
+  applying dynamic document relevance to retrieval-augmented generation for
+  question-answering.
+\newblock \emph{CoRR} abs/2406.07348.
+\newblock \doi{10.48550/ARXIV.2406.07348}.
+
+\bibitem[{Howard and Ruder(2018)}]{Howard2018}
+Howard J and Ruder S (2018) Universal language model fine-tuning for text
+  classification.
+\newblock In: \emph{Proceedings of the 56th Annual Meeting of the Association
+  for Computational Linguistics, {ACL} , Melbourne, Australia,}. pp. 328--339.
+\newblock \doi{10.18653/V1/P18-1031}.
+
+\bibitem[{Huang and
+  Huang(2024)}]{huang2024surveyretrievalaugmentedtextgeneration}
+Huang Y and Huang J (2024) A survey on retrieval-augmented text generation for
+  large language models.
+\newblock \emph{CoRR} abs/2404.10981.
+\newblock \doi{10.48550/ARXIV.2404.10981}.
+
+\bibitem[{Hulett et~al.(2012)Hulett, Hall and Qu}]{DynamicKNN2012}
+Hulett C, Hall A and Qu G (2012) Dynamic selection of k nearest neighbors in
+  instance-based learning.
+\newblock In: \emph{2012 IEEE 13th International Conference on Information
+  Reuse \& Integration (IRI)}. Las Vegas, NV, USA.
+\newblock \doi{10.1109/IRI.2012.6302995}.
+
+\bibitem[{Jadon and Patil(2023)}]{eviden2025mrr}
+Jadon A and Patil A (2023) A comprehensive survey of evaluation techniques for
+  recommendation systems.
+\newblock \emph{CoRR} abs/2312.16015.
+\newblock \doi{10.48550/ARXIV.2312.16015}.
+
+\bibitem[{Kang and
+  McAuley(2018)}]{kang2018selfattentivesequentialrecommendation}
+Kang W and McAuley JJ (2018) Self-attentive sequential recommendation.
+\newblock \emph{CoRR} abs/1808.09781.
+\newblock \urlprefix\url{http://arxiv.org/abs/1808.09781}.
+
+\bibitem[{Karpukhin et~al.(2020)Karpukhin, Oguz, Min, Wu, Edunov, Chen and
+  Yih}]{karpukhin2020dpr}
+Karpukhin V, Oguz B, Min S, Wu L, Edunov S, Chen D and Yih W (2020) Dense
+  passage retrieval for open-domain question answering.
+\newblock \emph{CoRR} abs/2004.04906.
+\newblock \urlprefix\url{https://arxiv.org/abs/2004.04906}.
+
+\bibitem[{Lafferty and Zhai(2017)}]{Lafferty2001}
+Lafferty J and Zhai C (2017) Document language models, query models, and risk
+  minimization for information retrieval.
+\newblock \emph{{SIGIR} Forum} 51(2): 251--259.
+\newblock \doi{10.1145/3130348.3130375}.
+\newblock \urlprefix\url{https://doi.org/10.1145/3130348.3130375}.
+
+\bibitem[{Lewis et~al.(2020{\natexlab{a}})Lewis, Liu, Goyal, Ghazvininejad,
+  Mohamed, Levy, Stoyanov and Zettlemoyer}]{lewis2019bart}
+Lewis M, Liu Y, Goyal N, Ghazvininejad M, Mohamed A, Levy O, Stoyanov V and
+  Zettlemoyer L (2020{\natexlab{a}}) {BART:} denoising sequence-to-sequence
+  pre-training for natural language generation, translation, and comprehension
+  : 7871--7880\doi{10.18653/V1/2020.ACL-MAIN.703}.
+
+\bibitem[{Lewis et~al.(2020{\natexlab{b}})Lewis, Perez, Piktus, Petroni,
+  Karpukhin, Goyal, K{\"u}ttler, Lewis, Yih et~al.}]{lewis2020retrieval}
+Lewis P, Perez E, Piktus A, Petroni F, Karpukhin V, Goyal N, K{\"u}ttler H,
+  Lewis M, Yih Wt et~al. (2020{\natexlab{b}}) Retrieval-augmented generation
+  for knowledge-intensive nlp tasks.
+\newblock \emph{CoRR} abs/2005.11401.
+\newblock \urlprefix\url{https://arxiv.org/abs/2005.11401}.
+
+\bibitem[{Liang et~al.(2024)Liang, Wang, Wang, Song, Yang, Niu, Hu, Liu, Yao,
+  Xiong and Li}]{liang2024controllabletextgenerationlarge}
+Liang X, Wang H, Wang Y, Song S, Yang J, Niu S, Hu J, Liu D, Yao S, Xiong F and
+  Li Z (2024) Controllable text generation for large language models: {A}
+  survey.
+\newblock \emph{CoRR} abs/2408.12599.
+\newblock \doi{10.48550/ARXIV.2408.12599}.
+
+\bibitem[{Mousavi et~al.(2025)Mousavi, Alghisi and Riccardi}]{Mousavi2025}
+Mousavi SM, Alghisi S and Riccardi G (2025) Llms as repositories of factual
+  knowledge: Limitations and solutions.
+\newblock \emph{CoRR} abs/2501.12774.
+\newblock \doi{10.48550/ARXIV.2501.12774}.
+
+\bibitem[{Naveed et~al.(2023)Naveed, Khan, Qiu, Saqib, Anwar, Usman, Barnes and
+  Mian}]{Radford2019}
+Naveed H, Khan AU, Qiu S, Saqib M, Anwar S, Usman M, Barnes N and Mian A (2023)
+  A comprehensive overview of large language models.
+\newblock \emph{CoRR} abs/2307.06435.
+\newblock \doi{10.48550/ARXIV.2307.06435}.
+\newblock \urlprefix\url{https://doi.org/10.48550/arXiv.2307.06435}.
+
+\bibitem[{Radford et~al.(2021)Radford, Kim, Hallacy, Ramesh, Goh, Agarwal,
+  Sastry, Askell, Mishkin, Clark, Krueger and
+  Sutskever}]{radford2021learningtransferablevisualmodels}
+Radford A, Kim JW, Hallacy C, Ramesh A, Goh G, Agarwal S, Sastry G, Askell A,
+  Mishkin P, Clark J, Krueger G and Sutskever I (2021) Learning transferable
+  visual models from natural language supervision.
+\newblock \emph{CoRR} abs/2103.00020.
+\newblock \urlprefix\url{https://arxiv.org/abs/2103.00020}.
+
+\bibitem[{Raffel et~al.(2020)Raffel, Shazeer, Roberts, Lee, Narang, Matena,
+  Zhou, Li and Liu}]{raffel2020exploring}
+Raffel C, Shazeer N, Roberts A, Lee K, Narang S, Matena M, Zhou Y, Li W and Liu
+  PJ (2020) Exploring the limits of transfer learning with a unified
+  text-to-text transformer.
+\newblock \emph{J. Mach. Learn. Res.} 21: 140:1--140:67.
+\newblock \urlprefix\url{https://arxiv.org/abs/1910.10683}.
+
+\bibitem[{Robertson and Walker(1997)}]{Robertson1997}
+Robertson SE and Walker S (1997) On relevance weights with little relevance
+  information.
+\newblock In: Belkin NJ, Narasimhalu AD, Willett P, Hersh WR, Can F and
+  Voorhees EM (eds.) \emph{SIGIR '97: Proceedings of the 20th Annual
+  International ACM SIGIR Conference on Research and Development in Information
+  Retrieval}. Philadelphia, PA, USA, pp. 16--24.
+\newblock \doi{10.1145/258525.258529}.
+
+\bibitem[{Sawarkar et~al.(2024)Sawarkar, Mangal and
+  Solanki}]{sawarkar2024blendedragimprovingrag}
+Sawarkar K, Mangal A and Solanki SR (2024) Blended {RAG:} improving {RAG}
+  (retriever-augmented generation) accuracy with semantic search and hybrid
+  query-based retrievers.
+\newblock \emph{CoRR} abs/2404.07220.
+\newblock \doi{10.48550/ARXIV.2404.07220}.
+
+\bibitem[{Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones,
+  Gomez, Kaiser and Polosukhin}]{vaswani2017attention}
+Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, Kaiser L and
+  Polosukhin I (2017) Attention is all you need.
+\newblock In: \emph{Advances in Neural Information Processing Systems},
+  volume~30.
+\newblock \urlprefix\url{https://arxiv.org/abs/1706.03762}.
+
+\bibitem[{Yuan et~al.(2024)Yuan, Liu, Yuan, Sun, Li and Zhang}]{yuan2024hybrid}
+Yuan Y, Liu C, Yuan J, Sun G, Li S and Zhang M (2024) A hybrid {RAG} system
+  with comprehensive enhancement on complex reasoning.
+\newblock \emph{CoRR} abs/2408.05141.
+\newblock \doi{10.48550/ARXIV.2408.05141}.
+
+\bibitem[{Zaragoza and Robertson(2009)}]{Zaragoza2009}
+Zaragoza H and Robertson SE (2009) The probabilistic relevance framework:
+  {BM25} and beyond.
+\newblock \emph{Foundations and Trends{\textregistered} in Information
+  Retrieval} 3(4): 333--389.
+\newblock \doi{10.1561/1500000019}.
+
+\bibitem[{Zhai et~al.(2023)Zhai, Gong, Wang, Sun, Yan, Li and
+  Liu}]{zhai2023revisiting}
+Zhai J, Gong Z, Wang Y, Sun X, Yan Z, Li F and Liu X (2023) Revisiting neural
+  retrieval on accelerators.
+\newblock \emph{CoRR} abs/2306.04039.
+\newblock \doi{10.48550/ARXIV.2306.04039}.
+
+\bibitem[{Zhang et~al.(2023)Zhang, Chen, Xu, Cao, Chen, Cohn and
+  Fang}]{Zhang2023}
+Zhang Q, Chen S, Xu D, Cao Q, Chen X, Cohn T and Fang M (2023) A survey for
+  efficient open domain question answering.
+\newblock In: Rogers A, Graber JB and Okazaki N (eds.) \emph{Proceedings of the
+  61st Annual Meeting of the Association for Computational Linguistics (Volume
+  1: Long Papers)}. Toronto, Canada, pp. 14447--14465.
+\newblock \doi{10.18653/v1/2023.acl-long.808}.
+
+\bibitem[{Zhao et~al.(2024)Zhao, Zhang, Yu, Wang, Geng, Fu, Yang, Zhang and
+  Cui}]{zhao2024retrievalaugmentedgenerationaigeneratedcontent}
+Zhao P, Zhang H, Yu Q, Wang Z, Geng Y, Fu F, Yang L, Zhang W and Cui B (2024)
+  Retrieval-augmented generation for ai-generated content: {A} survey.
+\newblock \emph{CoRR} abs/2402.19473.
+\newblock \doi{10.48550/ARXIV.2402.19473}.
+
+\bibitem[{Zhou and Agichtein(2020)}]{Zhou2021}
+Zhou J and Agichtein E (2020) Rlirank: Learning to rank with reinforcement
+  learning for dynamic search.
+\newblock In: Huang Y, King I, Liu T and van Steen M (eds.) \emph{{WWW} '20:
+  The Web Conference 2020, Taipei, Taiwan, April 20-24}. pp. 2842--2848.
+\newblock \doi{10.1145/3366423.3380047}.
+
+\bibitem[{Zhu et~al.(2024)Zhu, Shimada, Taniguchi and Ohkuma}]{Zhu2024}
+Zhu C, Shimada K, Taniguchi T and Ohkuma T (2024) {STAYKATE:} hybrid in-context
+  example selection combining representativeness sampling and retrieval-based
+  approach - {A} case study on science domains.
+\newblock \emph{CoRR} abs/2412.20043.
+\newblock \doi{10.48550/ARXIV.2412.20043}.
+
+\bibitem[{Zhu et~al.(2018)Zhu, Zhang, Li, He, Li and Gai}]{Zhu_2018}
+Zhu H, Zhang P, Li G, He J, Li H and Gai K (2018) Learning tree-based deep
+  model for recommender systems.
+\newblock \emph{CoRR} abs/1801.02294.
+\newblock \urlprefix\url{http://arxiv.org/abs/1801.02294}.
+
+\bibitem[{Zhuang et~al.(2021)Zhuang, Qi, Duan, Xi, Zhu, Zhu, Xiong and
+  He}]{zhuang2020comprehensive}
+Zhuang F, Qi Z, Duan K, Xi D, Zhu Y, Zhu H, Xiong H and He Q (2021) A
+  comprehensive survey on transfer learning.
+\newblock \emph{Proceedings of the IEEE} 109(1): 43--76.
+
+\end{thebibliography}
